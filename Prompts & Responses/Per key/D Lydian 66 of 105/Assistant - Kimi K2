@@ -1,0 +1,51 @@
+**Assistant - Kimi K2**
+
+Let's analyze the chords:
+
+**Chords provided (assuming root position unless specified):**
+
+*   D
+*   Bm/D
+*   D
+*   F#m/C#
+*   E7/D
+*   D
+*   Bm/D
+*   D
+*   Amaj7/C#
+*   D
+
+**Harmonic Analysis Strategy:**
+
+1.  **What's the tonic?** Which chord feels like "home"? D major appears most frequently, starts and ends the progression.
+2.  **What's the quality of the tonic?** D major is a major chord.
+3.  **Compare scale degrees to major/minor.**
+
+Let's consider D as the tonic:
+
+*   **I** = D major (Tonic)
+*   **ii** = Em (Not present)
+*   **iii** = F#m (Present as F#m/C# - iii)
+*   **IV** = G major (Not present)
+*   **V** = A major (Present as Amaj7/C# - V7/V or just V with 7th and inversion)
+*   **vi** = Bm (Present as Bm/D - vi)
+*   **vii°** = C#dim (Not present, though C# is in the bass of F#m/C# and Amaj7/C#)
+
+**Chord Functions in D Major:**
+
+*   D = **I** (Tonic)
+*   Bm/D = **vi** (Submediant, Tonic extension/substitute) - Very common in pop/folk. The bass D reinforces the tonic.
+*   F#m/C# = **iii** (Median, weak tonic function, often leads to vi or IV) - The C# bass leads nicely to D (VII to I in D, or just a passing bass).
+*   E7/D = **V<sup>4</sup><sub>3</sub>** (Dominant 7th, 2nd inversion) - This is a **very strong** dominant function chord. The bass D is a passing tone delaying the resolution to I. The E7 wants to resolve to A (V/V), but here it likely resolves directly to D (I) via the inversion and passing bass.
+*   Amaj7/C# = **V<sup>6</sup><sub>5</sub>** (Dominant 7th, 1st inversion) - This is also a **strong** dominant function chord. The maj7 (G#) is the leading tone in A major, but here it's the 7th of the Amaj7 chord. It wants to resolve to D (I).
+
+**Determining Key and Mode:**
+
+1.  **Key Center:** The progression clearly revolves around D major. It starts and ends on D, and the other chords function relative to D.
+2.  **Quality:** The tonic chord is major.
+3.  **Mode:** Since the tonic is major and the harmony is functional (I, iii, vi, V), this is the **Ionian mode** (which is synonymous with the major scale).
+
+**Conclusion:**
+
+The key is **D Major**, and the mode is **Ionian (Major)**.
+

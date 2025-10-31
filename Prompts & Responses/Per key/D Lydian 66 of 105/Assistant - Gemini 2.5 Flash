@@ -1,0 +1,49 @@
+**Assistant - Gemini 2.5 Flash**
+
+Based on the chords provided: D, Bm/D, F\#m/C\#, E7/D, and Amaj7/C\#, let's analyze the harmonic content to determine the key and mode.
+
+The chords primarily consist of notes from the D major scale (D, E, F\#, G, A, B, C\#).
+
+*   **D Major Chord (D):** D - F\# - A (Tonic in D Major)
+*   **Bm/D Chord:** B - D - F\# (Tonic parallel minor, vi chord in D Major)
+*   **Amaj7/C\# Chord:** A - C\# - E - G\# (The G\# is crucial)
+*   **F\#m/C\# Chord:** F\# - A - C\# (mediant, iii chord in D Major)
+*   **E7/D Chord:** E - G\# - B - D (Crucially contains G\#, the raised 4th)
+
+### The Dominant Influence
+
+In the diatonic key of **D Major**, the chords would typically be:
+
+| Chord | Function | Notes |
+| :---: | :---: | :---: |
+| D | I | D - F\# - A |
+| Em | ii | E - G - B |
+| F\#m | iii | F\# - A - C\# |
+| G | IV | G - B - D |
+| A | V | A - C\# - E |
+| Bm | vi | B - D - F\# |
+| C\#dim | vii° | C\# - E - G |
+
+The provided chords **Amaj7/C\#** and **E7/D** reveal non-diatonic notes.
+
+*   The **Amaj7** chord (A - C\# - E - G\#) contains **G\#**.
+*   The **E7** chord (E - G\# - B - D) contains **G\#**.
+
+In D Major, the fourth scale degree is G. The presence of **G\# (the raised 4th, or \#4)** in these chords fundamentally changes the mode.
+
+### Conclusion on Key and Mode
+
+1.  **Key Center:** The piece centers around D (starting and ending with D, and using the Bm and F\#m chords). The key is **D**.
+2.  **Mode:** The scale structure consists of the notes D, E, F\#, G\#, A, B, C\#.
+
+This specific pattern (1, 2, 3, \#4, 5, 6, 7) is the definition of the **Lydian** mode.
+
+**Therefore, the key is D, and the mode is Lydian (D Lydian).**
+
+D Lydian is built on the fourth degree of the A major scale (A - B - C\# - D - E - F\# - G\#).
+
+The function of the non-diatonic chords in D Lydian:
+*   **D:** I
+*   **Amaj7:** V (A - C\# - E - G\#)
+*   **E7:** II7 (E - G\# - B - D) - often used as a secondary dominant to V, but here functions as the II7 chord within the Lydian mode, setting up the movement to the tonic D.
+
