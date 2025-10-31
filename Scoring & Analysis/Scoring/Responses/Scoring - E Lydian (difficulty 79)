@@ -1,0 +1,951 @@
+**Assistant - GPT 5 High**
+
+Overview
+- Verdict: Correct
+- Overall score: 93/100 (Excellent)
+
+Weighted scoring breakdown
+- Key (tonal center) identification (30): 30/30
+  - Clearly centers the harmony on E (frequent E chords, E pedal via C#m/E, returns to E).
+- Mode determination (10): 9/10
+  - Arrives at E Lydian and marshals the decisive evidence (A# via F#7 and Bmaj7). Minor early hedging toward Ionian.
+- Chord-function mapping (20): 18/20
+  - Accurate reads: G#m/D# as iii6; F#7/E identified functionally (V/V with 7th in bass) and later noted as Lydian-diatonic; Bmaj7 correctly highlighted as containing A#. Small imprecision calling Bmaj7 “Vmaj7 in E major” (it’s not a functional dominant) and briefly questioning the chord label before accepting it.
+- Slash chords and pedal analysis (10): 9/10
+  - Recognizes tonic prolongation over an E pedal; could tighten terminology (e.g., “vi6 over tonic pedal” rather than “6/1 pedal”).
+- Cadence and tonal-center evidence (10): 9/10
+  - Good case via E pedal and A# usage (no A♮). Could explicitly stress the absence of A♮ across the progression and the coloristic Vmaj7 → I motion (non-dominant).
+- Clarity and structure (10): 9/10
+  - Well-organized sections; a bit of back-and-forth before settling on Lydian.
+- Concision and focus (5): 4/5
+  - Thorough and slightly verbose; a tighter lead would help.
+- Theoretical precision (5): 4/5
+  - Solid overall. Minor issues: “Vmaj7 in E major” is atypical terminology; better to reframe as Lydian-diatonic Vmaj7 lacking dominant function. Also, prefer II7 (Lydian) over exclusively V/V framing once choosing the Lydian lens.
+
+Strengths
+- Correct final identification: E Lydian with E as tonal center.
+- Pinpoints the characteristic tone A# (raised 4) and shows how F#7 (F#–A#–C#–E) and Bmaj7 (B–D#–F#–A#) supply it.
+- Good use of inversion/slash-chord reading and tonic-pedal understanding (E under C#m/E and others).
+- Distinguishes diatonic overlap (C#m, G#m) vs. Lydian-specific sonorities (F#7, Bmaj7).
+
+Areas to improve
+- Commit earlier to the Lydian frame once A# is established and no A♮ appears; avoid suggesting the Bmaj7 label is “curious” or should be B7.
+- Avoid “Vmaj7 in E major” language; Bmaj7 in this context isn’t a dominant-function chord (no tritone A–D#); it’s Lydian-diatonic color.
+- When you invoke secondary-dominant logic (F#7 as V/V), also recast it cleanly as II7 within Lydian to keep the modal lens consistent.
+- Clarify terminology: instead of “6/1 pedal,” say “vi6 (C#m/E) over a tonic (E) pedal.”
+
+Actionable suggestions
+- Lead with a crisp answer, then evidence:
+  - “Key/Mode: E Lydian (tonic E). Evidence: persistent E pedal; A# present (F#7, Bmaj7) and A♮ absent; Bmaj7 (Vmaj7) and F#7 (II7) are diatonic to E Lydian.”
+- Present a short Roman-numeral sketch in Lydian terms to reduce mixed frameworks:
+  - E (I) – C#m/E (vi6) – E (I) – G#m/D# (iii6) – F#7/E (II7 in 4/2) – E (I) – … – Bmaj7/D# (Vmaj7 in 6/3) – E (I)
+- Explicitly call out “absence of A natural” as decisive anti-Ionian evidence.
+- When noting Bmaj7 → E, emphasize it’s a coloristic Lydian Vmaj7 → I move (no dominant tritone), not a functional V7 → I cadence.
+
+Consider a concise lead sentence
+- “E Lydian (tonic E): the harmony pedals on E, and A# (raised 4) appears via F#7 and Bmaj7 while A♮ never does, making the collection Lydian rather than Ionian.”
+
+**Assistant - GPT 5 Medium**
+
+Overview
+- Verdict: Correct (E Lydian)
+- Overall score: 85/100 (Good)
+
+Weighted scoring breakdown
+- Key identification accuracy (30): 30/30
+  - Clearly centers E via pedal E and frequent E harmony.
+- Mode determination (10): 10/10
+  - Correctly isolates A# as Lydian’s #4 and notes absence of A natural.
+- Chord-function mapping (20): 14/20
+  - Good: Bmaj7 as diatonic in E Lydian; F#7 as V/V over E pedal is plausible.
+  - Issues: Mislabels F#7/E as “E13b9”; later calls Bmaj7 a “dominant seventh.”
+- Slash chords and pedal analysis (10): 9/10
+  - Strong use of E pedal to argue modal center; recognizes C#m/E and other slash chords as reinforcing E.
+- Cadence and tonal-center evidence (10): 7/10
+  - Convincing pedal-based centricity, but no explicit cadence analysis or voice-leading resolution to E is presented.
+- Clarity and structure (10): 9/10
+  - Well organized with clear sectioning; easy to follow.
+- Concision and focus (5): 4/5
+  - Slightly repetitive but stays on task.
+- Theoretical precision (5): 2/5
+  - Significant chord-quality error (E13b9 claim) and terminology slip (dominant vs major seventh).
+
+Strengths
+- Correctly identifies E as the tonal center and Lydian as the mode.
+- Uses the key Lydian cue (A#/#4) vs absence of A natural effectively.
+- Solid recognition that Bmaj7 is diatonic in E Lydian (parent scale B major).
+- Sensible functional note that F#7 can be heard as V/V against an E pedal.
+- Good awareness of how the E pedal establishes modality.
+
+Areas to improve
+- F#7/E ≠ E13(b9):
+  - F#7/E contains E–F#–A#–C#. An E13(b9) sonority would require E–G#–B–D–F(natural as b9)–C#; it would also typically include G# and D, which aren’t present, and it would not include A#. If reinterpreting over E, a more accurate “E-root” view would be something like E(add9, #11, 13) no 3rd/7th—still a stretch; best to call it F#7/E (upper-structure over pedal E) or a polychord E // F#7.
+- “Dominant seventh” terminology:
+  - Bmaj7 is not a dominant seventh (that would be B7 with A natural). In E Lydian, scale-degree 5 can appear as B or Bmaj7 (both diatonic), but it won’t carry the same dominant tritone function as B7 in E major.
+- Functional nuance in modal contexts:
+  - In Lydian, the V chord (especially as maj7) often behaves coloristically rather than functionally dominant. Stress color/scale-degree roles more than tonal-function labels.
+
+Actionable suggestions
+- When proposing chord-equivalences, list pitch content to verify:
+  - F#7/E: E–F#–A#–C#
+  - E13(b9): E–G#–B–D–F–C# (and often includes the 11/#11); clearly different sets.
+- Use precise labels: say “Vmaj7 in E Lydian” (or “scale-degree 5 maj7”) rather than “dominant seventh” when the chord has a major seventh.
+- If you want a non-functional E-based view for F#7/E, prefer “E with upper-structure F#7” or “polychord E // F#7,” and avoid naming complex E-extensions when core chord tones (3rd/7th) are missing.
+- Consider briefly noting why Lydian (A#) is preferred over Ionian (A♮) by inventorying actual A/A# occurrences in the passage.
+
+Summary
+- Correct conclusion (E Lydian) with strong modal-centering evidence and good diatonic mapping.
+- Deducted points for a significant chord-quality mislabel (E13b9) and a terminology slip (calling Bmaj7 “dominant seventh”).
+
+**Assistant - GPT 5 Low**
+
+Overview
+- Verdict: Correct (identifies E Lydian)
+- Overall score: 87/100 (Strong analysis with a few theoretical slips and minor contradictions)
+
+Weighted scoring breakdown
+- Key/mode identification accuracy (30): 30/30
+  - Clearly concludes E as the tonal center and Lydian as the mode.
+- Characteristic-tone and parent-key reasoning (10): 9/10
+  - Correctly highlights A# as Lydian’s raised 4 and connects E Lydian to the B major pitch collection; “chromatic color” wording was a bit off.
+- Chord-function mapping and diatonicity (20): 16/20
+  - Mostly correct: Bmaj7 (Vmaj7), G#m7 (iii7), C#m7 (vi7), II7 present. One notable error: stating “F# in E Lydian is F# minor too” (it’s F# major/7, not minor).
+- Roman numerals and inversion labels (10): 10/10
+  - I, vi6, iii6, II7 4-2 (V/V over 7th), Vmaj7/3 are accurate and well-notated.
+- Tonal-center evidence and cadential logic (10): 8/10
+  - Sensibly contrasts E center vs B major parent; notes return to E and bass emphasis (E/D#). Could have explicitly addressed the non-dominant V (Vmaj7) cadence in Lydian.
+- Clarity and structure (10): 7/10
+  - Organized with headings, but some repetition and a couple of contradictory statements.
+- Concision and focus (5): 4/5
+  - Slightly verbose with stream-of-consciousness phrasing.
+- Theoretical precision (5): 3/5
+  - F# minor vs F# major slip; calling A# “chromatic” and “leading tone to B” is potentially misleading in the E-centered modal context.
+
+Strengths
+- Correct identification of E Lydian with appropriate emphasis on A# (#4) as the characteristic tone.
+- Sound parent-key perspective (B major) and correct recognition that V is Bmaj7 (not dominant) in Lydian.
+- Accurate diatonic chord qualities for iii7 (G#m7), vi7 (C#m7), and Vmaj7 (Bmaj7).
+- Excellent Roman numeral work, including inversions and the equivalence II7 ≡ V/V in this context.
+
+Areas to improve
+- Correct the F# chord quality: in E Lydian, II is F# major and the diatonic 7th chord is F#7 (not F#m or F#m7).
+- Clarify terminology: A# is diatonic (characteristic raised 4) in E Lydian—avoid calling it “chromatic.” Also, reserve “leading tone” for the scale degree 7 to tonic (here D#→E); A#→B is better framed as scale-degree motion within the parent key or as the characteristic #4 resolving up to 5.
+- Streamline the narrative to avoid internal contradictions (e.g., “F#7 … is diatonic” vs “F# in E Lydian is F# minor”).
+
+Actionable suggestions
+- State the diatonic seventh-chord set in E Lydian to anchor the analysis:
+  - Imaj7: E G# B D#
+  - II7: F# A# C# E
+  - iii7: G# B D# F#
+  - IVø7: A# C# E G#
+  - Vmaj7: B D# F# A#
+  - vi7: C# E G# B
+  - vii7: D# F# A# C#
+- Rephrase key theoretical points:
+  - “A# is the Lydian #4 (diatonic), which yields a II major/7 (F#7) and a V major-7 (Bmaj7).”
+  - “Tonal center is E (returns to E, bass emphasis on E/D#), while the pitch set is that of B major (parent key).”
+- Tighten the prose: lead with the conclusion (E Lydian), list the confirming chord qualities, then contrast briefly with E Ionian/E major (A natural) to explain why Lydian fits.
+
+Notable inaccuracies to fix
+- “F# in E Lydian is F# minor too.” → Should be F# major; diatonic 7th is F#7.
+- “A# could just be a chromatic color…” → In E Lydian A# is diatonic (#4).
+- “A# serves as the leading tone to B.” → Better: A# tends to resolve to B within the B-major collection; in E Lydian, the true leading tone to the tonic is D#→E.
+
+**Assistant - Grok 4 Fast Thinking**
+
+Overview
+- Verdict: Incorrect (missed Lydian)
+- Overall score: 62/100 (mixed: correct tonic, wrong mode)
+
+Weighted scoring breakdown
+- Key (tonal center) identification (30): 18/30
+  - Correctly centers the harmony on E with strong pedal evidence; however, labeling the key as “E major (Ionian)” rather than E Lydian is a substantive miss.
+- Mode determination (10): 1/10
+  - Concludes Ionian and explicitly denies a raised 4th, despite repeated A#s. Only a passing nod to “Lydian color,” so minimal credit.
+- Chord-function mapping (20): 12/20
+  - Many functions are fine (I, vi over I, iii in inversion, pedal usage), but key misreads include F#7/E as V/V despite its resolution to E, and calling Bmaj7 a “Vmaj7” color in Ionian rather than recognizing its diatonic status in Lydian. Minor labeling slip (“iii⁷”) for a triad.
+- Slash chords & pedal analysis (10): 9/10
+  - Solid recognition of tonic pedal (E) and leading-tone bass (D#) usage.
+- Cadence/tonal-center evidence (10): 9/10
+  - Good articulation that everything orbits E and the progression starts/ends on E.
+- Clarity & structure (10): 7/10
+  - Well-organized, but internally contradictory (acknowledges A# yet denies Lydian).
+- Concision & focus (5): 4/5
+  - Thorough and mostly on-topic.
+- Theoretical precision (5): 2/5
+  - Incorrect statement about the Lydian #4 (“No raised 4th (F## or G natural)”; in E, the #4 is A#), and an implausible claim that Vmaj7 is a common Ionian substitution.
+
+What it gets right
+- Establishes E as the tonal center via start/end on E, frequent returns to E, and a persistent E pedal.
+- Sensibly interprets C#m/E and G#m/D# as diatonic inversions, aiding smooth bass motion.
+- Recognizes tension-building via non-root-bass chords and pedal techniques.
+
+Major issues (why it’s E Lydian, not Ionian)
+- Repeated A# (#4 in E) is the giveaway:
+  - Bmaj7/D# contains A# (B–D#–F#–A#). In E Ionian, diatonic V7 is B7 (B–D#–F#–A), not Bmaj7; Bmaj7 is non-diatonic in Ionian but diatonic in E Lydian (Vmaj7).
+  - F#7/E contains A# (F#–A#–C#–E). In E Ionian, the diatonic ii7 is F#m7 (F#–A–C#–E); F#7 (with A#) is non‑diatonic to Ionian but diatonic to E Lydian (ii7).
+- Functional mismatch:
+  - Labeling F#7/E as V/V implies a pull to B; in the progression it resolves directly back to E, supporting a modal (Lydian) color rather than tonal secondary-dominant function.
+- Contradictory reasoning:
+  - Advises “avoid A natural in favor of A#” over Bmaj7—this is effectively adopting E Lydian while still claiming Ionian.
+- Theoretical error:
+  - States there’s “no raised 4th (F## or G natural)” to indicate Lydian. In E, the #4 is A#, not F##/G.
+
+Key evidence for E Lydian in this progression
+- Scale: E Lydian = E F# G# A# B C# D# E.
+- Diatonic 7th-chord qualities in E Lydian include:
+  - ii7 = F#7 (F#–A#–C#–E) → present (as F#7/E) and resolves to I, not to V.
+  - Vmaj7 = Bmaj7 (B–D#–F#–A#) → present (Bmaj7/D#).
+- The A# (#4) occurs in two independent chords (F#7 and Bmaj7), making it a stable pitch-class in the collection, not a one-off chromatic color.
+
+Actionable suggestions
+- Identify the characteristic modal tone first. If A# recurs and supports harmony in multiple places, flag Lydian.
+- Reassess “secondary dominant” claims against actual resolutions. If V/V doesn’t move to V, consider modal or color interpretations.
+- Avoid contradictory guidance (e.g., recommending A# over A while insisting on Ionian).
+- Correct the modal hallmark: in E, #4 = A#. Use that as your test for Lydian.
+- Phrase a concise, accurate lead:
+  - “Key/Mode: E Lydian. Evidence: repeated A# via F#7/E (diatonic ii7) and Bmaj7/D# (diatonic Vmaj7), over an E pedal; resolves consistently to E.”
+
+Concise corrected mapping (E Lydian)
+- E: I
+- C#m/E: vi6
+- G#m/D#: iii6
+- F#7/E: ii7 over tonic pedal (also reads as Eadd9(#11,13) no 3rd)
+- Bmaj7/D#: Vmaj7/3
+- E: I
+
+One‑line corrected answer
+- Key/Mode: E Lydian. The progression centers on E with repeated A# (the Lydian #4) appearing diatonically in F#7/E (ii7) and Bmaj7/D#, confirming Lydian rather than Ionian.
+  
+**Assistant - Gemini 2.5 Pro**
+
+Overview
+- Verdict: Partially correct (tonic), incorrect mode
+- Overall score: 48/100
+
+Weighted scoring breakdown
+- Key identification accuracy (30): 24/30
+  - Correctly centers E as the tonal home; cites return to and closure on E. However, the justification leans on a mischaracterized “V–I” using Bmaj7, which weakens the evidence.
+- Mode determination (10): 0/10
+  - Fails to recognize E Lydian. Does not identify the raised 4 (A#) as the defining modal tone; treats A# as chromatic “color” instead of the mode’s hallmark.
+- Chord-function mapping (20): 6/20
+  - Correct mapping for C#m (vi) and G#m (iii) relative to E. Mislabels F#7 as a secondary dominant (V/V) and Bmaj7 as a functional V, rather than recognizing both as diatonic to E Lydian (II7 and Vmaj7). Early claim that F#7 “resolves to E” is also incorrect functionally.
+- Inversions / slash-chord handling (10): 5/10
+  - Notes Bmaj7/D# and the D#→E bass resolution. But overstates this as a definitive V–I and misses that D# is the leading tone in both E Ionian and E Lydian (not diagnostic by itself).
+- Cadence and tonal-center evidence (10): 4/10
+  - Correctly emphasizes E as center; however, calling Bmaj7→E a strong V–I is theoretical overreach (no dominant tritone). Misses the Lydian “Vmaj7→I” color cadence.
+- Clarity and structure (10): 6/10
+  - Organized into sections, but includes repeated, process-style narration and some internal contradictions.
+- Concision and focus (5): 2/5
+  - Overly verbose; restates points multiple times without sharpening the conclusion.
+- Theoretical precision (5): 1/5
+  - Contradictory claims (e.g., F#7 “resolves to E,” then later to Bmaj7). Confuses diatonic status and functional role of Bmaj7 in E major; misses that F#7 and Bmaj7 are diatonic in E Lydian.
+
+Strengths
+- Correctly identifies E as the tonal center.
+- Sensibly recognizes C#m (vi) and G#m (iii) roles relative to E.
+- Notices inversion (Bmaj7/D#) and the D#→E bass motion.
+
+Key issues
+- Misses the defining modal evidence: A# (the raised 4) appears in both F#7 (A#) and Bmaj7 (A#), which are diatonic in E Lydian, not chromatic “color” in E major.
+- Mischaracterizes Bmaj7→E as a strong V–I; V in E major is B7 (with A♮), not Bmaj7 (with A#). The absence of A♮ and the presence of A# argue against E Ionian.
+- Internal inconsistency: states F#7 “resolves to E,” later says it resolves to Bmaj7; the latter is more plausible, but in Lydian F#7 functions natively as II7.
+- Treats Lydian-signature chords (II7, Vmaj7) as secondary/borrowed, obscuring the actual mode.
+
+Actionable suggestions
+- Use characteristic tones to diagnose modes:
+  - Lydian: raised 4 (#11). In E Lydian, A# pervades (F#7 = F#–A#–C#–E; Bmaj7 = B–D#–F#–A#). If A# is common and A♮ is absent, strongly consider Lydian.
+- Check functional expectations:
+  - In E major (Ionian), V is B or B7 (with A♮). If you see Bmaj7 instead, ask whether Lydian (Vmaj7 diatonic) better explains the harmony.
+- Map the chords in the correct mode:
+  - E Lydian: E (I), F#7 (II7), G#m (iii), Bmaj7 (Vmaj7), C#m (vi).
+- Calibrate cadence language:
+  - Describe Bmaj7→E as a Lydian-flavored Vmaj7→I or a color resolution, not a classical dominant V7→I.
+- Tighten the write-up:
+  - Lead with the conclusion (Key/Mode), then give 2–3 decisive pieces of evidence (A#, II7, Vmaj7; absence of A♮/B7), followed by concise chord-function mapping.
+
+Corrected takeaway
+- Key/Mode: E Lydian
+- Evidence:
+  - Presence of A# (raised 4) throughout: diatonic F#7 (II7) and Bmaj7 (Vmaj7).
+  - Absence of A♮ and B7 (the true dominant of E major).
+  - E remains the tonal center; Bmaj7/D#→E uses D#→E leading tone within the Lydian collection.
+
+**Assistant - Qwen3 235B 2507 Thinking**
+
+Overview
+- Verdict: Incorrect (does not identify E Lydian)
+- Overall score: 20/100 (Poor)
+
+Weighted scoring breakdown
+- Key identification accuracy (30): 0/30
+  - Concludes D major; ground-truth is E Lydian. Never seriously tests E as tonic.
+- Mode determination (10): 0/10
+  - States Ionian; should be Lydian. No search for Lydian markers (raised 4th, II major, #11 color).
+- Chord-function mapping (20): 7/20
+  - Some plausible functional calls if one assumes D major (e.g., Bm/D as vi6, E7 as V/V, Amaj7/C# as V6/5); however the overall framework is anchored to the wrong tonic and riddled with note-spelling errors that undermine the mapping.
+- Slash chords and pedal analysis (10): 4/10
+  - Notices inversion roles (e.g., E7/D as third inversion, Amaj7/C# as first inversion) and bass semitone C#→D, but misreads F#m/C# and speculates about typos rather than validating chord membership.
+- Cadence and tonal-center evidence (10): 4/10
+  - Attempts to justify D as tonic via Amaj7/C# → D; does not evaluate or falsify E-centered cadential behavior or Lydian traits.
+- Clarity and structure (10): 4/10
+  - Lengthy, meandering, and internally contradictory. Multiple false starts without a clean synthesis.
+- Concision and focus (5): 1/5
+  - Overly verbose relative to the task; repeats the same uncertainties.
+- Theoretical precision (5): 0/5
+  - Critical pitch-content errors (see below) invalidate several lines of reasoning.
+
+Strengths
+- Tries to ground the analysis in chord spelling, inversions, and bass motion.
+- Correctly identifies some inversion labels (e.g., E7/D as third inversion; Amaj7/C# as first inversion).
+- Recognizes E7 as a secondary dominant in a D-major interpretation and notes the A→D pull as a potential cadence (within that mistaken key).
+
+Critical issues and factual errors
+- Mis-spelled triads:
+  - F# minor triad is F#–A–C#, not F#–A–C♮. This single mistake cascades into multiple incorrect conclusions (e.g., “F#m/C# is impossible”).
+- False claim that “the iii chord in a major key uses the flat 7 of the key.” In D major, iii = F#m = F#–A–C#, not F#–A–C♮.
+- Misdiagnosis of F#m/C#:
+  - As spelled, F#m/C# is a perfectly normal second-inversion F# minor triad (5th in the bass), not a contradiction.
+- Over-reliance on a D-major frame without testing the stated correct tonic/mode (E Lydian):
+  - No examination of E as tonal center, no search for Lydian’s raised 4 (#11) or II major harmony typical of Lydian.
+- Contradictory and speculative steps:
+  - Suggests notational errors (e.g., F#m/C→F#m7/C#) without verifying pitch content or need.
+  - Labels E7→D “deceptive” within the D-major frame but doesn’t check alternative modal contexts.
+
+Areas to improve
+- Validate pitch content first. Spell every triad/seventh chord correctly before assigning function or judging plausibility.
+- Systematically test candidate tonics (including the correct E). Look for:
+  - Cadential pulls into E (e.g., B or B7 resolving to E), and
+  - Lydian signatures: raised 4 (#11), frequent II major (over E), or voicings that highlight #4 against the tonic.
+- Avoid assuming classical-tonal V–I dominance when modal readings are plausible or when the prompt asks for mode.
+- Treat slash chords first as inversions or pedal-point sonorities; confirm the bass is chordal (e.g., F#m/C#) before declaring inconsistency.
+- Reduce speculation about typos; verify by pitch-set aggregation and voice-leading plausibility.
+
+Actionable suggestions
+- Workflow:
+  1) Extract a unique pitch-class set across the progression.
+  2) Check candidate centers (D, E, etc.) by tallying stability, opening/closing chords, and cadential gestures.
+  3) For modal hypotheses, test characteristic tones: for E Lydian, confirm evidence of #4 (A#) or Lydian-compatible chord choices (e.g., II major relative to E).
+  4) Only then assign functions and cadences; keep Roman numerals consistent with the chosen tonic/mode.
+- Precision:
+  - Double-check all chord spellings (F#m = F#–A–C#; Amaj7 = A–C#–E–G#; E7 = E–G#–B–D).
+  - Treat slash chords as inversions unless the bass lies outside the chord tones.
+- Communication:
+  - Lead with a concise verdict; present the 2–3 strongest pieces of evidence; avoid prolonged self-contradictions.
+
+What was missed relative to E Lydian
+- No attempt to evaluate E as the tonal center or to identify Lydian color tones (raised 4/#11) or II-major harmony against E.
+- No check for modal stability around E (e.g., pedal E, cadences into E, prevalence of E chord as resolution).
+
+Overall
+Despite some earnest harmonic parsing, the response fails on the core task: it misidentifies both key and mode, and contains fundamental note-spelling errors that compromise the analysis.
+
+**Assistant - Qwen3 235B 2507**
+
+Overview
+- Verdict: Incorrect (missed E as tonal center and Lydian mode)
+- Overall score: 35/100
+
+Weighted scoring breakdown
+- Key identification accuracy (30): 6/30
+  - Correctly identified the parent pitch collection (B major) but chose B as the key instead of E; ignored that the progression starts on E, heavily features E, and ends on E.
+- Mode determination (10): 0/10
+  - Declared Ionian; did not consider E Lydian despite the signature raised 4 (A#) appearing repeatedly (F#7, Bmaj7) and no A natural present.
+- Chord-function mapping (20): 9/20
+  - Internally consistent mapping in B major (E=IV, C#m=ii, G#m=vi, F#7=V7, Bmaj7=I), but this is the wrong center; no mapping relative to E Lydian.
+- Slash chords and pedal analysis (10): 3/10
+  - Noted inversions but treated them as disposable; missed the persistent E bass (C#m/E, F#7/E) signaling tonic pedal and E-centered harmony.
+- Cadence and tonal-center evidence (10): 2/10
+  - Claimed Bmaj7 “appears at the end and feels like resolution,” but the given progression resolves to E. Overlooked repeated E chords and final E cadence (…Bmaj7/D# → E).
+- Clarity and structure (10): 9/10
+  - Well organized, stepwise presentation.
+- Concision and focus (5): 4/5
+  - Focused and readable.
+- Theoretical precision (5): 2/5
+  - Accurate chord spellings and pitch-class set; however, misreading the final chord and not testing modal options (given A#) are substantial theoretical misses.
+
+Strengths
+- Correct pitch-class set and chord spellings; recognizes that all chords fit within B major’s notes (which is the parent scale for E Lydian).
+- Sensible, structured workflow; clear explanations.
+- Correct identification of F#7 as a diatonic dominant in B major and accurate handling of the listed inversions.
+
+Areas to improve
+- Tonal center: Heavily underweighted positional and cadence evidence (start on E, multiple E chords, C#m/E pedal, F#7/E, final E).
+- Modal awareness: Did not consider E Lydian even though the hallmark raised 4 (A#) is present throughout, and A natural never appears.
+- Cadential reading: Misstated the end; the progression resolves to E, not to Bmaj7.
+- Treatment of slash chords: Discarding bass notes lost crucial tonic pedal information that points to E as home.
+- Functional read in E: Did not reframe chords relative to E (e.g., F#7/E as II7 with 7th in the bass; Bmaj7/D# as Vmaj7/3 resolving to I).
+- Overreliance on “which major scale fits” without validating the musical center.
+
+Actionable suggestions
+- Always verify endpoints and recurrence: Check the first and last chords and the most frequent bass note(s). Here, E dominates and the cadence ends on E.
+- Test modal signatures: If E is suspected, scan for A vs. A#. A# (and no A) strongly suggests E Lydian.
+- Don’t discard inversion/bass info: Treat repeated E bass (C#m/E, F#7/E) as tonic pedal evidence, not noise.
+- Re-analyze functions relative to E Lydian:
+  - E = I
+  - C#m/E = vi (first inversion; vi6 over tonic pedal)
+  - G#m/D# = iii (second inversion; iii64)
+  - F#7/E = II7 (third inversion; 42)
+  - Bmaj7/D# = Vmaj7 (first inversion; 6/5)
+  - E = I
+- When a parent key fits (B major here), still ask: which chord sounds/acts like “home”? Use cadences, bass pedals, and arrival points to decide center and mode.
+- Lead with a concise, correct conclusion once validated:
+  - “Key/Mode: E Lydian. Evidence: repeated E tonic and pedal, final cadence to E, presence of A# (raised 4), and diatonic II7 (F#7) and Vmaj7 (Bmaj7) resolving to E.”
+
+**Assistant - Qwen3 Next 80B Thinking**
+
+Overview
+- Verdict: Incorrect (missed tonic/mode)
+- Correct target: E Lydian
+- Overall score: 44/100 (Needs improvement)
+
+Weighted scoring breakdown
+- Key (tonal center) identification accuracy (30): 8/30
+  - Correctly identified the pitch collection (B major/E Lydian), but chose B as tonic despite overwhelming E-centric evidence (start/end on E, frequency of E, E in the bass).
+- Mode determination (10): 0/10
+  - Reported Ionian; the mode is Lydian (E with a raised 4 = A#).
+- Chord-function mapping (20): 15/20
+  - Internally consistent mapping in B major (E=IV, C#m=ii, G#m=vi, F#7=V7, Bmaj7=I). However, functions should have been framed in E Lydian (I, vi, iii, II7, Vmaj7).
+- Slash chords and pedal analysis (10): 6/10
+  - Correct inversion labeling (e.g., F#7/E as 3rd inversion) but missed the functional significance of the pervasive E bass/pedal implying E as tonic.
+- Cadence and tonal-center evidence (10): 4/10
+  - Noted F#7 → E but treated it as V7→IV in B rather than the hallmark Lydian cadence II7→I in E. Underweighted the repeated/terminal E and Bmaj7 → E motion.
+- Clarity and structure (10): 6/10
+  - Thorough and stepwise, but meandering with multiple self-corrections.
+- Concision and focus (5): 2/5
+  - Overly verbose for the task.
+- Theoretical precision (5): 3/5
+  - Some confusion (e.g., degree labeling, brief mix-ups) but eventually corrected key-signature details.
+
+Strengths
+- Correctly enumerates the pitch set (B, C#, D#, E, F#, G#, A#), which matches E Lydian.
+- Solid chord spelling; identifies inversions accurately (e.g., G#m/D#, F#7/E, Bmaj7/D#).
+- Consistent diatonic mapping within the (chosen) parent scale; systematic approach.
+
+Areas to improve
+- Tonal-center detection: The progression is E-centric (starts/lands repeatedly on E, ends on E, lots of slash chords with E in the bass). This outweighs the single Bmaj7 appearance.
+- Modal diagnosis: Misses the signature Lydian #4 (A# relative to E) and the diatonic II or II7 resolving to I (F#7 → E), a classic Lydian tell.
+- Evidence weighting: Overrelies on “key signature fit” (B major) instead of resolving tendencies, cadence targets, and pedal tones that establish E as tonic.
+- Cadential reading: Treats F#7 → E as V7→IV in B rather than II7→I in E Lydian; underplays Bmaj7 → E as Vmaj7→I (diatonic in Lydian).
+
+Actionable suggestions
+- Prioritize tonic evidence:
+  - Start/end chords, longest/most frequent chord, pedal tones (here: persistent E and many “/E” basses).
+- Check mode-defining tones:
+  - Lydian: raised 4 (A# over E). Note the absence of A natural across the progression.
+- Test competing centers:
+  - Map functions in both frames (B Ionian vs E Lydian) and ask which yields stronger cadences (II7→I and Vmaj7→I in E vs weak V7→IV motion in B).
+- Cadence heuristics for modes:
+  - Lydian often features II(7) → I and Vmaj(7) → I (diatonic, not dominant-7 on V). Recognize F#7/E → E as quintessential Lydian behavior.
+- Keep “key signature vs key” separate:
+  - A shared pitch set does not fix the tonic/mode. Weigh tonal gravity over diatonic fit.
+
+What the correct analysis should highlight (brief)
+- Key & mode: E Lydian (E F# G# A# B C# D#).
+- Functions: E (I), C#m/E (vi over I bass), G#m/D# (iii6/4), F#7/E (II7 in 3rd inversion) → E, Bmaj7/D# (Vmaj7 in 1st inversion) → E.
+- Hallmarks: pervasive E pedal/goal, raised 4 (A#), and II7→I motion confirming Lydian.
+
+**Assistant - Qwen3 Next 80B**
+
+Overview
+- Verdict: Correct
+- Overall score: 93/100 (Excellent)
+
+Weighted scoring breakdown
+- Key identification accuracy (30): 30/30
+  - Correctly selects E as the tonal center (opening/ending on E, most frequent chord).
+- Mode determination (10): 10/10
+  - Properly identifies the Lydian collection (E F# G# A# B C# D#) and the parent key (B major).
+- Chord-function mapping (20): 18/20
+  - Sound mapping of E (I), C#m (vi), G#m (iii), F#7 as diatonic II7, Bmaj7 as diatonic Vmaj7 in E Lydian. Minor slips noted below.
+- Slash chords and pedal analysis (10): 7/10
+  - Correct identification of inversions; could better emphasize the E pedal/bass function (C#m/E, F#7/E) and the resulting Lydian color above a tonic pedal.
+- Cadence and tonal-center evidence (10): 10/10
+  - Highlights the Bmaj7/D# → E motion and the start/end on E to confirm centricity.
+- Clarity and structure (10): 10/10
+  - Clear stepwise reasoning; easy to follow.
+- Concision and focus (5): 4/5
+  - Thorough without being bloated; a touch of repetition.
+- Theoretical precision (5): 4/5
+  - One notable theoretical slip (see below); otherwise solid.
+
+Strengths
+- Nails the key/mode by spotting A# and linking E Lydian to its parent (B major).
+- Verifies every chord’s pitch content against E Lydian; correctly treats F#7 as diatonic (II7) and Bmaj7 as diatonic (Vmaj7).
+- Uses multiple indicators for tonal center (opening/closing on E, chord frequency, Vmaj7→I motion).
+- Communicates clearly with a clean, logical structure.
+
+Areas to improve
+- Mislabel in the Lydian context: states “vii°: D#dim” when, in E Lydian, the VII triad is D#m (not diminished). That label belongs to E Ionian, not E Lydian.
+- Underplays the role of the E pedal created by slash chords (C#m/E, F#7/E). Explicitly calling out the pedal would strengthen the centricity and the modal color argument.
+- “Vmaj7 → I as a hallmark of Lydian” is acceptable but a bit overstated; the defining trait is the #4 (A#) and the presence of a II major/II7, not specifically a Vmaj7→I cadence.
+
+Actionable suggestions
+- Correct the diatonic set in E Lydian:
+  - Triads: I E, II F# (major), III G#m, IV A#dim, V B, VI C#m, VII D#m.
+  - Sevenths: Imaj7, II7, IIIm7, IVm7b5, Vmaj7, VIm7, VIIm7.
+- Highlight the E pedal:
+  - C#m/E and F#7/E create a tonic pedal with upper-structure color tones (9, #11, 13 over E), showcasing the Lydian #4 (A#) directly against the tonic.
+- Offer concise Roman numerals in E Lydian with slash notation:
+  - E (I), C#m/E (VI over I pedal), G#m/D# (III in first inversion), F#7/E (II7 over I pedal), Bmaj7/D# (Vmaj7 in first inversion) → E (I).
+- If mentioning cadences, frame Vmaj7→I as “diatonic to Lydian and coloristic,” while reserving “hallmark” language for the raised 4th/II major (or II7) sonority.
+
+**Assistant - Qwen3 Max**
+
+Overview
+- Verdict: Correct
+- Overall score: 96/100 (Excellent)
+
+Weighted scoring breakdown
+- Key identification accuracy (30): 30/30
+  - Correctly selects E as tonic using strong evidence (start/end on E, frequency of E).
+- Mode determination (10): 10/10
+  - Properly identifies Lydian and highlights the characteristic #4 (A#) as the decisive indicator.
+- Chord-function mapping (20): 19/20
+  - Accurate mapping in E Lydian: E (I), C#m (vi), G#m (iii), F#7 (II7), Bmaj7 (Vmaj7). Minor notation slip calling F#7 “ii7” in the E major context before later using II7 in Lydian.
+- Slash chords and pedal analysis (10): 9/10
+  - Correct treatment of inversions (C#m/E, G#m/D#, Bmaj7/D#) and recognition of F#7/E. Could more explicitly describe E-as-pedal implications (e.g., F#7/E as an E Lydian vertical color).
+- Cadence and tonal-center evidence (10): 10/10
+  - Emphasizes tonic framing (starts/ends on E) and diatonic coherence to E Lydian; ending returns to E are clear.
+- Clarity and structure (10): 10/10
+  - Logical, stepwise analysis; easy to follow.
+- Concision and focus (5): 4/5
+  - Brief detour into “dominant key (B major)” is unnecessary once Lydian is established.
+- Theoretical precision (5): 4/5
+  - Small inconsistency in roman-numeral labeling (“ii7” vs II7). Otherwise solid, with correct point that Lydian yields II as a major/dominant and V as maj7.
+
+Strengths
+- Nails the conclusion: E Lydian.
+- Identifies the hallmark #4 (A#) and shows how F#7 and Bmaj7 embody it.
+- Verifies every chord is diatonic to E Lydian and provides accurate functions.
+- Contrasts with E Ionian effectively by noting absence of A natural and non-diatonic status of A# in Ionian.
+
+Areas to improve
+- Roman numeral consistency: avoid “ii7” for F#7 in E major context; in Lydian it’s II7.
+- Reduce speculative detours (e.g., “dominant key (B major)”) once the modal explanation fits all data.
+- Strengthen the pedal-point insight: explicitly frame F#7/E as an Lydian color over an E pedal (E–F#–A#–C# → E(9, #11, 13) color without 3rd/5th).
+- Make the “all seven tones appear” point explicit as a clincher (E, F#, G#, A#, B, C#, D#).
+
+Actionable suggestions
+- Use consistent roman numerals by mode: II7 (Lydian), not “ii7”; clarify that in E Ionian the diatonic ii is F#m (ii), and F#7 would be a secondary dominant (V/V), which isn’t what’s happening here because V is maj7, not 7.
+- Add a one-line pitch-set check: “Pitch collection across the progression = E F# G# A# B C# D# (complete E Lydian).”
+- Call out the vertical color of F#7/E as archetypal Lydian over tonic: essentially E(9, #11, 13) sonority with E in the bass.
+- Keep the core narrative tight: “Tonic E + pervasive A# (#4) + II7 and Vmaj7 diatonic to Lydian ⇒ E Lydian.”
+
+**Assistant - Gemini 2.5 Flash Thinking**
+
+Overview
+- Verdict: Correct
+- Overall score: 88/100 (Strong conclusion with a few theoretical and presentation issues)
+
+Weighted scoring breakdown
+- Key identification accuracy (30): 30/30
+  - Clearly establishes E as tonic; consistent with the chord set and stated centering on E.
+- Mode determination (10): 10/10
+  - Correctly infers E Lydian; leverages the A# in Bmaj7 as the characteristic #4.
+- Chord-function mapping (20): 18/20
+  - Mostly solid: E (I), C#m (vi), G#m (iii), Bmaj7 (Vmaj7) are all coherent in E Lydian. However, F#7 is labeled as “secondary dominant/chromatic,” when in E Lydian it’s actually diatonic II7.
+- Slash chords and pedal analysis (10): 6/10
+  - Mentions slash chords as “key,” but doesn’t concretely analyze them in the presented set. Partial credit for recognizing their potential diagnostic value.
+- Cadence and tonal-center evidence (10): 8/10
+  - Asserted tonic emphasis on E is good; could be strengthened by explicit cadence/voice-leading evidence or arrival points.
+- Clarity and structure (10): 9/10
+  - Well-organized with headings and a useful table; easy to follow.
+- Concision and focus (5): 3/5
+  - Some repetitious “meta” narration (“I’m now doing…”) that could be tightened.
+- Theoretical precision (5): 4/5
+  - Minor, but notable: F#7 is diatonic in Lydian (II7), not chromatic; otherwise accurate use of the raised 4th argument.
+
+Strengths
+- Correct and well-justified identification of E Lydian via the Bmaj7 (A# = #4).
+- Sensible comparison to E Ionian (expecting F#m and B/B7), highlighting what’s different here.
+- Clear, stepwise structure and a functional table that foregrounds the critical A#.
+
+Areas to improve
+- Mischaracterization of F#7: In E Lydian, F#7 (F#–A#–C#–E) is diatonic (II7), not a chromatic alteration or merely a secondary dominant.
+- Evidence depth: While E is asserted as tonic, the case would be stronger with explicit cadential behavior or resolution tendencies (e.g., Bmaj7 → E).
+- Slash chords: They’re flagged as important but not actually analyzed in the presented chord set.
+- Brevity: Reduce process narration to make room for tighter theory points.
+
+Actionable suggestions
+- Reframe F#7 as II7 in E Lydian and, if desired, briefly contrast how it would function in E Ionian (as V/V and non-diatonic there).
+- Add explicit Lydian Roman numerals for clarity:
+  - E (I), F#7 (II7, diatonic), G#m (iii), C#m (vi), Bmaj7 (Vmaj7, diatonic and Lydian-defining).
+- If slash chords are indeed present in the underlying progression, show at least one concrete example and how its bass motion supports E as tonic.
+- Tighten prose by removing “thinking out loud” lines; lead with the decisive evidence (A#/#4 via Bmaj7 + diatonic II7) and then confirm with tonic emphasis.
+
+For reference: corrected functional snapshot (E Lydian)
+- E = I
+- F#7 = II7 (diatonic to Lydian)
+- G#m = iii
+- C#m = vi
+- Bmaj7 = Vmaj7 (contains A#, the Lydian #4)
+
+Why this points to Lydian
+- Simultaneous presence of II7 and Vmaj7 is characteristic of Lydian (deriving from the B major parent scale over E tonic). In Ionian, you’d expect ii (minor) and V (often dominant or plain major), not II7 and Vmaj7.
+
+**Assistant - Gemini 2.5 Flash**
+
+Overview
+- Verdict: Incorrect mode; correct tonal center
+- Overall score: 52/100
+
+Weighted scoring breakdown
+- Key (tonal center) identification (30): 25/30
+  - Correctly centers the progression on E (start/end on E, pervasive /E bass).
+- Mode determination (10): 0/10
+  - Declares E Ionian; the harmony points to E Lydian.
+- Chord-function mapping (20): 6/20
+  - Some functions (I, vi, iii) are fine; misreads F#7 and Bmaj7 within E major, missing their modal implications.
+- Slash chords and pedal analysis (10): 5/10
+  - Notices the /E bass prevalence but doesn’t frame it as an E pedal reinforcing E-centric Lydian color.
+- Cadence and tonal-center evidence (10): 5/10
+  - Cites start/end on E; misses II7 → Vmaj7 → I color and its modal significance.
+- Clarity and structure (10): 7/10
+  - Organized and readable, though a few claims are asserted without carefully checking pitch content.
+- Concision and focus (5): 4/5
+  - Generally focused; a bit wordy for the conclusion reached.
+- Theoretical precision (5): 0/5
+  - States that A# is “already present in E Major,” which is false; mislabels Bmaj7 as comfortably diatonic in E major.
+
+Key evidence the answer missed (why it’s E Lydian)
+- Characteristic raised 4 (#4): A# appears repeatedly (F#7 contains A#, Bmaj7 contains A#). No A natural appears anywhere, strongly indicating Lydian (E–F#–G#–A#–B–C#–D#).
+- II vs ii: The progression uses F#7 (F#–A#–C#–E). In E Ionian, diatonic ii is F#m(7); F#7 requires A#, which is non‑diatonic to E Ionian but diatonic to E Lydian.
+- Vmaj7 vs V7: Bmaj7 (B–D#–F#–A#) is not diatonic to E major (which would favor B7 with A natural). Bmaj7 is diatonic to E Lydian.
+- Cadential color: A common Lydian gesture appears: II7 → Vmaj7 → I (here expressed with an E pedal and inversion: F#7/E → … → Bmaj7/D# → E).
+- Pedal and emphasis: The persistent E in the bass (/E) locks the tonal center while the upper structures project the Lydian collection.
+
+Specific errors and overstatements
+- “Bmaj7 … adds the major 7th (A#) which is already present in E Major.” A# is not in E major; it is the Lydian #4 relative to E.
+- Treats F#7 strictly as V/V in E major, ignoring that in E Lydian F#7 is diatonic (as II7).
+- Calls Bmaj7 “V … fits perfectly” in E major; in Ionian, V7 (with A natural) is diatonic, not Vmaj7.
+- Concludes “all core structural chords … are diatonic to E Major” despite Bmaj7 contradicting that.
+
+What the answer did well
+- Correctly identifies E as the tonal center and leverages start/end on E.
+- Reasonable mapping for E (I), C#m (vi), and G#m (iii).
+- Notes the significance of the unusual F#7 chord (though misclassified modally).
+
+Areas to improve
+- Check pitch content carefully before asserting diatonicity (A# ≠ in E major).
+- Distinguish modal Lydian signatures (#4, II(maj/7), Vmaj7) from major-key practice (ii, V7).
+- Weigh repeated chromatic alterations: recurring A# across multiple chords points to a different mode, not isolated secondary dominance.
+
+Actionable suggestions
+- Lead with: “Key and mode: E Lydian,” then justify with:
+  - Presence of A# (#4) and absence of A natural.
+  - II7 (F#7) and Vmaj7 (Bmaj7) as diatonic to E Lydian.
+  - E pedal reinforcing the center while upper harmonies outline the Lydian collection.
+- Provide a concise roman-numeral sketch in E Lydian:
+  - E (I) → C#m/E (vi over I) → G#m/D# (iii/5) → F#7/E (II7 over I) → … → Bmaj7/D# (Vmaj7/3) → E (I).
+- If proposing an alternate E‑Ionian reading, explicitly address the conflicts (A# usage, Vmaj7 vs V7) and explain why that reading is weaker here.
+  
+**Assitant - Kimi K2**
+
+Overview
+- Verdict: Incorrect (misses the modal center)
+- Overall score: 54/100 (Needs substantial correction)
+
+Weighted scoring breakdown
+- Key center identification (30): 30/30
+  - Correctly identifies E as the tonal center (start/end on E, prevalence of E, stable E pedal).
+- Mode determination (10): 0/10
+  - Fails to recognize E Lydian; asserts E Ionian despite clear Lydian indicators.
+- Chord-function mapping (20): 4/20
+  - Correct: E (I), C#m (vi), G#m (iii) relative to E.
+  - Major errors:
+    - F#7 labeled as V7 (dominant) is incorrect in E major; true V7 is B7.
+    - Bmaj7 labeled as IVmaj7 is incorrect; IV in E major is A. Bmaj7 isn’t diatonic to E Ionian.
+    - Claims “all chords are diatonic to E major” despite accidentals (A#) required by F#7 and Bmaj7.
+- Slash chords and pedal analysis (10): 4/10
+  - Notes E pedal and D# bass tones, but misinterprets their implications and misses how E pedal under II7 emphasizes Lydian color.
+- Cadence and tonal-center evidence (10): 3/10
+  - No genuine V–I in Ionian is shown (no B7→E). Misreads F#7 as V; overlooks Lydian-consistent motions (II7→I, Vmaj7→I).
+- Clarity and structure (10): 8/10
+  - Well organized, stepwise presentation.
+- Concision and focus (5): 5/5
+  - Appropriately concise for the task.
+- Theoretical precision (5): 0/5
+  - Multiple factual errors regarding diatonic membership and chord functions.
+
+Strengths
+- Establishes E convincingly as the tonal center.
+- Clear, orderly analysis with explicit lists and steps.
+- Notes the bass behavior (E pedal with occasional D#).
+
+Key issues (what makes it not E Ionian and points to E Lydian)
+- Non-diatonic in E major:
+  - F#7 (F#–A#–C#–E) contains A#, which is not in E major but is diatonic in E Lydian.
+  - Bmaj7 (B–D#–F#–A#) likewise requires A#.
+- Mislabeling:
+  - F#7 is not V7 in E major; the true V7 would be B7 (B–D#–F#–A).
+  - Bmaj7 is not IV in E major; IV is A.
+- Missed modal indicator:
+  - The presence of A# (the raised 4 relative to E) is the signature of E Lydian (E F# G# A# B C# D#).
+- Overreliance on generic tonal cues:
+  - Starting/ending on E and a D# bass passing tone also occur in E Lydian; they don’t distinguish Ionian vs Lydian without checking chord pitch content.
+
+What a correct analysis would notice (brief)
+- Scale: E Lydian = E F# G# A# B C# D#.
+- Chords map cleanly to E Lydian:
+  - E: I
+  - C#m/E: vi over tonic pedal
+  - G#m/D#: iii in first inversion
+  - F#7/E: II7 over tonic pedal (diatonic in Lydian; contains A# = #4)
+  - Bmaj7/D#: Vmaj7 in first inversion (also contains A#)
+- The II7 chord and Vmaj7 are hallmark Lydian sonorities around an E pedal; absence of B7 (true dominant) further weakens an Ionian reading.
+
+Actionable suggestions
+- Verify pitch content against the assumed scale before declaring diatonicism. If a chord needs A#, E Ionian is ruled out; consider E Lydian.
+- Recognize Lydian flags:
+  - II major/II7 (here F#7) and Vmaj7 are diatonic in Lydian, not Ionian.
+  - Explicitly call out the #4 (A# over E) when present.
+- Don’t conflate functions:
+  - In E major, V = B (often B7), not F#.
+  - IV = A, not B.
+- Use Roman numerals in both candidate modes to test:
+  - In E Lydian: F#7 = II7, Bmaj7 = Vmaj7 (both diatonic).
+  - In E Ionian: both are non-diatonic due to A#.
+- Interpret slash chords with the pedal in mind:
+  - E pedal under II7 (F#7/E) strongly highlights Lydian color; D# bass tones don’t by themselves confirm Ionian.
+
+Summary
+- Correct tonal center, incorrect mode and multiple function/diatonicity errors. The raised 4 (A#) embedded in F#7 and Bmaj7 is decisive: the progression is in E Lydian, not E Ionian.
+
+**Assitant - GPT 5 Chat**
+
+Overview
+- Verdict: Incorrect (mode misidentified)
+- Overall score: 59/100
+
+Weighted scoring breakdown
+| Category | Weight | Score | Rationale |
+|---|---:|---:|---|
+| Key/tonal center identification | 30 | 24 | Correctly centers E (pedal E throughout), but conflates “key” with Ionian rather than recognizing E Lydian. |
+| Mode determination | 10 | 0 | Concludes Ionian; the correct mode is Lydian. |
+| Chord-function mapping | 20 | 8 | Some correct functions (E = I, C#m/E = vi over 1, G#m/D# = iii over 3), but mislabels Bmaj7 as diatonic to E major and frames F#7/E only as V/V rather than Lydian II7. |
+| Slash chords & pedal analysis | 10 | 9 | Strong identification of the E pedal and its effect. |
+| Cadence/tonal-center evidence | 10 | 5 | Sees resolution to E, but misses the Lydian hallmark Vmaj7 → I and the significance of II7 in this context. |
+| Clarity and structure | 10 | 9 | Well-organized with clear steps and a table. |
+| Concision and focus | 5 | 4 | Reasonably concise and on-task. |
+| Theoretical precision | 5 | 0 | Asserts Bmaj7 is diatonic in E major (it isn’t) and overlooks repeated A# (#4) as the defining Lydian tone. |
+
+Key evidence the answer missed
+- Repeated A# (#4 relative to E) is the Lydian giveaway:
+  - F#7/E contains A# (F#–A#–C#–E): diatonic II7 in E Lydian.
+  - Bmaj7/D# contains A# (B–D#–F#–A#): Vmaj7 in E Lydian.
+- No A natural appears anywhere; A# appears twice. If this were E Ionian, you’d expect A natural (or at least not two independent A# occurrences).
+- Bmaj7 is not diatonic to E major (Ionian). In E major, V7 is B7 (B–D#–F#–A). Using Bmaj7 introduces A#—precisely the Lydian #4.
+- Treating both F#7 and Bmaj7 as “accidentals” in E major is less parsimonious than recognizing a consistent E Lydian collection (E F# G# A# B C# D#).
+
+What it should have recognized (concise corrected lens)
+- Mode: E Lydian (E is the tonal center; pitch set matches B major with E as tonic).
+- Roman numerals in E Lydian:
+  - E = I
+  - C#m/E = vi over 1
+  - G#m/D# = iii over 3
+  - F#7/E = II7 over 1 (diatonic to Lydian; contains #4 = A#)
+  - Bmaj7/D# = Vmaj7 over 3 (diatonic to Lydian; contains #4 = A#)
+- The cadence Bmaj7 → E (Vmaj7 → I) is a classic Lydian color; the II7 sonority is also characteristically Lydian.
+
+Strengths
+- Correctly identifies E as the tonal center and explains the E pedal well.
+- Clear structure and approachable explanation of inversions and pedal point.
+- Sensible secondary-dominant framing is offered (though it’s not the most economical explanation here).
+
+Areas to improve
+- Modal identification: explicitly check for the Lydian #4. Here, A# appears repeatedly.
+- Diatonic claims: Bmaj7 is not diatonic to E Ionian; asserting that undermines the analysis.
+- Functional labeling: In Lydian, II7 is a native chord; calling F#7 merely V/V misses the modal signal.
+- Cadential reading: Vmaj7 → I (with #4 present) points to Lydian, not Ionian.
+
+Actionable suggestions
+- List actual pitch content of “problem” chords and compare to both Ionian and Lydian collections for the same tonic.
+- Scan for characteristic modal tones:
+  - Lydian: raised 4 (A# over E).
+  - Ionian: natural 4 (A over E).
+- When both II7 and Vmaj7 appear for an E center, test E Lydian before defaulting to E major with multiple accidentals.
+- If labeling V as “maj7,” verify whether that 7th is diatonic to the chosen mode (A# is not diatonic to E Ionian but is to E Lydian).
+
+Summary
+- The response gets the center (E) right and explains the pedal well, but it overlooks the defining #4 and misstates diatonicity, leading to the wrong mode. Recognizing F#7 (II7) and Bmaj7 (Vmaj7) as native to E Lydian would have yielded the correct conclusion: E Lydian.
+
+**Assitant - DeepSeek V3.2 Thinking**
+
+Overview
+- Verdict: Correct
+- Overall score: 90/100 (Strong)
+
+Weighted scoring breakdown
+- Key identification accuracy (30): 30/30
+  - Correctly identifies E as the tonal center (start/end on E, frequent E bass/pedal).
+- Mode determination (10): 10/10
+  - Accurately derives E Lydian from the pitch collection {E, F#, G#, A#, B, C#, D#}.
+- Chord-function mapping (20): 20/20
+  - Sound functional read: I (E), vi (C#m), iii (G#m), ii7 (F#7), Vmaj7 (Bmaj7) in E Lydian; recognizes II7 and Vmaj7 are diatonic to Lydian.
+- Slash chords and inversion handling (10): 7/10
+  - Gets the idea (pedal E, inversions used), but with inversion mislabels:
+    - G#m/D# is second inversion (64), not first.
+    - F#7/E is third inversion (4/2), not first.
+    - C#m/E (6) and Bmaj7/D# (6) are correct.
+- Cadence and tonal-center evidence (10): 9/10
+  - Good use of opening/closing on E, E pedal, and diatonic set; could more explicitly frame Bmaj7→E as Vmaj7→I (Lydian) resolution.
+- Clarity and structure (10): 8/10
+  - Thorough and well-sequenced; some meandering side-calculations reduce crispness.
+- Concision and focus (5): 3/5
+  - Longer than needed; repeats points and explores dead ends at length.
+- Theoretical precision (5): 3/5
+  - Minor but notable slips (see below).
+
+Strengths
+- Arrives at the correct conclusion (E Lydian) with solid justification via pitch-set derivation.
+- Correctly recognizes that F#7 (II7) and Bmaj7 (Vmaj7) are diatonic in E Lydian.
+- Good grasp of modal chord qualities in Lydian (major II, minor iii/vi, etc.).
+- Uses bass behavior (E pedal and frequent E) effectively to anchor tonic.
+
+Areas to improve
+- Inversion labeling:
+  - G#m/D# is 64 (second inversion), not first.
+  - F#7/E is 4/2 (third inversion), not first.
+- Theoretical slips and momentary confusion:
+  - At one point states the “major 7th” of B is D# (it’s A#); later corrected by listing Bmaj7 = B–D#–F#–A#.
+  - Briefly misreinterprets G#m/D# as “D# diminished” and F#7/E as something like “E7#9,” before reverting to correct readings.
+  - Suggests C#m/E is “like E6,” which is only a coloristic analogy and omits the fifth (B) of E6—better to keep it as vi6.
+- Verbosity:
+  - Several exploratory tangents (E major, E mixolydian, B major) are useful but could be tightened once Lydian evidence is established.
+
+Actionable suggestions
+- Lead with the pitch-set check to lock E Lydian early, then minimize detours:
+  - Notes used: E F# G# A# B C# D# → E Lydian → all chords diatonic.
+- State functions and inversions cleanly:
+  - E (I), C#m/E (vi6), G#m/D# (iii64), F#7/E (ii7 4/2), Bmaj7/D# (Vmaj7/6), all resolving back to I.
+- Frame the characteristic Lydian colors explicitly:
+  - II7 (F#7) and Vmaj7 (Bmaj7) both contain A# (#4 of E), highlighting the mode.
+- Avoid speculative re-labels that introduce non-diatonic implications unless justified; verify chord members before proposing alternate spellings/interpretations.
+
+Summary
+A strong, correct analysis that compellingly identifies E Lydian, with good modal-functional insight. Tightening the inversion labels and trimming exploratory confusion would lift this into the mid-90s.
+
+**Assistant - DeepSeek V3.2**
+
+Overview
+- Verdict: Incorrect (target: E Lydian)
+- Overall score: 34/100
+
+Weighted scoring breakdown
+- Key identification accuracy (30): 2/30
+  - Anchors on D major and never seriously tests E as the tonal center despite E-centric cues (e.g., explicit E7 and recurrent D—potentially b7 relative to E).
+- Mode determination (10): 0/10
+  - Concludes Ionian; does not consider or test for Lydian characteristics (raised 4 relative to E), nor argue against or for E Lydian explicitly.
+- Chord-function mapping (20): 6/20
+  - Pros: Correctly notes E7 contains G# and frames it as a secondary dominant in the D-major reading; recognizes non-diatonicism.
+  - Cons: Several mislabels (e.g., in D major, Bm is vi, not ii; F#m is iii, not vi). Treats Amaj7 as “V maj7” in D without flagging its non-diatonic G# as a substantial issue in the declared key. Mischaracterizes E7/D with an implausible “Dmaj7#9?” aside.
+- Slash chords and pedal analysis (10): 8/10
+  - Solid observation of the D pedal and alternation with C#; identifies bass behavior clearly and consistently.
+- Cadence and tonal-center evidence (10): 3/10
+  - Asserts D major mainly from chord inventory and endpoints but provides little decisive cadence evidence and does not test E-centric gravitational pulls (e.g., behaviors of E7 and IV relationships relative to E).
+- Clarity and structure (10): 9/10
+  - Well organized, stepwise, and readable.
+- Concision and focus (5): 4/5
+  - Slightly verbose, but generally on-topic and coherent.
+- Theoretical precision (5): 2/5
+  - Multiple Roman numeral errors; casual/incorrect chord reinterpretation (e.g., “Dmaj7#9” from E7/D); insufficient handling of non-diatonic tones’ implications.
+
+What they did well
+- Clear, methodical presentation with labeled sections.
+- Good identification of the D and C# pedal behavior and how slash chords shape bass motion.
+- Correctly recognizes E7’s G# as non-diatonic to D major and frames E7 as a functional device (albeit only in the D-major lens).
+
+Key issues and why they matter
+- Missed tonal center and mode (target: E Lydian):
+  - Never evaluates the progression from an E-centric perspective. E7/D can be heard as tonic color (E7 with b7 in bass), and the frequent D may function as the b7 relative to E. The analysis does not explore that reading at all.
+  - No check for Lydian’s characteristic raised 4 relative to E or discussion of how chord/melodic content might imply a #11 over E.
+- Roman numeral/function errors:
+  - In D major, Bm = vi (not ii); F#m = iii (not vi). Such slips undermine the reliability of the functional analysis.
+- Non-diatonic allowances without reconciliation:
+  - Amaj7 as “Vmaj7 in D” is presented as common, but the G# conflict with D major isn’t properly integrated into the key claim (beyond noting E7’s G#). If the analysis tolerates multiple consistent non-diatonic tones (G#), it should reassess the declared key/mode or foreground a modal/tonic reinterpretation.
+
+Actionable suggestions
+- Test multiple tonal centers early:
+  - Normalize chords against E as well as D; ask which center best explains the largest share of harmony, pedal tones, and resolution tendencies.
+- Check for characteristic modal tones:
+  - For Lydian, explicitly look for the raised 4 (as chord tones, extensions like #11 on the tonic, or recurring scale-degree emphasis in melody/upper voices).
+- Get the Roman numerals right:
+  - In D major: ii = Em, iii = F#m, vi = Bm. Mislabeling these distorts functional conclusions.
+- Treat non-diatonic tones as critical evidence:
+  - Repeated G# occurrences (E7, Amaj7) should trigger reconsideration of D Ionian rather than being hand-waved as mere “secondary dominant” color.
+- Avoid speculative chord re-labels that add tones not present:
+  - E7/D is best read as E7 over a D pedal (or “I7/b7 bass” in an E-centric lens), not as “Dmaj7#9,” which implies unavailable chord tones.
+
+If aiming to argue E Lydian more convincingly next time
+- Examine whether E functions as a tonic (e.g., E-based arrival points, stability, or melodic anchoring).
+- Look for Lydian coloration (raised 4 relative to E) in melody/upper extensions (e.g., #11 over E) or in a II major chord (relative to E) and discuss how slash chords/pedals support or obscure that color.
+- Reinterpret key chords relative to E (e.g., E7/D as tonic color with a b7 pedal; A-based chords as subdominant area relative to E) and compare which framework (D Ionian vs E Lydian) yields fewer exceptions and cleaner functional narratives.
+
+Bottom line
+- The response is clearly written and engages the chord details, but it lands on the wrong key/mode (target: E Lydian), contains notable functional mislabels, and doesn’t adequately test an E-centric modal reading.
+
+**Assistant - GLM 4.6 Thinking**
+
+Overview
+- Verdict: Incorrect (should be E Lydian)
+- Overall score: 63/100
+
+Weighted scoring breakdown
+- Key (tonal center) identification (30): 28/30
+  - Correctly identifies E as the tonal center with strong pedal/positional evidence.
+- Mode determination (10): 0/10
+  - Misses the decisive Lydian cue (raised 4: A#), concludes Ionian/major instead.
+- Chord-function mapping (20): 6/20
+  - Some correct local functions (e.g., C#m, G#m), but major errors:
+    - Mislabels Bmaj7 as IV in E major and claims it’s diatonic.
+    - Treats A# as chromatic V/V evidence rather than Lydian #4.
+- Slash chords & pedal analysis (10): 8/10
+  - Good recognition of E pedal and inversions; sensible bass-note reading (E and D# prominence).
+- Cadence & tonal-center evidence (10): 8/10
+  - Solid case for E as tonic; overstates “cadential 6/4/backdoor” aspects of F#7/E.
+- Clarity & structure (10): 9/10
+  - Well organized, stepwise reasoning.
+- Concision & focus (5): 3/5
+  - Thorough but somewhat verbose and meandering.
+- Theoretical precision (5): 1/5
+  - Significant mislabeling and diatonicity errors (see below).
+
+What it gets right
+- E is convincingly the tonal center (starts/ends on E, frequent E, E pedal).
+- Competent handling of inversions and pedal-point role of slash chords.
+- Recognizes functional pathways (e.g., C#m as vi, G#m as iii in an E-centered context).
+
+Key issues and why the answer is not E major
+- Missed hallmark of E Lydian:
+  - The progression uses A# consistently (F#7 contains A#, Bmaj7 contains A#).
+  - There is no A natural anywhere. This is the characteristic raised 4 of E Lydian (E F# G# A# B C# D#; i.e., the note set of B major).
+- Bmaj7 is not IV in E major:
+  - In E major, IV is A major (A–C#–E). Bmaj7 (B–D#–F#–A#) is non‑diatonic to E Ionian (A# is outside the key).
+  - In E Lydian, Bmaj7 is diatonic (it’s Vmaj7 relative to E).
+- F#7/E misinterpreted:
+  - In E Ionian, F#7 is V/V (chromatic), but here it aligns naturally with E Lydian as a diatonic II7 (F#–A#–C#–E).
+  - Calling it “backdoor” or “cadential 6/4” is inaccurate; it’s better understood as a Lydian II7 over a tonic pedal.
+- Internal inconsistency:
+  - The answer first flags A# as non‑diatonic, then later claims Bmaj7 (which includes A#) is “all diatonic” in E major.
+
+Concise corrective view (why E Lydian fits)
+- Pitch inventory implied by the chords: E, F#, G#, A#, B, C#, D# (i.e., B major scale, which is E Lydian).
+- All featured chords are diatonic in E Lydian:
+  - E (I), C#m/E (vi/1st inv), G#m/D# (iii/1st inv), F#7/E (II7 over tonic pedal), Bmaj7/D# (Vmaj7/3), E (I).
+- In E Ionian you would expect:
+  - A natural (not present), and if you use a V7 sonority then B7 (B–D#–F#–A natural), not Bmaj7.
+
+Actionable suggestions
+- Do a quick pitch-class inventory before locking a mode:
+  - A# present? A natural absent? Strongly consider E Lydian.
+- When you see both II7 and Vmaj7 under an E center, test Lydian first:
+  - In Lydian, II is major/dominant and V can be maj7 diatonically.
+- Double-check diatonic claims and Roman numerals:
+  - In E major, IV is A, not B; Bmaj7 is not diatonic to E Ionian.
+- Avoid misusing “cadential 6/4” and “backdoor” terminology:
+  - Cadential 6/4 is I6/4 preceding V; backdoor dominant is typically bVII7 → I.
+
+Suggested corrected functional map (E Lydian)
+- E | C#m/E | E | G#m/D# | F#7/E | E | C#m/E | E | Bmaj7/D# | E
+- I | vi6 | I | iii6 | II7/I | I | vi6 | I | Vmaj7/3 | I

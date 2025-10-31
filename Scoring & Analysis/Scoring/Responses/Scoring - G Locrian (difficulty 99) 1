@@ -1,0 +1,1031 @@
+**Assistant - GPT 5 High**
+
+Here’s a comprehensive, quantitative evaluation of the “Assistant — GPT 5 High” response. Ground truth: G Locrian.
+
+Overview
+- Verdict: Incorrect (picks Ab Ionian over G Locrian)
+- Overall score: 62/100
+
+Weighted scoring breakdown
+- Key/tonal-center identification (30): 12/30
+  - Correctly identifies the pitch collection and acknowledges G Locrian as a contender, but ultimately chooses Ab Ionian. Given the repeated and final Gdim and lack of V–I cadence to Ab, this choice is not supported by the progression’s surface behavior.
+- Mode determination (10): 3/10
+  - Locrian is mentioned but rejected; final answer claims Ionian.
+- Chord-function mapping (20): 17/20
+  - Diatonic mapping in Ab major is mostly correct (vii°, V6, ii6/4, I/7, IVmaj7/6). Minor wobble where it briefly suggests Gdim challenges diatonicity, later self-corrected.
+- Slash chords and pedal analysis (10): 8/10
+  - Good inversion labeling (Eb/G, Bbm/F, Dbmaj7/F). Notes G–F bass motion. “Ab/G as I over 7” is arguable, but the unresolved “7” weakens the Ab-tonic claim.
+- Cadence and tonal-center evidence (10): 5/10
+  - Does not address the lack of Eb→Ab cadential motion and the fact the progression starts/ends and heavily rests on Gdim. This undercuts the Ionian reading.
+- Clarity and structure (10): 9/10
+  - Well-organized and readable; reasoning path is easy to follow.
+- Concision and focus (5): 4/5
+  - Slightly verbose but on topic.
+- Theoretical precision (5): 4/5
+  - Mostly solid. Small inconsistency about Gdim’s diatonicity to Ab major (later fixed). Some functional claims (I over 7) could be better justified by resolution.
+
+Strengths
+- Accurately identifies the complete pitch set: G, Ab, Bb, C, Db, Eb, F (Ab major collection).
+- Recognizes and checks G Locrian as an alternative derived from that collection.
+- Correctly parses and labels most inversions and diatonic functions within Ab major.
+- Sensible observation about G–F bass toggling.
+
+Areas to improve
+- Tonal center determination: The progression begins, frequently returns to, and ends on Gdim; there is no Eb→Ab cadence. This strongly argues against Ab Ionian and for G Locrian as the operative center.
+- Evidence weighting: Over-relies on “diatonic to Ab major” while underweighting cadence, final chord, recurrence, and bass behavior. Diatonic membership alone doesn’t determine tonic.
+- Functional claims: Calling Ab/G “I over 7” implies leading-tone resolution to I; that resolution never materializes, weakening the Ab-centric interpretation.
+- Consistency: Early suggestion that Gdim challenges Ab’s diatonic framework is incorrect; later fixed but indicates uncertainty.
+
+Actionable suggestions
+- Prioritize center-of-gravity tests:
+  - Start/end chords, most frequent/resting sonority, and bass pedal behavior.
+  - Here, repeated and terminal Gdim, plus lack of Ab cadences, point to G as center.
+- Check for actual cadences:
+  - In Ab Ionian, expect Eb (V or V7) to lead to Ab (I). Eb/G repeatedly moves back to Gdim, not to Ab, undermining the Ionian read.
+- Separate pitch collection from tonic:
+  - Note that Ab major collection supports several modes: Ab Ionian, C Phrygian, G Locrian. Tonic must be inferred from behavior, not just membership.
+- If proposing “I over 7,” verify resolution:
+  - A persistent, unresolved 7 in the bass typically suggests the bass note is the center (here G), not a leading tone.
+- Offer the Locrian Roman numerals to test fit:
+  - Gdim = i°
+  - Eb/G = bVI6
+  - Bbm/F = bIII6/4
+  - Ab/G = bII over i-bass (upper-structure bII above tonic pedal)
+  - Dbmaj7/F = bVmaj7/3
+  - The progression: i° i° bVI6 bVI6 i° i° bIII6/4 bII/i i° i° bVI6 bVI6 i° i° bVmaj7/3 i°
+  - This matches the observed chord stream and its centering on G.
+
+What the correct analysis should highlight
+- Tonal center: G (Locrian) due to repeated tonic sonority (i°), including both start and end.
+- Cadential behavior: Absence of any Eb→Ab cadence; Eb/G repeatedly resolving back toward Gdim.
+- Bass evidence: G- and F-centered bass motion (1 and b7 in G Locrian), not ti→do motion toward Ab.
+- Collection: Ab major pitch set; mode = G Locrian.
+
+**Assistant - GPT 5 Medium**
+
+Overview
+- Verdict: Incorrect (correct answer: G Locrian)
+- Overall score: 34/100
+
+Weighted scoring breakdown
+- Key identification accuracy (30): 0/30
+  - Concludes A♭ major; the progression centers on G (starts/ends on Gdim) and repeatedly uses G in the bass, consistent with G Locrian.
+- Mode determination (10): 0/10
+  - Misses the Locrian modal center on G; treats the pitch collection as A♭ Ionian rather than G Locrian.
+- Chord-function mapping (20): 15/20
+  - Internal mapping in A♭ major is mostly coherent (e.g., Gdim = vii°, E♭/G = V6, D♭maj7/F = IVmaj7/3, A♭/G ≈ Imaj7/7).
+  - Notational slip: labels B♭m/F as “ii6” (it’s ii6/4 in classical inversion figures).
+- Slash chords and pedal analysis (10): 3/10
+  - Notices G in the bass but interprets it as a leading tone to A♭ instead of recognizing the persistent G-centricity (Eb/G, Ab/G, repeated Gdim) as a tonic pedal indicative of Locrian centricity.
+- Cadence and tonal-center evidence (10): 1/10
+  - Provides no convincing cadence to A♭ (no clear V–I with A♭ in the bass); ignores opening/closing on Gdim which strongly signals G as the center.
+- Clarity and structure (10): 9/10
+  - Well organized with clear sections.
+- Concision and focus (5): 3/5
+  - Some meandering and speculative detours; still mostly on-topic.
+- Theoretical precision (5): 3/5
+  - Mixed rigor: mostly correct pitch content; minor inversion labeling error; some unnecessary speculation (“key around G♭”).
+
+What it gets right
+- Correctly identifies the pitch collection as that of A♭ major (the parent scale of G Locrian).
+- Accurately spells chord tones and most diatonic functions within A♭.
+- Sensible readings of E♭/G (V6), D♭maj7/F (IVmaj7/3), and A♭/G ≈ A♭maj7/7 in the A♭ framework.
+
+Key issues and misses
+- Tonal center misread: the progression begins and ends on Gdim and frequently places G in the bass (Gdim, E♭/G, A♭/G), pointing to G as center.
+- Modal identity overlooked: the characteristic Locrian i° (G–B♭–D♭) is emphasized; prominent b2 (A♭), b5 (D♭), and b6 (E♭) are featured—classic Locrian color.
+- Lack of cadential support for A♭: there’s no strong V–I (E♭→A♭) with A♭ in the bass; A♭ appears with G in the bass (A♭/G), weakening any sense of A♭ tonic.
+- Over-reliance on diatonic membership to infer Ionian, instead of centricity and closure.
+
+Corrective analysis snapshot (why it’s G Locrian)
+- Scale: G Locrian = G A♭ B♭ C D♭ E♭ F (parent: A♭ major).
+- Chord-by-chord (relative to G Locrian):
+  - Gdim: i° (G–B♭–D♭) — repeated at opening and close.
+  - E♭/G: bVI6 (E♭–G–B♭ with 3rd in bass = G).
+  - B♭m/F: bIII6/4 (B♭–D♭–F with 5th in bass).
+  - A♭/G: bIImaj7/7 (A♭–C–E♭ over G = the 7th in bass).
+  - D♭maj7/F: bVmaj7/3 (D♭–F–A♭–C with 3rd in bass).
+- Hallmarks:
+  - i° is prominent and terminal.
+  - Frequent use of bIImaj7 and bVI over a tonic-bass G.
+  - No authentic cadence to A♭; centricity consistently returns to G.
+
+Actionable suggestions
+- Prioritize centricity clues: opening/closing harmony, bass pedals, and points of repose outweigh mere diatonic membership.
+- When a diminished triad repeatedly functions as “home,” test Locrian on that root and relate chords to the modal center (and to the parent major).
+- Validate cadential evidence: if claiming Ionian, show a credible V–I with the tonic in the bass; otherwise, consider modal centers.
+- Label inversions precisely (e.g., ii6/4 vs ii6) and avoid unnecessary speculative key detours.
+- Provide dual views when helpful: parent key (A♭) and modal center (G Locrian) to reconcile pitch set with centricity.
+
+**Assistant - GPT 5 Low**
+
+Overview
+- Verdict: Incorrect (correct answer is G Locrian)
+- Overall score: 26/100
+
+Weighted scoring breakdown
+- Key identification accuracy (30): 0/30
+  - Concludes Ab major (Ionian) instead of G Locrian. Although Ab major shares the pitch collection with G Locrian, the task is to name the correct center/mode; not done.
+- Mode determination (10): 0/10
+  - Picks Ionian; the correct mode is Locrian.
+- Chord-function mapping (20): 8/20
+  - Internally consistent Ab-major mapping (e.g., Gdim = vii°, Eb/G = V6, Bbm/F = ii6/4) shows some grasp of diatonic relations, but the functions should have been cast relative to G Locrian (e.g., Gdim = i°), which is the correct center.
+- Slash chords and pedal analysis (10): 5/10
+  - Notices the G–F bass ostinato and identifies several inversions. However, key implications of the G pedal for Locrian tonicization are missed; calling Ab/G “a chromatic bass step” is off (it’s diatonic within the collection).
+- Cadence and tonal-center evidence (10): 2/10
+  - Offers no compelling cadence/centering proof for Ab. Admits ambiguity, mentions G as a possible pedal center, yet ultimately ignores the strongest centering cue (persistent G/F pedal and i° presence) for Locrian.
+- Clarity and structure (10): 7/10
+  - Headed sections help, but the argument meanders, revisits ideas, and reaches an unsupported conclusion.
+- Concision and focus (5): 3/5
+  - Overlong for the task and spends time on alternate frameworks that don’t resolve the central question.
+- Theoretical precision (5): 1/5
+  - Misapplies “Neapolitan” (typically a major triad in first inversion; “Neapolitan seventh” is not standard). Blurs modal and tonal frameworks; labels diatonic motion as “chromatic”; treats Gdim as v° in C Phrygian rather than recognizing it as i° in G Locrian.
+
+Strengths
+- Correctly recognizes the shared pitch collection among Ab major, C Phrygian, and G Locrian.
+- Spots the G–F bass ostinato and catalogs diatonic chords/inversions accurately within the Ab-major collection.
+- Notes that Dbmaj7 contains C natural (diatonic within the collection).
+
+Areas to improve
+- Centering: Failure to identify G as the tonal center despite the explicit G/F pedal and the presence of Gdim (which, in G Locrian, is i°, a key Locrian hallmark).
+- Modal framing: Over-relies on relative major (Ab Ionian) and C Phrygian vantage points instead of testing Locrian’s characteristic tones (b2, b5) around G.
+- Functional labeling: Uses tonal labels (e.g., “Neapolitan-style”) in a modal context, creating category errors.
+- Evidence: Lacks a concrete centering argument (no cadence/arrival on Ab; repeated emphasis actually points to G).
+- Terminology: Calls Ab/G “chromatic” despite being diatonic within the shared collection.
+- Consistency: Contradictory exploration culminates in an unsupported Ab-major conclusion.
+
+Actionable suggestions
+- Establish the center first:
+  - Weigh bass ostinati/pedals and points of arrival more heavily than relative-major familiarity.
+  - Here, the persistent G (with F neighbor) strongly points to G as center.
+- Test the mode via characteristic intervals:
+  - Locrian hallmark from G: b2 (Ab) and b5 (Db). Both are prominently used (Ab/G, Dbmaj7/F).
+  - Tonic triad is diminished (G–Bb–Db): the observed Gdim should be read as i° in G Locrian, not v° in C Phrygian.
+- Re-label the chords relative to G Locrian (with inversions):
+  - Gdim = i°
+  - Ab/G = bII over 1
+  - Bbm/F = bIII over b7
+  - Dbmaj7/F = bVmaj7 over b7
+  - Eb/G = bVI over 1
+- Avoid tonal imports in modal analysis:
+  - Don’t call Dbmaj7 a “Neapolitan seventh.” In modal terms, it’s bVmaj7 functioning within the Locrian collection.
+- Provide centering evidence explicitly:
+  - Highlight the G/F bass ostinato, lack of authentic V→I motion to Ab, and recurring support of G as a pedal/anchor.
+- Consider a concise lead in the final answer:
+  - “Key/Mode: G Locrian. Evidence: persistent G pedal; diatonic collection of Ab major heard with G as center; presence of i° (Gdim) and prominent bII (Ab) and bV (Db) sonorities; no functional dominant to Ab.”
+
+**Assistant - Grok 4 Fast Thinking**
+
+Overview
+- Verdict: Incorrect (misses the intended tonic and mode)
+- Overall score: 28/100
+
+Weighted scoring breakdown
+- Key/tonal-center identification (30): 0/30
+  - Takes Ab as the tonic; the intended center is G (G Locrian). The progression repeatedly lands on/returns to Gdim and features multiple slash chords with G in the bass, pointing to G as the center.
+- Mode determination (10): 0/10
+  - Asserts Ionian; the correct mode is Locrian on G (G–Ab–Bb–C–Db–Eb–F).
+- Chord-function mapping (20): 6/20
+  - Note-spelling of chords is correct, but Roman numerals/inversions contain significant errors and are framed in the wrong key:
+    - Eb/G is V6 in Ab, not IV6.
+    - Ab/G is not I6; more plausibly Abmaj7/G (7th implied by bass) or simply a coloristic slash-chord over the Locrian tonic pedal.
+    - Bbm/F is ii6/4 in Ab if taken that way, not “ii with F bass = ii⁵.”
+- Slash-chords and pedal analysis (10): 5/10
+  - Correctly notices recurring G and F in the bass but misinterprets their structural role; G operates as a tonic pedal in G Locrian, not a mere leading-tone bass for Ab.
+- Cadence/tonal-center evidence (10): 2/10
+  - Claims ii–I motion to Ab, but the supposed “I” is never convincingly established in root position; the loop ends on Gdim, reinforcing G as center. No authentic cadential drive to Ab is demonstrated.
+- Clarity and structure (10): 8/10
+  - Well organized and readable.
+- Concision and focus (5): 4/5
+  - Mostly on-topic; a bit expansive given the incorrect premise.
+- Theoretical precision (5): 3/5
+  - Several Roman-numeral/inversion mistakes and overstatements about dominant pull to Ab given the actual bass plan.
+
+Strengths
+- Correct pitch collection: all chords are diatonic to Ab major (i.e., G Locrian).
+- Solid chord spellings; recognizes the repeated G/F bass motion.
+- Clear presentation.
+
+Areas to improve
+- Tonal center: Weigh center-of-gravity evidence (pedal, returns, final sonority) before declaring a key. Ending and recurring Gdim strongly argue for G as the center.
+- Mode: Recognize Locrian cues—diminished tonic triad (G–Bb–Db), prevalence of b2 (Ab) and b5 (Db), and absence of a stable V–I cadence.
+- Roman numerals/inversions:
+  - Eb/G is V6 in Ab (not IV6).
+  - Ab/G is not I6; if analyzed in Ab at all, it implies a 7th in bass (Abmaj7/G), but here it functions better as II over i° pedal in G Locrian.
+  - Bbm/F is ii6/4 in Ab (if using Ab framework), not “ii⁵.”
+- Cadential logic: There’s no convincing Ab-tonic confirmation; repeated arrival on Gdim and G bass contradict an Ab-Ionion reading.
+
+Actionable suggestions
+- Start by testing G as the tonic: identify i° (Gdim), II (Ab), iii (Bbm), V (Db[maj7]), VI (Eb) as the prevalent chords—exactly the triads one expects in G Locrian.
+- Treat slash chords relative to the pedal: Eb/G and Ab/G sit over a G tonic pedal, supporting Locrian centricity rather than leading-tone behavior to Ab.
+- Fix Roman numerals and inversion labels; avoid labeling slash chords as simple “I6” when the bass is the implied major 7th.
+- Summarize succinctly:
+  - Mode: G Locrian (G–Ab–Bb–C–Db–Eb–F)
+  - Functions: i° (G–Bb–Db), II (Ab), iii (Bbm), V/maj7 (Db[maj7]), VI (Eb), with a persistent G pedal and final i° emphasizing G as the center.
+  
+**Assistant - Gemini 2.5 Pro**
+
+Overview
+- Verdict: Incorrect (misidentifies tonic and mode)
+- Overall score: 32/100
+
+Weighted scoring breakdown
+- Key/tonic identification accuracy (30): 3/30
+  - The response settles on C as the tonal center; the correct center is G.
+- Mode determination (10): 0/10
+  - Concludes Phrygian; the correct mode is Locrian.
+- Chord-function mapping (20): 9/20
+  - Chords are mapped consistently to C Phrygian, but the functional map is relative to the wrong center. Pitch content and some inversions are identified correctly.
+- Slash chords and pedal analysis (10): 3/10
+  - Notes the importance of the bass and lists slash chords, but misses that repeated G in the bass (Gdim, Eb/G, Ab/G) strongly signals a G pedal and thus G-centric modality.
+- Cadence/tonal-center evidence (10): 3/10
+  - Asserts C-centricity mainly from shared pitch collection and generic modal claims; does not provide convincing center-of-gravity evidence (bass emphasis, arrival points, or cadential gestures) that would overcome the G pedal evidence.
+- Clarity and structure (10): 8/10
+  - Well-formatted and readable; the stepwise headings make the argument easy to follow.
+- Concision and focus (5): 3/5
+  - Some meandering and repeated re-framing; could be tighter.
+- Theoretical precision (5): 3/5
+  - Correct chord spellings and pitch set; however, characterizes v° as a “dominant” in Phrygian (functionally weak), overstates bII as uniquely “Phrygian,” and infers mode from pitch set rather than from centricity.
+
+What the answer did well
+- Correctly enumerates the pitch collection: C–Db–Eb–F–G–Ab–Bb.
+- Accurately spells the chords and identifies several inversions.
+- Organized, readable presentation with a full chord-by-chord inventory.
+
+Where it went wrong (major issues)
+- Tonic and mode: Chose C Phrygian solely because the chords are diatonic to that pitch set; this same set also supports G Locrian. Diatonic fit alone cannot determine mode.
+- Ignoring centricity cues: Multiple chords use G in the bass (Gdim, Eb/G, Ab/G), and Gdim appears as a structural chord—strong evidence for G as center. This is exactly how Locrian often asserts itself (through pedal/recurring-bass emphasis rather than a stable major/minor tonic triad).
+- Mislabeling the color: Attributing a “Spanish/flamenco” Phrygian feel is misleading here; the hallmark Locrian tension is the semitone b2 over 1 (Ab over G), which is featured explicitly by Ab/G.
+- Functional claims: Calling Gdim the “diatonic dominant” in C Phrygian implies a dominant function that Phrygian’s v° does not strongly support in practice; the real functional gravity in this progression points to G as tonic, not C.
+
+Why G Locrian fits (concise correction)
+- Pitch collection: G Locrian = G–Ab–Bb–C–Db–Eb–F (same set identified).
+- Tonal center: Repeated G in the bass (Gdim, Eb/G, Ab/G) functions as a tonic pedal.
+- Character tones: Both Locrian hallmarks are prominent:
+  - b2 above tonic: Ab/G explicitly places b2 over 1.
+  - b5: Db (and Dbmaj7) are featured.
+- Diatonic functional view in G Locrian (with bass context):
+  - Gdim: i°
+  - Eb/G: bVI in first inversion (bVI6)
+  - Bbm/F: bIII in second inversion (bIII64)
+  - Ab/G: bII over a tonic pedal (bII over 1)
+  - Dbmaj7/F: bVmaj7 (65 inversion over F)
+
+Actionable suggestions
+- Don’t decide mode from pitch collection alone; test centricity explicitly:
+  - Track bass pedals, recurring arrival points, and points of rest.
+  - Compare rival centers that share the same set (here: C Phrygian vs G Locrian).
+- Highlight characteristic intervals against the candidate tonic:
+  - For Locrian, look for b2 over 1 and b5 activity (both are present).
+- Treat v° in Phrygian cautiously as a “dominant”; without a leading tone, it’s a weak dominant and rarely the main centering force.
+- When slash chords place a non-chord tone in the bass (e.g., Ab/G), analyze as harmony-over-pedal rather than an inversion.
+- Provide a side-by-side Roman-numeral sketch for competing centers to justify the choice.
+
+Suggested corrected one-liner
+- Key/Mode: G Locrian. Evidence: G pedal across multiple chords (Gdim, Eb/G, Ab/G), explicit b2 over tonic (Ab/G), and b5 (Db/Dbmaj7); all harmony is diatonic to G Locrian.
+
+**Assistant - Qwen3 235B 2507 Thinking**
+
+Overview
+- Verdict: Correct
+- Overall score: 90/100 (Strong)
+
+Weighted scoring breakdown
+- Key identification accuracy (30): 30/30
+  - Correctly centers the harmony on G, with persuasive G pedal-point evidence and frequent returns to Gdim.
+- Mode determination (10): 10/10
+  - Correctly identifies Locrian and highlights its hallmark b2 and b5 (Ab and Db), and absence of D natural.
+- Chord–scale mapping (20): 17/20
+  - Accurately shows all chords (Gdim, Eb/G, Bbm/F, Ab/G, Dbmaj7/F) are diatonic to G Locrian and explains why Dbmaj7 is diatonic on b5. Minor labeling slips and a few early misreads reduce the score.
+- Slash chords and pedal analysis (10): 9/10
+  - Strong recognition of the G pedal and F as a frequent neighboring/passing bass. Slight overstatement (“alternates between G and F”) given many consecutive Gs.
+- Tonal-center evidence and cadence logic (10): 9/10
+  - Makes a solid modal (non-functional) case: persistent G bass, repeated returns to Gdim, and lack of any D-natural/V harmony. Could be tightened by explicitly naming bV rather than “v chord”.
+- Clarity and structure (10): 9/10
+  - Ends with a clear, organized explanation and a useful chord-by-chord validation. Early meandering and self-corrections add some noise.
+- Concision and focus (5): 3/5
+  - Thorough but verbose, with multiple detours before settling on Locrian.
+- Theoretical precision (5): 3/5
+  - A few factual/terminology inaccuracies (see below), but the final analysis is coherent and correct.
+
+Strengths
+- Arrives at the correct conclusion (G Locrian) and clearly states it.
+- Compelling evidence: complete pitch-class set (G, Ab, Bb, C, Db, Eb, F) matches G Locrian; correctly observes the absence of D natural.
+- Good modal framing: acknowledges Locrian’s unstable tonic and how the G pedal “forces” a center.
+- Insightful chord check: Dbmaj7/F is neatly justified as bVmaj7/F using only Locrian tones.
+
+Areas to improve
+- Theoretical precision and terminology:
+  - “C isn’t in G Locrian” (it is: C is the 4th).
+  - “Db is the subtonic of G” (subtonic is b7 = F; Db is b5).
+  - “G half-diminished scale (G Locrian mode)” is imprecise; Locrian ≠ “half-diminished scale.” (The so‑called “half‑diminished scale” in jazz often refers to Locrian natural 2 from melodic minor, which is not used here.)
+  - Roman numerals: calling Dbmaj7 “v chord” is misleading; it’s better labeled bVmaj7.
+  - Gdim vs Gø7: “Gdim might be shorthand for G half-diminished” conflates a diminished triad (dim) with a half‑diminished seventh (ø7).
+- Early false starts:
+  - Mis-spelled key: “F major” listed as F–G–Ab–Bb–C–Db–E (incorrect).
+  - Briefly suggests Ab major framework then notes the Bbm contradiction; could more quickly discard it by checking diatonic quality (Bbm ≠ diatonic to Ab major).
+- Examples/references:
+  - Citing “Blue in Green” or “Metallica” as Locrian exemplars is dubious; better omit or pick defensible examples.
+
+Actionable suggestions
+- Lead with a compact proof:
+  - List the union of chord tones to show the pitch set = G–Ab–Bb–C–Db–Eb–F (Locrian), note the absence of D natural, and emphasize the G pedal and repeated Gdim.
+- Use accurate labels:
+  - Prefer bVmaj7 for Dbmaj7, bII for Ab, bVI for Eb; avoid calling Db “v chord.”
+  - Distinguish dim triads (Gdim) from half-diminished sevenths (Gø7). If a 7th isn’t present, don’t assume it.
+- Keep modal and tonal frameworks distinct:
+  - Avoid mixing common-practice cadential expectations with modal analysis; stress pedal-point centricity and characteristic intervals (b2, b5).
+- Trim detours:
+  - When a trial key/mode introduces non-diatonic mismatches (e.g., D natural in Phrygian), discard quickly and proceed to the pitch-set validation.
+
+Notable corrections (for reference)
+- C is diatonic to G Locrian (degree 4).
+- Db is b5 of G (not subtonic).
+- F major scale is F–G–A–Bb–C–D–E (not with Ab/Db).
+- Prefer bVmaj7 (Dbmaj7) in G Locrian; don’t call it “v chord.”
+- Avoid calling Locrian a “half-diminished scale.”
+
+**Assistant - Qwen3 235B 2507**
+
+Overview
+- Verdict: Incorrect
+- Overall score: 28/100 (Poor)
+
+Weighted scoring breakdown
+- Key/tonal-center identification (30): 0/30
+  - Correct center is G (Locrian). The response asserts Ab as the tonic despite a persistent G pedal and a final Gdim. It conflates pitch collection (Ab major) with tonal center (G).
+- Mode determination (10): 0/10
+  - Correct mode is Locrian. The response concludes Ionian (major) and never seriously tests Locrian, even though the materials strongly suggest it.
+- Chord-function mapping (20): 9/20
+  - Positives: Notes for Gdim (G–Bb–Db), Eb/G (Eb–G–Bb), Bbm (Bb–Db–F), Ab (Ab–C–Eb), Dbmaj7 (Db–F–Ab–C) are identified correctly; observing that all chords are diatonic to Ab’s pitch collection is true.
+  - Issues:
+    - Ab/G mislabeled as I6 (it is not an inversion of I; G is the major 7 below Ab, not a chord tone for an inversion).
+    - Bbm/F labeled as “ii6 (second inversion)” mixes inversion nomenclature (if a triad, F-bass would be 6/4).
+    - Dbmaj7/F labeled “IV6 (second inversion)” is also inconsistent; with a seventh present, inversion should be indicated as IVmaj7 6/5, and F is the 3rd (first inversion), not second.
+- Slash chords and pedal analysis (10): 6/10
+  - Correctly extracts bass tones and recognizes the G–F pedal behavior. However, it underweights the tonal significance of a dominating G pedal and a final Gdim in assessing center.
+- Cadence and tonal-center evidence (10): 2/10
+  - No convincing V–I or arrival on Ab; Ab occurs only once and never in root position. Ending on Gdim is treated as “unusual for a tonic,” but in Locrian it is expected. Evidence was interpreted toward Ab despite contrary centricity cues.
+- Clarity and structure (10): 8/10
+  - Well organized, stepwise reasoning, clear headings. Easy to follow.
+- Concision and focus (5): 2/5
+  - Overlong with detours (e.g., speculative Csus(b9) aside, secondary diminished digression) without advancing the correct conclusion.
+- Theoretical precision (5): 1/5
+  - Enharmonic/mode-spelling issues (e.g., D#°7 for vii°/V in a flat key), inversion-label inaccuracies, and treating Ab/G as an inversion undercut rigor.
+
+Where it goes wrong relative to G Locrian
+- The pitch set matches Ab major, but the center is G. Locrian is the mode of Ab major built on G; the pervasive G pedal and recurrent Gdim strongly imply G-centricity.
+- In Locrian:
+  - Gdim = i° (tonic diminished)
+  - Eb/G = bVI over tonic pedal
+  - Bbm/F = bIII over bVII bass
+  - Ab/G = bII over tonic pedal
+  - Dbmaj7/F = bVmaj7 over bVII bass
+- The analysis treats Gdim as “vii° of Ab,” assuming functional major harmony, but never tests the alternative that Gdim could be the tonic triad of Locrian. Avoiding a root-position Ab and ending on Gdim are both consistent with a Locrian vamp centered on G.
+
+Strengths
+- Accurately identifies chord tone content and recognizes that all chords fit a single diatonic collection.
+- Good extraction of the bass line and attention to voice-leading continuity.
+- Clear structure and readable step-by-step layout.
+
+Areas to improve
+- Distinguish pitch collection from tonal center: a mode may share notes with a parent major key without sharing its tonic.
+- Consider Locrian explicitly when you see:
+  - Tonic pedal on the 7th degree of a related major (here, G against Ab major’s notes),
+  - Frequent i° usage,
+  - Absence of cadential confirmation of the supposed major tonic.
+- Use correct inversion labels and consistent Roman-numeral syntax (especially with 7th chords and 6/4 vs 6).
+- Avoid enharmonic spellings that fight the key’s accidentals (e.g., flats for Ab-derived collections; avoid D#° in a flat context).
+
+Actionable suggestions
+- Add a “centricity checklist” to weigh:
+  - Pedal/bass centricity, start/end chords, points of repose, and any cadential motion.
+  - If the bass and final sonority favor G while all chords are from Ab’s pitch set, test G Locrian directly.
+- When slash chords obscure roots, analyze both:
+  - Functional roles by root, and
+  - Centric roles relative to the pedal (e.g., “bVI over tonic pedal”).
+- Tighten inversion notation:
+  - Triads: root (no figure), 6 (first inversion), 6/4 (second inversion).
+  - Seventh chords: 7 (root), 6/5 (first), 4/3 (second), 4/2 (third).
+- Briefly propose the correct reading once decided:
+  - “Center: G; Mode: Locrian. Evidence: G pedal, i° endpoint, chords all diatonic to Ab’s collection but no Ab cadential confirmation.”
+
+**Assistant - Qwen3 Next 80B Thinking**
+
+Overview
+- Verdict: Incorrect (target: G Locrian)
+- Overall score: 32/100
+
+Weighted scoring breakdown
+- Key identification accuracy (30): 0/30
+  - Concludes F minor; the tonal center is G (Locrian), strongly indicated by the persistent G pedal and recurrent Gdim.
+- Mode determination (10): 0/10
+  - Labels Aeolian; correct mode is Locrian (same pitch set, different center and tonic quality).
+- Chord-function mapping (20): 8/20
+  - Chord spellings and diatonic membership are largely correct, but Roman-numeral mapping is anchored to the wrong center (F), so the functional narrative is misassigned.
+- Slash chords and pedal analysis (10): 6/10
+  - Correctly identifies slash-chord bass notes and recognizes a strong G pedal, but underweights its significance for tonal centricity.
+- Cadence and tonal-center evidence (10): 3/10
+  - Emphasizes F in a few bass positions while overlooking the overwhelming G pedal and repeated returns to Gdim; no evidence of an F-centered cadence or tonic confirmation.
+- Clarity and structure (10): 8/10
+  - Methodical, step-by-step, with a clear final summary and a (mostly) coherent table.
+- Concision and focus (5): 3/5
+  - Thorough but verbose; revisits the same points multiple times.
+- Theoretical precision (5): 4/5
+  - Minor momentary confusion about Dbmaj7 (C vs C#) is self-corrected; otherwise solid note spellings and interval logic.
+
+Key issues
+- Missed modal center: While the pitch collection matches Ab major/F Aeolian/G Locrian, the analysis selects F as the tonic despite:
+  - A nearly continuous G bass pedal (with only brief F pedal points).
+  - Repeated emphasis on Gdim, which is the Locrian i° triad on G (G–Bb–Db).
+  - Use of b2 (Ab), b5 (Db), and b6 (Eb) sonorities above a G pedal—classic Locrian color.
+  - Absence of an actual Fm tonic or compelling F-centered cadence.
+- Over-reliance on “all notes fit F Aeolian; therefore F” rather than weighing centricity cues (pedal tone, recurrence, points of repose).
+
+Strengths
+- Accurately lists chord tones and compiles the correct 7-note collection.
+- Handles slash chords/inversions correctly and tracks the bass line carefully.
+- Provides a structured, transparent reasoning process and checks diatonic consistency well.
+
+Areas to improve
+- Center detection: When multiple modes share the same pitch set, prioritize centricity tests (pedal frequency, points of repose, opening/closing gestures, recurring emphasis).
+- Modal awareness: Recognize that Locrian’s tonic triad is diminished; repeated returns to Gdim with a G pedal are strong Locrian signals.
+- Functional mapping: Contrast competing centers (F Aeolian vs G Locrian) explicitly, and see which yields a more coherent functional story (e.g., in F Aeolian there’s no I chord or cadence; in G Locrian there is persistent i° and b2/b5 activity over G).
+- Avoid speculative alternate labels that introduce non-diatonic tones (e.g., earlier flirtation with Csus4(b9)) unless strictly justified.
+
+Actionable suggestions
+- Run a centricity checklist:
+  - Count bass-pedal occurrences by pitch and duration.
+  - Identify recurring/rest chords; ask “which sonority feels like home?”
+  - Test two-mode hypotheses that share a pitch set by mapping every chord function both ways and comparing coherence.
+- For Locrian detection:
+  - Look for i° (diminished tonic) used as a point of repose.
+  - Check for prominent b2, b5, b6 above the tonic pedal.
+  - Expect the absence of conventional dominant-tonic cadences.
+- Keep interval arithmetic clean:
+  - Dbmaj7 = Db–F–Ab–C (C natural is the major 7 of Db).
+- Tighten the write-up: Lead with the answer/hypotheses, then present the decisive evidence.
+
+Correct answer and brief rationale
+- Correct: G Locrian (notes: G, Ab, Bb, C, Db, Eb, F)
+- Why:
+  - Nearly continuous G pedal; repeated Gdim = i° in Locrian.
+  - b2 (Ab), b5 (Db), b6 (Eb) sonorities used extensively over G (e.g., Ab/G, Eb/G, Dbmaj7/F), all diatonic to G Locrian.
+  - Non-G bass moments (Bbm/F, Dbmaj7/F) highlight F (b7) as a pedal point, not a tonic.
+  - No Fm tonic or F-centered cadence to substantiate F Aeolian as the key.
+
+**Assistant - Qwen3 Next 80B**
+
+Overview
+- Verdict: Incorrect (wrong tonal center and mode)
+- Overall score: 30/100 (Significantly flawed)
+
+Weighted scoring breakdown
+- Key identification accuracy (30): 0/30
+  - Correct answer: G Locrian. The response concludes Ab major (Ionian), i.e., wrong center and mode.
+- Mode determination (10): 0/10
+  - Fails to consider Locrian despite overwhelming evidence (repeated Gdim as tonic sonority, pervasive G bass).
+- Chord-function mapping (20): 12/20
+  - Internally coherent diatonic mapping to Ab major (e.g., Eb = V, Bbm = ii, Gdim = vii°) much of the time; however, this is the wrong framework for the progression’s actual center. Contains several labeling slips (see “Theoretical precision”).
+- Slash chords and pedal analysis (10): 4/10
+  - Correctly identifies inversions like Eb/G and Ab/G but misses the central musical fact: a strong G pedal/centripetal pull that defines G as tonic (Locrian).
+- Cadence and tonal-center evidence (10): 2/10
+  - No convincing cadence to Ab is demonstrated; the progression begins and ends on Gdim and repeatedly returns to G-based sonorities. The write-up asserts Ab major without showing authentic dominant-tonic motion or resolution to Ab.
+- Clarity and structure (10): 8/10
+  - Well-organized with stepwise reasoning and tables; readable despite detours.
+- Concision and focus (5): 2/5
+  - Overlong with multiple false starts and speculative tangents.
+- Theoretical precision (5): 2/5
+  - Several errors and contradictions (details below).
+
+Strengths
+- Thorough note listings and identification of chord spellings.
+- Recognizes that the pitch collection matches Ab major (which is the parent scale of G Locrian).
+- Good mechanical handling of many inversions and common-practice Roman-numeral functions within an Ab framework.
+
+Critical issues
+- Misses the tonic: The music clearly centers on G (opening/closing on Gdim, frequent G in the bass), pointing to G Locrian, not Ab Ionian.
+- Tonic-chord quality mismatch: In Locrian, the tonic triad is diminished—exactly the sonority repeated throughout (G–Bb–Db). Treating this as vii° of Ab without resolution to Ab misreads its structural role.
+- Pedal/ground-bass oversight: Multiple chords occur over G (Eb/G, Ab/G), reinforcing G as a pedal/center; this is not explained functionally.
+- Cadential logic: No Eb→Ab (V→I) cadence in root position or convincing arrival on Ab is shown; the final Gdim contradicts an Ab-major cadence.
+- Confusions and mislabels:
+  - Claims “Eb is not in Ab major,” then corrects.
+  - Tritone-sub speculation with Dbmaj7 ⇄ F#7b9 is a dead end.
+  - Inversion/function slips: calls Bbm/F “vi6” before correcting to “ii6”; labels Dbmaj7/F as “second inversion” though F (the 3rd) makes it first inversion; “I with flat 7 in bass” for Ab/G (G is the major 7 of Ab, not b7).
+
+Key evidence for G Locrian (the correct analysis) the answer missed
+- Pitch collection: {G, Ab, Bb, C, Db, Eb, F} = G Locrian (Ab major starting on G).
+- Tonic sonority: Repeated Gdim (G–Bb–Db) is the Locrian i° triad—appears at structural points (beginning, end, and often), signaling tonic.
+- Bass gravity: Many chords feature G in the bass (Eb/G, Ab/G) = modal coloration over a G pedal.
+- Diatonic coherence in Locrian:
+  - Eb major = bVI (VI) in Locrian (Eb–G–Bb), often over G pedal.
+  - Bbm/F = bIII (Bb–Db–F) with F (bVII) in the bass.
+  - Ab/G = II (Ab–C–Eb) over tonic pedal G; also reads as Abmaj7 in 3rd inversion but still centers the ear on G.
+  - Dbmaj7/F = bVmaj7 with bVII in the bass—coloristic but diatonic to the collection.
+- Form/closure: Ending on Gdim supports G as the final rather than resolving to Ab.
+
+Actionable suggestions
+- Start by inventorying pitch classes and checking for a recurring bass/pedal; let that guide tonic identification before assigning Roman numerals.
+- Verify tonic-chord quality against the proposed mode: a repeated diminished triad on the putative tonic is a hallmark of Locrian.
+- Avoid speculative substitutions unless they clarify function; prioritize cadence and closure evidence.
+- When using inversion labels, keep them consistent and accurate (e.g., Dbmaj7/F = first inversion).
+- Present a concise verdict early, then support it: “Key center: G. Mode: Locrian (parent scale: Ab major). Evidence: repeated i° (Gdim), G pedal under Eb and Ab, no Ab authentic cadence, final on Gdim.”
+
+Concise corrected framing (for reference)
+- Key center: G
+- Mode: Locrian (Ab major pitch collection: G–Ab–Bb–C–Db–Eb–F)
+- Functional color:
+  - Gdim = i°
+  - Eb/G = VI6 over tonic pedal
+  - Bbm/F = bIII6/4 with bVII in bass
+  - Ab/G = II (or Imaj7 over 7th) over tonic pedal
+  - Dbmaj7/F = bVmaj7 with bVII in bass
+- The pervasive G pedal and repeated i° confirm G Locrian as the operative mode.
+
+**Assistant - Qwen3 Max**
+
+Overview
+- Verdict: Incorrect (should be G Locrian; response concludes A♭ major/Ionian)
+- Overall score: 41/100 (Partial insight, but final determination is wrong)
+
+Weighted scoring breakdown
+- Key identification accuracy (30): 0/30
+  - Final answer contradicts ground truth (G Locrian), despite briefly recognizing it in-process.
+- Mode determination (10): 3/10
+  - Correctly identifies the pitch set as G Locrian at one point, but rejects it and asserts Ionian.
+- Chord-function mapping (20): 16/20
+  - Diatonic mapping in A♭ major is largely correct (G°=vii°, E♭=V, B♭m=ii, A♭=I, D♭=IV), but mischaracterizes some functions/uses (see issues).
+- Slash chords and pedal analysis (10): 7/10
+  - Correct parsing of slash chords and sensible voice-leading comments; misses the global “G” centric pedal implication that supports Locrian.
+- Cadence and tonal-center evidence (10): 3/10
+  - Notes end on Gdim is “unusual,” yet treats it as a non-issue; underweights the closing sonority and repeated G-centric harmony pointing to G as center.
+- Clarity and structure (10): 6/10
+  - Organized into steps and generally followable, but includes self-contradictions and detours that blur the throughline.
+- Concision and focus (5): 3/5
+  - Thorough but meandering; could be tighter.
+- Theoretical precision (5): 3/5
+  - Several factual slips (see below), partially offset by later self-corrections.
+
+What the response did well
+- Correctly collects the pitch-class set: {C, D♭, E♭, F, G, A♭, B♭}.
+- Accurately identifies A♭ major as a diatonic container and maps most chords plausibly within that key.
+- Recognizes G Locrian as the 7th mode of A♭ major and that the chord set is consistent with it.
+- Points out smooth voice-leading pathways between repeated G° and the surrounding chords.
+
+Key issues (impacting the final call)
+- Ignores strong centering cues on G:
+  - Gdim appears 8 times and is the final sonority; in G Locrian, Gdim is the tonic triad (i°).
+  - Prominent b2 (A♭ major chord), b5 (D♭maj7), and b6 (E♭ major) are hallmark Locrian colors surrounding a G center.
+- Misreads functional cues in A♭ major:
+  - Treats G° → E♭ as vii° → V “standard” motion. In A♭, vii° (G°) normally resolves to I (A♭), not to V (E♭). The leading-tone to V would be D°, not G°.
+  - Ab/G is described as “I with leading tone in bass … cadential 6/4 or suspension.” A true cadential 6/4 in A♭ would place E♭ in the bass (I6/4 over V), not G. Ab/G is an unusual coloration rather than a stock cadence.
+- Fails to weigh the ending: concluding on Gdim is atypical in A♭ major; it is perfectly typical if G is the tonic in Locrian.
+
+Why the ground truth is G Locrian (brief evidence)
+- Pitch classes align exactly with G Locrian (mode 7 of A♭ major): G–A♭–B♭–C–D♭–E♭–F.
+- Chord-by-chord under the G Locrian lens:
+  - Gdim (G–B♭–D♭): i° (tonic triad) — appears repeatedly and closes the progression.
+  - Eb/G (E♭–G–B♭): bVI in first inversion — characteristic Locrian color.
+  - Bbm/F (B♭–D♭–F): bIII in second inversion — diatonic to A♭/G Locrian.
+  - Ab/G (A♭–C–E♭): bII over the tonic pedal (1 in bass) — the signature Locrian b2 above tonic.
+  - Dbmaj7/F (D♭–F–A♭–C): bVmaj7 in first inversion — another distinctive Locrian degree.
+- The repetition of G in the bass and the final Gdim reinforce G as the tonal center; Locrian uniquely allows a diminished tonic triad.
+
+Notable factual/analytical slips
+- “5 flats” key signature claim for the collected set is incorrect (it’s 4 flats: B♭, E♭, A♭, D♭).
+- Misstates E♭ natural minor: wrote E♭–F–G–A♭–B♭–C–D♭ (should be E♭–F–G♭–A♭–B♭–C♭–D♭).
+- In F minor, labels D♭ as ♭II (Neapolitan); in F minor the Neapolitan is G♭, not D♭ (D♭ is ♭VI).
+- Calls G° → E♭ a “vii° → V” progression in A♭ major; the true vii° of A♭ targets I (A♭). The leading-tone chord to V would be vii°/V (D°), not G°.
+- Describes Ab/G as “cadential 6/4 or suspension,” but a cadential 6/4 in A♭ requires E♭ in the bass.
+
+Actionable suggestions
+- Center identification: Prioritize ending sonority and recurrence. A repeated and final Gdim is a strong anchor; test G-centric modes first.
+- Modal fingerprints: Check for Locrian markers explicitly: diminished tonic (i°), b2 major (A♭), b5 major (D♭), b6 major (E♭).
+- Functional consistency: Avoid asserting stock functions that don’t apply (e.g., vii° → V in A♭). Verify secondary leading-tone logic when claiming such motions.
+- Accuracy on key signatures and natural minor spellings; double-check accidentals before concluding.
+- Slash-chord reading: When bass note recurs (G under multiple chords), consider a pedal/center hypothesis rather than treating each as isolated inversion.
+- Tighten the writeup: Lead with the most compelling evidence, then alternatives, and only brief counterarguments.
+
+Concise correction
+- Correct key/mode: G Locrian (7th mode of A♭ major).
+- Supporting cues: i° (Gdim) used pervasively and as the final chord; strong presence of b2 (A♭), b5 (D♭), and b6 (E♭) chords around a G pedal.
+
+**Assistant - Gemini 2.5 Flash Thinking**
+
+Overview
+- Verdict: Incorrect (should be G Locrian, not C Phrygian)
+- Overall score: 24/100
+
+Weighted scoring breakdown
+- Tonic/center identification (30): 0/30
+  - Misidentifies C as the tonal center; the material supports G as center.
+- Mode determination (10): 0/10
+  - Should be Locrian; answer settles on Phrygian.
+- Chord-function mapping (20): 7/20
+  - Some chord spellings align with the Ab major pitch set, but functions are mapped to the wrong center (C). Frequent mislabels (e.g., “secondary dominant,” “dominant substitute”) for a system that lacks a true dominant.
+- Slash chords and pedal/bass evidence (10): 3/10
+  - Eb/G and Ab/G strongly emphasize G as a bass focus (Locrian tonic), but this is not leveraged.
+- Tonal-center evidence and cadence logic (10): 3/10
+  - The repeated Gdim and final Gdim actually argue for G as tonic (i° in Locrian), not for C; this is missed.
+- Clarity and structure (10): 7/10
+  - Organized into sections, but meandering, repetitive, and self-contradictory over time.
+- Concision and focus (5): 2/5
+  - Overly verbose; multiple passes that restate the same points without converging on correct center.
+- Theoretical precision (5): 2/5
+  - Misuses functional labels (e.g., calling Gdim a “dominant substitute” or “secondary dominant”), and treats a maj7 Neapolitan as if it were standard. Some unsupported claims (e.g., “presence of both E and Eb”).
+
+Key issues
+- Wrong center: Interprets C as the tonic; the chord collection and bass placements point to G as the tonal center.
+- Wrong mode: Concludes Phrygian; correct answer is Locrian (on G).
+- Misinterprets Gdim: In this context, Gdim is i° (Locrian tonic), not a dominant/proxy to C. Labeling it “dominant substitute” or “secondary dominant” is not justified by the pitch set (no B natural or E natural to support C as a strong goal).
+- Unsupported/loose claims: Mentions “both E and Eb” without clear supporting chords; treats Dbmaj7 as a routine Neapolitan in C minor; conflates modal color with tonal functional harmony.
+- Missed bass evidence: Multiple slash chords with G in the bass (Eb/G, Ab/G) and repeated Gdim underpin G-centric hearing.
+
+What a correct G Locrian reading would note
+- Pitch set: G–Ab–Bb–C–Db–Eb–F (parent Ab major).
+- Tonic and tonic chord: Gdim = i° (G–Bb–Db), frequently reiterated/ending on Gdim supports G as center.
+- Functional placements relative to G Locrian:
+  - Eb (Eb–G–Bb) = bVI
+  - Ab (Ab–C–Eb) = bII
+  - Dbmaj7 (Db–F–Ab–C) = bVmaj7
+  - Bbm (Bb–Db–F) = bIII
+  - Eb/G and Ab/G = bVI/1 and bII/1, reinforcing G in the bass
+  - Bbm/F and Dbmaj7/F highlight F (b7) as a common bass tone, consistent with the mode’s collection.
+- Absences: No B natural or E natural to support a compelling C-major/minor tonicization; Db (b2 of C) undermines a C-major/tonal reading.
+
+Actionable suggestions
+- Establish tonic before mode: Decide the pitch of rest (here, G via repeated G bass and final Gdim), then name the mode from the pitch set.
+- Check chord inventory against the mode: All cited chords are diatonic to Ab major; relative to G, they map cleanly to Locrian degrees.
+- Avoid tonal-dominant language in modal contexts: In Phrygian/Locrian there’s no true V; diminished triads don’t act as dominant substitutes without added leading-tone content.
+- Use slash-chord basses as evidence: Repeated G bass and cadence to Gdim are strong center cues—privilege those over abstract function-lists.
+- Be precise with labels: If invoking “Neapolitan,” note that classical usage is a major triad on bII (often in first inversion), not typically a maj7 sonority; in modal/jazz contexts, prefer modal-degree labeling (e.g., bVmaj7 in G Locrian).
+
+Concise corrected takeaway
+- Key/Mode: G Locrian
+- Evidence: Repeated Gdim (i°), multiple chords from Ab major with frequent G in the bass (Eb/G, Ab/G), and no leading-tone drive to C—all consistent with a G-centered Locrian modal framework.
+
+**Assistant - Gemini 2.5 Flash**
+
+Overview
+- Verdict: Incorrect
+- Overall score: 26/100 (Poor)
+
+Weighted scoring breakdown
+- Key identification accuracy (30): 2/30
+  - The analysis lands on F minor; the correct tonal center is G (Locrian). While it notes the prevalence of Gdim and even considers a “G Locrian or exotics” context, it dismisses it without addressing the very strong G-centric bass/pedal evidence.
+- Mode determination (10): 0/10
+  - Concludes “F Harmonic Minor.” The actual mode is G Locrian. Moreover, the cited pitch set lacks E natural, so “harmonic” minor is specifically unsupported by the material presented.
+- Chord-function mapping (20): 6/20
+  - Some diatonic relations in F natural minor are incidentally true (e.g., Bbm as iv, Db as bVI, Gdim as ii°). However:
+    - Eb is mislabeled as bVI in F minor (it is bVII).
+    - Ab/G is left essentially unintegrated functionally.
+    - The mapping is built on the wrong center, so functional claims don’t reflect the actual (G-centered) usage.
+- Slash chords and pedal analysis (10): 3/10
+  - Correctly notes note-sharing between chords, but repeatedly mislabels inversions (“root third inversion”) and misses the central fact that G functions as a persistent pedal/center through Gdim and the /G chords.
+- Cadence and tonal-center evidence (10): 2/10
+  - No convincing cadential evidence for F minor is provided (no dominant-to-tonic behavior toward F; no C/C7 → F). The progression overwhelmingly returns to G in the bass and to Gdim, which the analysis overlooks as a centering device.
+- Clarity and structure (10): 8/10
+  - Well organized with headings and stepwise reasoning.
+- Concision and focus (5): 4/5
+  - Thorough and mostly on-topic, if ultimately misdirected.
+- Theoretical precision (5): 1/5
+  - Multiple errors:
+    - “Root third inversion” is not a standard term; Eb/G and Bbm/F are first inversion triads; Dbmaj7/F is first inversion, not “third inversion.”
+    - Claims the pitch set matches F harmonic minor (requires E natural, which is not in the collected set).
+    - “Db harmonic major” is misidentified; the notes listed (Db, Eb, F, G, Ab, Bb, C) are Db Lydian (i.e., Ab major) rather than Db harmonic major (Db, Eb, F, Gb, Ab, A, C).
+    - Eb mislabeled as bVI in F minor (it is bVII).
+
+Major issues and corrections
+- The aggregate pitch collection G–Ab–Bb–C–Db–Eb–F exactly equals G Locrian (the 7th mode of Ab major). This is the defining pitch evidence and it was in hand but misinterpreted.
+- The progression’s bass strongly centers on G (Gdim; Eb/G; Ab/G), with occasional motion to F (…/F chords). That persistent G pedal plus a diminished tonic triad is quintessential Locrian behavior.
+- F harmonic minor is specifically contradicted by the absence of E natural in the identified pitch set.
+- The “Db harmonic major” label and inversion terminology are incorrect.
+
+Concise corrective sketch (why G Locrian fits)
+- Scale: G Locrian = G Ab Bb C Db Eb F (same pitch set the analysis collected).
+- Chords (all diatonic to G Locrian):
+  - Gdim = i° (G–Bb–Db), recurrent “home” sonority.
+  - Eb/G = bVI in first inversion (Eb–G–Bb over G).
+  - Bbm/F = bIII (Bb–Db–F) over 5th (F).
+  - Ab/G = bII (Ab–C–Eb) over tonic pedal G (a classic Locrian color with b2 above the tonic).
+  - Dbmaj7/F = bVmaj7 (Db–F–Ab–C) over 3rd (F).
+- The repeated return to G in the bass and to Gdim, plus the use of b2 (Ab) over G, foreground G Locrian rather than F minor.
+
+Strengths
+- Clear structure and stepwise presentation.
+- Correct raw pitch collection assembled from the chords.
+- Recognizes the prevalence of Gdim and some note-sharing across chords.
+
+Areas to improve
+- Center identification: prioritize pedal/bass centering and recurrence of a “home” sonority; here, G and Gdim are the gravitational center, not F.
+- Mode literacy: when the collected set exactly matches a mode (G Locrian), acknowledge and test that interpretation rigorously before defaulting to a more familiar tonal key.
+- Theoretical accuracy: use correct inversion labels; avoid misnaming scales (e.g., harmonic major vs Lydian).
+- Functional labeling: avoid mislabeling degrees (Eb is bVII in F minor, not bVI) and avoid asserting “fits perfectly” without cadential evidence.
+
+Actionable suggestions
+- Start by testing the most salient pedal note (G) as the tonal center; check whether the prevailing triad on that degree is diminished (a Locrian hallmark).
+- Verify scale matches carefully:
+  - G Locrian: G Ab Bb C Db Eb F → exact match with the collected set.
+  - F harmonic minor requires E natural; if E never appears, don’t claim “harmonic minor.”
+- Use standard inversion terminology consistently:
+  - Triad first inversion = third in bass (Eb/G, Bbm/F).
+  - Seventh-chord inversions: third/sixth/seventh in bass; Dbmaj7/F is first inversion (third in bass), not third inversion.
+- Provide tonal-center evidence: look for pedal points, recurrences, and cadences that affirm the center you claim.
+  
+**Assitant - Kimi K2**
+
+Overview
+- Verdict: Incorrect (mode misidentified)
+- Overall score: 63/100 (Mixed)
+
+Why the correct reading is G Locrian
+- The collected pitch-class set is G–Ab–Bb–C–Db–Eb–F. That is exactly G Locrian (1, b2, b3, 4, b5, b6, b7).
+- The tonic triad present is G–Bb–Db (Gdim), a hallmark of Locrian (only mode with a diminished tonic triad).
+- All listed sonorities are diatonic to Ab major (the parent scale of G Locrian): Eb (bVI), Ab (bII), Dbmaj7 (bV-based maj7), Bbm (bIII), etc.
+- Dorian b2 (2nd mode of melodic minor) would require a perfect 5th (D) and a natural 6th (E); neither D nor E appears. Instead, Db and Eb appear.
+
+Weighted scoring breakdown
+- Key (tonic) identification accuracy (30): 30/30
+  - Correctly centers on G (bass emphasis and collection suggest G as tonic).
+- Mode determination (10): 0/10
+  - Concludes “G Dorian b2” instead of G Locrian despite a diminished tonic and b5 present.
+- Chord-function mapping (20): 6/20
+  - Chord tones largely identified, but no functional mapping relative to the correct mode; implications of a diminished tonic were missed.
+- Slash chords and pedal/bass analysis (10): 6/10
+  - Notes the G/F bass motion accurately, but the modal inference drawn from it is off.
+- Cadence and tonal-center evidence (10): 7/10
+  - Uses bass-line emphasis to argue for G as center; reasonable given the material, though no cadential proof is shown.
+- Clarity and structure (10): 8/10
+  - Clear, stepwise presentation; readable chord-by-chord accounting.
+- Concision and focus (5): 5/5
+  - Efficient and to the point.
+- Theoretical precision (5): 1/5
+  - Multiple theoretical slips: wrong mode, “every pitch of G natural minor except 2” (ignores the altered 5), and a chord-tone slip on Dbmaj7/F.
+
+Strengths
+- Correct pitch-class inventory: G Ab Bb C Db Eb F (exactly G Locrian).
+- Sensible identification of G as the tonal center given the bass and recurrence of G.
+- Useful chord-by-chord note listing aids verification.
+- Concise, readable structure.
+
+Areas to improve
+- Mode misidentification:
+  - The presence of a diminished tonic triad (G–Bb–Db) and a b5 (Db) rules out Dorian b2 and points squarely to Locrian.
+  - Dorian b2 would require D (P5) and E (natural 6); the set has Db and Eb instead.
+- Mischaracterization relative to G natural minor:
+  - It’s not “every pitch of G natural minor except A”; the 5th is also altered (D → Db).
+- Chord-tone slip:
+  - “Dbmaj7/F = F Ab C Eb” should be Db–F–Ab–C (i.e., F Ab C Db). Eb is not part of Dbmaj7.
+- Terminology accuracy:
+  - “G dorian b2 (2nd mode of F melodic minor)” is not compatible with the extracted pitch set; avoid equating “omitted 2nd” with the presence of a b2.
+
+Actionable suggestions
+- After extracting the pitch set, test the tonic triad:
+  - If the tonic triad is diminished (1–b3–b5), Locrian is the only diatonic mode that fits.
+- Verify candidate modes by their defining tones:
+  - G Locrian: 1 b2 b3 4 b5 b6 b7 → requires Ab and Db (both present).
+  - G Dorian b2: 1 b2 b3 4 5 6 b7 → requires D and E (both absent).
+- Map chords against the parent scale:
+  - Recognize the set equals Ab major; then G is scale-degree 7 (Locrian on G). Eb, Ab, Dbmaj7, Bbm are all diatonic to Ab major.
+- Provide a concise, corrected statement up front:
+  - Key center: G; Mode: Locrian (parent: Ab major). Evidence: i° (G–Bb–Db), pitch set = Ab major, all chords diatonic to Ab.
+
+**Assitant - GPT 5 Chat**
+
+Overview
+- Verdict: Incorrect (should be G Locrian)
+- Overall score: 21/100
+
+Weighted scoring breakdown
+- Key identification accuracy (30): 0/30
+  - Concludes Eb major; the pitch set and centricity clearly support G Locrian (G–Ab–Bb–C–Db–Eb–F), with Gdim as recurring tonic sonority and final chord.
+- Mode determination (10): 0/10
+  - Labels Ionian with “Mixolydian flavor”; misses Locrian’s hallmark b2 (Ab) and b5 (Db) relative to G.
+- Chord-function mapping (20): 4/20
+  - Multiple functional errors:
+    - Ab is labeled “V” in Eb (it is IV).
+    - Bbm labeled “ii” in Eb (ii in Eb is Fm; Bbm is not diatonic to Eb Ionian).
+    - “vii°/V in Eb” for Gdim is incorrect (vii°/V in Eb would be built on A, the leading tone to Bb).
+    - Db as bVII in Eb is plausible as a borrowed chord, but the overall functional network is inconsistent with the chord set and bass behavior.
+- Slash chords and pedal analysis (10): 2/10
+  - Eb/G and Ab/G strongly spotlight G in the bass; the analysis notices the slash chords but doesn’t infer G-centricity or tonic pedal implications.
+- Cadence and tonal-center evidence (10): 1/10
+  - No cadence to Eb is demonstrated (no Bb or Bb7 present); the progression ends on Gdim, reinforcing G as center in Locrian—this was overlooked.
+- Clarity and structure (10): 8/10
+  - Well organized steps and a readable layout.
+- Concision and focus (5): 4/5
+  - Direct and relatively concise.
+- Theoretical precision (5): 2/5
+  - Several factual mislabels (e.g., Ab as V in Eb; incorrect secondary leading-tone analysis; misstatement that Eb/G is “root position with G in bass,” which is actually first inversion).
+
+Key issues
+- Missed the pitch-set identity: all chords use notes of Ab major/C Phrygian/G Locrian; no D natural, no Bb major (V in Eb), and no tonal pull to Eb.
+- Ignored Locrian markers:
+  - Tonic triad diminished (G–Bb–Db) appears repeatedly, including at the end (i°).
+  - Presence of both b2 (Ab) and b5 (Db) relative to G.
+- Misread the role of slash chords: persistent G in the bass (Eb/G, Ab/G) supports a G-centric pedal, not Eb centricity.
+- Functional mislabeling within Eb major undermines the argument (Ab ≠ V; Bbm ≠ ii; vii°/V miscomputed).
+
+What was done well
+- Clear, stepwise presentation and an attempt to map functions.
+- Recognizes Db as a bVII relationship relative to Eb (as a borrowed color), though the global key choice is still incorrect.
+
+How to improve
+- Start from pitch inventory: {G, Ab, Bb, C, Db, Eb, F} → unmistakably G Locrian (b2, b3, 4, b5, b6, b7).
+- Weigh centricity evidence: repeated and final Gdim implies tonic in Locrian; absence of a dominant to Eb (Bb or Bb7) argues against Eb as key.
+- Treat slash chords as bass-centric clues: Eb/G and Ab/G emphasize a G pedal.
+- Check functional claims rigorously:
+  - In Eb: V = Bb, ii = Fm, vii°/V is built on A, not G.
+  - Avoid calling first-inversion chords “root position with altered bass.”
+
+Brief correct reading (for reference)
+- Mode/center: G Locrian (7th mode of Ab major).
+- Chord roles in G Locrian:
+  - Gdim = i°
+  - Eb/G = bVI in first inversion (bVI6)
+  - Bbm/F = bIII in first inversion (bIII6)
+  - Ab/G = bII over tonic pedal (bII/1), a characteristic Locrian color
+  - Dbmaj7/F = bVmaj7 in first inversion
+- Evidence: complete Locrian collection; persistent G bass and final i°; prominent b2 (Ab) and b5 (Db) relative to G; no dominant function to Eb.
+
+Actionable suggestions
+- Verify functions against the correct scale degrees before assigning Roman numerals.
+- Use the bass line and cadence/ending as primary evidence of tonal center.
+- When proposing secondary functions (vii°/V, etc.), compute them from the actual V of the asserted key.
+- Cross-check for modal signatures (Locrian: i° tonic, b2, b5) and ensure your conclusion explains the most recurrent sonorities and the final chord.
+
+**Assitant - DeepSeek V3.2 Thinking**
+
+Overview
+- Verdict: Incorrect (target: G Locrian)
+- Overall score: 46/100 (Partly insightful but mis-centered)
+
+Weighted scoring breakdown
+- Key/tonal-center identification (30): 10/30
+  - Correctly identifies the parent pitch set (Ab major) but assigns the tonal center to Ab instead of G. The progression’s persistent G bass and repeated returns to Gdim strongly suggest G as tonic.
+- Mode determination (10): 0/10
+  - Calls it Ionian; the intended answer is G Locrian (same pitch set as Ab Ionian, different center and function).
+- Chord-function mapping (20): 12/20
+  - Internally consistent in Ab major (ii, IV, V, vii°), but the relevant functional reading in G Locrian is not considered. Accurately notes diatonic membership; misses Locrian functions (i° = Gdim; bII = Ab; bV = Db; bVI = Eb; bVII = F).
+- Slash chords and pedal analysis (10): 5/10
+  - Observes frequent G in the bass but interprets it as “leading tone in the bass” rather than a tonic pedal. Misses the hallmark modal-pedal reading that points to G as center.
+- Cadence and tonal-center evidence (10): 3/10
+  - No true V–I (to Ab) cadence is demonstrated; the form repeatedly returns to and even ends on Gdim. The analysis acknowledges the lack of resolution but still concludes Ab major.
+- Clarity and structure (10): 9/10
+  - Well organized, stepwise, and readable.
+- Concision and focus (5): 4/5
+  - Slightly verbose but stays on task.
+- Theoretical precision (5): 3/5
+  - Some confusion around vii°7 quality in major (ultimately notes half-diminished is diatonic, fully diminished would require Fb). Equivocates on “dim” implying triad vs dim7.
+
+Strengths
+- Identifies a coherent diatonic collection and maps most chords cleanly within Ab major.
+- Solid note-level parsing of slash chords; recognizes enharmonic spelling issues (Fb vs E).
+- Clear, structured reasoning and attention to inversion details (e.g., Eb/G, Dbmaj7/F).
+
+Key issues
+- Misidentifies the tonal center: treats a pervasive G bass and repeated Gdim as “leading-tone emphasis” instead of tonic/pedal, missing the Locrian reading.
+- No convincing cadential or phrase-final evidence for Ab as tonic; the progression ends on Gdim, not Ab.
+- Does not consider modal interpretation despite the diminished tonic triad (a Locrian signature) being foregrounded.
+
+Actionable suggestions
+- Prioritize center-of-gravity diagnostics:
+  - Check bass pedals and phrase endpoints; repeated returns to G and a final Gdim strongly indicate G as tonic.
+  - Require cadential evidence before declaring a tonic (e.g., V–I or clear tonic-prolongation to Ab). It’s absent here.
+- Test modal hypotheses explicitly when the tonic triad is diminished:
+  - Locrian hallmark: tonic triad is diminished (G–Bb–Db), b2 (Ab), and b5 (Db) are prominent. This progression showcases those tones repeatedly.
+- When many slash chords share one bass note, analyze function relative to that bass:
+  - Eb/G, Ab/G above a G pedal are better read as color/harmonic fields over G than as inversions serving Ab-tonic harmony.
+- Clarify chord-quality conventions:
+  - In major, viiø7 is diatonic; vii°7 requires a lowered seventh (Fb). Be explicit about whether “dim” means triad or dim7 in your context.
+
+Correct analysis snapshot (for orientation)
+- Parent collection: Ab major (Ab–Bb–C–Db–Eb–F–G) = G Locrian.
+- Tonal center: G (pedal, returns, final chord).
+- Locrian functions suggested by the progression:
+  - i°: Gdim (G–Bb–Db) — recurrent and terminal.
+  - bII: Ab (appears as Ab/G, a color chord above the G pedal).
+  - bV: Db (Dbmaj7/F reinforces the Locrian b5 color).
+  - bVI: Eb (Eb/G over G pedal).
+  - bVII: F (appears as chord tones in Bbm/F and Dbmaj7/F contexts).
+- Therefore: G Locrian, not Ab Ionian.
+
+**Assistant - DeepSeek V3.2**
+
+Overview
+- Verdict: Incorrect (correct answer: G Locrian)
+- Overall score: 25/100 (Needs significant revision)
+
+Weighted scoring breakdown
+- Key identification accuracy (30): 4/30
+  - Correctly recognizes the parent collection of A♭ major (same pitch set as G Locrian), but incorrectly asserts A♭ major as the key center instead of G Locrian.
+- Mode determination (10): 0/10
+  - Concludes “A♭ major (with modal mixture),” missing the Locrian mode entirely and misidentifying B♭m as borrowed.
+- Chord-function mapping (20): 6/20
+  - Some chord spellings are fine, but several functional labels are wrong:
+    - E♭ is repeatedly called IV in A♭ major (it’s V).
+    - B♭m is called v in A♭ major (it’s ii and diatonic, not borrowed).
+    - Treats Gdim as generic vii°7 of A♭ without reconciling its repeated prominence and ending position.
+- Slash chords and pedal analysis (10): 1/10
+  - Misses the pervasive G pedal implication (E♭/G, A♭/G, and the repeated Gdim point strongly to G as the center).
+- Cadence and tonal-center evidence (10): 1/10
+  - Provides no convincing cadence or phrase-final evidence for A♭; ignores the repeated return to and finality on Gdim.
+- Clarity and structure (10): 7/10
+  - Well-organized, stepwise presentation with chord spellings; however, clarity is undermined by functional errors.
+- Concision and focus (5): 4/5
+  - Reasonably concise and on-topic.
+- Theoretical precision (5): 2/5
+  - Multiple factual/theoretical slips (see below); some enharmonic reasoning is fine, but conclusions are inconsistent.
+
+Strengths
+- Correct chord spellings and slash-chord interpretations at the pitch level (e.g., E♭/G = E♭–G–B♭ with G in bass; A♭/G implies a major 7th above the G pedal).
+- Notes the symmetry/enharmonic equivalence of fully diminished seventh chords.
+- Structured, step-by-step approach aids readability.
+
+Issues and inaccuracies
+- Central misread: overlooks G as the tonal center implied by the repeated Gdim, the frequent G bass (E♭/G, A♭/G), and the ending on Gdim—hallmarks of G Locrian.
+- Modal error: never considers Locrian; mislabels the landscape as “A♭ major with mixture,” and incorrectly flags B♭m as borrowed (it’s diatonic in A♭).
+- Roman numeral mistakes:
+  - In A♭ major, E♭ is V (not IV).
+  - B♭m is ii (not v).
+- Assumptive chord quality: treats “Gdim” as a fully diminished seventh (adds F♭) when the symbol doesn’t specify “7.” This can be acceptable contextually, but it should be justified or flagged as an assumption.
+- Lacks tonal evidence: no cadential proof or phrase-final rationale for A♭ as tonic; ignores that Locrian textures often center a diminished i° with pedal support.
+
+Actionable suggestions
+- Establish tonal center first:
+  - Track pedal tones and bass gravity. The persistent G bass and repeated Gdim strongly indicate G as “home.”
+  - Check where phrases resolve and which sonorities recur at structural points (here, Gdim ends the cycle).
+- Test modal candidates explicitly:
+  - G Locrian = notes of A♭ major centered on G: G–A♭–B♭–C–D♭–E♭–F.
+  - Identify Locrian signatures relative to G: b2 (A♭), b5 (D♭), diminished i° (G–B♭–D♭). The chords used (E♭, A♭, B♭m, D♭maj7) are all diatonic to this set and sit over a G pedal.
+- Correct Roman numerals:
+  - In A♭ major: IV = D♭, V = E♭, ii = B♭m.
+  - Avoid calling diatonic ii (B♭m) a borrowed chord.
+- Avoid speculative labels that add non-notated tones:
+  - If assuming Gdim7 (vs Gdim triad), say why the 7th is implied by usage/function.
+- Lead with the answer and evidence:
+  - “Key/Mode: G Locrian. Evidence: repeated G pedal (E♭/G, A♭/G), recurrent and final Gdim (i°), all chords diatonic to A♭’s pitch set but organizing around G (Locrian), presence of b2 (A♭) and b5 (D♭) above G.”
+
+Concise corrected read (for reference)
+- Mode/Center: G Locrian (parent collection A♭ major).
+- Hallmarks:
+  - i°: Gdim recurs and closes the progression.
+  - b6: E♭/G.
+  - b2: A♭/G.
+  - b5 present via D♭maj7/F.
+  - ii (Locrian’s “iii in A♭”): B♭m/F.
+- The persistent G bass and repeated G° underpin a Locrian center, not an A♭ major tonic.
+
+**Assistant - GLM 4.6 Thinking**
+
+Overview
+- Verdict: Correct
+- Overall score: 86/100 (Very good)
+
+Weighted scoring breakdown
+- Key/tonal center identification (30): 30/30
+  - Correctly establishes G as the tonal center (start/end on Gdim, persistent G pedal, bass emphasis on G with occasional F).
+- Mode determination (10): 10/10
+  - Correctly identifies the mode as G Locrian (7th mode of Ab major / relative to F natural minor).
+- Chord-function mapping (20): 12/20
+  - Gets the big picture right (Locrian tonic i°; other chords drawn from the same collection), but contains several mislabelings/contradictions in roman numerals within Locrian (see “Theoretical precision”).
+- Slash chords and pedal analysis (10): 9/10
+  - Good recognition of the G and F pedal effects and how slash chords color the mode; nice observation that many voicings are “slices” around the Gdim7 collection.
+- Cadence and tonal-center evidence (10): 10/10
+  - Persuasively argues non-functional/modal behavior and explains why Ab major or F minor aren’t the centers despite sharing the pitch set.
+- Clarity and structure (10): 9/10
+  - Well-organized, stepwise reasoning; easy to follow.
+- Concision and focus (5): 4/5
+  - Thorough but a bit longer than necessary; a tighter lead summary would help.
+- Theoretical precision (5): 2/5
+  - Several inaccuracies/confusions in roman-numeral labeling within Locrian and inconsistent chord-function statements.
+
+Strengths
+- Arrives at the correct conclusion (G Locrian) and clearly states it.
+- Accurately extracts the note pool (Ab major/F natural minor) and shows all chords are diatonic to it.
+- Strong justification of G as the tonal center (Gdim prominence, G pedal, start/end on Gdim, lack of functional V–I elsewhere).
+- Solid discussion of modal, non-functional character; good handling of slash-chord color and pedal tones.
+
+Areas to improve
+- Roman-numeral consistency within Locrian:
+  - Eb is scale-degree 6 (VI), not 5; calling Eb “v/bv” is incorrect in G Locrian.
+  - Db (scale-degree b5) should be labeled bV (Dbmaj7), not “IV (bIV)” or “bVI7.”
+  - Ab is II (major) in G Locrian; calling it “bII” is fine if you’re referencing G major as the notional baseline, but then be consistent in using that framework across all chords.
+- Avoid contradictory statements about the same chord’s function (e.g., Db variously labeled as bIV and bVI7).
+- When relating to parent key vs. mode, keep the frame fixed (either modal roman numerals from G or functional numerals from Ab/F) and note when you switch.
+
+Actionable suggestions
+- Adopt a consistent analysis frame for Locrian:
+  - G Locrian scale degrees: 1 G, 2 Ab (II), b3 Bb (iii), 4 C (iv), b5 Db (bV), b6 Eb (VI), b7 F (vii).
+  - Diatonic triads: i° (G-Bb-Db), II (Ab-C-Eb), iii (Bb-Db-F), iv (C-Eb-G), bV (Db-F-Ab), VI (Eb-G-Bb), vii (F-Ab-C).
+- Corrected functional labels for the given chords in G Locrian:
+  - Gdim = i°
+  - Eb/G = VI with 1 (G) in the bass (i.e., VI over tonic pedal; enharmonically first inversion of VI)
+  - Ab/G = II over tonic pedal (not a true inversion; G is not chordal)
+  - Bbm/F = iii over vii (Bbm/F)
+  - Dbmaj7/F = bVmaj7 over vii (Dbmaj7/F)
+- Keep the excellent note-pool check, then lead with a concise summary:
+  - “Mode: G Locrian (parent: Ab major). Evidence: i° emphasis (start/end), G pedal, all chords diatonic; non-functional/modal flow argues against Ab or F as centers.”
+
+Overall comment
+A convincing and musically insightful modal analysis that correctly lands on G Locrian. Tightening the roman-numeral consistency within Locrian and avoiding contradictory labels would lift this from very good to excellent.

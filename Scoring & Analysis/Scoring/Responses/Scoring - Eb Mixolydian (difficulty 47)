@@ -1,0 +1,973 @@
+**Assistant - GPT 5 High**
+
+Overview
+- Verdict: Correct
+- Overall score: 87/100 (Very good)
+
+Weighted scoring breakdown
+- Key/tonic identification (30): 30/30
+  - Correctly establishes Eb as the tonal center and keeps Eb-centric framing throughout.
+- Mode determination (10): 10/10
+  - Mixolydian is correctly justified via the persistent Db (b7) and absence of D natural; bVII→I color highlighted.
+- Chord-function mapping (20): 17/20
+  - Strong final mapping: Cm/Eb = vi6, G°/Db = iii°6/4, Fm/Eb = ii7 4/2, Db6 ≈ bVII(add6). Useful alternative view of G° as vii°/IV.
+  - Minor slips: early mislabel of Fm/Eb as “ii6/5,” and a momentary contradiction (“lacks the Eb”) before correcting to ii7 4/2.
+- Inversions and slash-chord handling (10): 8/10
+  - Correctly identifies G°/Db as 2nd inversion, Cm/Eb as 1st inversion, and Fm7/Eb as 3rd inversion; Db6 treated plausibly as add6 sonority.
+  - Some notation ambiguity around “Db6” (see precision notes).
+- Cadence/tonal-center evidence (10): 8/10
+  - Solid use of bVII→I and Eb emphasis; could be even stronger by explicitly tracing resolutions/voice-leading into Eb.
+- Clarity and structure (10): 8/10
+  - Organized into clear sections and reaches a coherent conclusion; a few meandering detours and self-corrections reduce crispness.
+- Concision and focus (5): 4/5
+  - Thorough and mostly on-task; a bit verbose given the target.
+- Theoretical precision (5): 2/5
+  - Notable issues:
+    - Misstates Db as “flat sixth degree” in Eb major (it is b7, not b6).
+    - “Leads to the Ab minor context” is misleading; G° (G–Bb–Db) is the diatonic vii° in Ab major (not minor).
+    - Neapolitan discussion conflates “Db6” (add6 sonority) with the classical N6 (bII6, first inversion triad); also mentions bVI = Cb in a confusing aside.
+
+Strengths
+- Arrives at the correct mode/tonic and states the key signature linkage (Eb mixolydian ≈ Ab major notes).
+- Accurately identifies and labels the diatonic collection for Eb mixolydian; correctly treats G° as iii° in this mode.
+- Provides credible alternative functional view (vii°/IV) for G°, showing theoretical versatility.
+- Properly interprets Fm/Eb as ii7 in third inversion and Cm/Eb as vi6.
+- Sensibly interprets Db chord as bVII(add6), aligning with mixolydian practice and supporting the modal cadence.
+
+Areas to improve
+- Interval naming: In Eb major, Db is b7 (not b6). Correct this to avoid undermining the modal argument.
+- Secondary-function clarity: If invoking vii°/IV, keep it in major-key terms and avoid “Ab minor context” unless you explicitly introduce mixture.
+- Neapolitan vs add6: Distinguish N6 (bII in first inversion) from “Db(add6)” in root position; “Db6” can be ambiguous in pop/jazz vs classical nomenclature.
+- Consistency in chord labeling: Avoid transient mislabels like “ii6/5” and contradictory statements (e.g., saying Fm/Eb “lacks Eb” when Eb is the bass/7th).
+- Evidence framing: Strengthen the case with an explicit pitch inventory check and a brief voice-leading/cadential snapshot (Db→Eb).
+
+Actionable suggestions
+- Correct the interval reference: “Db is b7 in Eb; absence of D natural supports mixolydian.”
+- When discussing G°, present both valid readings succinctly:
+  - Mixolydian: iii° (G–Bb–Db), 6/4 in the slash form.
+  - Tonal Eb major lens: vii°/IV leading to Ab.
+- Clarify the Db chord label:
+  - If you mean an add6 sonority: write “Db(add6)” and note it’s bVII(add6) in Eb mixo.
+  - If you mean a Neapolitan: specify “N6 (bII6)” and show it’s first inversion.
+- Maintain consistent inversion numerals:
+  - Cm/Eb = vi6; Fm7/Eb = ii7 4/2; G°/Db = iii° 6/4; Db(add6) = bVII(add6).
+- Lead with the answer, then the strongest evidence; trim exploratory detours.
+
+Suggested concise lead
+- “Key/Mode: Eb mixolydian. Evidence: persistent Db (b7) with no D♮; chords fit Eb mixo diatonically: I (Eb), vi6 (Cm/Eb), iii°6/4 (G°/Db), ii7 4/2 (Fm7/Eb), bVII(add6) (Db add6), with a typical bVII→I pull.”
+
+**Assistant - GPT 5 Medium**
+
+Overview
+- Verdict: Correct
+- Overall score: 73/100 (Good conclusion, but with several theoretical inaccuracies and inconsistencies)
+
+Weighted scoring breakdown
+- Key (tonal center) identification (30): 27/30
+  - Correctly identifies Eb as the center and consistently returns to Eb; minor early wavering (brief Eb minor speculation).
+- Mode determination (10): 9/10
+  - Concludes Eb Mixolydian and justifies via bVII (Db) and absence of D♮; good call.
+- Chord-function mapping (20): 11/20
+  - Final mapping is mostly right for Mixolydian (I, vi, iii°, ii, bVII), but the analysis contains several incorrect or contradictory function labels along the way.
+- Slash-chords, inversions, and pedal use (10): 7/10
+  - Sensible points about Eb pedal and how slash chords shape voice-leading; however, mislabels appear (e.g., ii6/4).
+- Tonal-center evidence and cadential logic (10): 7/10
+  - Good reliance on repeated Eb and bVII; could have been tighter by emphasizing the diatonic iii° and lack of any D♮-bearing dominant.
+- Clarity and structure (10): 7/10
+  - Understandable and with useful signposting, but sections repeat and the narrative backtracks.
+- Concision and focus (5): 3/5
+  - Some redundancy and meandering before committing to Mixolydian.
+- Theoretical precision (5): 2/5
+  - Several misstatements (see below) and inconsistent figured-bass usage.
+
+Strengths
+- Ends with the correct verdict: Eb Mixolydian.
+- Correctly highlights Db (bVII) as a key Mixolydian marker and notes the absence of D♮.
+- Recognizes that Gdim (G–Bb–Db) occurs and that it can function smoothly as a passing harmony between Cm/Eb and Fm/Eb.
+- Sensible intuition about Eb pedal tones created by the slash chords.
+
+Issues and inaccuracies (with corrections)
+- “Gdim/Db would function like a V7 chord of Eb, even though it lacks the root.” 
+  - Incorrect. V7 of Eb is Bb–D–F–Ab. Gdim (G–Bb–Db) shares only Bb and Db with Bbm7 and does not outline V7 without its root. It is not an incomplete dominant.
+- “Gdim… could imply vii°7/IV.”
+  - To tonicize IV (Ab), the leading-tone chord would require B♮ (G–B–D–F). The chord at hand contains Bb and Db, not B♮ or D♮, so this interpretation is not supported by pitch content.
+- “Gdim/Db… second inversion iii°6.”
+  - Mixed/incorrect inversion labeling. If you intend second inversion of a triad, use 6/4. Here, Gdim/Db is iii°6/4 in Eb Mixolydian (G–Bb–Db with Db in the bass).
+- “Fm/Eb suggests ii7 in third inversion” vs later “ii6/4.”
+  - Inconsistent. Fm/Eb is not ii6/4 (that would demand C in the bass). If the sonority truly contains Eb above, you could hear Fm7/Eb (ii7 in third inversion). Otherwise, best call it ii over a tonic pedal (Fm/Eb).
+- Early speculation about Eb minor
+  - G natural contradicts Eb natural minor (which has Gb). The presence of G immediately weakens an Eb minor hypothesis.
+
+What the analysis gets right (and could lean on more strongly)
+- Eb Mixolydian triads: I Eb, ii Fm, iii G°, IV Ab, v Bbm, vi Cm, bVII Db. Your set matches these: Eb, Cm/Eb (vi over I), Gdim/Db (iii°6/4), Fm/Eb (ii over I), Db6 (bVII with added 6=Bb). No D♮ appears anywhere.
+- The iii° (G–Bb–Db) is diatonic to Mixolydian but not to Ionian; that’s prime evidence against Eb major.
+- Ending on Eb and frequent Eb in the bass fortify the tonal center.
+
+Actionable suggestions
+- Pitch-check before assigning functions: verify every accidental against the proposed key/mode.
+- Keep inversion figures consistent:
+  - First inversion triad = 6; second inversion triad = 6/4. Don’t call a second inversion “6.”
+- Don’t assume unnotated chord tones:
+  - Fm/Eb is not automatically Fm7/Eb. If 7ths aren’t given, analyze the symbol as written (or as harmony-over-pedal).
+- Avoid “like V7 without the root” unless the remaining pitch-class set truly matches a dominant subset.
+- Make the modal case early and cleanly:
+  - Note that iii° and bVII are diatonic in Mixolydian and that no D♮ appears; therefore Ionian is unlikely.
+- Tighter structure:
+  - Lead with the conclusion, then present 2–3 decisive pieces of evidence, then a concise chord-by-chord mapping.
+
+Concise corrected mapping (for reference)
+- Eb: I
+- Cm/Eb: vi6 (or vi over I pedal)
+- Gdim/Db: iii°6/4 (smooth passing sonority between vi and ii)
+- Fm/Eb: ii over I pedal (if the 7th is present, ii7 in 3rd inversion)
+- Db6: bVII(add6)
+- Eb: I
+
+Overall: The response lands on the right key and mode with several good insights, but it would benefit from more rigorous pitch-checking, consistent inversion labeling, and fewer speculative/functionally incorrect detours.
+
+**Assistant - GPT 5 Low**
+
+Overview
+- Verdict: Correct
+- Overall score: 89/100 (Strong, with a few theoretical/clarity issues)
+
+Weighted scoring breakdown
+- Key identification accuracy (30): 30/30
+  - Clearly centers harmony on Eb; repeated Eb pedal identified.
+- Mode determination (10): 10/10
+  - Correctly concludes Mixolydian, supported by explicit Db (b7) and lack of D♮.
+- Chord-function mapping (20): 18/20
+  - Maps Fm (ii), Cm (vi), Db (bVII), and G° (iii°) appropriately to Eb Mixolydian.
+  - Minor slip: calls G° a “leading-tone diminished chord” (not accurate in Eb; G is not the leading tone to Eb or F).
+- Slash chords and pedal analysis (10): 8/10
+  - Correctly frames Cm/Eb and Fm/Eb as upper triads over an Eb pedal.
+  - Overstates Cm/Eb as “Ebmaj add9 add6” (no 9 present); Eb6(no5) is the cleaner equivalence.
+- Cadence and tonal-center evidence (10): 9/10
+  - Notes bVII → I (Db6 → Eb) Mixolydian cadence and Eb pedal; could more directly prioritize the positive evidence (presence of Db, G° diatonic).
+- Clarity and structure (10): 8/10
+  - Organized in sections and progresses toward a defensible conclusion; some meandering and self-contradictory detours.
+- Concision and focus (5): 3/5
+  - Repetitive and hedging at points (“It’s tricky!” / “I could say Eb major with bVII...”).
+- Theoretical precision (5): 3/5
+  - Minor inaccuracies: mislabeling G° as a “leading-tone diminished” chord; overstated chord extension (“add9”) on Cm/Eb.
+
+Strengths
+- Arrives at the correct tonic and mode and states them explicitly.
+- Solid grasp of Mixolydian signatures: bVII (Db) presence, absence of leading tone (D♮), and diatonic G° (iii°).
+- Good use of pedal-point thinking: upper triads over Eb pedal (Cm/Eb, Fm/Eb).
+- Recognizes bVII → I cadence and half-step bass motion (Db → Eb) as compelling Mixolydian cues.
+
+Areas to improve
+- Theoretical labeling:
+  - G° is iii° in Eb Mixolydian (and can be heard as vii°/Ab), but it is not a generic “leading-tone diminished chord” in this context.
+  - Cm/Eb = Eb6(no5) is precise; avoid implying an add9 that isn’t present.
+- Consistency and confidence:
+  - Avoid drifting into “Eb major (Ionian) with bVII” after assembling clear Mixolydian evidence.
+- Efficiency:
+  - Tighten the exposition; lead with the supported conclusion, then the key evidence.
+
+Actionable suggestions
+- When asserting “leading-tone” function, specify the target (e.g., G° = vii°/Ab) or avoid the label if the resolution isn’t literal.
+- Verify chord tones before naming extensions: Cm/Eb contains Eb–G–C (no F), so Eb6(no5) fits; “add9” does not.
+- Present the decisive evidence first:
+  - Presence of Db (b7), diatonic G° (iii°), Fm (ii), and bVII → I motion → Eb Mixolydian.
+- Provide a concise summary up front, e.g.:
+  - “Tonic: Eb. Mode: Mixolydian, evidenced by Db (b7), diatonic G°(iii°), Fm(ii), and bVII→I cadence; many chords sit over an Eb pedal.”
+
+Bottom line
+- Correct and well-argued overall; a few imprecisions and hedges keep it from the mid-90s.
+
+**Assistant - Grok 4 Fast Thinking**
+
+Overview
+- Verdict: Correct conclusion (Eb Mixolydian)
+- Overall score: 87/100 (Strong, with a few theoretical slips)
+
+Weighted scoring breakdown (100 total)
+- Key identification accuracy (30): 30/30
+  - Eb is clearly established as the tonic via frequency, opening/closing emphasis, and pedal tones.
+- Mode determination (10): 10/10
+  - Correctly identifies Mixolydian (b7 present: Db), and all chords fit the mode.
+- Chord-function mapping (20): 16/20
+  - Right idea overall (I, vi, iv, bVII), but a few mislabels: Gdim is iii° (not ♭vi°), and calling that move “chromatic” contradicts the diatonic Mixolydian analysis.
+- Slash chords and pedal analysis (10): 8/10
+  - Good recognition of the tonic pedal on Eb and Db under Gdim; minor confusion labeling the passing diminished as “chromatic.”
+- Cadence and tonal-center evidence (10): 7/10
+  - Db6 → Eb is aptly heard as bVII → I (Mixolydian hallmark), but referencing “V7-of-V” here is incorrect for Db6 → Eb in Eb.
+- Clarity and structure (10): 9/10
+  - Well organized with a logical step-by-step; easy to follow.
+- Concision and focus (5): 4/5
+  - Slightly long and includes speculative song references not needed for the conclusion.
+- Theoretical precision (5): 3/5
+  - Several small inaccuracies: misfunction of Gdim, “chromatic” labeling, and “Db as #5” in Ionian context.
+
+Strengths
+- Reaches the correct key and mode and explains why the major-I sound with a b7 (Db) points to Mixolydian.
+- Verifies diatonic membership of all sonorities in Eb Mixolydian (Eb, Cm, Fm, Gdim, Db6).
+- Sensibly contrasts Ionian vs Mixolydian by focusing on Db (b7) and the bVII → I motion.
+- Highlights the pedal/slash chord usage that reinforces Eb as the center.
+
+Areas to improve
+- Functional labels:
+  - Gdim is iii° in Eb Mixolydian, not ♭vi°. The bass Db in Gdim/Db is the scale-degree b7, not an inversion figure.
+  - The Db6 → Eb motion is bVII(add6) → I in Mixolydian; not V7-of-V.
+- Consistency of terminology:
+  - Avoid calling fully diatonic motion “chromatic.”
+  - In Ionian, Db is a b7 (not “#5 or altered”); be precise about which scale degree is affected.
+- Minor role/function phrasing:
+  - Describing Cm as “subdominant pull” is debatable; better to call it vi (submediant) functioning within a tonic prolongation when over an Eb pedal.
+
+Actionable suggestions
+- Use mode-consistent Roman numerals: I, vi(/I), iii°(/bVII), iv(/I), bVII(add6) → I.
+- When contrasting with Ionian, explicitly name the altered degree (b7 vs natural 7) rather than using “altered/#5.”
+- Drop the “V-of-V” idea here; instead, emphasize bVII → I as a classic Mixolydian cadence.
+- Keep the nice step-by-step structure, but trim speculative song references to tighten focus.
+
+Concise corrected mapping (within Eb Mixolydian)
+- Eb → Cm/Eb → Gdim/Db → Fm/Eb → Eb … → Db6 → Eb
+- Functions: I → vi(/I) → iii°(/bVII) → iv(/I) → I … → bVII(add6) → I
+
+Overall
+- A solid, correct modal identification with clear reasoning, marred only by a few mislabeled functions and inconsistent terminology.
+  
+**Assistant - Gemini 2.5 Pro**
+
+Overview
+- Verdict: Correct (Eb Mixolydian)
+- Overall score: 92/100
+
+Weighted scoring breakdown
+- Key identification accuracy (30): 29/30
+  - Strong case for Eb as tonal center via repeated Eb chords and Eb pedal. Minor early hedging (“Eb major key” before final modal conclusion).
+- Mode determination (10): 10/10
+  - Correctly identifies the b7 (Db) and concludes Mixolydian; validates with scale-tone check.
+- Chord-function mapping (20): 19/20
+  - Accurate roles: I (Eb), vi (Cm), ii (Fm), iii° (Gdim), bVII(add6) (Db6). Nice observation of Gdim → Fm voice-leading. Minor inconsistency calling Gdim “chromatic” earlier despite later noting it’s diatonic.
+- Slash chords and pedal analysis (10): 9/10
+  - Clear recognition of Eb pedal anchoring the harmony; sensible note on the lone Db bass creating pull. Could further link each slash-bass to stepwise bass-line design.
+- Cadence and tonal-center evidence (10): 9/10
+  - Tonal center evidence is strong (pedal, start/end on Eb). Could strengthen by noting the expected modal traits (absence of leading tone D, V likely minor).
+- Clarity and structure (10): 8/10
+  - Well-organized with clear sections; some repetitive “I’m now…” phrasing reduces crispness.
+- Concision and focus (5): 4/5
+  - Slightly verbose; could front-load the conclusion more directly.
+- Theoretical precision (5): 4/5
+  - Two small issues: calling Gdim/Db “chromatic” (it’s diatonic in Eb Mixolydian), and briefly framing the context as “Eb major” before finalizing Mixolydian.
+
+Strengths
+- Arrives at the correct key/mode and states it clearly.
+- Solid diatonic check against Eb Mixolydian; functional mapping is accurate.
+- Good use of pedal-point analysis to justify tonal center.
+- Sensible treatment of bVII(add6) as characteristic color in Mixolydian.
+
+Areas to improve
+- Avoid contradictory labels (diatonic vs chromatic) for the same chord.
+- Make the modal argument crisper by explicitly citing the absent D natural and the implication for a minor v (Bbm) rather than a major V.
+- Reduce repetitive meta language and lead with the conclusion.
+
+Actionable suggestions
+- Open with: “Key: Eb; Mode: Mixolydian. Evidence: Eb pedal/tonic focus + bVII (Db) and diatonic iii°.”
+- Replace “chromatic passing chord” with “diatonic diminished passing sonority” for Gdim/Db.
+- Add one compact chord-to-scale mapping line to show each chord is in Eb Mixolydian.
+
+Quick cross-check (Eb Mixolydian: Eb F G Ab Bb C Db)
+- Eb (I): Eb–G–Bb ✓
+- Cm/Eb (vi over I): C–Eb–G over Eb ✓
+- Fm/Eb (ii over I): F–Ab–C over Eb ✓
+- Gdim/Db (iii° over bVII): G–Bb–Db over Db ✓
+- Db6 (bVII add6): Db–F–Ab–Bb ✓
+
+Confidence: High
+
+**Assistant - Qwen3 235B 2507 Thinking**
+
+Overview
+- Verdict: Correct (Eb Mixolydian)
+- Overall score: 94/100 (Excellent)
+
+Weighted scoring breakdown
+- Key identification accuracy (30): 30/30
+  - Correctly identifies Eb as the tonal center, supported by start/end on Eb and frequency of Eb.
+- Mode determination (10): 10/10
+  - Correctly concludes Eb Mixolydian, with accurate scale tones (Eb F G Ab Bb C Db) and modal rationale.
+- Chord-function mapping (20): 19/20
+  - Accurate diatonic set and Roman-numeral mapping (I, ii, iii°, vi, bVII). Minor slip when describing an inversion detail for Gdim/Db (see precision).
+- Slash chords and pedal analysis (10): 8/10
+  - Correctly treats slash chords as inversions/pedal emphasis and keeps root-function analysis intact. Slight inversion detail error noted below.
+- Cadence and tonal-center evidence (10): 10/10
+  - Highlights the bVII → I (Db6 → Eb) resolution as a Mixolydian hallmark; strong centricity on Eb established.
+- Clarity and structure (10): 9/10
+  - Well organized with headings, table, and clear through-line from data → inference → conclusion.
+- Concision and focus (5): 4/5
+  - Thorough; a bit verbose with exploratory detours, but generally on-topic and purposeful.
+- Theoretical precision (5): 4/5
+  - One factual slip: calls Db “the 3rd” of Gdim when it is the 5th (G–Bb–Db). A couple of tentative digressions (e.g., enharmonic/diminished chord speculation) could be tighter.
+
+Strengths
+- Nails the correct mode (Eb Mixolydian) and explains why, using both pitch collection and harmonic function.
+- Precise diatonic inventory for Mixolydian; correctly identifies iii° (Gdim), ii (Fm), vi (Cm), and bVII (Db).
+- Solid recognition of the characteristic bVII → I cadence and the diminished iii° as distinct from major (Ionian).
+- Good handling of slash chords as bass-voice devices that do not alter chord roots/functions.
+
+Areas to improve
+- Inversion detail: Gdim/Db places the 5th (Db) in the bass, not the 3rd; keep interval labels consistent.
+- Avoid speculative enharmonic/diminished equivalences that aren’t directly applicable (e.g., conflating or loosely comparing unrelated dim7 sets).
+- “Why not Eb major?” rationale leans partly on absence of IV/V; absence alone isn’t decisive. Emphasize the positive evidence (flat 7th and iii°) instead.
+- Tighten early exploratory sections (minor-key detours) once Mixolydian evidence is established.
+
+Actionable suggestions
+- When labeling inversions, double-check chord member identities (root/3rd/5th) to avoid misstatements.
+- Center the argument on Mixolydian’s defining tones and functions:
+  - Flat 7 (Db) present and cadential (bVII → I).
+  - iii° (G–Bb–Db) occurs, which cannot be diatonic in Ionian.
+- Use a concise lead: “Key/Mode: Eb Mixolydian. Evidence: Eb-centric, scale = Eb–F–G–Ab–Bb–C–Db, diatonic iii° and bVII→I.”
+- Keep optional song references precise, or omit if not strictly reinforcing the analysis.
+
+Summary
+A clear, well-supported, and correct identification of Eb Mixolydian with strong functional evidence and solid diatonic mapping. Minor theoretical slips and some verbosity prevent a perfect score, but the analysis is musically sound and highly instructive.
+
+**Assistant - Qwen3 235B 2507**
+
+Overview
+- Verdict: Incorrect (tonic identified, mode misidentified)
+- Overall score: 58/100
+
+Weighted scoring breakdown
+- Key identification accuracy (30): 26/30
+  - Correctly centers the music on E♭ (starts/ends on E♭, bass pedal on E♭).
+  - However, conflates “key = E♭ major” with “mode,” missing the Mixolydian quality.
+- Mode determination (10): 0/10
+  - Fails to recognize E♭ Mixolydian despite the persistent D♭ (♭7) and total absence of D♮.
+- Chord-function mapping (20): 8/20
+  - Pros: Fm as ii and Cm as vi relative to E♭ are sensible; Db6 ultimately recognized as a flat-scale-degree chord moving to I.
+  - Cons: Labels Gdim as “iii° in E♭ major” (incorrect—Ionian’s iii is G minor); early mislabel of D♭ as ♭VI; meanders into unrelated reinterpretations.
+- Slash chords and pedal analysis (10): 8/10
+  - Good extraction of the bassline and identification of an E♭ pedal with brief D♭; sensible attention to inversions.
+- Cadence and tonal-center evidence (10): 7/10
+  - Correctly notes bVII→I (D♭→E♭) as a strong move, but misattributes it to “borrowed from minor” rather than a Mixolydian hallmark.
+- Clarity and structure (10): 5/10
+  - Thorough but meandering; multiple false starts and detours (e.g., augmented-sixth speculation) impede readability.
+- Concision and focus (5): 2/5
+  - Overlong with substantial digressions that don’t advance the core identification.
+- Theoretical precision (5): 2/5
+  - Several inaccuracies (e.g., “iii° in major,” interval confusion, German+6 content, equivalence claims) reduce rigor.
+
+Strengths
+- Correctly identifies E♭ as the tonal center via opening/closing chords and bass emphasis.
+- Ultimately recognizes D♭6 as a flat-scale-degree sonority and hears the D♭→E♭ motion as cadentially meaningful.
+- Careful attention to the written inversions and the role of the bass pedal (E♭).
+
+Areas to improve
+- Mode recognition: The consistent presence of D♭ (Gdim = G–B♭–D♭; D♭6; bass D♭) and the complete absence of D♮ strongly indicate E♭ Mixolydian, not Ionian. Treat bVII as modal (Mixolydian), not “borrowed from minor.”
+- Diatonic mapping consistency: In E♭ Ionian, iii is G minor (G–B♭–D), not G diminished. Calling Gdim “diatonic (iii°)” in E♭ major is incorrect; it is, however, diatonic in E♭ Mixolydian.
+- Avoid speculative detours: German augmented sixth and convoluted enharmonic re-labelings (e.g., “D♭6 ≡ B♭m7/C♭?”) are inapplicable here and obscure the simpler modal read.
+- Interval/theory slips: e.g., momentary claim “B♭–F is a diminished fifth” (it’s a perfect fifth), initial mis-ID of D♭ as ♭VI in E♭, and misattribution of bVII borrowing “from minor” instead of Mixolydian.
+
+Actionable suggestions
+- Establish the pitch set first: List the unique tones implied by the chords. Here they are E♭, F, G, A♭, B♭, C, D♭ (no D♮) → E♭ Mixolydian.
+- Check the 7th scale degree: If b7 appears repeatedly (D♭) and the leading tone (D♮) never appears, prefer Mixolydian over Ionian-with-mixture.
+- Validate each chord against the candidate mode:
+  - E♭ = I
+  - C minor/E♭ = vi over a tonic pedal (vi/E♭)
+  - Gdim/D♭ = iii° in second inversion (iii°6 4), diatonic in Mixolydian
+  - Fm/E♭ = ii over tonic pedal (ii/E♭)
+  - D♭6 = bVII6
+  - Cadence bVII → I is idiomatic in Mixolydian
+- Reserve chromatic-function labels (Neapolitan, augmented sixth) for when their defining intervals appear. Don’t introduce non-occurring accidentals.
+- Lead with the answer, then show two or three decisive pieces of evidence (tonic, scale-degree 7 quality, cadence), and only then add secondary details.
+
+**Assistant - Qwen3 Next 80B Thinking**
+
+Overview
+- Verdict: Incorrect (misses the Eb Mixolydian tonic/mode)
+- Overall score: 31/100
+
+Weighted scoring breakdown
+| Category | Weight | Score | Notes |
+|---|---:|---:|---|
+| Key (tonic) identification accuracy | 30 | 5 | Correct pitch collection (Ab major) but wrong tonal center; the progression clearly centers on Eb, not Ab. |
+| Mode determination | 10 | 0 | States Ionian (Ab major) instead of Eb Mixolydian (Eb-centered with b7 = Db). |
+| Chord-function mapping | 20 | 9 | All chords mapped diatonically to Ab major (parent scale) correctly, but the functional analysis is to the wrong tonic; misses the Mixolydian functions (I, vi6, iii°6/4, ii7 4/2, bVII(add6)). |
+| Slash-chords and pedal analysis | 10 | 5 | Accurately identifies inversions (e.g., Cm/Eb, Gdim/Db) and that Fm/Eb implies Fm7/Eb, but underplays the pervasive Eb pedal/center. |
+| Cadence and tonal-center evidence | 10 | 2 | Interprets Db6 → Eb as IV–V in Ab (half cadence) rather than bVII(add6) → I in Eb Mixolydian; overlooks start/end and repeated bass Eb as tonic evidence. |
+| Clarity and structure | 10 | 6 | Final formatted sections are clear; however, the reasoning meanders with self-corrections before settling. |
+| Concision and focus | 5 | 2 | Overly verbose with detours (interval counting digressions). |
+| Theoretical precision | 5 | 2 | Some interval confusion mid-stream (later corrected); several defensible chord-note identifications, but the central tonic/mode error is significant. |
+| Total | 100 | 31 |  |
+
+What it did well
+- Correctly enumerates the pitch set: C, Db, Eb, F, G, Ab, Bb (i.e., Ab major scale).
+- Accurately identifies chord tones for each symbol (e.g., Db6 = Db–F–Ab–Bb; Fm/Eb implies Fm7/Eb; Gdim/Db = G–Bb–Db in inversion).
+- Shows that the entire progression is diatonic to Ab major (the parent scale of Eb Mixolydian).
+
+Key issues
+- Misidentifies the tonal center: the progression begins, repeatedly returns to, and ends on Eb; many slash chords use Eb in the bass, strongly implying Eb as tonic.
+- Misreads the cadence: Db6 → Eb is archetypal bVII(add6) → I in Mixolydian, not IV → V in Ab (and there is no Ab tonic anywhere to confirm Ab as home).
+- Functional mapping is anchored to Ab major instead of Eb Mixolydian:
+  - Correct mapping in Eb Mixolydian:
+    - Eb = I
+    - Cm/Eb = vi6 (first inversion)
+    - Gdim/Db = iii°6/4 (second inversion)
+    - Fm/Eb = ii7 4/2 (Fm7 with the 7th in bass)
+    - Db6 = bVII(add6)
+- Overlooks the absence of an Ab tonic chord and any strong motion toward Ab, which weakens the Ab Ionian claim.
+
+Actionable suggestions
+- Prioritize tonic detection: weigh start/end chords, bass pedal tones, and points of repose. If everything gravitates to Eb, test Eb-centered modes first.
+- When pitch set matches a parent major scale but the center differs, consider modal analysis explicitly (e.g., “Eb Mixolydian = Ab major with Eb as tonic”).
+- Identify hallmark Mixolydian moves: bVII → I, minor v (if present), lack of a leading tone; here Db6 → Eb is a strong tell.
+- Use dual mappings to validate: map to Ab Ionian and Eb Mixolydian side-by-side, then compare which yields more convincing cadences/tonic emphasis.
+- Tighten exposition: avoid extended interval-count digressions; present notes, test tonics, test cadences, conclude.
+
+Concise corrected reading (for reference)
+- Scale/mode: Eb Mixolydian (Eb–F–G–Ab–Bb–C–Db).
+- Functions:
+  - Eb = I
+  - Cm/Eb = vi6
+  - Gdim/Db = iii°6/4
+  - Fm/Eb = ii7 4/2 (Fm7/Eb)
+  - Db6 = bVII(add6)
+- Cadence: Db6 → Eb = bVII(add6) → I (classic Mixolydian motion).
+- Center: Strong Eb pedal and terminal Eb confirm Eb as tonic.
+
+**Assistant - Qwen3 Next 80B**
+
+Overview
+- Verdict: Partially correct (tonal center = Eb), incorrect mode (should be Eb Mixolydian)
+- Overall score: 48/100 (Needs improvement)
+
+Weighted scoring breakdown
+- Key/tonal-center identification (30): 22/30
+  - Correctly centers on Eb (start/end on Eb, repeated returns). However, the analysis treats the collection as Eb major rather than Eb Mixolydian, despite clear evidence.
+- Mode determination (10): 0/10
+  - Fails to identify Mixolydian. The pervasive Db (b7) and total absence of D natural argue strongly for Mixolydian, not Ionian.
+- Chord-function mapping (20): 8/20
+  - Some diatonic functions are fine (Eb as I, Cm/Eb as vi6, Fm/Eb as ii7/Eb). Major misreads include treating Db as Neapolitan in Eb major and treating Gdim as non-diatonic instead of recognizing it as diatonic iii° in Mixolydian.
+- Slash chords and bass/pedal reasoning (10): 6/10
+  - Notices the bass toggling Eb–Db–Eb and inversion usage. Misses the hallmark bVII–I (Db→Eb) move of Mixolydian and over-frames Db as Neapolitan rather than bVII.
+- Cadence and tonal-center evidence (10): 6/10
+  - Uses beginning/ending on Eb as evidence. However, the claimed “Db6 → Eb = Neapolitan → I” is not the standard classical N6 function, and the more parsimonious read (bVII → I) is missed.
+- Clarity and structure (10): 4/10
+  - Meandering with frequent self-corrections and speculative detours (e.g., German +6, Db7(b5), ambiguous dominant extensions) that obscure the main argument.
+- Concision and focus (5): 2/5
+  - Overlong with multiple false starts; could be much tighter.
+- Theoretical precision (5): 0/5
+  - Several clear inaccuracies and contradictions (see below), including altered-extension confusion and incorrect functional claims.
+
+Strengths
+- Correctly emphasizes Eb as the tonal center (start/end, recurrence).
+- Sensibly identifies Cm/Eb as a first-inversion vi (or an Eb6 without 5th, though that’s less helpful).
+- Eventually recognizes Fm/Eb as Fm7/Eb (ii7 in Eb, third inversion), which is a reasonable interpretation.
+- Observes the salient bass neighbor motion Eb–Db–Eb.
+
+Key errors and issues (high impact)
+- Mode oversight: Db (b7) appears repeatedly (Gdim/Db, Db6), and D natural never appears. This is textbook Eb Mixolydian evidence; Ionian would require D natural.
+- Misuse of “Neapolitan”: Db is bII in Eb major, but the normative N6 resolves to V (often via I6), not straight to I. Here, Db6 → Eb is more straightforwardly bVII(6) → I, the quintessential Mixolydian cadence.
+- Gdim misread: Gdim (G–Bb–Db) is diatonic iii° in Eb Mixolydian. Calling it “not diatonic to Eb” and fishing for borrowed-chord explanations is unnecessary.
+- Confused chord-ID and extensions:
+  - Early on, mislabels and second-guesses Fm/Eb with dominant-9/#9 language; also momentarily states the #9 of Eb is F natural (it’s F#).
+  - Calls “Db6 → Eb” “IV6 → I” at one point (IV in Eb is Ab, not Db), then pivots to Neapolitan; contradictory.
+- Unnecessary detour to F minor: Interim hypothesis of F minor contradicts the clear cadential focus on Eb and the lack of V of Fm.
+
+Actionable suggestions
+- Run a pitch inventory first: Eb, F, G, Ab, Bb, C, Db all appear; D natural does not. That is Eb Mixolydian. Use the presence/absence of characteristic tones (b7 vs 7) to choose mode.
+- Favor simplest functional reads:
+  - Db → Eb = bVII → I (Mixolydian hallmark), not Neapolitan → I.
+  - Gdim/Db = G° in second inversion (iii°6 4) and is diatonic to Eb Mixolydian.
+  - Fm/Eb = ii7 in third inversion (ii7 4 2), fully diatonic to both Ionian and Mixolydian; here it supports the bVII ↔ I framework.
+- Avoid speculative labels that introduce tones not present (e.g., Eb7(b9)/#9) unless you can point to those alterations explicitly in the chord.
+- Tighten the write-up: State tonic and mode early, then give one clean Roman-numeral line and a brief justification.
+
+Quick corrected reading (for reference)
+- Scale: Eb Mixolydian = Eb–F–G–Ab–Bb–C–Db (b7 present, no D natural).
+- Simplified progression: Eb – Cm/Eb – Gdim/Db – Fm/Eb – Db6 – Eb.
+- Functions in Eb Mixolydian:
+  - Eb = I
+  - Cm/Eb = vi6 (diatonic)
+  - Gdim/Db = iii°6 4 (diatonic diminished triad, 2nd inversion)
+  - Fm/Eb = ii7 4 2 (third inversion)
+  - Db6 = bVII(add6)
+  - Eb = I
+- Cadential color: bVII(6) → I and pervasive b7 (Db) clearly signal Mixolydian.
+
+**Assistant - Qwen3 Max**
+
+Overview
+- Verdict: Correct (E♭ Mixolydian)
+- Overall score: 81/100 (Good)
+
+Weighted scoring breakdown
+- Key identification accuracy (30): 30/30
+  - Correctly identifies E♭ as the tonal center (starts/ends on E♭; heavy emphasis on E♭).
+- Mode determination (10): 10/10
+  - Mixolydian is the cleanest diatonic fit given the presence of D♭ (♭7), G° (iii°), Fm (ii), and D♭ as ♭VII (here with add6).
+- Chord-function mapping (20): 17/20
+  - Accurately maps the chords to E♭ Mixolydian:
+    - I: E♭
+    - ii: Fm
+    - iii°: G°
+    - vi: Cm
+    - ♭VII(add6): D♭(add6)
+  - Minor deductions for earlier detours and not labeling inversions/functions for the slash chords.
+- Slash chords and pedal analysis (10): 5/10
+  - Missed the strong E♭ pedal implication (Cm/E♭, Fm/E♭); misinterpreted G°/D♭ inversion (it’s second inversion of G°).
+- Cadence and tonal-center evidence (10): 8/10
+  - Solid use of start/end on E♭ and prevalence of E♭; could strengthen by highlighting the modal cadence flavor (I–♭VII–I) and pervasive E♭ pedal.
+- Clarity and structure (10): 6/10
+  - The argument meanders with multiple false starts; clarity improves once Mixolydian is considered.
+- Concision and focus (5): 3/5
+  - Thorough but longer than needed due to exploratory detours.
+- Theoretical precision (5): 2/5
+  - Several inaccuracies (see below), later self-corrected in places.
+
+Notable inaccuracies and slips
+- “F minor is not in E♭ major”: Incorrect. In E♭ major, ii is F minor (F–A♭–C).
+- Harmonic vs melodic minor: At one point implies E♭ harmonic minor contains C♮ (it does not; it has C♭). Later self-corrected.
+- Inversions/labels:
+  - G°/D♭ is second inversion of G° (D♭ is the fifth), not “D♭ diminished in first inversion” nor “D♭7♭5 without the 7th.”
+  - Claiming G°/D♭ is enharmonic to A° or B° is incorrect.
+- Some scattered enharmonic/functional speculation that isn’t supported by pitch content.
+
+Strengths
+- Arrives at the correct conclusion (E♭ Mixolydian) and clearly articulates why the mode fits.
+- Properly identifies the diatonic collection E♭–F–G–A♭–B♭–C–D♭ and checks each chord against it.
+- Recognizes the diagnostic presence of ♭VII (D♭) and iii° (G°) as strong Mixolydian indicators.
+- Acknowledges the frequent E♭ tonic and boundary placement (start/end on E♭).
+
+Areas to improve
+- Reduce early-key detours and avoid incorrect dismissals (e.g., Fm in E♭ major).
+- Handle slash chords precisely:
+  - Cm/E♭ = first inversion of vi (Cm6/3)
+  - Fm/E♭ = ii over tonic pedal (strong E♭ pedal implication)
+  - G°/D♭ = iii° in second inversion (6/4)
+- Avoid speculative relabels that introduce tones not present (e.g., D♭7♭5 without the 7th).
+- Cleanly distinguish modal vs tonal minor practices when comparing alternatives.
+
+Actionable suggestions
+- Lead with the diatonic test for the candidate mode: list the mode’s scale, build triads, and verify each chord (including extensions like add6).
+- Explicitly note the E♭ pedal created by slash chords (…/E♭) to reinforce tonic emphasis and the modal flavor.
+- When discussing inversions, name them unambiguously (e.g., iii°6/4 for G°/D♭).
+- Trim speculative pathways; once Mixolydian cleanly accounts for all chords, consolidate and present the case succinctly.
+
+Quick validated mapping (E♭ Mixolydian: E♭ F G A♭ B♭ C D♭)
+- E♭ = I
+- Cm/E♭ = vi in first inversion (vi6/3)
+- Gdim/D♭ = iii° in second inversion (iii°6/4)
+- Fm/E♭ = ii over tonic pedal (ii/1)
+- D♭6 = ♭VII(add6), all chord tones (D♭–F–A♭–B♭) are diatonic
+
+Bottom line
+- Conclusion is correct and well-motivated by the chord set, but the path includes several theoretical missteps and inversion/slash-chord handling issues. Tightening the analysis and sharpening theoretical accuracy would lift this from good to excellent.
+
+**Assistant - Gemini 2.5 Flash Thinking**
+
+Overview
+- Verdict: Incorrect
+- Overall score: 52/100 (Needs improvement)
+
+Weighted scoring breakdown
+- Key identification accuracy (30): 27/30
+  - Correctly centers on Eb as the tonic and references beginning/ending on Eb. However, it doesn’t leverage the pitch-content evidence that would separate Ionian vs. Mixolydian when Db is present throughout.
+- Mode determination (10): 1/10
+  - Mixolydian is the correct mode; the response ultimately concludes “Eb major with Aeolian borrowing.” It briefly entertains Mixolydian but does not adopt it.
+- Chord-function mapping (20): 7/20
+  - Correct that Eb, Fm, and Cm can function as I–ii–vi with Eb as center, but misreads the critical chords for this passage:
+    - Db6 is treated as borrowed bVII from Aeolian; in Eb Mixolydian, Db (VII) is diatonic, and an added-6 (Bb) remains in-key.
+    - Gdim/Db (G–Bb–Db over Db) is labeled non‑diatonic/puzzling; in Eb Mixolydian, Gdim is the iii° triad and, over Db, is its second inversion (or analyzable as vii°/IV), i.e., fully diatonic.
+- Slash chords and pedal analysis (10): 2/10
+  - Mentions slash chords but doesn’t capitalize on them as inversions/voice-leading evidence. Gdim/Db is precisely an inversion that argues for Db’s diatonic status in Mixolydian.
+- Cadence and tonal-center evidence (10): 6/10
+  - Provides some tonic-centering evidence (start/end on Eb), but does not marshal characteristic-mode evidence (persistent Db, absence of D♮, lack of a strong leading-tone function) that would clinch Mixolydian.
+- Clarity and structure (10): 6/10
+  - Structured in sections, but meanders and repeats (“Final Mode Assessment,” “Concluding the Analysis,” then more “Determining Key and Mode”), creating internal contradictions.
+- Concision and focus (5): 2/5
+  - Verbose and circular; repeats points without converging promptly on a single, justified conclusion.
+- Theoretical precision (5): 1/5
+  - Conflates modal mixture with true modal centering. Claims Fm and Cm imply Aeolian borrowing (they are diatonic to both Eb Ionian and Eb Mixolydian). Misidentifies Gdim/Db as non‑diatonic and as a “surrogate dominant to Cm,” which is not supported by pitch content or common-function practice here.
+
+Strengths
+- Correctly identifies Eb as the tonal center.
+- Notices the presence of bVII (Db) and recognizes its modal significance, at least provisionally.
+- Attempts to account for non-Ionian color via modal borrowing.
+
+Areas to improve
+- Commit to a single, well-supported mode decision; bVII as a stable harmony strongly signals Mixolydian when D♮ is absent.
+- Do not treat Db (VII) and Gdim (iii°) as “borrowed” in a context where they are diatonic to Eb Mixolydian.
+- Avoid attributing Fm and Cm to Aeolian mixture; these chords are diatonic to Eb major and Eb Mixolydian, so they don’t evidence Aeolian borrowing.
+- Correct the function of Gdim/Db: it is diatonic in Eb Mixolydian (iii° in 2nd inversion) and can also be read as vii°/IV, not a surrogate V of Cm.
+- Reduce redundancy and contradictions across sections; lead with the supported conclusion.
+
+Actionable suggestions
+- Start by listing the pitch set of Eb Mixolydian (Eb–F–G–Ab–Bb–C–Db) and test every chord against it. If all target sonorities (Db6, Gdim/Db, Cm/Eb, Fm) fit, prefer Mixolydian over “major with borrowing.”
+- Provide clear Roman numerals in the correct mode:
+  - Eb = I, Fm = ii, Cm/Eb = vi6, Db6 = VII(add6), Gdim/Db = iii°6/4 (or vii°/IV over Db).
+- Use characteristic-tone diagnostics for mode:
+  - Mixolydian: stable b7 (Db), lack of leading tone (D♮), and typical VII → I or bVII → I motions.
+  - Ionian: presence of D♮ and functional V (Bb major or Bb7) resolving to I.
+- When encountering slash chords, first decide if they are simple inversions (e.g., Gdim/Db) before labeling them as chromatic/borrowed.
+- Tighten the write-up: state the conclusion up front (“Key: Eb, Mode: Mixolydian”), then give two to three decisive pieces of evidence (Db as diatonic b7, Gdim as iii°, no D♮), and only then add any secondary color (e.g., how Db6 resolves).
+
+**Assistant - Gemini 2.5 Flash**
+
+Overview
+- Verdict: Incorrect (should be Eb Mixolydian)
+- Overall score: 31/100 (Poor)
+
+Weighted scoring breakdown
+- Key (tonal center) identification (30): 12/30
+  - Correctly senses Eb as the tonal center (start/end on Eb), but asserts the key as Eb minor rather than the correct Eb Mixolydian.
+- Mode determination (10): 0/10
+  - Misses Mixolydian despite listing the exact Mixolydian pitch set.
+- Chord-function mapping (20): 3/20
+  - Roman numerals/functions are largely inconsistent or incorrect for the claimed key; no correct Mixolydian mapping presented.
+- Slash-chord/pedal interpretation (10): 1/10
+  - Little to no treatment of the slash chords as inversions or tonic pedal behavior.
+- Cadence/tonal-center evidence (10): 5/10
+  - Cites beginning/ending on Eb and assembles the pitch collection; however, the interpretation is contradictory.
+- Clarity and structure (10): 6/10
+  - Well formatted (table/sections), but riddled with contradictory labels and conclusions.
+- Concision and focus (5): 3/5
+  - Overlong and meandering; multiple speculative alternatives muddy the result.
+- Theoretical precision (5): 1/5
+  - Multiple theoretical errors (see Error log), including mislabeling scales and functions.
+
+Key issues and why it’s wrong
+- The pitch set they extract—Eb, F, G, Ab, Bb, C, Db—is exactly Eb Mixolydian (major 3rd with a flat 7). They then misidentify it as Eb natural minor (which would be Eb, F, Gb, Ab, Bb, Cb, Db).
+- They repeatedly treat Eb major as “I (Phrygian)”—impossible, since Phrygian’s tonic triad is minor.
+- They invoke “V (harmonic minor)” for Eb major in an Eb-minor context—V in Eb harmonic minor is Bb major/Bb7, not Eb major.
+- Several diatonic claims contradict their own chosen key:
+  - Fm labeled “II minor” in Eb minor—diatonically, ii in Eb natural minor is F diminished, not F minor.
+  - Cm is treated as VI in Eb minor—diatonically, VI in Eb natural minor is Cb major, not C minor.
+- Misapplied concepts: “Picardy third” for a progression that persistently uses a major tonic; Dorian borrowing is suggested without the mode-defining raised 6 of Eb Dorian (and with no D natural present).
+
+What the correct analysis should look like (concise reference)
+- Mode: Eb Mixolydian (Eb F G Ab Bb C Db)
+- Diatonic triads: I (Eb), ii (Fm), iii° (G°), IV (Ab), v (Bbm), vi (Cm), bVII (Db)
+- Given chords map cleanly in Eb Mixolydian:
+  - Eb = I
+  - Cm/Eb = vi in first inversion (vi6) or vi over tonic pedal
+  - Gdim/Db = iii° over Db (second inversion of iii° or iii°/bVII pedal)
+  - Fm/Eb = ii over tonic pedal (not an inversion; a pedal-point slash)
+  - Db6 = bVII(add6) (diatonic to Mixolydian)
+- The repeated Eb in bass and returns to Eb confirm Eb as tonic; the presence of Db (b7) with a major 3rd (G) identifies Mixolydian, not minor.
+
+Strengths
+- Correctly identifies Eb as the tonal center by start/end emphasis.
+- Accurately lists the pitch-class collection from the chords (which perfectly matches Eb Mixolydian).
+- Organized presentation with an attempt at functional labeling.
+
+Areas to improve
+- Do not conflate minor modes/scales with the observed major 3rd; recognize that major 3rd + flat 7 implies Mixolydian.
+- Avoid contradictory roman-numeral options spanning incompatible systems (Phrygian, minor, harmonic minor) without settling on one coherent framework.
+- Validate diatonic claims against the chosen scale: if you pick Eb minor, ensure the chords actually fit Eb minor (they don’t: Fm and Cm are non-diatonic there).
+- Use slash-chord context (tonic pedal and inversions) to reinforce mode/center rather than obscure it.
+- Reserve terms like “Picardy third” for their proper context (final-major chord in an otherwise minor piece), which is not the case here.
+
+Actionable suggestions
+- Start from the collected pitch set:
+  - If the tonic is Eb and the 3rd is G (major), check the 7th. Db (flat 7) ⇒ Mixolydian. If D natural (major 7) ⇒ Ionian. If Cb/Gb ⇒ minor/Aeolian. This fast filter would have yielded Eb Mixolydian.
+- Re-map the chords with a single, consistent framework (Eb Mixolydian):
+  - Eb (I), Cm/Eb (vi6), G°/Db (iii°6/4), Fm/Eb (ii over tonic pedal), Db6 (bVII6(add6)).
+- Explain the slash chords as a tonic pedal (Eb held in the bass) rather than forcing minor-key functions.
+- Eliminate incompatible labels (e.g., “I (Phrygian)”) and unsupported borrowings (Dorian, Picardy third) unless specific tones/cadences justify them.
+- Provide a brief cadence/center summary:
+  - “Frequent I, persistent tonic pedal on Eb, and bVII (Db) with a major 3rd (G) = Eb Mixolydian.”
+
+Summary
+- Despite finding the correct pitch collection and tonic, the analysis fails to recognize the defining Mixolydian quality (major 3rd + flat 7) and instead forces a minor-key narrative with multiple theoretical inconsistencies.
+
+Final scores by category
+- Key (center) identification: 12/30
+- Mode determination: 0/10
+- Chord-function mapping: 3/20
+- Slash-chord/pedal analysis: 1/10
+- Cadence/tonal evidence: 5/10
+- Clarity/structure: 6/10
+- Concision/focus: 3/5
+- Theoretical precision: 1/5
+- Total: 31/100
+  
+**Assitant - Kimi K2**
+
+Overview
+- Verdict: Correct
+- Overall score: 94/100 (Excellent)
+
+Weighted scoring breakdown
+
+| Category                             | Weight | Score | Notes |
+|--------------------------------------|:------:|:-----:|-------|
+| Key identification accuracy          | 30     | 30    | Correctly centers on Eb; starts/ends on Eb. |
+| Mode determination                   | 10     | 10    | Identifies Mixolydian via b7 (Db) replacing D♮. |
+| Chord-function mapping               | 20     | 17    | Chords spelled and grouped well; would benefit from Roman-numeral functions in Eb Mixolydian. |
+| Slash chords & pedal analysis        | 10     | 8     | Accurately parses slash chords; could highlight the effective Eb pedal created by repeated “/Eb” chords. |
+| Cadence & tonal-center evidence      | 10     | 9     | Notes start/end on Eb; could call out bVII (Db6) → I as a characteristic Mixolydian cadence. |
+| Clarity & structure                  | 10     | 10    | Clear stepwise layout; easy to follow. |
+| Concision & focus                    | 5      | 5     | Tight and on-topic. |
+| Theoretical precision                | 5      | 5     | Correct pitch set; no spurious accidentals; correct chord spellings. |
+
+Strengths
+- Gets the right call: Eb Mixolydian, justified by the exact pitch collection Eb–F–G–Ab–Bb–C–Db.
+- Clean, step-by-step method: chord inventory → unique notes → mode → tonal center.
+- Correct chord spellings and slash-chord parsing (e.g., Gdim/Db; Db6 = Db–F–Ab–Bb).
+- Sensible tonal-center argument (start/end on Eb; presence of b7).
+
+Areas to improve
+- Provide Roman-numeral functions in Eb Mixolydian to deepen the analysis:
+  - Eb = I
+  - Cm/Eb = vi6
+  - Gdim/Db = iii°6/4
+  - Fm/Eb = ii over tonic pedal (not a standard inversion)
+  - Db6 = bVIIadd6
+- Highlight the characteristic Mixolydian motion bVII → I (Db6 → Eb) at the end.
+- Note the effective Eb pedal in the bass created by repeated “/Eb” chords, reinforcing the tonic.
+- Briefly contrast with “Eb major with borrowed bVII”: the presence of Gdim (with Db) and total absence of D♮ across the progression favor a consistent Mixolydian reading.
+
+Actionable suggestions
+- Add a one-line Roman-numeral pass: I – I – vi6 – vi6 – iii°6/4 – ii/Eb (tonic pedal) – I – I – vi6 – vi6 – I – I – bVIIadd6 – I.
+- Explicitly state: “All chords are diatonic to Eb Mixolydian; no D natural appears; Db shows up multiple times (Gdim/Db, Db6).”
+- Call out the closing bVII → I move as a hallmark Mixolydian cadence and the Eb bass pedal effect through many bars.
+- Optionally include the scale for clarity: Eb Mixolydian = Eb F G Ab Bb C Db.
+
+**Assitant - GPT 5 Chat**
+
+Overview
+- Verdict: Incorrect mode (should be Eb Mixolydian); tonic center correctly identified as Eb
+- Overall score: 62/100 (Mixed: clear writing and tonic evidence, but key modal and functional errors)
+
+Weighted scoring breakdown
+- Key (tonic) identification (30): 26/30
+  - Correctly centers the music on Eb with solid tonic-pedal observations.
+- Mode determination (10): 0/10
+  - Concludes Ionian (major) instead of the correct Eb Mixolydian.
+- Chord-function mapping (20): 6/20
+  - Significant mislabels:
+    - Gdim is not vii° in Eb major; G–Bb–Db is iii° in Eb Mixolydian (and vii° of Ab, the parent).
+    - Fm is ii in Eb major/mixolydian, not iv (iv would be Ab minor in Eb major; Ab major in Mixolydian).
+    - “Cm/Eb as vi in rootless 1st inversion” is contradictory terminology.
+- Slash chords and pedal analysis (10): 7/10
+  - Correctly notes tonic pedal (Eb) under Cm/Eb and Fm/Eb; however, supporting functions are mislabeled (e.g., calling Fm “iv”).
+- Cadence and tonal-center evidence (10): 8/10
+  - Good emphasis on tonic centricity (Eb repetition, pedal). No cadence analysis, but not essential here.
+- Clarity and structure (10): 9/10
+  - Well organized (steps, summary) and easy to read.
+- Concision and focus (5): 5/5
+  - Succinct, stays on task.
+- Theoretical precision (5): 1/5
+  - Multiple theory slips (vii° identity, bVI vs bVII, misapplied mixture, inconsistent inversion terminology).
+
+Strengths
+- Correctly identifies Eb as the tonal center and explains the role of the tonic pedal.
+- Notes how slash chords contribute to tonic prolongation.
+- Clear, readable structure that guides the reader through the reasoning.
+
+Key issues that led to the wrong verdict
+- Missed the characteristic flat-7 (Db) that appears twice (Gdim/Db and Db6), which strongly signals Mixolydian.
+- Misidentified Db6 as “♭VI” and “borrowed from the parallel minor.” In Eb, Db is ♭VII; this is classic Mixolydian mixture, not parallel minor bVI.
+- Treated Gdim as vii° of Eb major; the diatonic vii° in Eb major is D–F–Ab (Ddim), not G–Bb–Db.
+- Labeled Fm as “iv,” conflating Eb minor practice while concluding Ionian.
+
+Actionable suggestions
+- First test for modal color tones:
+  - Is scale-degree 7 lowered? If yes (Db here), consider Mixolydian before invoking mixture.
+- Audit each non-diatonic chord carefully by scale degrees:
+  - In Eb Ionian: Db is ♭VII (modal, not parallel minor bVI), and Gdim is not diatonic.
+  - In Eb Mixolydian: Db (♭VII) and Gdim (iii°) are both diatonic.
+- Verify Roman numerals and inversion labels against actual pitch content:
+  - Avoid terms like “rootless first inversion”; use precise inversion or “over tonic pedal.”
+- When mixture is invoked, specify the source mode accurately (e.g., “♭VII from Mixolydian”), and reserve “parallel minor” for changes that actually match that collection (e.g., b3, b6, b7 with appropriate spellings).
+
+Corrected interpretation (for reference)
+- Mode: Eb Mixolydian (Eb–F–G–Ab–Bb–C–Db)
+- Diatonic fit:
+  - Eb: I
+  - Cm/Eb: vi6 (first inversion) over tonic pedal
+  - Gdim/Db: iii°6/4 (G–Bb–Db over Db)
+  - Fm/Eb: ii over tonic pedal (slash chord, not a true inversion)
+  - Db6: ♭VII(add6), fully diatonic to Eb Mixolydian
+- Evidence:
+  - Repeated presence of Db (♭7) with no D natural
+  - All chords fit the Eb Mixolydian collection cleanly
+  - Tonic emphasis via Eb pedal and frequent returns to Eb
+
+In short: Strong sense of Eb, but the systematic presence of Db and the diatonic role of Gdim point to Eb Mixolydian, not Eb Ionian with ad hoc borrowing.
+
+**Assitant - DeepSeek V3.2 Thinking**
+
+Overview
+- Verdict: Correct
+- Overall score: 90/100 (Strong)
+
+Weighted scoring breakdown
+- Key identification accuracy (30): 30/30
+  - Correctly identifies Eb as the tonal center.
+- Mode determination (10): 10/10
+  - Properly concludes Mixolydian based on the flat 7 (Db) and diatonic triads within Eb Mixolydian.
+- Chord-function mapping (20): 19/20
+  - Sound mapping of I (Eb), ii (Fm), iii° (Gdim), vi (Cm), and VII (Db); recognizes bVII → I motion. Minor missed opportunities to label specific inversions/functions.
+- Slash chords and pedal analysis (10): 6/10
+  - Notes that slash chords indicate inversions “generally,” but incorrectly calls Fm/Eb a first-inversion Fm (Eb is not a chord tone of Fm). Misses the tonic-pedal perspective.
+- Cadence and tonal-center evidence (10): 9/10
+  - Uses pitch-class collection and bVII → I well; could more explicitly emphasize the repeated Eb bass/pedal and absence of D natural as decisive evidence.
+- Clarity and structure (10): 9/10
+  - Logical, well-sequenced reasoning; easy to follow.
+- Concision and focus (5): 4/5
+  - Slightly verbose with some repetition, but stays on target.
+- Theoretical precision (5): 3/5
+  - Main slip: mislabeling Fm/Eb as an inversion; blanket statement that all slash chords here are inversions is inaccurate. Otherwise solid.
+
+Strengths
+- Correct conclusion (Eb Mixolydian) with convincing evidence.
+- Accurate pitch collection: Eb, F, G, Ab, Bb, C, Db (i.e., D♭ instead of D♮).
+- Correct diatonic triads in Eb Mixolydian (I, ii, iii°, IV, v, vi, VII) and recognition that v is minor.
+- Sensible functional read: Gdim fits as iii°, Db6 functions as bVII(add6) resolving to I.
+- Good grasp of the characteristic bVII → I cadence and its stylistic context.
+
+Areas to improve
+- Inversion accuracy: Fm/Eb is not an inversion (Eb is not in the Fm triad). It’s Fm over a tonic pedal Eb.
+- Overgeneralization: “The bass notes … indicate inversions” is not true for all slash chords here (e.g., Fm/Eb).
+- Missed specificity: Could explicitly label Gdim/Db as iii°6/4 and Cm/Eb as vi6 to strengthen the analysis.
+- Evidence emphasis: The absence of D♮ (and presence of D♭) could be highlighted more directly as the mode-defining fact, alongside the frequent Eb in the bass.
+
+Actionable suggestions
+- Correct the slash-chord taxonomy:
+  - Cm/Eb = vi6 (first inversion).
+  - Gdim/Db = iii°6/4 (second inversion).
+  - Fm/Eb = ii over a tonic pedal (not an inversion); describe as ii over I pedal or as a polychordal/compound sonority.
+- Lead with the decisive evidence:
+  - Pitch set matches Eb Mixolydian exactly (flat 7 = Db).
+  - Functional cadence bVII (Db[6]) → I (Eb).
+  - Prevalent Eb in the bass creating a tonic pedal through many measures.
+- Provide a concise Roman-numeral snapshot:
+  - Eb (I) | Eb (I) | Cm/Eb (vi6) | Cm/Eb (vi6) | Gdim/Db (iii°6/4) | Fm/Eb (ii over I pedal) | Eb (I) | Eb (I) | Cm/Eb (vi6) | Cm/Eb (vi6) | Eb (I) | Eb (I) | Db6 (VIIadd6) | Eb (I).
+- Tighten the exposition: state “Eb Mixolydian” upfront, then give the 2–3 key proofs (pitch set, iii° and VII usage, bVII → I), followed by any nuance.
+
+**Assistant - DeepSeek V3.2**
+
+Overview
+- Verdict: Correct final answer (Eb Mixolydian)
+- Overall score: 83/100 (Good)
+
+Weighted scoring breakdown
+- Key identification accuracy (30): 30/30
+  - Correctly identifies Eb as the tonal center and treats the progression as Eb-based throughout.
+- Mode determination (10): 10/10
+  - Justifies Mixolydian via the bVII (Db) and confirms all chords fit Eb Mixolydian.
+- Chord-function mapping (20): 13/20
+  - Correct: Eb = I; Cm/Eb = vi6; Fm = ii.
+  - Issues:
+    - Gdim/Db is called “vii° in Eb major” and “first inversion,” but in Eb major the vii° is D°; G° is not diatonic. In Eb Mixolydian, G° is iii°, and with Db in the bass it’s iii°6/4 (second inversion), not first inversion.
+    - Fm/Eb is labeled “ii6,” but Eb isn’t a chord tone of Fm; it’s ii over a tonic pedal, not an inversion.
+- Slash chords and pedal analysis (10): 6/10
+  - Notes some inversions correctly (Cm/Eb), but misses the broader Eb pedal concept across Cm/Eb and Fm/Eb; misidentifies Fm/Eb as an inversion rather than ii over I pedal.
+- Cadence and tonal-center evidence (10): 9/10
+  - Correctly highlights bVII–I cadence (Db → Eb), a hallmark Mixolydian move. Could further emphasize the absence of V (Bb major) and any leading tone (D natural).
+- Clarity and structure (10): 9/10
+  - Well organized, stepwise reasoning; easy to follow.
+- Concision and focus (5): 4/5
+  - Thorough and mostly focused; minor detours are still on-topic.
+- Theoretical precision (5): 2/5
+  - Several theoretical slips: inversion labeling (Gdim/Db, Fm/Eb), misnaming G° as vii° in Eb major, and under-specified chord spelling for Db6 (omits Ab).
+
+Strengths
+- Arrives at the correct key and mode, with a clear rationale centered on bVII–I.
+- Verifies diatonic compatibility of all chords with Eb Mixolydian.
+- Sensibly considers and dismisses Eb minor with concrete pitch-set reasoning (G natural, C vs Cb).
+- Structured, readable presentation.
+
+Areas to improve
+- Inversion accuracy:
+  - Gdim/Db is second inversion (6/4), not first inversion; and in Eb Mixolydian it’s iii°, not vii°.
+  - Fm/Eb isn’t an inversion of ii; it’s ii over a tonic pedal (non-chord bass).
+- Consistent modal Roman numerals:
+  - Don’t force a major-key (Ionian) framework when concluding Mixolydian; label functions within Mixolydian (e.g., iii° instead of vii°).
+- Chord spelling detail:
+  - Db6 is Db–F–Ab–Bb; omitting Ab is common in voicing, but the analysis should still list the complete chord.
+- Evidence for mode:
+  - Strengthen the Mixolydian case by explicitly noting the absence of D natural (leading tone) and absence of a major V (Bb major) throughout.
+
+Actionable suggestions
+- Re-label the problem spots:
+  - Gdim/Db → iii°6/4 in Eb Mixolydian (or simply “G° over Db”).
+  - Fm/Eb → ii over I pedal (not ii6).
+- Provide a concise Roman-numeral pass in the chosen mode:
+  - I – I – vi6 – vi6 – iii°6/4 – ii/I – I – I – vi6 – vi6 – I – I – bVII(add6) – I.
+- When discussing alternate keys/modes, explicitly list the scale tones that fail (e.g., G natural vs Gb; C vs Cb) and tie them to the progression.
+- When naming “6” chords, include the full chord spelling, then note potential omissions in voicing.
+
+Corrected/cleaned analysis snapshot (Eb Mixolydian)
+- Scale: Eb F G Ab Bb C Db (no D natural)
+- Chords:
+  - Eb = I
+  - Cm/Eb = vi6
+  - Gdim/Db = iii°6/4
+  - Fm/Eb = ii over I pedal
+  - Db6 = bVII(add6)
+- Progression function: I – I – vi6 – vi6 – iii°6/4 – ii/I – I – I – vi6 – vi6 – I – I – bVII(add6) – I
+- Cadence: bVII → I confirms Mixolydian flavor; no leading tone or V major to suggest Ionian.
+
+**Assistant - GLM 4.6 Thinking**
+
+Overview
+- Verdict: Incorrect (should be Eb Mixolydian, not Eb Phrygian)
+- Overall score: 67/100 (Fair analysis of tonal center; mode and theory errors)
+
+Weighted scoring breakdown
+- Key (tonal center) identification (30): 30/30
+  - Correctly centers the progression on Eb with solid evidence (start/end, frequency, pedal).
+- Mode determination (10): 0/10
+  - Concludes Eb Phrygian; the correct mode is Eb Mixolydian. The analysis misidentifies Db as b2 (Phrygian) instead of b7 (Mixolydian), and overlooks the major 3rd (G), which rules out Phrygian.
+- Chord-function mapping (20): 6/20
+  - Some functional intuitions are reasonable (subdominant/passing roles, modal feel), but core labels are off:
+    - Db is treated as bII (Phrygian hallmark) rather than bVII (Mixolydian).
+    - Accepts Eb major triad as diatonic in “Eb Phrygian” despite G natural (Phrygian has Gb).
+    - Overstates “all notes fit Eb Phrygian.”
+- Slash chords and pedal analysis (10): 9/10
+  - Good observation of the Eb pedal in Cm/Eb and Fm/Eb, and the descending Eb → Db bass move around Gdim/Db.
+- Cadence and tonal-center evidence (10): 9/10
+  - Correctly notes the absence of a functional dominant and the modal/static center on Eb.
+- Clarity and structure (10): 9/10
+  - Clear sections, logical flow, and readable chord-by-chord narrative.
+- Concision and focus (5): 4/5
+  - Thorough but a bit long for the task; still on-topic.
+- Theoretical precision (5): 1/5
+  - Major theoretical slips: mislabeling Db as b2 in Eb, claiming Phrygian while using G natural, and asserting all pitches fit Eb Phrygian.
+
+Strengths
+- Establishes Eb as the tonal center convincingly (frequency, endpoints, pedal).
+- Recognizes the modal character via lack of a functional dominant.
+- Sensible handling of slash chords/pedal-point voicings and the passing diminished sonority.
+
+Areas to improve
+- Mode identification: Db is the b7 of Eb, not the b2. No E natural (the true b2) appears; G natural (major 3rd) excludes Phrygian. The pitch set exactly matches Eb Mixolydian (Eb F G Ab Bb C Db).
+- Scale-content checks: The claim “every note fits Eb Phrygian” is false (Phrygian would include Gb and Cb and typically E natural enharmonically as Fb; the progression does not).
+- Chord labeling:
+  - Db6 is bVII6 in Mixolydian, not bII6 (Phrygian).
+  - Fm/Eb is ii (Fm) over I pedal in Eb Mixolydian, not “iv7” in Eb major or a Phrygian iv.
+  - Gdim is the diatonic iii° in Eb Mixolydian; over Db bass it’s a color/passing sonority relating to bVII, not evidence for Phrygian.
+- Avoid justifying a major I within “Phrygian” without specifying Phrygian dominant (which would introduce a different pitch collection).
+
+Actionable suggestions
+- Do a quick pitch-inventory pass before naming the mode:
+  - Collected pitches here: {Eb, F, G, Ab, Bb, C, Db} → matches Eb Mixolydian exactly.
+- Verify characteristic tones for each candidate mode:
+  - Mixolydian: major 3rd + b7; Phrygian: minor 3rd + b2. This progression has G (major 3rd) and Db (b7), but no E natural (b2) and no Gb (minor 3rd).
+- Label diatonic functions under Eb Mixolydian:
+  - Eb = I
+  - Fm/Eb = ii(7)/I pedal
+  - Cm/Eb = vi/I pedal
+  - Gdim/Db = iii° over bVII bass (color/passing)
+  - Db6 = bVII6
+- When proposing alternative chord parses (e.g., “Dbmaj7#11-ish,” “Db+”), cross-check actual pitch content and context to avoid speculative mislabels.
+- Keep the solid structural flow, but lead with the correct verdict and the key evidence (pitch set + characteristic intervals) to avoid drifting into the wrong mode.
+
+For reference: a concise corrected read
+- Key center: Eb
+- Mode: Eb Mixolydian (Eb F G Ab Bb C Db)
+- Functions:
+  - Eb: I
+  - Cm/Eb: vi over I pedal
+  - Fm/Eb: ii7 over I pedal
+  - Gdim/Db: iii° sonority over bVII bass (passing color)
+  - Db6: bVII6 (common Mixolydian move)
+- Hallmarks supporting Mixolydian: major 3rd (G) plus flat 7 (Db); no b2 (E natural) or minor 3rd (Gb).

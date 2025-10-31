@@ -1,0 +1,966 @@
+**Assistant - GPT 5 High**
+
+Overview
+- Verdict: Correct (identifies B Phrygian)
+- Overall score: 82/100 (Good, with notable theoretical slips)
+
+Weighted scoring breakdown
+- Key/tonal center identification (30): 30/30
+  - Correctly centers on B; acknowledges repeated Bm and slash chords with B in the bass.
+- Mode determination (10): 10/10
+  - Selects B Phrygian and ties it to the G major/E minor parent scale; lists correct pitch collection (G A B C D E F#).
+- Chord-fit and functional mapping (20): 15/20
+  - Correctly checks that Bm, G/B, D/A, C/B, and Am6 are diatonic to B Phrygian (G major).
+  - Misses a clear functional map (i, bII, bIII, bVI, bVII) and mislabels Dorian triads earlier.
+- Slash-chord/pedal analysis (10): 7/10
+  - Sensibly reads C/B ≈ Cmaj7/B. Notes Am6’s F# as a color that remains diatonic.
+  - Could better emphasize the pervasive B pedal (G/B, C/B, Bm) as key evidence of B as tonic.
+- Cadential evidence and justification of center (10): 7/10
+  - Concludes B as center but doesn’t leverage strong cues (opening/closing on Bm, recurring B bass) as explicitly as it could.
+- Clarity and structure (10): 7/10
+  - Organized with headings, but the narrative meanders (Dorian → Aeolian → Phrygian) and includes a few confusing claims.
+- Concision and focus (5): 4/5
+  - Generally focused but could be tighter.
+- Theoretical precision (5): 2/5
+  - Several inaccuracies: incorrect B Dorian diatonic triads; “C only appears in C/B” overlooks C in Am6; misuse of “leading tone” language.
+
+Strengths
+- Arrives at the correct conclusion: B Phrygian, parent G major/E minor.
+- Correct pitch set and chord membership checks (all chords fit G major).
+- Useful observation about C/B as a diatonic sonority in B Phrygian; Am6’s F# is rightly treated as diatonic color.
+
+Issues to address
+- Incorrect B Dorian triads: listed “ii C#dim” and “VII A#dim,” which is wrong. In B Dorian: Bm, C#m, D, E, F#m, G#dim, A.
+- “C only appears in the C/B chord” is false; Am6 (A C E F#) also contains C.
+- “This gives B a leading tone to C!” misuses terminology and suggests C as tonic; in B Phrygian, C is the characteristic b2 above the tonic B, not the goal of a leading tone.
+- Underdeveloped evidence for tonal center: the progression starts/ends on Bm and sustains B in the bass (G/B, C/B), which should be highlighted more strongly.
+- Lacks a concise functional map of the chords within B Phrygian.
+
+Actionable suggestions
+- Correct the Dorian inventory and use it to rule Dorian out cleanly (B Dorian has C#, G#, neither appears; hence Phrygian).
+- Replace “leading tone” phrasing with: “C is the characteristic b2 of B Phrygian; C/B strongly spotlights that color over a B pedal.”
+- Explicitly leverage form/evidence: “Starts and ends on Bm; frequent B pedal (Bm, G/B, C/B) anchors B as tonic.”
+- Provide a compact functional read:
+  - Bm = i
+  - G/B = bVI6
+  - D/A = bIII6/4
+  - C/B = bII over 1 (often heard as Cmaj7/B)
+  - Am6 = bVII(add6)
+- Conclude with a crisp one-liner: “B Phrygian (notes B C D E F# G A), derived from G major; progression emphasizes B as tonic and features the Phrygian b2 via C/B.”
+
+**Assistant - GPT 5 Medium**
+
+Overview
+- Verdict: Correct
+- Overall score: 84/100 (Good)
+
+Weighted scoring breakdown
+- Key/tonal center identification (30): 29/30
+  - Correctly centers on B; final answer states B Phrygian.
+- Mode determination (10): 10/10
+  - Phrygian is correctly identified; parent collection G major is noted.
+- Chord-function mapping (20): 14/20
+  - Gets many notes/triads right, but includes mislabels (e.g., D/A as “V,” G as “bVI in B minor”) and some inconsistent diatonic labeling mid-analysis.
+- Slash-chord and pedal analysis (10): 9/10
+  - C/B as bII over a tonic (B) pedal is a solid, relevant observation; G/B correctly described as first inversion.
+- Tonal-center evidence and justification (10): 8/10
+  - Notes the centricity of Bm; could more clearly marshal evidence (opening/closing chords, recurrence, absence of C#) as the through-line.
+- Clarity and structure (10): 7/10
+  - Reasoning reaches the right place but meanders, with mode/key frames shifting midstream.
+- Concision and focus (5): 4/5
+  - Slightly verbose but mostly on-topic.
+- Theoretical precision (5): 3/5
+  - A few issues: Lydian mention for C/B, “bVI in minor” usage, D/A labeled as V, and a confusing bVII6(add6) label.
+
+Strengths
+- Correct final identification: B Phrygian, with the parent collection G major clearly stated.
+- Verifies the pitch-class set accurately (B C D E F# G A), crucially noting the absence of C#.
+- Highlights characteristic Phrygian color: C/B as bII over B pedal and Am6 (A–C–E–F#) as a diatonic sonority in B Phrygian.
+- Solid chord spelling and slash-chord recognition (e.g., G/B as first inversion).
+
+Areas to improve
+- Functional labeling:
+  - D/A is not the V in this context; in B Phrygian it’s bIII in first inversion (D/A).
+  - In minor keys, G is VI (not “bVI”); “bVI” is typically used relative to the parallel major context.
+- Modal color attribution:
+  - C/B points to Phrygian (b2), not Lydian (which involves #4).
+  - “Neapolitan flavor” is plausible in spirit (bII), but C/B with a tonic pedal is modal/planar rather than a textbook Neapolitan (which is usually bII in first inversion: C/E in the minor mode).
+- Notation clarity:
+  - Avoid “bVII6(add6)”: “6” usually implies inversion; here “Am6” means a minor triad with an added 6th (A–C–E–F#), so “bVII(add6)” is clearer.
+- Consistency:
+  - Early claims (e.g., “C/B is non-diatonic”) are true only under a B natural minor lens; once you pivot to B Phrygian, reconcile that and state it plainly.
+
+Actionable suggestions
+- Lead with the verdict, then support it with the pitch-class set and centricity evidence.
+- Map each chord to B Phrygian with clear functions:
+  - Bm = i
+  - G/B = bVI6
+  - D/A = bIII6
+  - C/B = bII over tonic pedal (modal color)
+  - Am6 = bVII(add6)
+- Keep modal color straight: b2 = Phrygian; #4 = Lydian.
+- Use “add6” vs inversion “6” distinctly to avoid ambiguity.
+
+**Assistant - GPT 5 Low**
+
+Overview
+- Verdict: Correct
+- Overall score: 84/100 (Strong)
+
+Weighted scoring breakdown
+- Key/tonal center identification (30): 29/30
+  - Correctly centers on B and ties the pitch set to G major (one sharp).
+- Mode determination (10): 9/10
+  - Correctly identifies Phrygian and highlights the characteristic b2 (C natural).
+- Chord-function mapping (20): 15/20
+  - Mostly sound (Bm = i, G/B = VI6, C = bII, Am = bVII, D = III), but some labeling/functional slips (e.g., “III6/5” without a seventh).
+- Slash chords and bass motion (10): 8/10
+  - Sensible note on stepwise C → C/B → B movement; acknowledges inversions (G/B, D/A). One misread (see below).
+- Cadence and tonal-center evidence (10): 8/10
+  - Cites repeated Bm and resolution to Bm; could more explicitly frame bII → i as a Phrygian-defining move.
+- Clarity and structure (10): 8/10
+  - Clear sections and summaries; a bit meandering with some speculative detours.
+- Concision and focus (5): 4/5
+  - Generally focused but includes an unnecessary alternative-key digression.
+- Theoretical precision (5): 3/5
+  - A few inaccurate/loose statements and terminology issues.
+
+Strengths
+- Arrives at the correct answer (B Phrygian) and states the parent scale (G major) and key signature (one sharp) correctly.
+- Lists the correct pitch collection (B C D E F# G A).
+- Identifies and leverages the hallmark Phrygian b2 via C/C–B motion and the use of C-major sonority.
+- Sensible chord inventory for the mode: Bm (i), C (bII), D (III), Em (iv), G (VI), Am (bVII); acknowledges inversions and stepwise bass.
+
+Areas to improve
+- Misstatement: “C/B becomes a passing dominant to Em.” C/B is not a dominant to Em; the dominant of Em is B(7). Here C/B is best heard as bII over scale-degree 7 in the bass, commonly leading to i (Bm).
+- Terminology/inversion label: “III6/5” implies a seventh chord; should be III6 (first inversion triad) if no seventh is present.
+- “Modal mixture” is not warranted when all tones are diatonic to B Phrygian/G major.
+- Logical clarity: “C natural appears twice, which means G major serves as the VI…” is muddled. G is VI in B Phrygian regardless; C natural is the b2, not evidence for G’s function.
+- Could foreground canonical Phrygian logic (bII → i cadence, absence of leading tone, v° rather than V) more explicitly as the proof.
+
+Actionable suggestions
+- Replace the Em claim: Describe C/B → Bm as a Phrygian bII → i motion (stepwise b2–1 in the upper voice or bass-driven resolution) rather than any dominant-to-Em function.
+- Clean up labeling:
+  - Use III6 (not III6/5) for D/A if it’s a triad.
+  - Am6 is fine; “bVII(add6)” is acceptable, but be consistent (add6 vs 6).
+- Provide a compact, correct roman-numeral map for the mentioned chords in B Phrygian:
+  - Bm = i, C = bII, D = III, Em = iv, F#° = v°, G = VI, Am = bVII
+  - Inversions: G/B = VI6, D/A = III6, C/B = bII over 7̂.
+- Tighten the proof of center: Briefly note the lack of a true dominant (no A#/leading tone), the prevalence of Bm, and any cadential/telic motion to Bm. If applicable, call out an explicit bII → i cadence.
+- Drop the “alternative key with borrowed bII/bVI” digression unless defending an actual competing reading.
+
+Correctness notes (claim-by-claim)
+- B Phrygian as the mode of G major: Correct.
+- Scale/pitch collection (B C D E F# G A): Correct.
+- bII (C) and bVII (Am) character in Phrygian: Correct.
+- C/B “passing dominant to Em”: Incorrect.
+- D/A labeled “III6/5”: Inaccurate; should be III6 without a seventh.
+
+Summary
+A solid, ultimately correct identification of B Phrygian with the right parent scale and pitch content. Tightening the functional claims (especially around C/B), cleaning up inversion/terminology, and emphasizing classic Phrygian cadential logic would raise this to excellent.
+
+**Assistant - Grok 4 Fast Thinking**
+
+Overview
+- Verdict: Correct (B Phrygian)
+- Overall score: 81/100 (Good)
+
+Weighted scoring breakdown
+- Key/tonic identification (30): 30/30
+  - Clearly establishes B as the tonal center; references a B pedal.
+- Mode determination (10): 10/10
+  - Correctly identifies Phrygian and cites the characteristic ♭2 (C).
+- Chord-function mapping (20): 10/20
+  - Correct: i (Bm), ♭III (D), ♭II (C), ♭vii (Am6 as a sonority).
+  - Errors:
+    - G/B labeled as ♭VII; it is ♭VI in B Phrygian.
+    - D/A labeled “⁶” but that bass A makes it a 6/4 (second inversion), not 6.
+    - C/B labeled “♭II⁶”; B is not a chord tone of C major, so this is not a first inversion of ♭II.
+    - “♭vii₆” used to mean “add6” is ambiguous/misleading in Roman-numeral syntax.
+- Slash chords and pedal analysis (10): 7/10
+  - Good recognition of the B pedal concept; however, inversion/figured-bass labeling for slash chords is inconsistent (especially C/B) and under-explained.
+- Cadential/tonal-center evidence (10): 8/10
+  - Solid tonic-centering via pedal and chord collection; could strengthen by describing how motion returns to i or highlighting characteristic Phrygian semitone (C over B) as a centering cue.
+- Clarity and structure (10): 9/10
+  - Concise, organized, and readable.
+- Concision and focus (5): 5/5
+  - Direct and on-topic.
+- Theoretical precision (5): 2/5
+  - Multiple notation and inversion inaccuracies (see below).
+
+Strengths
+- Correct key and mode with appropriate note collection: A B C D E F♯ G → B Phrygian (1 ♭2 ♭3 4 5 ♭6 ♭7).
+- Sensibly uses the presence of C (♭II) and a B pedal to justify Phrygian.
+- All cited chord tones are diatonic to B Phrygian (including the F♯ in Am6).
+
+Areas to improve
+- Roman numeral degree for G/B: G is ♭VI in B Phrygian (not ♭VII).
+- Figured-bass accuracy:
+  - D/A is a 6/4 (second inversion), not “⁶.”
+  - C/B is not an inversion of ♭II; it’s a slash chord with a non-chord-tone bass (B), so “♭II⁶” is incorrect.
+- Notation clarity:
+  - Avoid using “₆” to mean “added 6.” In Roman numerals, “6” usually indicates first inversion; for added tones, use “add6” or chord symbols (e.g., Am6).
+- Explanatory depth:
+  - Briefly clarify why these moves (e.g., C/B) reinforce the B center (C–B semitone is the Phrygian hallmark) beyond just “no accidentals.”
+
+Actionable corrections
+- Fix the Roman numerals/inversions:
+  - G/B → ♭VI6 (G major in first inversion).
+  - D/A → ♭III6/4 (second inversion).
+  - C/B → label as C/B (♭II over 7) with B as pedal/non-chord-tone bass; do not call it ♭II6.
+  - Am6 → ♭vii(add6) or simply “Am6” (avoid “₆” to denote add6).
+- Add one sentence on the characteristic Phrygian semitone (C over B) to strengthen mode evidence.
+- When asserting “all chords are diatonic,” you can explicitly list any potentially controversial pitch (e.g., F♯ in Am6) as still diatonic to B Phrygian.
+
+One-sentence summary
+- A concise and mostly solid identification of B Phrygian with strong modal evidence via ♭II and a B pedal, but marred by several Roman numeral and inversion labeling errors.
+  
+**Assistant - Gemini 2.5 Pro**
+
+Overview
+- Verdict: Incorrect primary conclusion (should be B Phrygian)
+- Overall score: 48/100
+
+Weighted scoring breakdown
+- Key identification accuracy (30): 18/30
+  - Correctly centers on B as the tonal center, but mislabels the prevailing collection as “B minor” (Aeolian) rather than Phrygian.
+- Mode determination (10): 2/10
+  - Treats Phrygian as “interchange” instead of the governing mode. The hallmark bII (C) and bVII (A minor) appear as core color tones of B Phrygian, not occasional borrowings.
+- Chord-function mapping (20): 10/20
+  - Positives: Correctly spots C/B as bII over tonic and ties Am’s F# to smooth motion into Bm. Notes B–C half-step color characteristic of Phrygian.
+  - Issues: Calls Am6 “vii6” (confuses add6 with inversion/leading-tone chord). In Phrygian, it’s better read as bVII(add6). Mentions “secondary dominant tendencies” for chords that are diatonic to B Phrygian, which is misleading.
+- Slash chords and voice-leading (10): 6/10
+  - Recognizes G/B, D/A, and C/B as voice-leading devices and notes the Phrygian-style bII→i gravity. Could more clearly explain the consistent tonic bass usage (e.g., C/B resolving to Bm) and how inversions reinforce B as the pedal/anchor.
+- Cadence and tonal-center evidence (10): 4/10
+  - Cites a “Phrygian cadence” (bII→i), which supports B Phrygian, yet concludes Aeolian as primary; relies on unsubstantiated claims like “begins/ends on Bm” instead of foregrounding the decisive flat-2 behavior and bVII presence.
+- Clarity and structure (10): 4/10
+  - Final sections are organized, but the answer is cluttered with repetitive “I’m analyzing now” meta-commentary and duplicated sections, which obscures the core reasoning.
+- Concision and focus (5): 1/5
+  - Highly verbose with repeated paragraphs; the essential argument is buried.
+- Theoretical precision (5): 3/5
+  - Misuse of “vii6” label; ambiguous “bII/i” notation; conflation of modal interchange with an actually modal (Phrygian) framework. Still, pitch-class content and scale spelling for B Phrygian (B–C–D–E–F#–G–A) are handled correctly.
+
+Strengths
+- Correct tonal center (B) and recognition of key Phrygian sonorities:
+  - C/B as bII over B (canonical Phrygian color/cadence).
+  - A minor present (bVII), consistent with B Phrygian (not Aeolian’s A major).
+  - Sensible note on F# in Am6 linking smoothly back to Bm.
+- Identifies diatonic material common to B Phrygian (bII, bIII, bVI, bVII).
+
+Areas to improve
+- The core conclusion is inverted: this is B Phrygian with possible Aeolian color, not B Aeolian with Phrygian “borrowings.”
+- Roman numeral usage and chord labeling need tightening (e.g., bVII(add6) vs “vii6”).
+- Avoid speculative mentions of “secondary dominants” when the chords are diatonic to Phrygian.
+- Reduce repetitive meta-narration; lead with a crisp, evidence-based thesis.
+
+Actionable suggestions
+- Lead with: “Tonal center B; mode: Phrygian,” then justify with hallmark tones:
+  - Flat 2 (C) via C/B → Bm (bII→i) resolution.
+  - Flat 7 (A) via A minor; presence of bVI (G) and bIII (D) also align with Phrygian.
+- Map each cited chord to B Phrygian:
+  - Bm = i
+  - C/B = bII over tonic bass (Phrygian cadence sonority)
+  - G/B = bVI in first inversion
+  - D/A = bIII over A bass
+  - Am6 = bVII(add6) with diatonic 6 (F#)
+- Use consistent, standard labels; reserve “vii” for leading-tone chords and use “bVII” for A minor in B Phrygian.
+- Tighten prose: present evidence (bII, bVII, lack of C#) before any mention of “mixture.” Mixture is unnecessary when the modal scale itself explains the chords.
+
+**Assistant - Qwen3 235B 2507 Thinking**
+
+Overview
+- Verdict: Correct
+- Overall score: 86/100 (Good, with a few theoretical/labeling slips)
+
+Weighted scoring breakdown
+- Key identification accuracy (30): 30/30
+  - Correctly identifies B as the tonal center (strong emphasis on Bm and resolution behavior).
+- Mode determination (10): 10/10
+  - Correctly concludes B Phrygian; ties pitch collection to G major and centers on B.
+- Chord-function mapping (20): 15/20
+  - Gets i (Bm), bII (C), and III (D) right; identifies Am6 as the chord on scale degree 7 (minor) with added 6 (diatonic F#). However, mislabels G as bVII; in B Phrygian, G is VI (flat 6), not bVII.
+- Slash chords and pedal analysis (10): 9/10
+  - Properly interprets G/B, D/A, C/B; highlights the Phrygian-flavored C/B → Bm move.
+- Cadence and tonal-center evidence (10): 9/10
+  - Notes the classic Phrygian bII → i motion (C → Bm). Could strengthen by explicitly framing it as the key cadence anchoring B.
+- Clarity and structure (10): 8/10
+  - Provides a clean, structured summary after a meandering inner monologue; end summary is readable and well organized.
+- Concision and focus (5): 3/5
+  - Longer than needed; includes detours and self-corrections.
+- Theoretical precision (5): 2/5
+  - Notable slips:
+    - Calls G “bVII” (should be VI in B Phrygian).
+    - States “in B natural minor, the ♭II would be C#°,” conflating ii° (C#dim) with ♭II (C major, the Neapolitan). The point (C is non‑diatonic in Aeolian) is fine, but the label is off.
+
+Strengths
+- Arrives at the correct key and mode with solid pitch-set evidence (A B C D E F# G = G major; tonic on B → B Phrygian).
+- Identifies the defining Phrygian feature (b2: B–C) and the bII → i cadence (via C/B → Bm).
+- Competently parses slash chords and keeps the harmonic analysis grounded in the actual voicings used.
+- Final synthesized section is coherent and persuasive.
+
+Areas to improve
+- Roman-numeral accuracy: in B Phrygian, G is VI (flat six), not bVII; A builds the VII chord (minor).
+- Precision in modal vs tonal labels: distinguish ii° (diatonic in Aeolian) from ♭II (Neapolitan, non‑diatonic in Aeolian but diatonic in Phrygian).
+- Tighten the exposition; reduce early false starts and contradictions.
+
+Actionable suggestions
+- Use a quick modal map for B Phrygian to anchor labels:
+  - Scale: B C D E F# G A
+  - Triads: i Bm, ♭II C, III D, iv Em, v° F#dim, VI G, VII Am
+- When contrasting with Aeolian, say: “C major (♭II) is non‑diatonic in B Aeolian (ii° is C#dim), but diatonic in B Phrygian.”
+- Streamline delivery: lead with the correct pitch set and cadence evidence, then present degree mapping cleanly, avoiding backtracking.
+
+Quick corrected mapping for this progression (B Phrygian)
+- Bm: i
+- G/B: VI in first inversion
+- D/A: III in second inversion
+- C/B: ♭II over scale-degree 1 (Phrygian cadential sonority)
+- Am6: VII(add6) — A C E (+ F#), all diatonic to B Phrygian
+
+**Assistant - Qwen3 235B 2507**
+
+Overview
+- Verdict: Incorrect conclusion
+- Correct answer: B Phrygian
+- Overall score: 23/100
+
+Weighted scoring breakdown
+- Key identification accuracy (30): 0/30
+  - Concludes G major instead of B as the tonal center.
+- Mode determination (10): 0/10
+  - Misses B Phrygian entirely; labels Ionian (G major).
+- Chord-function mapping (20): 8/20
+  - Note-level diatonic checks are mostly correct; Roman numerals in G are internally consistent, but irrelevant to the correct modal center. “Am6 = ii6 (or ii(add6))” is imprecise (ii6 denotes inversion, not added 6).
+- Slash chords and pedal analysis (10): 3/10
+  - Correctly identifies inversions and some smooth voice-leading (e.g., G/B → Bm). Fails to recognize the persistent B pedal (Bm, G/B, C/B) and misstates a “descending bass D→C→B” where the actual bass is A→B→B.
+- Cadence and tonal-center evidence (10): 2/10
+  - Acknowledges frequent Bm and ending on Bm but dismisses it. Misses the hallmark Phrygian motion b2→1 (C/B → Bm) and the b3→b2→1 descent (D/A → C/B → Bm) above a B center.
+- Clarity and structure (10): 6/10
+  - Well formatted and methodical, but meanders with multiple self-corrections.
+- Concision and focus (5): 2/5
+  - Overlong for the core task; considerable digressions and backtracking.
+- Theoretical precision (5): 2/5
+  - Several misstatements and corrections (e.g., confusion about D in B minor; mixing modal/tonal thinking; misuse of “ii6”).
+
+What it gets right
+- Correctly identifies the pitch collection as G major (G A B C D E F#), and verifies all chords fit that set.
+- Notes for Am6 (A–C–E–F#) are correct; observes smooth voice-leading G/B → Bm (common tones B, D).
+- Clear formatting and step-by-step intent.
+
+Key diagnostic misses (why it’s B Phrygian)
+- Center and pedal: The bass spends much of the time on B (Bm, G/B, C/B), and the progression starts and ends on Bm—strong centricity on B.
+- Phrygian hallmark: C/B → Bm explicitly places b2 (C) over tonic bass (B) resolving to i, a classic Phrygian color.
+- Characteristic descent: D/A → C/B → Bm outlines b3 → b2 → 1 above a B center—textbook Phrygian gesture.
+- Overreliance on parent major: Identifying the parent key (G major) is necessary but not sufficient; the modal center (B) must be determined from centricity, pedal, and cadential behavior.
+
+Actionable suggestions
+- Separate “pitch collection” from “center.” After finding the scale (G major notes), determine the tonal center via:
+  - Start/end chords
+  - Bass pedal/inversions (watch slash-chord bass!)
+  - Cadential motions (here, b2→1 is decisive)
+- Check for modal signatures:
+  - Phrygian: prominent b2 above the tonic bass (C over B), frequent i and bII interactions, b6 and b7 present (G, A).
+- Label slash chords by actual bass behavior:
+  - G/B and C/B maintain a B pedal; don’t conflate chord root motion with the bass line.
+- Use precise chord labels:
+  - Reserve “ii6” for inversion; use “ii(add6)” when adding a 6th.
+
+Corrected analysis snapshot (B Phrygian)
+- Scale (B Phrygian): B C D E F# G A
+- Chords and functions:
+  - Bm = i
+  - G/B = bVI6 (G major over B pedal)
+  - D/A = bIII6/4 (D major with A in bass)
+  - C/B = Cmaj7/B ≈ bII(maj7) over tonic pedal (Phrygian b2 color)
+  - Am6 = bVII(add6)
+- Cadential color:
+  - … D/A → C/B → Bm outlines b3 → b2 → 1, with C/B → Bm giving the characteristic Phrygian semitone resolution.
+
+Summary
+- The analysis correctly identifies the diatonic collection but mistakes the tonal center and mode. Recognizing the persistent B pedal, the start/end on Bm, and the b2→1 motion would have led to the correct answer: B Phrygian.
+
+**Assistant - Qwen3 Next 80B Thinking**
+
+Overview
+- Correct answer: B Phrygian (mode 3 of G major)
+- Verdict on the analyzed response: Incorrect
+- Overall score: 25/100 (Poor)
+
+Weighted scoring breakdown
+- Key identification accuracy (30): 0/30
+  - Concludes G major (Ionian) instead of B Phrygian; misses the true tonal center.
+- Mode determination (10): 0/10
+  - Fails to consider Phrygian; settles on Ionian.
+- Chord-function mapping (20): 8/20
+  - Accurate pitch-set and functional mapping within G/E frameworks, but not in the correct B-centric mode.
+- Slash chords and pedal analysis (10): 3/10
+  - Notices the bass notes (mostly B, with some A) but doesn’t interpret G/B and C/B as a B pedal reinforcing B as tonic.
+- Cadence and tonal-center evidence (10): 2/10
+  - Overweights presence of G and absence of Em; underweights start/end on Bm and persistent B bass. Misses the Phrygian hallmark C over B (b2 tension over tonic).
+- Clarity and structure (10): 7/10
+  - Reasonably organized and readable despite meandering.
+- Concision and focus (5): 2/5
+  - Overlong, indecisive, and repetitive.
+- Theoretical precision (5): 3/5
+  - Correct pitch collection; some conflation of tonal vs modal thinking; no identification of modal signatures.
+
+Key misses relative to B Phrygian
+- Characteristic b2: The C/B sonority (C triad over B bass) is a textbook Phrygian color (b2 over 1). This is the most telling clue and was overlooked.
+- Tonal center evidence: The progression begins and ends on Bm, and the bass sits on B repeatedly (G/B, C/B, many Bm) — strong B centricity.
+- Modal triads in B Phrygian (from G major): i (Bm), bII (C), bIII (D), iv (Em), v° (F#dim), bVI (G), bVII (Am). Every chord used is diatonic to B Phrygian.
+- Misplaced emphasis: Using “tonic chord presence” to prefer G major over E minor is not the right discriminator here; the decisive factor is the B pedal and b2 color, pointing to B Phrygian.
+
+Strengths
+- Correctly identifies the complete pitch set: B–C–D–E–F#–G–A (i.e., G major/E minor collection).
+- Thorough enumeration of chords and note content.
+- Considers multiple keys and counts chord frequency.
+- Recognizes bass-note patterns (B and A appear frequently).
+
+Areas to improve
+- Modal detection: Explicitly test modal centers, not just relative major/minor. Check for characteristic tones (e.g., Phrygian b2).
+- Tonal-center reasoning: Weigh start/end chords, bass pedals, and structural repetitions more heavily than “presence of relative tonic chord.”
+- Slash-chord interpretation: Treat G/B and C/B as evidence of a B pedal reinforcing the center, not merely inversions within G major.
+- Avoid equating “shared key signature” with “key.” Relative keys share pitch sets but can imply different modal centers.
+
+Actionable suggestions
+- Use a 4-step method:
+  1) Collect the pitch set.
+  2) Identify candidate centers by start/end chords, pedal tones, and chord frequency (here: strong B center).
+  3) Test modal signatures: for Phrygian, look for b2 against the tonic (here: C/B).
+  4) Map functions in the winning mode.
+- Re-analyze this progression succinctly:
+  - Scale: G major pitch set, center B → B Phrygian.
+  - Functions: Bm (i), G/B (bVI over 1), D/A (bIII with 5 in bass), C/B (bII over 1, signature b2 color), Am6 (bVIIadd6), returning to Bm (i).
+  - Cadential motion: … D/A → C/B → Bm evokes bIII → bII → i with a persistent B anchor — modal, not tonal-major.
+
+Summary
+The response demonstrates solid pitch-set analysis and thoroughness but misses the crucial modal center. The persistent B pedal, bookending Bm, and the C/B sonority (b2 over tonic) collectively identify B Phrygian, not G major (Ionian).
+
+**Assistant - Qwen3 Next 80B**
+
+Overview
+- Verdict: Incorrect (should be B Phrygian)
+- Overall score: 58/100 (Fair)
+
+Weighted scoring breakdown
+- Key/tonal center identification (30): 26/30
+  - Correctly centers the harmony on B (repetition of Bm, overall gravitational pull).
+- Mode determination (10): 0/10
+  - Concludes B Aeolian; the correct mode is B Phrygian.
+- Chord-function mapping (20): 6/20
+  - Several mislabels:
+    - In B natural minor, VII should be A major (A–C#–E), not Am.
+    - In B Phrygian, ♭II is C major (C–E–G), not C diminished.
+    - Labels Am6 as diatonic to B minor, which it isn’t (contains C♮).
+  - Correctly notes G and D as fitting B-centered harmony, but the accumulation of errors is significant.
+- Slash chords and bass/inversion analysis (10): 6/10
+  - Correct that inversions don’t change the mode; however, misses how C/B strongly spotlights the Phrygian ♭2 to 1 semitone motion.
+- Cadence and tonal-center evidence (10): 7/10
+  - Uses frequency of Bm and overall return to B; doesn’t leverage the decisive absence of C# and the characteristic ♭2 (C) against B.
+- Clarity and structure (10): 9/10
+  - Well-organized, stepwise approach.
+- Concision and focus (5): 4/5
+  - Slightly verbose but stays on topic.
+- Theoretical precision (5): 0/5
+  - Multiple factual errors about diatonic chord qualities in both Aeolian and Phrygian.
+
+Strengths
+- Correctly identifies B as the tonal center.
+- Sensibly treats slash chords as inversions for harmonic classification.
+- Recognizes the presence and salience of C major and attempts to rationalize it.
+- Clear, readable structure that walks through identification, scale content, and functions.
+
+Areas to improve
+- Misidentifies diatonic chord qualities:
+  - B natural minor (Aeolian) has VII = A major, not A minor.
+  - B Phrygian’s ♭II is a major triad (C major), not diminished.
+- Misclassifies C major as a “borrowed ♭II/Neapolitan” from minor practice rather than recognizing it as diatonic in B Phrygian.
+- Overlooks that the entire chord set Bm, C, D, G, Am(6) is diatonic to B Phrygian (B–C–D–E–F#–G–A), while B Aeolian would require C# and A major—neither appears.
+- Conflates modal and tonal frameworks (e.g., invoking Neapolitan in a context that’s cleanly explained by a mode).
+- Misses the characteristic Phrygian color: the half-step motion from ♭2 to 1 (explicit in C/B → Bm).
+
+Actionable suggestions
+- Build the triads directly from the candidate mode before concluding:
+  - B Phrygian (B C D E F# G A) ⇒ i: Bm, ♭II: C, III: D, iv: Em, v: F#m, ♭VI: G, ♭VII: Am. All chords used (including Am6 = Am add 6) are diatonic here.
+- Verify chord quality carefully:
+  - Aeolian’s VII is major (A–C#–E). If you see Am or C♮, that contradicts Aeolian.
+  - Phrygian’s ♭II is major; don’t label it diminished.
+- Prioritize characteristic tones to choose mode:
+  - Absence of C# and repeated presence of C♮ are decisive for Phrygian over Aeolian.
+- Use modal Roman numerals with flats where appropriate (i, ♭II, III, ♭VI, ♭VII) and highlight hallmark motions (e.g., C/B → B as ♭2 → 1).
+- Reserve “Neapolitan” (traditionally ♭II in first inversion within tonal minor) for clearly tonal contexts; here, diatonic Phrygian explains the harmony more parsimoniously.
+
+Key missed insight (why it’s B Phrygian)
+- The pitch collection implied by the chords is exactly B–C–D–E–F#–G–A (G major’s notes), centered on B: that’s B Phrygian.
+- Every harmony used (Bm, C, D, G, Am[add6]) is diatonic to B Phrygian.
+- The motion C/B → Bm foregrounds the Phrygian ♭2 → 1 semitone, a signature color not accounted for by Aeolian.
+
+**Assistant - Qwen3 Max**
+
+Overview
+- Verdict: Incorrect (mode misidentified)
+- Overall score: 66/100
+
+Weighted scoring breakdown
+- Key (tonal center) identification (30): 28/30
+  - Strong evidence for B as tonic (start/end on Bm, frequency of Bm). Center is correct.
+- Mode determination (10): 0/10
+  - Correct mode is B Phrygian; response concludes B Aeolian with “Phrygian borrowings.”
+- Chord-function mapping (20): 10/20
+  - Accurate for i (Bm), bVI (G/B), bIII (D/A), and bII (C/B) as a concept; however, treats C natural as “chromatic” instead of diatonic to B Phrygian, and misreads Am6 as non-diatonic rather than bVII(add6), fully diatonic in B Phrygian.
+- Slash chords and pedal analysis (10): 6/10
+  - Notes C/B as “♭II with tonic in the bass.” Limited discussion of B pedal implications across G/B, C/B, etc., and how that supports B Phrygian.
+- Cadence and tonal-center evidence (10): 8/10
+  - Correctly leverages start/end and prevalence of Bm; misses the characteristic Phrygian i–♭II–i color (C/B → Bm half-step) as modal evidence.
+- Clarity and structure (10): 8/10
+  - Well-organized step-by-step flow; however, several contradictory asides and retractions reduce clarity.
+- Concision and focus (5): 4/5
+  - Thorough but meanders, with speculative detours.
+- Theoretical precision (5): 2/5
+  - Major error: asserts B Phrygian has F natural (it has F#, from parent G major). Additional mislabels (e.g., “v6 in B minor”) and iiø7 confusion.
+
+Key strengths
+- Correctly identifies B as the tonal center with multiple supporting cues.
+- Solid initial diatonic mapping for B natural minor and appropriate recognition of slash-chord bass roles.
+- Recognizes the presence of ♭II (C/B) and connects it to a Phrygian/Neapolitan flavor.
+- Notes the Am6 = A–C–E–F# pitch set and the equivalence to F#ø7/A (a helpful lens, if used correctly).
+
+Critical errors and omissions
+- Misstates the B Phrygian pitch collection: B Phrygian (from G major) is B–C–D–E–F#–G–A. The perfect fifth (F#) is diatonic; the response incorrectly claims Phrygian would have F natural.
+- Because of that, it wrongly rejects Phrygian and forces a “B Aeolian with borrowings” analysis instead of recognizing a fully diatonic B Phrygian reading.
+- Treats C natural as chromatic in a B-minor framework rather than modal-diatonic in Phrygian.
+- Mischaracterizes Am6 as non-diatonic/derivative when it is bVII(add6) in B Phrygian (notes A–C–E–F# are all in the B Phrygian/G-major pitch set).
+- Confusing/incorrect statements:
+  - “Am6 = v6 in B minor” (v in B minor is F#, not A).
+  - iiø7 attribution to F#m7♭5 in the context of B minor.
+  - Temporary mislabel of C as ♭6 in B minor (later corrected to ♭2).
+
+What the correct analysis should highlight
+- Pitch set check: All chords’ notes fit B Phrygian = B–C–D–E–F#–G–A.
+  - Bm (i), G/B (♭VI), D/A (♭III), C/B (♭II over tonic), Am6 (♭VII add6; or F#ø7/A), all diatonic.
+- The hallmark Phrygian color is the ♭2 above the tonic: the C/B → Bm motion is quintessentially Phrygian.
+- Presence of F# supports, not contradicts, B Phrygian (5 is perfect in Phrygian).
+
+Actionable suggestions
+- When ♭2 appears prominently over/against the tonic minor triad, explicitly test Phrygian by deriving the parent major: B Phrygian ← G major. Verify all pitches against that collection.
+- Remember: in Phrygian the 5th is perfect (not flat). For B Phrygian, 5 = F#.
+- Before declaring “borrowed” or “chromatic,” attempt a modal pitch-set closure test: do all chord tones belong to a single mode? Here, they do (B Phrygian).
+- Label the chords in the correct mode:
+  - Bm = i
+  - G/B = ♭VI
+  - D/A = ♭III
+  - C/B = ♭II over i (common Phrygian sonority)
+  - Am6 = ♭VII(add6) or F#ø7/A
+- Avoid speculative re-labels that introduce tones not present (e.g., implying Csus4(b9)) and ensure Roman numerals match the mode in use rather than defaulting to tonal minor practice.
+
+Summary
+- The response centers the correct tonic (B) and notices the ♭II color, but a critical misunderstanding of Phrygian’s pitch content (F# vs F) leads to the wrong mode conclusion. A quick parent-scale check (G major) would have revealed that every chord is cleanly diatonic to B Phrygian.
+
+**Assistant - Gemini 2.5 Flash Thinking**
+
+Overview
+- Verdict: Correct
+- Overall score: 88/100 (Strong)
+
+Weighted scoring breakdown
+- Tonal center identification (30): 30/30
+  - Correctly establishes B as the center via repeated Bm and overall pull to B.
+- Mode determination (10): 10/10
+  - Correctly identifies B Phrygian; highlights the decisive C natural (♭2) present in Am6 and C/B.
+- Chord-function mapping (20): 17/20
+  - Spots key chords and the pivotal ♭II. Would be stronger with explicit, systematic mapping to Phrygian degrees and acknowledging that D belongs to both Aeolian and Phrygian (so D/A isn’t evidence against Phrygian).
+- Slash chords and bass/inversion handling (10): 8/10
+  - Notes G/B, D/A, and C/B; could label their functions more precisely (e.g., bVI6, bIII6, bII over tonic pedal).
+- Cadence and tonal-center evidence (10): 9/10
+  - Solid tonic emphasis via Bm; could strengthen by noting the absence of a strong dominant (expected in Phrygian) or any bII–i motion.
+- Clarity and structure (10): 7/10
+  - Clear line of thought but vacillates between “B minor with mixture” and “Phrygian,” with repetitive self-revisions that dilute the throughline.
+- Concision and focus (5): 3/5
+  - Redundant revisions; could be tighter.
+- Theoretical precision (5): 4/5
+  - Minor conflation of frameworks: talking about “tonic and dominant relationships” in a Phrygian context (where v is diminished) is not ideal; “more formally, B minor with Phrygian coloring” frames an alternative lens rather than a more formal one.
+
+Strengths
+- Arrives at the correct mode (B Phrygian) and clearly identifies the decisive C natural (♭2).
+- Sensibly treats C/B as the bII sonority over a tonic pedal—signature Phrygian color.
+- Recognizes that Bm, G/B, and D/A are comfortably within a B-centered minor palette (also compatible with Phrygian).
+- Acknowledges the tonic’s prominence through repeated Bm.
+
+Areas to improve
+- Commit earlier: D/A does not pull toward Aeolian specifically, since D is common to both Aeolian and Phrygian; that pivot point was weak.
+- Provide a complete, explicit Roman-numeral mapping in B Phrygian:
+  - Bm = i
+  - C/B = ♭II over 1 (bII/I)
+  - D/A = ♭III6
+  - G/B = ♭VI6
+  - Am6 = ♭VII(add6)
+- Clarify framework choice:
+  - If calling it “B minor with Phrygian coloring,” name the borrowed devices (♭II, ♭VII add6) explicitly from Phrygian/flat-2 collection.
+  - If calling it “B Phrygian,” emphasize that all cited chords are diatonic (or characteristic) to B Phrygian and note the expected weak dominant (v°).
+- Strengthen evidence for modality by noting the absence of C# and the lack of a strong V (consistent with Phrygian).
+
+Actionable suggestions
+- Lead with a crisp conclusion, then give 2–3 decisive pieces of evidence:
+  - “Mode: B Phrygian. Evidence: tonic on Bm; pervasive C natural via C/B and Am6 = ♭2; all listed chords fit B Phrygian (i, ♭II, ♭III, ♭VI, ♭VII(add6)).”
+- Map every chord to scale degree and inversion so the diatonic fit is unmistakable.
+- Avoid framing D/A as evidence against Phrygian; instead, note it’s the diatonic ♭III in B Phrygian.
+- If invoking “dominant,” add that in Phrygian the dominant is diminished (v°), so a strong V is not expected—this supports the modal reading.
+
+Concise improvement template
+- “Key center: B. Mode: Phrygian. Chords align as i (Bm), ♭II/I (C/B), ♭III6 (D/A), ♭VI6 (G/B), ♭VII(add6) (Am6). The repeated C natural (♭2) and lack of C# confirm Phrygian.”
+
+**Assistant - Gemini 2.5 Flash**
+
+Overview
+- Verdict: Correct conclusion (B Phrygian)
+- Overall score: 76/100 (Good insight but marred by several theoretical inaccuracies)
+
+Weighted scoring breakdown
+- Key (tonal center) identification (30): 30/30
+  - Correctly recognizes B as the tonal center (Bm at start/end, pervasive B in the bass via slash chords).
+- Mode determination (10): 9/10
+  - Correctly identifies Phrygian and highlights the defining ♭II (C major) alongside a minor tonic and ♭VI (G).
+- Chord-function mapping (20): 12/20
+  - Gets several functions right (Bm as tonic, C as ♭II, G as ♭VI, D as ♭III, Am6 relating to ♭VII with added 6).
+  - However, significant errors in the stated diatonic set for Phrygian (see “Theoretical precision”).
+- Slash chords and pedal/bass analysis (10): 6/10
+  - Acknowledges slash chords but doesn’t leverage their bass implications (near-constant B pedal, C/B producing the B–C semitone rub characteristic of Phrygian).
+- Cadence/tonal-center evidence (10): 7/10
+  - Good reliance on tonic emphasis; could more explicitly emphasize the B pedal and how C/B resolves back to Bm.
+- Clarity and structure (10): 8/10
+  - Well organized with headings and lists; readable and walks the reader through alternatives.
+- Concision and focus (5): 3/5
+  - Some digressions and speculative detours; could be tighter.
+- Theoretical precision (5): 1/5
+  - Contains multiple incorrect claims about diatonic chord qualities and minor-scale functions (details below).
+
+Strengths
+- Correct overall verdict: B Phrygian.
+- Properly identifies C major as ♭II (signature Phrygian color) and G as ♭VI.
+- Sensibly treats Bm as the tonal center (supported by position and bass).
+- Notes that D major appears (fits ♭III in B Phrygian) and that Am6 contains only Phrygian tones (A–C–E–F#).
+- Clear, step-by-step structure and comparative consideration of Aeolian and harmonic minor.
+
+Areas to improve
+- Core modal-diatonic errors:
+  - In B Phrygian, the i triad is B minor (B–D–F#), not B diminished. Labeling i as “Bdim (i°)” is incorrect.
+  - In B Phrygian, the ♭III triad is D major (D–F#–A), not D minor. The write-up states “Dm is diatonic,” which is incorrect.
+  - The “diatonic chords in B Phrygian” list is wrong for i and ♭III, leading to an inverted “borrowing” narrative. No borrowing is needed: Bm and D major are already diatonic.
+- Natural minor (Aeolian) misstatements:
+  - “Am is the diatonic vii chord in B Aeolian/natural minor” is incorrect. In B Aeolian, VII is A major (A–C#–E), not A minor.
+  - Statements about Am being “usually the VII in harmonic minor” or “VI in melodic minor” (relative to B) are incorrect.
+- Scale-degree enumeration inconsistency:
+  - After listing roots (B, G, D, C, A), the scale-degree set given as “1–♭3–4–5–♭6–♭7” omits the crucial ♭2 just cited (C). This undermines the argument.
+- Underuse of slash-chord evidence:
+  - G/B, C/B, and D/A collectively outline a strong B pedal (with one step to A on D/A), and C/B vividly exhibits the Phrygian half-step above the tonic. This is key evidence that could be emphasized.
+
+Actionable suggestions
+- Correct the diatonic triads for B Phrygian (B–C–D–E–F#–G–A):
+  - i: Bm | ♭II: C | ♭III: D | iv: Em | v°: F#dim | ♭VI: G | ♭VII: Am
+- Fix the erroneous claims:
+  - Replace “Bdim (i°)” with “Bm (i)”.
+  - Replace “Dm (♭III)” with “D (♭III)”.
+  - Remove references to Am as VII in Aeolian or harmonic minor; clarify that Am (A–C–E) is diatonic in B Phrygian (♭VII) and non-diatonic in B Aeolian (which has C#).
+- Tighten the modal argument:
+  - Emphasize the B pedal implied by repeated slash chords (… G/B … C/B …) and the C/B sonority as a hallmark Phrygian color (b2 over 1).
+  - Note that Am6 (A–C–E–F#) is simply ♭VIIadd6 within B Phrygian.
+- Streamline the exposition:
+  - Lead with the correct verdict and two strongest pieces of evidence: minor tonic (Bm) + prominent ♭II (C major) over a B pedal.
+  - Avoid mixing tonal minor (harmonic/melodic) practices when giving a modal analysis unless clearly contrasting frameworks.
+
+Concise corrected framing (for reference)
+- Tonic: B (Bm prevalent; B in bass most of the time).
+- Character tones: C major (♭II) and G major (♭VI) appear over a B pedal; C/B highlights the Phrygian ♭2 above the tonic.
+- All chord tones are diatonic to B Phrygian: B, C, D, E, F#, G, A.
+- Mode: B Phrygian.
+  
+**Assitant - Kimi K2**
+
+Overview
+- Verdict: Incorrect
+- Overall score: 50/100 (Mixed: right tonal center, wrong mode and key quality)
+
+Weighted scoring breakdown
+- Key identification accuracy (30): 18/30
+  - Correctly spots B as the tonal center (start/end on Bm, B is frequent).
+  - However, labeling the key as “B minor” (tonal Aeolian) rather than modal Phrygian is materially incorrect.
+- Mode determination (10): 1/10
+  - The presence of C natural (not C#) is noted, but misread as “lowered 6th” instead of the defining b2 of Phrygian; concludes Aeolian incorrectly.
+- Chord-function mapping (20): 5/20
+  - Chord spellings are listed correctly, but functional interpretation misses that C major and A minor are diatonic to B Phrygian (not Aeolian). bII (C) is miscast as a “borrowed color” instead of a defining Phrygian degree.
+- Slash chords and pedal analysis (10): 4/10
+  - Identifies inversions but doesn’t leverage the near-constant B pedal or explain C/B as bIImaj7 over a tonic pedal (a classic Phrygian sonority).
+- Cadence and tonal-center evidence (10): 7/10
+  - Good use of start/end and frequency of Bm; no discussion of modal (non-dominant) behavior or the role of bII.
+- Clarity and structure (10): 9/10
+  - Well-organized stepwise layout; easy to follow.
+- Concision and focus (5): 4/5
+  - Focused and compact without rambling.
+- Theoretical precision (5): 1/5
+  - Critical error: confuses b2 with “lowered 6th”; misses the modal implication of bII and bVII; mislabels diatonic Phrygian sonorities as “borrowed.”
+
+Strengths
+- Accurately identifies B as the tonal center using sensible surface cues (start/end, frequency).
+- Correct chord spellings and a reasonable note inventory from the chords.
+- Clear presentation and readable structure.
+
+Areas to improve
+- Misidentifies the mode: the consistent C natural (no C# anywhere) and the explicit C major triad (C/B) exclude B Aeolian and point squarely to B Phrygian.
+- Misinterprets the role of bII: C/B is not “borrowed”; in B Phrygian, C major (bII) is diatonic, and C/B strongly flags a Phrygian color (bII over a tonic pedal).
+- The “lowered 6th” claim is incorrect; the decisive alteration here is the lowered 2nd (C♮) relative to B natural minor.
+- Overlooks that Am(6) (A–C–E–F#) is perfectly diatonic to B Phrygian and can be reinterpreted as vø7/A (F#ø7/A), further supporting the modal collection.
+
+Actionable suggestions
+- Verify scale degrees against claims: if you see C♮ (not C#) in a B-centered context, flag Phrygian (1–b2–b3–4–5–b6–b7).
+- Treat bII major as a diagnostic for Phrygian. A sonority like C/B (bIImaj7 over tonic pedal) is quintessentially Phrygian, not a casual “borrowed” color.
+- Cross-check diatonic triads for the candidate mode:
+  - B Phrygian diatonic triads: i (Bm), bII (C), bIII (D), iv (Em), v° (F#°), bVI (G), bVII (Am).
+  - Your chords: Bm, G/B (bVI6), D/A (III6), C/B (bIImaj7 over 1), Am6 (bVII add6 = F#ø7/A) all fit B Phrygian cleanly.
+- Keep a quick “exclusion test”: no C# anywhere and multiple appearances of C and A minor → excludes Aeolian, supports Phrygian.
+
+Concise corrected read
+- Key center: B
+- Mode: Phrygian (from the G major collection: B–C–D–E–F#–G–A)
+- Functional sketch:
+  - Bm = i
+  - G/B = bVI6
+  - D/A = III6
+  - C/B = bIImaj7 over tonic pedal (signature Phrygian color)
+  - Am6 = bVII(add6) = enharmonic F#ø7/A (diatonic vø7 in first inversion)
+- Bass behavior: Predominant B pedal with brief A dips (D/A, Am6), reinforcing B as tonic without tonal-dominant cadences, consistent with modal practice.
+
+**Assitant - GPT 5 Chat**
+
+Overview
+- Verdict: Incorrect (mode)
+- Overall score: 57/100 (Mixed: good tonal center, wrong mode)
+
+Weighted scoring breakdown
+- Key identification accuracy (30): 26/30
+  - Correctly identifies B as the tonal center via repeated Bm and pervasive B in the bass.
+- Mode determination (10): 0/10
+  - Concludes B Aeolian; the correct mode is B Phrygian (characteristic C natural = b2).
+- Chord-function mapping (20): 6/20
+  - Functional reading is framed in B natural minor, which mislabels diatonic Phrygian elements (C/B, Am6) as “chromatic/borrowed.”
+- Slash chords and pedal analysis (10): 6/10
+  - Accurately parses chord tones and inversions; notes the pedal-like effect, but misses its modal significance (bII over tonic pedal).
+- Cadence and tonal-center evidence (10): 5/10
+  - Establishes B as center but doesn’t leverage Phrygian-signature motion (b2 → 1) or parent pitch collection logic.
+- Clarity and structure (10): 9/10
+  - Well organized, with a clear stepwise method and a useful chord/scale-consistency table.
+- Concision and focus (5): 4/5
+  - Focused and readable; just enough detail without bloat.
+- Theoretical precision (5): 1/5
+  - Internal contradictions (treats C natural as both chromatic yet “reinforcing Aeolian”) and incorrect modal inference.
+
+Strengths
+- Solid identification of B as the tonal center; clear acknowledgement of repeated B in the bass.
+- Clean chord spelling and correct recognition of slash chords/inversions (G/B, D/A, C/B).
+- Recognizes C natural as salient and flags it in the scale-consistency table.
+- Clear, structured presentation with helpful comparison to B natural minor.
+
+Areas to improve
+- Misidentifies the mode: C natural (b2) is the defining Phrygian tone; it contradicts B Aeolian (which requires C#).
+- Misclassifies diatonic Phrygian sonorities as “borrowed/Neapolitan-like” rather than intrinsic to the mode.
+- Internal inconsistency: concluding Aeolian while simultaneously showing C natural is non-diatonic to B natural minor.
+- Under-explains the modal logic: doesn’t check whether all chords fit one parent collection (they do: G major/B Phrygian).
+- Overlooks characteristic Phrygian behaviors (bII over tonic pedal; semitone b2→1 color).
+
+Actionable suggestions
+- Test the pitch collection: List unique pitches (B, C, D, E, F#, G, A). This matches G major → B Phrygian, not B Aeolian.
+- Highlight hallmark tones: For Phrygian, emphasize b2 (C) and the common bII sonority (C major), especially over a tonic pedal (C/B).
+- Reframe “chromaticism” as “modal”: If multiple so-called “borrowed” chords share a single diatonic collection, treat it as a modal center rather than tonal with chromatic borrowings.
+- Provide a concise modal RN analysis to validate: e.g., i, bVI6, bIII64, bII/1-pedal, bVII(add6), i.
+- Avoid mixing modal/tonal frameworks: If you say “Aeolian,” ensure all scale degrees (like 2 = C# in B Aeolian) are present; if not, reassess the mode.
+
+What the correct analysis should note (B Phrygian)
+- Pitch collection: B C D E F# G A (parent key: G major). No C# appears; C natural is frequent.
+- Characteristic color: b2 (C) above tonic B; C/B is quintessential Phrygian (bII over tonic pedal).
+- Chord-by-chord (in B Phrygian):
+  - Bm = i
+  - G/B = bVI in first inversion (bVI6)
+  - D/A = bIII in second inversion (bIII64)
+  - C/B = bII over tonic pedal (classic Phrygian sound)
+  - Am6 = bVII with added 6 (A–C–E–F#), all diatonic to the collection
+- Tonal center is B, with frequent B in the bass creating a pedal; upper harmonies rotate through diatonic triads of the G-major collection, reinforcing B Phrygian rather than B Aeolian.
+
+In short: Good center, wrong mode. Recognizing that C natural is not “color against B minor” but the defining b2 of B Phrygian would flip the conclusion to the correct one.
+
+**Assitant - DeepSeek V3.2 Thinking**
+
+Overview
+- Verdict: Correct
+- Overall score: 92/100 (Excellent)
+
+Weighted scoring breakdown
+- Key/tonic identification (30): 30/30
+  - Correctly centers on B as tonic (Bm starts/ends, high frequency).
+- Mode determination (10): 10/10
+  - Accurately identifies Phrygian via C natural (b2) and A minor quality (VII becomes minor), and rules out Aeolian and Dorian appropriately.
+- Chord-function mapping (20): 19/20
+  - Correct diatonic set for B Phrygian (i Bm, II C, III D, iv Em, v° F#dim, VI G, vii Am). Notes Am6 is diatonic. Minor room to tighten explicit Roman-numeral tagging for each chord instance in the given progression.
+- Slash chords and pedal/bass analysis (10): 8/10
+  - Recognizes inversions (G/B, D/A, C/B) and that they remain diatonic; notes C/B emphasizes tonic B. Could more clearly frame this as a B pedal and discuss the characteristic Phrygian color in C/B → Bm motion.
+- Cadential/tonal-center evidence (10): 9/10
+  - Good tonic evidence (begin/end on Bm). Could mention characteristic Phrygian-type gestures (e.g., bII–i color) more explicitly as cadence-like support.
+- Clarity and structure (10): 9/10
+  - Well-structured, stepwise reasoning; clean summary and bullet-point recap.
+- Concision and focus (5): 4/5
+  - Slightly verbose with some exploratory detours; still focused.
+- Theoretical precision (5): 3/5
+  - Minor inaccuracies:
+    - States Phrygian has a “flattened seventh compared to natural minor” (in B, both Phrygian and Aeolian have A as the 7th; the difference is b2, not b7).
+    - Suggests Phrygian isn’t “standard in key signatures” (B Phrygian can be notated with the G major/E minor key signature).
+    - Occasional vague phrasing (e.g., “dominant function or something”) where a clearer modal-functional description would be better.
+
+Strengths
+- Arrives at the correct answer and justifies it with multiple converging cues.
+- Enumerates the B Phrygian scale and its diatonic triads/quality accurately.
+- Properly excludes B Dorian (would require G#) and B Aeolian (would require C# leading to C#dim and A major).
+- Correctly identifies Am6 (A–C–E–F#) as diatonic to B Phrygian.
+
+Areas to improve
+- Correct the statement about the 7th degree: the difference vs. natural minor is the b2 (C), not the 7th.
+- Clarify that modal music can use the parent major key signature (here, G major/E minor) for notation.
+- Strengthen the analysis of the bass/pedal: many slash chords keep B in the bass, reinforcing tonic via a pedal point, and C/B → Bm highlights the Phrygian b2 color.
+- Replace vague functional language (“or something”) with precise modal/voice-leading descriptions.
+
+Actionable suggestions
+- Add explicit Roman numerals (modal) to the actual chords used:
+  - Bm (i), G/B (VI in first inversion over tonic pedal), D/A (III over 5), C/B (II over tonic pedal), Am6 (vii with added 6), Bm (i).
+- Call out the B pedal explicitly: G/B and C/B keep B in the bass, stabilizing the tonic while upper voices outline modal color.
+- Highlight the signature Phrygian color: the semitone B–C (b2), heard strongly in the C/B → Bm motion.
+- If mentioning key signatures, note: B Phrygian uses the pitch set of G major (two sharps), so it’s commonly notated with that key signature.
+
+Quick diatonic check (B Phrygian = B C D E F# G A)
+- Bm: B–D–F# ✓
+- G/B: G–B–D (over B bass) ✓
+- D/A: D–F#–A (over A bass) ✓
+- C/B: C–E–G (over B bass) ✓
+- Am6: A–C–E–F# ✓
+
+Overall: An accurate and well-reasoned diagnosis of B Phrygian with a few small theoretical slips and opportunities to tighten the modal/pedal explanation.
+
+**Assistant - DeepSeek V3.2**
+
+Overview
+- Verdict: Incorrect (mode misidentified)
+- Overall score: 63/100
+
+Why: The response correctly centers the harmony on B, but it misidentifies the mode as B Aeolian with “borrowed” chords. Every harmony used is diatonic to B Phrygian (B C D E F# G A), so the consistent C natural (and F#ø sonority) is not modal mixture—it’s the governing collection. Several theoretical assertions (e.g., viiø7 in B harmonic minor) are also inaccurate.
+
+Weighted scoring breakdown
+- Tonic (key-center) identification (30): 30/30
+  - Correctly identifies B as the tonal center (starts/ends on Bm, bass B pedal).
+- Mode determination (10): 0/10
+  - Concludes B Aeolian; the correct mode is B Phrygian (systematic presence of C natural; no C# anywhere).
+- Chord-function mapping (20): 8/20
+  - Some correct local labels (Bm as i, G as ♭VI, D as ♭III). Misreads C major as borrowed rather than diatonic ♭II in Phrygian; mislabels Am6/F#ø function.
+- Slash chords and bass-line analysis (10): 7/10
+  - Lists and tracks bass accurately (B–B–A–B pattern). Limited functional insight drawn from it.
+- Cadence/tonal-center evidence (10): 8/10
+  - Uses phrase boundaries and repetition of Bm sensibly; no explicit cadential parsing (none strongly present).
+- Clarity and structure (10): 6/10
+  - Organized in steps, but contains self-corrections and meandering “wait/actually” moments that cloud the narrative.
+- Concision and focus (5): 3/5
+  - Some redundancy and digressions.
+- Theoretical precision (5): 1/5
+  - Significant errors (see below), especially regarding harmonic minor and half-diminished function.
+
+Key evidence the answer missed
+- Pitch inventory check: All chords derive cleanly from B Phrygian (B C D E F# G A). There is no C# present anywhere, so Aeolian is not supported by the data.
+- Characteristic Phrygian degree: The repeated C major (C/B) is the signature ♭II of Phrygian and appears structurally, not as a one-off color.
+- F#ø (A–C–E–F#): This sonority is diatonic to B Phrygian (vø7), not an imported viiø7 from B harmonic minor.
+
+Strengths
+- Correctly identifies B as the tonal center and uses positional evidence (begin/end on Bm).
+- Accurately spells and inventories the chord tones and the bass line.
+- Recognizes Am6 is enharmonically F#m7♭5/A (note-set equivalence).
+
+Major issues
+- Mode error: Treats C major as “borrowed” despite every harmony fitting B Phrygian without mixture; overlooks the complete absence of C#.
+- Misfunction of Am6/F#ø: Calls it viiø7 of B harmonic minor—incorrect. B harmonic minor’s vii°7 is A#°7 (A#–C#–E–G). F#ø7 (F#–A–C–E) is vø7 in B Phrygian (and iiø7 in E minor).
+- Confusion around D major: Unnecessary detour into “III in melodic minor ascending,” which adds noise (D major is already diatonic in both Aeolian and Phrygian here).
+- Nonstandard/awkward labeling (e.g., “♭VIIm6”) and conflation of modal mixture and tonal minor practice.
+
+Areas to improve
+- Start with a pitch inventory: If C natural is pervasive and C# absent, Aeolian is unlikely; consider Phrygian.
+- Use mode-defining tones: For Phrygian, the ♭2 (C) is the tell; for Aeolian, look for C# or typical Aeolian functions. Don’t default to “mixture” when one collection explains all chords.
+- Check seventh-chord functions against the actual scale: Don’t attribute F#ø7 to B harmonic minor.
+- Tighten Roman numeral usage and avoid speculative alternates that introduce tones not in the set.
+
+Actionable suggestions
+- Verify the governing collection first: List pitch classes from all chords and confirm scale membership before assigning mode (here: B–C–D–E–F#–G–A).
+- Map each chord within B Phrygian:
+  - Bm = i
+  - G/B = ♭VI6
+  - D/A = ♭III6
+  - C/B = ♭II over 1 (Neapolitan over tonic pedal)
+  - Am6 (A–C–E–F#) = vø7/A (F#ø7 in 3rd inversion), fully diatonic
+- Reserve “modal mixture” claims for cases where one scale cannot explain all harmonies.
+- Clean up narrative: Present the conclusion early (“B Phrygian”), then justify with diatonic mapping and the characteristic ♭2.
+
+For reference (correct framing)
+- Mode: B Phrygian (B C D E F# G A)
+- All chords are diatonic; the recurring C major and F#ø sonorities are characteristic of this mode, not borrowings.
+
+**Assistant - GLM 4.6 Thinking**
+
+Overview
+- Verdict: Incorrect (misses B Phrygian)
+- Overall score: 45/100
+
+Weighted scoring breakdown
+- Key/tonic identification (30): 20/30
+  - Correctly centers on B as tonic via frequency and placement, but mislabels the key as “minor” rather than Phrygian.
+- Mode determination (10): 0/10
+  - Fails to test or recognize Phrygian; attributes b2 (C natural) to Neapolitan practice instead.
+- Chord-function mapping (20): 6/20
+  - Multiple mislabels (e.g., C/B as N6; D/A as IV6); misses that all chords are diatonic to B Phrygian.
+- Slash chords and pedal analysis (10): 5/10
+  - Notes the significance of slash chords and some pedal behavior, but misclassifies crucial functions (C/B).
+- Cadential/tonal-center evidence (10): 6/10
+  - Uses start/end on Bm and prevalence of Bm well; overlooks the characteristic Phrygian bII→i color implied by C/B → Bm.
+- Clarity and structure (10): 8/10
+  - Well organized with clear sections and a summary.
+- Concision and focus (5): 3/5
+  - Thorough but longer than needed; some detours.
+- Theoretical precision (5): 1/5
+  - Several factual errors (e.g., what constitutes N6, “F# is the leading tone to B,” D as IV in B minor).
+
+Key hits
+- Correct tonic center (B) supported by repetition and placement.
+- Accurately identifies many chord spellings and notes good voice-leading effects of the slash chords.
+- Clearly structured, readable analysis.
+
+Major misses relative to B Phrygian
+- Does not recognize the pitch-class collection {A, B, C, D, E, F#, G} (i.e., G major) implying B Phrygian (mode 3 of G major).
+- Misidentifies C/B as Neapolitan sixth. In B minor, N6 would be C/E (third in bass). C/B is bII over tonic pedal—classic Phrygian color—not N6.
+- D/A labeled as IV6 via “borrowed chord” logic; in B Phrygian (and in B natural minor) D is III, so D/A is III6 (diatonic in Phrygian).
+- Treats G/B as “borrowed ♭VI”; in B Phrygian, G is diatonic (bVI).
+- Am6 is diatonic in B Phrygian (bVIIadd6). Calling it “♭VII6” conflates inversion “6” with an added sixth sonority; also, calling F# a “leading tone to B” is incorrect (the leading tone to B would be A#/Bb).
+- Over-frames the harmony as “minor with borrowings” instead of a single coherent modal collection (B Phrygian) that explains every chord without borrowing.
+
+What would be correct (brief)
+- Mode: B Phrygian (from G major): B C D E F# G A
+- All chords are diatonic to B Phrygian:
+  - Bm = i
+  - G/B = bVI6 (first inversion)
+  - D/A = III6 (first inversion)
+  - C/B = bII over tonic pedal (Phrygian color, not N6)
+  - Am6 = bVIIadd6
+- Characteristic evidence:
+  - Persistent C natural (b2) across C/B and Am6 confirms Phrygian.
+  - The move C/B → Bm evokes the Phrygian bII → i color (often with tonic pedal).
+
+Actionable suggestions
+- Start by extracting the pitch-class set from all chords; here it yields {A, B, C, D, E, F#, G} → B Phrygian.
+- Test the defining modal tones: for Phrygian, look for b2 (C). Its recurring presence is a strong modal fingerprint.
+- Reserve “Neapolitan sixth (N6)” for bII in first inversion (third in the bass). In B, N6 would be C/E, not C/B.
+- Distinguish inversion “6” from add6 sonorities. Write Am(add6) or Am6 as bVIIadd6, not “bVII6” (which implies inversion).
+- Don’t infer harmonic-minor practice (raised 7, V or V7) without actual V(7) chords or leading-tone behavior.
+- When several slash chords place the tonic in the bass (e.g., G/B, C/B), consider a tonic pedal and evaluate modal coloration over that pedal (common in Phrygian).
+
+Concise corrected mapping example
+- Bm | Bm | G/B | G/B | Bm | Bm | D/A | C/B | Bm | Bm | G/B | G/B | Bm | Bm | Am6 | Bm
+- i | i | bVI6 | bVI6 | i | i | III6 | bII over i | i | i | bVI6 | bVI6 | i | i | bVIIadd6 | i
