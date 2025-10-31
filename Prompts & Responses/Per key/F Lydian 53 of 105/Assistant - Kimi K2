@@ -1,0 +1,32 @@
+**Assistant - Kimi K2**
+
+Given chord sequence:
+
+```
+F   F   Dm/F Dm/F  
+F   F   Am/E G7/F  
+F   F   Dm/F Dm/F  
+F   F   Cmaj7/E F
+```
+
+1. **Identify all the roots appearing in the chords:**  
+   F, D, A, G, C – therefore the collection is  
+   F G A C D → a 5-note set.  
+
+2. **Arrange those notes as a scale starting on F:**  
+   F – G – A – C – D = 1 – 2 – 3 – 5 – 6  
+   The 4th (B♭) and 7th (E) are missing, a classic pentatonic
+   collection built on the tonic F.
+
+3. **Look at the cadence:**  
+   The progression keeps returning to F major triads; the only
+   non-diatonic bass note is the passing E under Cmaj7, which simply
+   supplies the major 7th of F (E) before the final tonic.  There is
+   no B♭ anywhere, hence no Mixolydian colour, and no minor 3rd (A♭)
+   that would point to F minor.  All harmonic tension (G7) is
+   directed straight back to F.
+
+Therefore the passage is in:
+
+**F Ionian (major) pentatonic.**
+
