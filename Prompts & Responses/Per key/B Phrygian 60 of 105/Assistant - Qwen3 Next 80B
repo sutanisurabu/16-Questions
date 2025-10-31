@@ -1,0 +1,170 @@
+**Assistant - Qwen3 Next 80B**
+
+Let's analyze the chord progression:
+
+**Chord sequence:**
+> Bm — Bm — G/B — G/B — Bm — Bm — D/A — C/B — Bm — Bm — G/B — G/B — Bm — Bm — Am6 — Bm
+
+---
+
+### Step 1: Identify the root chords (ignoring bass notes for now)
+
+First, simplify by focusing on the **chord qualities and roots**, ignoring the slash bass notes (which are just inversions or bass extensions):
+
+- Bm (x8)
+- G (x4)
+- D (x1)
+- C (x1)
+- Am6 (x1)
+
+So the primary chords are:  
+**Bm, G, D, C, Am6**
+
+---
+
+### Step 2: Look for a tonal center
+
+We see **Bm appears 8 times** — clearly the **tonic** (home chord). So we're likely in **B minor**.
+
+Let’s check if the other chords fit within the **B minor key**.
+
+#### B natural minor scale (Aeolian):  
+B – C# – D – E – F# – G – A
+
+Chords built on each degree (triads):
+- i: Bm
+- ii°: C#°
+- III: D
+- iv: Em
+- v: F#m
+- VI: G
+- VII: Am
+
+Wait — we have **G** and **D**, which are **VI and III** — both appear in natural minor.
+
+We also have **C** and **Am6**.
+
+What’s **C**?  
+C = C-E-G → Not in B minor scale. The 7th degree should be **A**, not C.
+
+C major is **not diatonic** to B natural minor.
+
+What about **Am6**?  
+A minor 6 = A-C-E-F#  
+In B minor, A is the 7th scale degree → Am is diatonic (VII degree).  
+Adding 6th (F#) — that’s fine, since F# is the 5th of B minor.  
+So Am6 = Am with added 6th → **still diatonic** to B minor. The 6th (F#) is the 5th, so it’s just an extension.
+
+But **C major (C-E-G)**?  
+C is **not** in the B natural minor scale.  
+B minor scale has: B C# D E F# G A → no C natural.
+
+So **C major chord** is **borrowed** — it’s a **chromatic chord**.
+
+---
+
+### Step 3: What key and mode?
+
+We have a strong **Bm** tonic, and chords that mostly belong to **B natural minor** (Aeolian), **except** the **C major chord**.
+
+C major chord (C-E-G) contains **C natural**, which is **not** in B minor (it should be C#).
+
+This C major chord suggests a **borrowed chord** from **B Dorian** or **B Phrygian**, or perhaps **B harmonic minor** — but harmonic minor has C#, not C.
+
+Wait — what key contains **Bm and C major**?
+
+Let’s think differently.
+
+### Consider: Could this be in **D major**?
+
+D major: D E F# G A B C#
+
+Chords: D, Em, F#m, G, Am, Bm, C#°
+
+We have Bm (vi) and G (IV) — both diatonic.
+
+But we also have **C major** → In D major, the VII chord is **C#°**, not C major.
+
+C major would be **borrowed** from D Mixolydian? D Mixolydian has C natural.
+
+D Mixolydian: D E F# G A B C — yes, C natural.
+
+But we have **Bm** as tonic — not D. So this is **not** in D major.
+
+What if **Bm is tonic**, and C is a borrowed chord?
+
+In **B Dorian**, the scale is:  
+B C# D E F# G# A → still has C#! So no C natural.
+
+In **B Phrygian**: B C D E F# G A → YES! Here we have **C natural**!
+
+Check B Phrygian scale:
+- B (root)
+- C (♭2)
+- D (m3)
+- E (4)
+- F# (5)
+- G (♭6)
+- A (♭7)
+
+So chords built on scale degrees:
+- i: Bm
+- ii°: C° (we have C major, not C°)
+- III: D
+- iv: Em
+- v: F#m
+- VI: G
+- vii: Am
+
+Wait! **C major** would be **not diatonic** even in B Phrygian — Phrygian has **C°**, not C major.
+
+But we have **C major** — C-E-G — which is a **major triad on the ♭2**.
+
+This is a **non-diatonic, borrowed chord**.
+
+It’s often called a **"Neapolitan" chord**, but Neapolitan is usually a ♭II *in first inversion* and major triad — yes! That’s it.
+
+In minor keys, the **♭II chord** (major triad on the lowered second scale degree) is common, especially in classical and rock music. It’s borrowed from the **parallel major** or **Phrygian mode**.
+
+So in **B minor**, the **♭II chord** is C major (since ♭2 of B is C).
+
+And we also have:
+- G (VI) — diatonic
+- D (III) — diatonic
+- Am6 (vii6) — diatonic (Am with added 6th = F#)
+- Bm (i) — tonic
+
+So we have:
+- i (Bm)
+- ♭II (C)
+- III (D)
+- VI (G)
+- vii6 (Am6)
+
+All are consistent with **B minor**, with a strong **borrowed ♭II chord** (C major), which is very common in minor keys — especially in rock, pop, and metal.
+
+The progression:
+> Bm — Bm — G/B — G/B — Bm — Bm — D/A — C/B — Bm — Bm — G/B — G/B — Bm — Bm — Am6 — Bm
+
+The inversions (G/B, D/A, C/B) are just bass notes — doesn’t change the mode.
+
+---
+
+### Final Determination
+
+- **Key: B minor**
+- **Mode: Natural minor (Aeolian)**, **with a borrowed ♭II (C major) chord**
+
+> Some might call it **B Phrygian** because of the C natural, but Phrygian has a **C° chord**, and our bass movement and harmonic context suggest **B minor with chromatic flavor**, not an actual mode change. The **C major** is a **borrowed chord**, not a modal indicator — especially since the scale still otherwise follows natural minor (no G# or other alterations).
+
+The **Am6** also reinforces natural minor — it's just an extended vii chord.
+
+---
+
+### ✅ Final Answer:
+
+**Key:** **B minor**  
+**Mode:** **Natural minor (Aeolian)** with a **borrowed flat-II chord (C major)** for color.
+
+This progression is **not** in Phrygian, Dorian, or Harmonic minor — the C major is chromatic, not modal. So the underlying mode is **Aeolian**.
+

@@ -1,0 +1,59 @@
+**Assistant - Kimi K2**
+
+To determine the **key and mode** of this chord progression:
+
+**Chord progression:**
+```
+Bm  Bm  G/B  G/B  Bm  Bm  D/A  C/B  Bm  Bm  G/B  G/B  Bm  Bm  Am6  Bm
+```
+
+---
+
+### Step 1: Look at the overall tonic
+- The progression **starts and ends on Bm**.
+- **Bm** is the most frequent chord.
+- The final resolution is to **Bm**, suggesting **B** is the tonal center.
+
+---
+
+### Step 2: Analyze the chord qualities and notes
+
+Let’s list the notes in each chord:
+
+- **Bm**: B D F#
+- **G/B**: G B D (G major in first inversion)
+- **D/A**: D F# A (D major in first inversion)
+- **C/B**: C E G B (C major with B in bass – effectively Cmaj7/B)
+- **Am6**: A C E F# (this is an **F#ø7** in first inversion, or Am6)
+
+---
+
+### Step 3: Look at the scale implied
+
+From the chords, the unique pitches are:
+
+**B C D E F# G A**
+
+This is the **B natural minor scale**:
+- B C♯ D E F♯ G A → but **C natural** appears (in C/B and Am6), **not C♯**.
+
+So this is **B minor with a lowered 6th scale degree** — that is:
+
+> **B Aeolian** (natural minor), **not harmonic or melodic minor**.
+
+---
+
+### Step 4: Check for modal mixture or color
+
+- The **Am6** chord (A C E F#) includes **F#**, the major 6th above A, but in the key of B minor, **F# is the natural 3rd**, so this is **not unusual**.
+- The **C/B** chord is a **Cmaj7/B**, which is a **borrowed chord** or **passing color**, not a modulator.
+
+---
+
+### ✅ Final Answer:
+
+> **Key: B minor**  
+> **Mode: B Aeolian (natural minor)**
+
+No strong evidence of modal mixture or mode change — just chromatic voice leading and inversions.
+
