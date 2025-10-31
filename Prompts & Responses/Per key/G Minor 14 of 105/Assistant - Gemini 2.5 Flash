@@ -1,0 +1,35 @@
+**Assistant - Gemini 2.5 Flash**
+
+The provided chord progression is:
+
+**Gm Gm Eb/G Eb/G Gm Gm Bb/F Bm(b5)/G Gm Gm Eb/G Eb/G Gm Gm F6 Gm**
+
+To determine the key and mode, we first look for the most frequently occurring and structurally important chords, particularly the tonic (I) chord.
+
+1.  **Dominant Chord:** The `F6` chord (F-A-C-D) or simply `F` chord serves as the dominant chord, strongly pulling towards G. The `F` major chord is the $\text{VII}$ chord in the $\text{G}$ natural minor scale. Since we don't have a $\text{D}$ major (V) chord, this structure suggests a mode or scale that uses a minor dominant.
+
+2.  **Tonic Chord:** The `Gm` chord starts and ends the progression and is the most frequently occurring chord, establishing **G** as the tonal center. This immediately suggests a minor key system (G minor).
+
+3.  **Progression Analysis:**
+    *   $\text{Gm}$ (i)
+    *   $\text{Eb/G}$ (IV or iv/major IV depending on mode used) - $\text{Eb}$ major is the $\text{bVI}$ chord in $\text{G}$ minor.
+    *   $\text{Bb/F}$ ($\text{Bb}$ Major) - $\text{Bb}$ major is the $\text{bIII}$ chord in $\text{G}$ natural minor.
+    *   $\text{Bm(b5)/G}$ (This chord is unusual in a simple minor key. $\text{Bmb5}$ is B-D-F. When inverted with $\text{G}$ in the bass, it functions structurally similar to a $\text{G}$ minor chord with added tension, or perhaps more locally, as a passing chord.)
+    *   $\text{F6}$ ($\text{F}$ major) - $\text{F}$ major is the $\text{bVII}$ chord in $\text{G}$ minor.
+
+4.  **Diatonic Chords in G Minor Modes:**
+
+    *   **G Natural Minor (Aeolian):** $\text{Gm}$ (i), $\text{Adim}$ (ii°), $\text{Bb}$ (bIII), $\text{Cm}$ (iv), $\text{Dm}$ (v), $\text{Eb}$ (bVI), $\text{F}$ (bVII).
+    *   **G Harmonic Minor:** $\text{Gm}$ (i), $\text{Adim}$ (ii°), $\text{Bbaug}$ (bIII+), $\text{Cm}$ (iv), $\text{D}$ (V), $\text{Eb}$ (bVI), $\text{F#dim}$ (vii°).
+    *   **G Melodic Minor:** $\text{Gm}$ (i), $\text{Am}$ (ii), $\text{Bbaug}$ (bIII+), $\text{C}$ (IV), $\text{D}$ (V), $\text{Edim}$ (vi°), $\text{F#dim}$ (vii°).
+
+**Conclusion:**
+
+The progression exclusively uses the chords $\text{Gm}$ (i), $\text{Bb}$ (bIII), $\text{Eb}$ (bVI), and $\text{F}$ (bVII). All these chords are the diatonic chords of the **G Natural Minor Scale** (G-A-Bb-C-D-Eb-F).
+
+The use of the $\text{F}$ major chord ($\text{bVII}$) instead of the $\text{D}$ major chord (V) is the defining characteristic that separates the Natural Minor (Aeolian Mode) from Harmonic or Melodic Minor, where the Dominant is often raised.
+
+Therefore, the key and mode are:
+
+**Key and Mode:** **G Aeolian Mode (or G Natural Minor)**
+
