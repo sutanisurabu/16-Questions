@@ -1,0 +1,758 @@
+**Assistant - Qwen 235B**
+
+Let's analyze the given chord progression:
+
+**Chords:**
+> Bbdim | Bbdim | Gb/Bb | Gb/Bb | Bbdim | Bbdim | Dbm/Ab | B/Bb | Bbdim | Bbdim | Gb/Bb | Gb/Bb | Bbdim | Bbdim | Emaj7/Ab | Bbdim
+
+---
+
+### Step 1: List the Chords More Clearly
+
+- **Bbdim** — Bb° (Bb–Db–Fb)
+- **Gb/Bb** — Gb major with Bb in the bass (i.e., first inversion of Gb major)
+- **Dbm/Ab** — Db minor with Ab in the bass (first inversion of Dbm)
+- **B/Bb** — B major triad with Bb in bass? That creates a clash — let's check this.
+- **Emaj7/Ab** — E major 7 chord with Ab in the bass
+
+Wait — several issues here.
+
+Let’s examine the problematic chords:
+
+---
+
+### 1. **B/Bb** — B major over Bb bass?
+
+- B major = B–D#–F#
+- Bb = A# — enharmonic, but Bb ≠ B
+- So B/Bb is B–D#–F# over Bb — a tritone between Bb and B, very dissonant.
+
+This is highly unusual. Possibly a typo?
+
+But **B/Bb** might actually mean **B°/Bb**, or **Bdim/Bb**, since Bbdim appears frequently. Or maybe it's supposed to be **B°/Bb**, a common passing chord.
+
+Alternatively, perhaps **B/Bb** means **Bdim/Bb**, which is the same as **Bdim** in first inversion.
+
+- Bdim = B–D–F
+- Bdim/Bb? Bb under B–D–F? That would require Bb as the bass.
+- But Bdim does not contain Bb.
+
+Wait: Bdim is B–D–F  
+Bbdim is Bb–Db–Fb (enharmonic to A)
+
+So they’re different chords.
+
+But Bdim/Bb would be **B–D–F over Bb bass**, which creates a minor 9th interval (Bb–B) — very dissonant.
+
+Alternatively, **maybe it's a typo** and meant to be **Bdim/Bb** but meant **Ab7** or **Bdim**?
+
+Hold that. Let's look at **Emaj7/Ab**.
+
+---
+
+### 2. **Emaj7/Ab** — E–G#–B–D# over Ab bass?
+
+- Ab to E is an augmented 5th — extremely harsh.
+- That’s Ab–E—a tritone. In jazz, this might be a #11 or something, but rare.
+
+But wait — perhaps this is **enharmonic reinterpretation**.
+
+Let’s consider:
+
+- **Emaj7/Ab** — maybe this is meant to be **Eb7#11/Ab**? Unlikely.
+Alternately, perhaps it's a misspelling and meant to be **Em7/Ab** or **Ab/C**?
+
+But let’s look at the overall harmonic movement.
+
+---
+
+### Step 2: Look for a Tonal Center
+
+We see **Bbdim** repeatedly — often used as a **passing chord** or **common tone diminished chord**.
+
+Also, **Gb/Bb** appears multiple times — Gb major with Bb in bass. So the **third** of Gb is Bb, so this is **first inversion Gb major**.
+
+So **Gb major** is important.
+
+Also, **Dbm/Ab** — Db minor with Ab in bass → third of Dbm is Ab, so again **first inversion** of Dbm.
+
+So we have:
+- Gb major (in inversion)
+- Db minor (in inversion)
+- Bbdim (repeated)
+- ?B/Bb?
+- Emaj7/Ab?
+
+Hmm.
+
+Let’s look at roots used:
+
+- Bb (from Bbdim, Gb/Bb, B/Bb, Dbm/Ab, Emaj7/Ab)
+- Gb (from Gb/Bb)
+- Db (from Dbm)
+- B? (from B/Bb — questionable)
+- Ab (from Dbm/Ab, Emaj7/Ab)
+- E? (from Emaj7 — very odd)
+
+But note: **B** and **E** are not in the same key as Bb, Gb, Db.
+
+Unless we consider **enharmonic equivalents**.
+
+Let’s reframe everything in **enharmonic keys**.
+
+---
+
+Try enharmonic equivalents:
+
+- **Gb major** = **F# major** (6 sharps)
+- **Bb** = A#
+- But that may not help.
+
+Alternatively, consider **Bbdim** — a **common tone diminished chord** — often used to embellish a tonic or dominant.
+
+Bbdim = Bb–Db–Fb (Fb = E)
+
+So notes: Bb, Db, E
+
+Wait — Bb, Db, E.
+
+E is enharmonic to Fb, but spelled as E, so this chord has a **major third interval** between Db and E? No — Db to E is augmented 2nd — in equal temperament, it's a minor third? No:
+
+- Db to E = interval of an **augmented 2nd** (in notation), which is 3 semitones — same as minor third.
+
+But in a **diminished chord**, all intervals are minor thirds.
+
+Bbdim should be: Bb–Db–Fb (Fb = E)
+
+So: Bb – Db – E (Fb)
+
+So spelled as: Bb, Db, E — but E is actually Fb — so it's a **diminished triad**.
+
+So notes: Bb, Db, E (Fb)
+
+So pitch set: Bb, Db, E
+
+But E is enharmonic to Fb.
+
+So pitches: **Bb, Db, E**
+
+Now, Gb major: Gb, Bb, Db
+
+Ah! So **Bbdim** shares **Bb and Db** with **Gb major**.
+
+In fact, **Bbdim** is a **common-tone diminished chord** based on the **third** of Gb major.
+
+Common-tone diminished chords often serve to embellish a major chord using a dim7 above the root.
+
+So: Gb = Gb, Bb, Db
+
+Bbdim = Bb, Db, Fb — common tones: Bb, Db — so **common-tone diminished chord emphasizing Gb major**.
+
+So **Bbdim → Gb** is a **common tone movement** — likely **Bbdim is decorating Gb**.
+
+Similarly, we see **Dbm/Ab** — Db minor chord in first inversion.
+
+Notes: Ab, Db, Fb
+
+So Dbm = Db, Fb, Ab
+
+Also has Db and Ab.
+
+Now, Bbdim has Bb, Db, Fb (E) — so common tones: Db, Fb with Dbm.
+
+So Bbdim also shares notes with Dbm.
+
+So Bbdim could be **decorating either Gb or Dbm**.
+
+Now, later we have **Emaj7/Ab**
+
+Emaj7 = E, G#, B, D#
+
+With **Ab** in bass.
+
+Ab = G#
+
+Wait — Ab = G# enharmonically.
+
+So **Ab in bass = G#**, which is the **third of E major**.
+
+So if **Ab = G#**, then **Emaj7/Ab** is actually **Emaj7/G#**, which is second inversion of **Emaj7** — which is a **very normal voicing**.
+
+So likely, **"Emaj7/Ab" is meant to be Emaj7/G#"**, not Ab.
+
+Similarly, **"B/Bb"** — B major over Bb bass?
+
+But B and Bb are a half step apart.
+
+But **B/Bb** — if Bb is actually **A#**, and **B** is the chord, then perhaps **B/A#** — which is **B major over A#**, i.e., **Bmaj7/A#** or just **B major in close position**?
+
+But still odd.
+
+But wait — **Bdim** is B–D–F — notes a m3 apart.
+
+If we consider **Bdim/Bb**, but Bb = A# — then B–D–F over A# — that’s A#–B = minor 2nd, very dissonant.
+
+But here's a better idea: perhaps the chord **"B/Bb"** is a typo, and it's meant to be **Bdim/Ab** or **Bdim/Cb**?
+
+Wait — look at the progression:
+
+> ... Dbm/Ab | B/Bb ...
+
+After **Dbm/Ab** (Ab–Db–Fb) comes **B/Bb**
+
+But **B** and **Dbm** don't go together.
+
+Wait — what if **"B/Bb"** is meant to be **"Bdim"** — and "B/Bb" is a typo?
+
+Or **"Ab7"**?
+
+Alternatively — here's a theory.
+
+Let’s look at the entire sequence in **pitches**:
+
+Let’s assume all are real and interpret enharmonically.
+
+List all chord pitches:
+
+1. **Bbdim** = Bb, Db, Fb (E)
+2. **Gb/Bb** = Bb, Gb, Bb, Db → notes: Gb, Bb, Db
+3. **Dbm/Ab** = Ab, Db, Fb
+4. **B/Bb** = Bb, B, D#, F#
+   - Very dissonant — Bb and B clash, D# vs Db, F# vs Fb
+   - Not likely intended.
+
+   Unless **"B/Bb"** is **"B°/Bb"** = Bdim with Bb bass — Bdim = B, D, F — over Bb
+
+   So pitches: Bb, B, D, F — still Bb–B clash.
+
+5. **Emaj7/Ab** = Ab, E, G#, B, D#
+   - Ab and E = tritone
+   - G# = Ab, so Ab–Ab = same pitch (if G# = Ab)
+   - So if G# = Ab, then the chord has Ab (G#) in bass, and G# in chord — OK.
+   - But E and Ab are tritone — fine in a dominant chord.
+
+Wait — **E, G#, B, D#** over **Ab (G#)** is the same as:
+- Bass: G#
+- Chord: E, G#, B, D#
+
+So it's **Emaj7/G#**, which is **second inversion Emaj7** — fine.
+
+So **Emaj7/Ab** is just **Emaj7/G#** — not an issue.
+
+Now, what about **"B/Bb"**?
+
+Maybe it's **Bdim**, and the "/Bb" is a typo or mislabel.
+
+Alternatively, consider that **"B/Bb"** could be **Cbb**, but no.
+
+Another idea: in jazz, **B/Bb** sometimes means **B7/Bb**, which is **B7 in third inversion**.
+
+B7 = B–D#–F#–A
+
+B7/Bb? Bb is not in B7 — B7 has A, not Bb.
+
+Unless it’s **B7/A**, but A ≠ Bb.
+
+But **A = G#**, **Bb = A#**
+
+So no.
+
+But **B7** has A natural — so **B7/A** would be third inversion.
+
+But labeled **B/Bb**, only if A was misread as Bb — which is a common **notation error** in some fake books.
+
+So **perhaps "B/Bb" is meant to be "B7/A"** → B7 in third inversion.
+
+That makes sense.
+
+So: **B7/A** — chord: B–D#–F#–A, bass: A
+
+Now, **what key has B7?**
+
+B7 is the **V7 of Emaj**.
+
+And we have **Emaj7** later: **Emaj7/Ab**
+
+And **G#** is the third of Emaj.
+
+So if **B7** leads to **Emaj7**, that’s **V7–I in E major**.
+
+But then the rest of the chords are in **Gb, Bb, Db** — all flats.
+
+But E major = 4 sharps.
+
+But let’s check: are any of these chords enharmonic to E key?
+
+- Gb major = F# major — 6 sharps
+- Bb = A# — in F# major
+- Bbdim = A#° — could be chord in C# minor or F# major?
+
+Wait.
+
+Let’s try **enharmonic reinterpretation** of the entire progression.
+
+---
+
+### Enharmonic Rewrite
+
+Let’s rewrite everything in sharps.
+
+- **Bb** = A#
+- **Gb** = F#
+- **Db** = C#
+- **Ab** = G#
+- **E** = E
+
+So progression becomes:
+
+> A#° | A#° | F#/A# | F#/A# | A#° | A#° | C#m/G# | B/A# | A#° | A#° | F#/A# | F#/A# | A#° | A#° | Emaj7/G# | A#°
+
+Now:
+
+- **F# major** — key of **C# minor** or **F# major**
+- **C#m** — so C# minor chord
+- **Emaj7/G#** — E major 7, G# in bass — G# is the 3rd of E
+- **B/A#** — B over A#? B major chord: B, D#, F#
+
+Now, **B7** would be **B, D#, F#, A**
+
+But here it’s labeled **B/A#** — and A# = Bb — but if B7/A# is intended, but B7 has **A natural**, not A#.
+
+So **B7/A** = B–D#–F#–A over A — so **A** in bass.
+
+But **A# ≠ A** — a half step apart.
+
+So cannot be.
+
+But what if **B/A#** is **Bdim/A#**?
+
+Bdim = B, D, F
+
+Over A#? Still doesn't match.
+
+Wait — A#° = Bbdim = Bb, Db, E
+
+E = Fb
+
+But in sharp terms: A#, C#, E
+
+So A#° = A#, C#, E
+
+Now, **E** is common to both **E major** and **C# minor**.
+
+Now, look:
+
+- We have **F#/A#** = F# over A# → F#, A#, C# — F# major in first inversion
+- C#m/G# = C#, E, G# — C# minor, first inversion
+- A#° = A#, C#, E
+- Emaj7/G# = E, G#, B, D#, G# (bass) — so E, G#, B, D#
+
+Now, **B chord?** — "B/A#" — if it's just **B**, major — B, D#, F#
+
+But in key of C# minor or E major, D# is natural.
+
+C# natural minor: C#, D#, E, F#, G#, A, B
+
+So **D# is in the scale**.
+
+But **F#** is also in C# minor.
+
+Now, **B major chord** (B, D#, F#) — is this diatonic?
+
+In C# minor, the **V chord** is **G# diminished** — not B major.
+
+But **B major** = **III chord in G# minor**.
+
+Wait.
+
+In C# **harmonic** minor: raise the 7th → C# D# E F# G# A B#
+
+So **B# dim** is vii° — not B major.
+
+But **B major** is not in C# minor.
+
+But B major is **V of Emaj**.
+
+And we have **Emaj7** — so possible.
+
+So let’s suppose: **B major** → **Emaj7**
+
+That's **V–I** in **E major**.
+
+E major: E, F#, G#, A, B, C#, D#
+
+Now, chords:
+
+- F# major — that’s **ii** in E major
+- C# minor — that’s **vi** in E major
+- A#° — A#, C#, E — notes: A#, C#, E
+
+In E major: E, F#, G#, A, B, C#, D#
+
+A# is not in E major — A# is **leading tone to B**, but E major has **B natural**, not B#.
+
+A# is **not in E major** — E major has **A natural**.
+
+So A#° is **not diatonic** to E major.
+
+But **A#°** is chromatic.
+
+However, **A#° = C#° = E° = G#°** — all the same dim7 chord.
+
+A#° = A#, C#, E, G
+
+But we only have **Bbdim**, which is **three-note** — not full dim7.
+
+Still, A#° = A#, C#, E — which is **G#° missing the G natural**.
+
+In **E major**, we can have **common-tone diminished chords**.
+
+For example, **C#°** could be a common-tone leading to C# minor.
+
+But here, **A#°** — A#, C#, E — common tone with **F# major**? F# has A#? F# = F#, A#, C#
+
+Yes! F# major = F#, A#, C#
+
+So A#° = A#, C#, E — shares **A# and C#** with F# major.
+
+So **A#° is a common-tone diminished chord for F# major**, using the **third** as the common tone.
+
+Common practice: **ii°/ii** or **vii°/ii** to embellish ii chord.
+
+Similarly, **C#m/G#** — C#, E, G#
+
+A#° also has **C# and E** — so common tone with C# minor.
+
+So A#° can decorate **C#m** too.
+
+Then **B/A#** — if it's **B major over A# bass**, then:
+
+- B major = B, D#, F#
+- A# bass = A#
+
+B to A# = minor 2nd — harsh
+
+But in **E major**, **B major chord** is the **V chord** — dominant.
+
+But why put A# under it?
+
+Unless it's a **passing bass line**.
+
+Let’s look at the bass line:
+
+From the progression:
+
+- Bbdim → bass: Bb
+- Gb/Bb → bass: Bb
+- Bbdim → Bb
+- Gb/Bb → Bb
+- Bbdim → Bb
+- Dbm/Ab → Ab
+- B/Bb → Bb
+- Bbdim → Bb
+- Gb/Bb → Bb
+- Dbm/Ab → Ab
+- Emaj7/Ab → Ab
+- Bbdim → Bb
+
+Wait — bass line:
+
+- Bb, Bb, Bb, Bb, Bb, Ab, Bb, Bb, Bb, Ab, Ab, Bb
+
+So mostly **Bb**, then **Ab**, then **Bb**, and finally **Ab** to **Bb**
+
+But **Ab to Bb** is a major 2nd.
+
+But **Ab** is also the **third of Emaj7** — so **Emaj7/Ab** means Ab in bass.
+
+So bass: Ab → then Bbdim → Bb
+
+So **Ab–Bb** — rising major 2nd.
+
+But the chord before Ab is **B/Bb** with **Bb** in bass — so Bb → Ab? That would be descending.
+
+Let’s lay it out:
+
+Before **Dbm/Ab**: Bbdim (Bb)
+Then **Dbm/Ab**: Ab
+Then **B/Bb**: Bb
+Then Bbdim: Bb
+...
+Then **Emaj7/Ab**: Ab
+Then Bbdim: Bb
+
+So bass line snippet:
+
+...Bb (Bbdim) → Ab (Dbm/Ab) → Bb (B/Bb) → Bb (Bbdim)...
+
+So Ab–Bb — a major 2nd.
+
+Then later: Bb → Bb → Bb → Ab (Emaj7) → Bb
+
+So **Ab–Bb** movement.
+
+Now, in **E major**, **Bb** is **C flat**, not used.
+
+But if we consider **enharmonic to A#**, then in **B major** or **E major**, A# is Bb — still foreign.
+
+But here's a better idea: **this progression is in Gb major**, and the last chord is not Emaj7 but something else.
+
+Wait — **Emaj7/Ab** — Ab is the **ninth** of Gb major? Gb major: Gb, Ab, Bb, Cb, Db, Eb, F
+
+So Ab is the **2nd/9th**.
+
+So if we have Gb major, and a chord with **E** — that’s not in Gb.
+
+E = Fb — so Fb.
+
+But **Emaj7** = E, G#, B, D#
+
+E = Fb, G# = Ab, B = Cb, D# = Eb
+
+So **Enharmonically: Fb, Ab, Cb, Eb**
+
+That's **Gb7** without the root!
+
+Gb7 = Gb, Bb, Db, Fb
+
+But we have Fb, Ab, Cb, Eb
+
+Not the same.
+
+Fb, Ab, Cb, Eb = **Fb minor 7 (Fbm7)**?
+
+Fbm = Fb, Abb, Cb
+
+No.
+
+Alternatively, **Ab7** = Ab, C, Eb, Gb
+
+We have: Ab, Cb (B), Eb, Fb — so **Ab, Cb, Eb, Fb** — that’s **Ab7(b9)** — Ab–Cb–Eb–Gb–Bbb, but here we have Fb instead of Gb.
+
+Fb = E, Gb = F#.
+
+No.
+
+Wait — Fb, Ab, Cb, Eb
+
+Intervals from Fb:
+- Fb–Ab = major 3rd
+- Fb–Cb = perfect 5th
+- Fb–Eb = major 7th
+
+So **Fbmaj7**?
+
+Fbmaj7 = Fb, Ab, Cb, Eb — yes!
+
+And Fbmaj7 = **enharmonic to Emaj7**
+
+Yes!
+
+So **Emaj7/Ab** = Fbmaj7/Ab — Fb major with Ab in bass.
+
+Fbmaj7 = Fb, Ab, Cb, Eb
+
+Bass: Ab — so **first inversion** of Fbmaj7.
+
+Now, Fb = Gb? No.
+
+But in practical terms, **Fb = E**, so keyboard pitch same as E.
+
+But in harmony, if the key is **Gb major**, then:
+
+- Gb major: Gb, Ab, Bb, Cb, Db, Eb, F
+- Fb = E — but in Gb, the leading tone is F natural.
+- Fb = E is enharmonic to the **6th degree down a half step** — not diatonic.
+
+But **Fbmaj7** is **bVIIImaj7** in Gb? Gb has F naturals.
+
+No.
+
+But here's the key insight:
+
+We have:
+
+- **Bbdim** — Bb–Db–Fb — Fb = E
+- **Gb/Bb** — Gb major
+- **Dbm/Ab** — Db minor
+- **Fbmaj7/Ab** — Fb–Ab–Cb–Eb
+
+All these chords have **Ab, Bb, Db, Fb** = **Eb**
+
+List the notes used:
+
+- Bb, Db, Fb, Ab, Gb, Cb, Eb
+
+So: Bb, Db, Eb, Fb, Gb, Ab, Cb
+
+That’s: Bb, Cb, Db, Eb, Fb, Gb, Ab
+
+That’s the **Bb major scale**! But with **no A natural** — all flats.
+
+Bb major: Bb, C, D, Eb, F, G, A
+
+But we have Cb, Db, instead of C, D; Fb instead of F; Gb instead of G; Ab instead of A.
+
+So this is actually the **Gb major scale**:
+
+Gb major = Gb, Ab, Bb, Cb, Db, Eb, F
+
+Compare:
+
+- Bb = Bb
+- Db = Db
+- Fb = E = not in Gb major — Gb major has F natural
+- Fb = E is **not in Gb major**
+
+Gb major has F natural.
+
+But we have Fb = E natural.
+
+So it's **not Gb major**.
+
+Unless it's **G# major**, but unlikely.
+
+Another idea: perhaps the key is **C# minor**.
+
+C# harmonic minor: C#, D#, E, F#, G#, A, B#
+
+B# = C
+
+But we have Bb = A#
+
+A# is not in C# minor.
+
+This is difficult.
+
+### Revelation: Common-tone diminished progression
+
+The chord Bbdim (Bb-Db-Fb) appears over and over, often alternating with Gb/Bb.
+
+Gb major: Gb, Bb, Db
+Bbdim: Bb, Db, Fb
+
+So common tones: Bb, Db
+
+So Bbdim is a **common-tone diminished chord for Gb major**, specifically the **third-based ct° chord**.
+
+Similarly, when it goes to Dbm/Ab: Db, Fb, Ab
+
+Bbdim has Db, Fb — so common with Dbm.
+
+And Fb = E, but in context, it's acting as a passing note.
+
+Then we have Emaj7/Ab — which is Fbmaj7/Ab
+
+Fb = E, so it's a chromatic major chord.
+
+But in **Gb major**, the bVI chord is Eb major, not E major.
+
+So this is chromatic.
+
+But consider that **Emaj7/Ab = Fbmaj7/Ab**, and Fb is the **b3 of Dbm chord? No.
+
+Perhaps the progression is in **Bb minor**.
+
+Bb minor: Bb, C, Db, Eb, Fb, Gb, Abb
+
+Common chords:
+- Bbdim? No, i° in Bb minor is not stable.
+- Gb = VI
+- Dbm = ii or iv? Db = third scale degree.
+
+Bb natural minor: Bb, C, Db, Eb, Fb, Gb, Abb
+
+So:
+- Gb = VI
+- Dbm = iii
+- Bbdim = degree i° — possible
+
+But Bb dim is not a tonic chord.
+
+And Emaj7 not in scale.
+
+But if Bb harmonic minor: raise the 7th to A natural.
+
+Bb, C, Db, Eb, Fb, Gb, A
+
+Then A is major.
+
+But we have E major, not A.
+
+Another possibility: **The key is Gb major, and "Emaj7" is a chromatic passing chord**.
+
+But the most likely explanation is that this is a **jazz progression** centered on **Dbm and Gb**, with **common-tone diminished chords**, and the final Emaj7 is a **tonic chord in E major**, but that doesn't fit.
+
+Given the prominence of Gb and Bb, and the bass line alternating Bb and Ab, and the final move to Emaj7/Ab, it's possible this is a **modal interchange** or **chromatic passing**.
+
+But after careful analysis, the most coherent interpretation is:
+
+### Final Analysis:
+
+The chord progression is in **Bb minor**, and uses:
+
+- Bbdim as a common-tone chord to Gb and Dbm
+- Gb = VI
+- Dbm = #iv (not diatonic) — so not likely.
+
+Wait — if **Bb minor**, Db = minor third, so Dbm = biii
+
+In Bb minor:
+- i: Bbmin
+- biii: Dbm
+- VI: Gb
+
+Yes! Gb is VI in Bb minor.
+
+In Bb minor: Bb, C, Db, Eb, Fb (E), Gb, Abb (G)
+
+So:
+- **Gb** = VI — major
+- **Dbm** = biii — minor
+- **Bbdim** — not diatonic, but could be a chromatic passing chord
+- **Bbdim** could be interpreted as the **vii° of Cb**, not helpful.
+
+But Bbdim has Bb, Db, Fb — Fb = E, which is the 5th of Bb minor.
+
+In Bb minor, the 5th is Fb (E) — yes.
+
+But the chord is Bbdim, not Bbm.
+
+So not tonic.
+
+But the bass is often Bb, and chords are around Bb.
+
+Yet the final chord is Emaj7, which is foreign.
+
+Unless the **"Emaj7/Ab"** is not a chord in E, but a **spelling for Ab7#11 or something**.
+
+Ab7 with G# = #11.
+
+Ab7 = Ab, C, Eb, Gb
+G# = #11 if you spell it as such.
+
+But here the chord is "Emaj7" — E, G#, B, D# — so not Ab7.
+
+I think the only way this makes sense is if the final chord is a **tonic chord in E major**, and the rest is a chromatic approach.
+
+Given the B7 chord (from B/Bb likely being B7) resolving to Emaj7, it's likely that the key is **E major**, and the earlier chords are chromatic or passing.
+
+**B/Bb** is probably B7/A, bass mistake.
+
+So progression: common-tone diminished in F#/C#, then B7, then Emaj7.
+
+So the mode is **E major (Ionian)**.
+
+### Conclusion:
+
+**Key: E major**  
+**Mode: Ionian**
+
+The progression uses common-tone diminished chords to decorate F#m or F# major (ii), then moves to B7 (V), resolving to Emaj7 (I).
+
+The "Gb" is F#, "Bbdim" is A#°, "Dbm" is C#m, "Ab" is G#.
+
+So it's a **progression in E major** with chromatic embellishments.
+
+**Final Answer: Key is E major, mode is Ionian.**
+
