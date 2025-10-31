@@ -1,0 +1,1 @@
+For the keys of G Locrian and Bb Locrian, you see 10 attempts, not 1 like with other keys. I prompted models for these keys 10 times in a row to test whether pass@10 at difficult items would be a good predictor of their overall performance, but became lazy and abolished this idea. I kept them here if anyone feels like trying it out.
