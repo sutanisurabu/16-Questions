@@ -1,0 +1,46 @@
+**Assistant - Gemini 2.5 Flash**
+
+The analysis of the given chord progression points towards the key of **E-flat minor ($E{\flat}m$)** or **E-flat Phrygian**. However, based on the function of the chords and standard harmony, **E-flat minor ($E{\flat}m$) (Aeolian or Harmonic/Melodic Minor)** is the most likely key center.
+
+Here's a breakdown of the analysis:
+
+| Chord | Root | Quality | Roman Numeral (Assuming $E{\flat}m$) | Function | Notes (E $\to$ Eb) | Function |
+| :---: | :--: | :-----: | :--------------------------------: | :-------: | :---: | :-------: |
+| **Eb** | $Eb$ | Major | $I$ (Phrygian) or $bIII$ (Minor key) or $V$(Harmonic minor) | Tonic/Dominant/Mediant | $\rightarrow$ | Tonic Chord (${\bf I}$) |
+| **Eb** | $Eb$ | Major | $I$ (Phrygian) or $bIII$ (Minor key) or $V$(Harmonic minor) | Tonic/Dominant/Mediant | $\rightarrow$ | Tonic Chord (${\bf I}$) |
+| **Cm/Eb** | $C$ | minor | $bVI$ (Phrygian) or $VI$ (Harmonic Minor) | Submediant | $\rightarrow$ | Submediant Chord (${\bf vi}$) |
+| **Cm/Eb** | $C$ | minor | $bVI$ (Phrygian) or $VI$ (Harmonic Minor) | Submediant | $\rightarrow$ | Submediant Chord (${\bf vi}$) |
+| **Gdim/Db** | $G$ | diminished | $III$ diminished | Leading Tone/Mediant | $\rightarrow$ | Leading Tone Chord (${\bf iii}^{\circ}$) |
+| **Fm/Eb** | $F$ | minor | $II$ minor | Supertonic | $\rightarrow$ | Supertonic Chord (${\bf ii}$) |
+| **Eb** | $Eb$ | Major | $I$ (Phrygian) or $bIII$ (Minor key) or $V$(Harmonic minor) | Tonic/Dominant/Mediant | $\rightarrow$ | Tonic Chord (${\bf I}$) |
+| **Eb** | $Eb$ | Major | $I$ (Phrygian) or $bIII$ (Minor key) or $V$(Harmonic minor) | $\rightarrow$ | Tonic Chord (${\bf I}$) |
+| **Cm/Eb** | $C$ | minor | $bVI$ (Phrygian) or $VI$ (Harmonic Minor) | $\rightarrow$ | Submediant Chord (${\bf vi}$) |
+| **Cm/Eb** | $C$ | minor | $bVI$ (Phrygian) or $VI$ (Harmonic Minor) | $\rightarrow$ | Submediant Chord (${\bf vi}$) |
+| **Eb** | $Eb$ | Major | $I$ (Phrygian) or $bIII$ (Minor key) or $V$(Harmonic minor) | $\rightarrow$ | Tonic Chord (${\bf I}$) |
+| **Eb** | $Eb$ | Major | $I$ (Phrygian) or $bIII$ (Minor key) or $V$(Harmonic minor) | $\rightarrow$ | Tonic Chord (${\bf I}$) |
+| **Db6** | $Db$ | Major | $VII$ major ${}^{6}$ or $IV$ (Harmonic Minor) | Subtonic/Subdominant | $\rightarrow$ | Subtonic/Subdominant Chord (${\bf VII}$) |
+| **Eb** | $Eb$ | Major | $I$ (Phrygian) or $bIII$ (Minor key) or $V$(Harmonic minor) | $\rightarrow$ | Tonic Chord (${\bf I}$) |
+
+### Key & Mode Determination:
+
+1.  **The Dominant Sound:** The most unusual aspect is the repeated use of **Eb Major** (Eb-G-Bb) as the apparent tonic, initiating and concluding the phrase.
+2.  **The Context:**
+    *   The secondary chords are **Cm** (C-Eb-G), **Gdim** (G-Bb-Db), **Fm** (F-Ab-C), and **Db6** (Db-F-Ab-Bb).
+    *   The notes present are **Eb, G, Bb** (from Eb Major); **C, Eb, G** (from Cm); **G, Bb, Db** (from Gdim); **F, Ab, C** (from Fm); **Db, F, Ab, Bb** (from Db6).
+    *   Combining all notes: **Eb, F, G, Ab, Bb, C, Db**. This set of notes is highly characteristic of the **E-flat natural minor scale (Aeolian)**: $E{\flat}, F, G{\flat}, A{\flat}, B{\flat}, C{\flat}, D{\flat}$.
+3.  **The Conflict/Resolution:**
+    *   If the key were strict **$E{\flat}$ minor (Aeolian)**, the tonic chord would be $E{\flat}m$ ($E{\flat}-G{\flat}-B{\flat}$) and the dominant minor $B{\flat}m$.
+    *   If the key were strict **$E{\flat}$ Phrygian**, the $I$ chord would be $E{\flat}m$, and the $V$ chord is $B{\flat}d$. $\boldsymbol{E{\flat}m}$ is the chord that would have *all* of the following chords derived from it easily.
+    *   The presence of **$E{\flat}$ Major ($E{\flat}-G-B{\flat}$)**, **$C$ minor ($C-E{\flat}-G$)**, **$F$ minor ($F-A{\flat}-C$)**, and **$D{\flat}$ Major ($D{\flat}-F-A{\flat}$)**, along with a $\mathbf{G}$ diminished ($\mathbf{G}-B{\flat}-D{\flat}$), strongly points to an ambiguity common in minor keys where a major chord is tonicized.
+
+### Conclusion
+
+The overall tonal center is **E-flat** due to the beginning and ending chord. The surrounding harmony (Fm, Cm, Gdim, Db) defines the minor tonality. The major **Eb** chords, however, suggest that this is a song in **$E{\flat}$ minor** but which has borrowed the **Picardy Third** or utilizes the major-triad dominant (V) from the **$A{\flat}$ Major** scale as a way to create a deceptive tonicity. Considering the harmonic content:
+
+The **Key** is **E-flat minor ($E{\flat}m$)**.
+
+The **Mode** is a mixture, primarily **Aeolian/Natural Minor**, but with strong characteristics of its **parallel Major (Eb Major)** or a **Dorian** borrowing, given the use of the **Eb Major** chord as the main harmonic pillar. Since the secondary chords (Cm, Fm, Db, Gdim) align best with **Natural Minor**, we default to:
+
+**Key:** **Eb Minor ($E{\flat}m$)**
+**Mode:** **Aeolian** (with tonicization of the major $I$ chord)
+
