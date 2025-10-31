@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model Performance Analysis</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        h2 {
+            color: #555;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        .chart-container {
+            position: relative;
+            height: 400px;
+            margin-bottom: 20px;
+        }
+        .controls {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        button {
+            padding: 8px 16px;
+            margin: 0 5px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        button:disabled {
+            background-color: #cccccc;
+            cursor: not-allowed;
+        }
+        .model-info {
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .progress-bar {
+            width: 100%;
+            height: 10px;
+            background-color: #e0e0e0;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .progress {
+            height: 100%;
+            background-color: #4CAF50;
+            border-radius: 5px;
+            width: 0%;
+            transition: width 1s linear;
+        }
+        .info-box {
+            background-color: #f8f9fa;
+            border-left: 4px solid #4CAF50;
+            padding: 10px 15px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+        .info-box p {
+            margin: 0;
+            color: #555;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Model Performance Analysis</h1>
+        
+        <h2>Individual Model Performance</h2>
+        <div class="model-info" id="currentModel">Loading...</div>
+        <div class="chart-container">
+            <canvas id="modelChart"></canvas>
+        </div>
+        <div class="progress-bar">
+            <div class="progress" id="progress"></div>
+        </div>
+        <div class="controls">
+            <button id="playBtn">Play</button>
+            <button id="pauseBtn" disabled>Pause</button>
+            <button id="resetBtn">Reset</button>
+        </div>
+        
+        <h2>Individual Model Performance - Popularity Weighted</h2>
+        <div class="info-box">
+            <p>This chart shows each model's scores weighted by key popularity. More frequently used keys have greater impact on the overall score.</p>
+        </div>
+        <div class="chart-container">
+            <canvas id="weightedModelChart"></canvas>
+        </div>
+        
+        <h2>Average Score per Key</h2>
+        <div class="chart-container">
+            <canvas id="averageChart"></canvas>
+        </div>
+        
+        <h2>Popularity-Weighted Average Score per Key</h2>
+        <div class="info-box">
+            <p>This chart shows average scores weighted by key popularity. More frequently used keys have greater impact on the overall score.</p>
+        </div>
+        <div class="chart-container">
+            <canvas id="weightedChart"></canvas>
+        </div>
+    </div>
+
+    <script>
+        // Data
+        const keys = ["C Major", "G Minor", "G# Minor", "C# Major", "A Dorian", "C Dorian", 
+                     "Eb Mixolydian", "F Lydian", "B Phrygian", "D Lydian", "G# Mixolydian", 
+                     "E Lydian", "Bb Phrygian", "F# Locrian", "G Locrian", "Bb Locrian"];
+        
+        // Key popularity percentages (in decimal form)
+        const keyPopularity = [7.700, 2.800, 1.750, 0.825, 0.480, 0.320, 
+                              0.240, 0.140, 0.108, 0.080, 0.060, 
+                              0.050, 0.027, 0.012, 0.006, 0.002];
+        
+        const models = [
+            { name: "DeepSeek V3.2", data: [8,5,9,10,1,9,10,10,0,10,0,10,9,0,0,0] },
+            { name: "DeepSeek V3.2 Thinking", data: [10,7,9,10,10,10,10,10,0,10,10,10,9,0,0,0] },
+            { name: "Gemini 2.5 Flash", data: [9,9,0,10,10,9,0,0,0,0,9,10,1,0,0,0] },
+            { name: "Gemini 2.5 Flash Thinking", data: [10,9,9,10,10,10,1,10,10,10,1,10,0,0,0,9] },
+            { name: "Gemini 2.5 Pro", data: [9,9,9,10,2,0,10,0,2,1,2,0,0,0,0,0] },
+            { name: "GLM 4.6 Thinking", data: [10,9,6,9,9,9,0,0,0,0,9,0,0,0,10,0] },
+            { name: "GPT 5 Chat", data: [10,10,5,10,9,9,0,10,0,0,6,0,0,0,0,0] },
+            { name: "GPT 5 High", data: [10,8,4,10,10,10,10,10,10,9,10,9,2,0,3,0] },
+            { name: "GPT 5 Low", data: [10,8,9,10,10,10,10,10,9,10,10,9,0,1,0,0] },
+            { name: "GPT 5 Medium", data: [10,9,9,10,9,9,9,10,10,8,9,10,0,0,0,0] },
+            { name: "Grok 4 Fast Thinking", data: [10,8,10,9,0,0,10,1,10,0,8,1,0,0,0,0] },
+            { name: "Kimi K2", data: [10,8,9,10,4,0,10,0,1,0,0,0,0,0,0,1] },
+            { name: "Qwen3 235B 2507", data: [8,9,8,10,9,0,0,10,0,10,0,0,0,0,0,0] },
+            { name: "Qwen3 235B 2507 Thinking", data: [10,9,10,10,10,10,10,10,10,0,0,0,0,0,10,0] },
+            { name: "Qwen3 Max", data: [10,9,8,10,10,10,10,10,0,0,2,10,2,0,3,0] },
+            { name: "Qwen3 Next 80B", data: [10,9,9,0,0,0,0,0,0,0,0,10,0,0,0,0] },
+            { name: "Qwen3 Next 80B Thinking", data: [10,9,10,10,10,10,10,0,10,0,0,0,0,0,0,0] }
+        ];
+        
+        // Calculate average scores for each model
+        models.forEach(model => {
+            const sum = model.data.reduce((acc, val) => acc + val, 0);
+            model.avg = sum / model.data.length;
+            
+            // Calculate weighted scores for each model
+            model.weightedData = model.data.map((score, index) => {
+                return score * (keyPopularity[index] / 100);
+            });
+            
+            // Calculate weighted average for each model
+            const weightedSum = model.weightedData.reduce((acc, val) => acc + val, 0);
+            model.weightedAvg = weightedSum / model.weightedData.length;
+        });
+        
+        // Sort models by average score (highest first)
+        models.sort((a, b) => b.avg - a.avg);
+        
+        // Calculate average scores per key
+        const avgScores = keys.map((key, index) => {
+            let sum = 0;
+            models.forEach(model => {
+                sum += model.data[index];
+            });
+            return sum / models.length;
+        });
+        
+        // Calculate popularity-weighted average scores per key
+        const weightedAvgScores = keys.map((key, index) => {
+            let sum = 0;
+            models.forEach(model => {
+                sum += model.data[index];
+            });
+            const avg = sum / models.length;
+            // Apply popularity weight (convert percentage to decimal and multiply)
+            return avg * (keyPopularity[index] / 100);
+        });
+        
+        // Chart configurations
+        const modelChartConfig = {
+            type: 'line',
+            data: {
+                labels: keys,
+                datasets: [{
+                    label: '',
+                    data: [],
+                    borderColor: 'rgb(75, 192, 192)',
+                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                    tension: 0.1,
+                    fill: false
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 10,
+                        title: {
+                            display: true,
+                            text: 'Score'
+                        }
+                    },
+                    x: {
+                        title: {
+                            display: true,
+                            text: 'Keys'
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        display: false
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                return `Score: ${context.parsed.y}`;
+                            }
+                        }
+                    }
+                }
+            }
+        };
+        
+        const weightedModelChartConfig = {
+            type: 'line',
+            data: {
+                labels: keys,
+                datasets: [{
+                    label: '',
+                    data: [],
+                    borderColor: 'rgb(153, 102, 255)',
+                    backgroundColor: 'rgba(153, 102, 255, 0.2)',
+                    tension: 0.1,
+                    fill: true
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 1,
+                        title: {
+                            display: true,
+                            text: 'Weighted Score (Score × Popularity)'
+                        }
+                    },
+                    x: {
+                        title: {
+                            display: true,
+                            text: 'Keys'
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        display: false
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                const index = context.dataIndex;
+                                const originalScore = models[currentIndex].data[index];
+                                const popularity = keyPopularity[index];
+                                const weightedScore = context.parsed.y;
+                                return [
+                                    `Weighted Score: ${weightedScore.toFixed(4)}`,
+                                    `Original Score: ${originalScore}`,
+                                    `Popularity: ${popularity}%`
+                                ];
+                            }
+                        }
+                    }
+                }
+            }
+        };
+        
+        const avgChartConfig = {
+            type: 'line',
+            data: {
+                labels: keys,
+                datasets: [{
+                    label: 'Average Score',
+                    data: avgScores,
+                    borderColor: 'rgb(255, 99, 132)',
+                    backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                    tension: 0.1,
+                    fill: true
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 10,
+                        title: {
+                            display: true,
+                            text: 'Average Score'
+                        }
+                    },
+                    x: {
+                        title: {
+                            display: true,
+                            text: 'Keys'
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        display: true
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                return `Average Score: ${context.parsed.y.toFixed(2)}`;
+                            }
+                        }
+                    }
+                }
+            }
+        };
+        
+        const weightedChartConfig = {
+            type: 'line',
+            data: {
+                labels: keys,
+                datasets: [{
+                    label: 'Weighted Score',
+                    data: weightedAvgScores,
+                    borderColor: 'rgb(54, 162, 235)',
+                    backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                    tension: 0.1,
+                    fill: true
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 1,
+                        title: {
+                            display: true,
+                            text: 'Weighted Score (Score × Popularity)'
+                        }
+                    },
+                    x: {
+                        title: {
+                            display: true,
+                            text: 'Keys'
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        display: true
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                const index = context.dataIndex;
+                                const avgScore = avgScores[index];
+                                const popularity = keyPopularity[index];
+                                const weightedScore = context.parsed.y;
+                                return [
+                                    `Weighted Score: ${weightedScore.toFixed(4)}`,
+                                    `Average Score: ${avgScore.toFixed(2)}`,
+                                    `Popularity: ${popularity}%`
+                                ];
+                            }
+                        }
+                    }
+                }
+            }
+        };
+        
+        // Create charts
+        const modelCtx = document.getElementById('modelChart').getContext('2d');
+        const modelChart = new Chart(modelCtx, modelChartConfig);
+        
+        const weightedModelCtx = document.getElementById('weightedModelChart').getContext('2d');
+        const weightedModelChart = new Chart(weightedModelCtx, weightedModelChartConfig);
+        
+        const avgCtx = document.getElementById('averageChart').getContext('2d');
+        const avgChart = new Chart(avgCtx, avgChartConfig);
+        
+        const weightedCtx = document.getElementById('weightedChart').getContext('2d');
+        const weightedChart = new Chart(weightedCtx, weightedChartConfig);
+        
+        // Slideshow functionality
+        let currentIndex = 0;
+        let intervalId = null;
+        const playBtn = document.getElementById('playBtn');
+        const pauseBtn = document.getElementById('pauseBtn');
+        const resetBtn = document.getElementById('resetBtn');
+        const currentModelEl = document.getElementById('currentModel');
+        const progressBar = document.getElementById('progress');
+        
+        function updateChart() {
+            const model = models[currentIndex];
+            
+            // Update original model chart
+            modelChart.data.datasets[0].data = model.data;
+            modelChart.data.datasets[0].label = model.name;
+            modelChart.data.datasets[0].borderColor = getRandomColor();
+            modelChart.update();
+            
+            // Update weighted model chart
+            weightedModelChart.data.datasets[0].data = model.weightedData;
+            weightedModelChart.data.datasets[0].label = model.name;
+            weightedModelChart.data.datasets[0].borderColor = getRandomColor();
+            weightedModelChart.update();
+            
+            currentModelEl.textContent = `${model.name} (Average: ${model.avg.toFixed(2)}, Weighted: ${model.weightedAvg.toFixed(4)})`;
+            progressBar.style.width = `${((currentIndex + 1) / models.length) * 100}%`;
+        }
+        
+        function getRandomColor() {
+            const letters = '0123456789ABCDEF';
+            let color = '#';
+            for (let i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+        
+        function startSlideshow() {
+            if (intervalId) return;
+            
+            playBtn.disabled = true;
+            pauseBtn.disabled = false;
+            
+            intervalId = setInterval(() => {
+                currentIndex = (currentIndex + 1) % models.length;
+                updateChart();
+                
+                if (currentIndex === 0) {
+                    clearInterval(intervalId);
+                    intervalId = null;
+                    playBtn.disabled = false;
+                    pauseBtn.disabled = true;
+                }
+            }, 1000);
+        }
+        
+        function pauseSlideshow() {
+            if (intervalId) {
+                clearInterval(intervalId);
+                intervalId = null;
+                playBtn.disabled = false;
+                pauseBtn.disabled = true;
+            }
+        }
+        
+        function resetSlideshow() {
+            pauseSlideshow();
+            currentIndex = 0;
+            updateChart();
+        }
+        
+        playBtn.addEventListener('click', startSlideshow);
+        pauseBtn.addEventListener('click', pauseSlideshow);
+        resetBtn.addEventListener('click', resetSlideshow);
+        
+        // Initialize with the first model
+        updateChart();
+    </script>
+</body>
+</html>

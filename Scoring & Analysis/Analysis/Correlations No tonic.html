@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Model Performance Analysis</title>
+    
+    <!-- Chart.js for the Scatter Plot -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+        .container {
+            max-width: 2200px;
+            margin: auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            overflow-x: auto;
+        }
+        h1, h2 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        p {
+            text-align: center;
+            color: #555;
+            margin-bottom: 30px;
+        }
+        #correlation-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            font-size: 0.7em;
+        }
+        #correlation-table th, #correlation-table td {
+            border: 1px solid #ddd;
+            padding: 6px;
+            text-align: center;
+            vertical-align: middle;
+        }
+        #correlation-table th {
+            background-color: #34495e;
+            color: white;
+            font-weight: bold;
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+            padding: 5px;
+        }
+        #correlation-table th:first-child, #correlation-table td:first-child {
+            writing-mode: horizontal-tb;
+            text-align: left;
+            font-weight: bold;
+            background-color: #ecf0f1;
+        }
+        #correlation-table tr:hover td:first-child {
+            background-color: #d5dbdb;
+        }
+        #correlation-table td {
+            font-family: "Courier New", Courier, monospace;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        #correlation-table td:hover {
+            transform: scale(1.15);
+            box-shadow: 0 0 5px rgba(0,0,0,0.3);
+            z-index: 10;
+            position: relative;
+        }
+        .legend {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+        }
+        .legend-gradient {
+            width: 300px;
+            height: 20px;
+            background: linear-gradient(to right, #ff0000, #ffff00, #00ff00);
+            border: 1px solid #ccc;
+            margin: 0 10px;
+        }
+        .chart-container {
+            margin-top: 40px;
+            padding: 20px;
+            border-top: 2px solid #f4f7f6;
+        }
+        .chart-canvas-wrapper {
+            max-width: 800px;
+            margin: 20px auto;
+            height: 500px;
+        }
+        .controls {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        .control-group {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .control-group label {
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #555;
+        }
+        select {
+            padding: 8px 12px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 1em;
+            min-width: 200px;
+        }
+        .rankings-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 20px;
+            margin: 20px auto;
+            flex-wrap: wrap;
+        }
+        .ranking-container {
+            flex: 1;
+            min-width: 280px;
+            max-width: 600px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+        .ranking-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px 12px;
+            border-bottom: 1px solid #eee;
+            border-radius: 4px;
+        }
+        .ranking-item:last-child {
+            border-bottom: none;
+        }
+        .ranking-rank {
+            font-weight: bold;
+            color: #34495e;
+            margin-right: 15px;
+            font-size: 1.1em;
+            padding-left: 10px;
+        }
+        .ranking-model-name {
+            flex-grow: 1;
+            font-weight: 500;
+        }
+        .ranking-score {
+            color: #7f8c8d;
+            font-family: "Courier New", Courier, monospace;
+        }
+        .correlations-section {
+            margin-top: 40px;
+            padding: 20px;
+            border-top: 2px solid #f4f7f6;
+        }
+        .correlations-list {
+            max-height: 400px;
+            overflow-y: auto;
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 20px;
+            background-color: #fafafa;
+        }
+        .correlation-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px 12px;
+            margin-bottom: 5px;
+            border-radius: 4px;
+            font-size: 0.9em;
+            transition: transform 0.2s;
+        }
+        .correlation-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .correlation-rank {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-right: 10px;
+            min-width: 30px;
+        }
+        .correlation-metrics {
+            flex-grow: 1;
+            font-weight: 500;
+        }
+        .correlation-value {
+            font-weight: bold;
+            font-family: "Courier New", Courier, monospace;
+            min-width: 60px;
+            text-align: right;
+        }
+        .stats-card {
+            padding: 15px;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .stats-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Interactive Model Performance Analysis</h1>
+        <p>This table shows the Pearson correlation between all metrics. The matrix has been reordered: Music Theory benchmarks are at the top-left, followed by combined Music Theory scores, with other benchmarks at the bottom-right. Gemini 2.5 Flash is excluded from this analysis due to its absence in LiveBench.</p>
+        
+        <table id="correlation-table">
+            <!-- Table will be generated by JavaScript -->
+        </table>
+
+        <div class="legend">
+            <span>Strong Negative (-1)</span>
+            <div class="legend-gradient"></div>
+            <span>Strong Positive (+1)</span>
+        </div>
+
+        <div class="correlations-section">
+            <h2>Correlations Ranked by Strength</h2>
+            <p>Here are all metric correlations sorted from highest positive to lowest negative. Click on any correlation to highlight it in the table above.</p>
+            <div class="correlations-list" id="correlations-list">
+                <!-- Correlations will be generated by JavaScript -->
+            </div>
+        </div>
+
+        <div class="correlations-section" id="stats-section">
+            <h2>Correlation Statistics by Category</h2>
+            <p>Average correlation and standard deviation within and between benchmark categories.</p>
+            <div class="stats-grid" id="stats-grid">
+                <!-- Stats cards will be generated by JavaScript -->
+            </div>
+        </div>
+
+        <div class="chart-container">
+            <h2>Interactive Scatterplot Explorer</h2>
+            <p>Select any two metrics from the dropdowns below to visualize their relationship across all models. Models are colored by their rank on the X-axis metric (Green = #1, Red = #16).</p>
+            
+            <div class="controls">
+                <div class="control-group">
+                    <label for="x-axis-select">X-Axis Metric</label>
+                    <select id="x-axis-select"></select>
+                </div>
+                <div class="control-group">
+                    <label for="y-axis-select">Y-Axis Metric</label>
+                    <select id="y-axis-select"></select>
+                </div>
+            </div>
+
+            <div class="chart-canvas-wrapper">
+                <canvas id="scatterplot-canvas"></canvas>
+            </div>
+
+            <div class="rankings-wrapper">
+                <div class="ranking-container">
+                    <h3 id="ranking-title-x">Model Ranking</h3>
+                    <div id="ranking-list-x">
+                        <!-- Ranking list will be generated by JavaScript -->
+                    </div>
+                </div>
+                <div class="ranking-container">
+                    <h3 id="ranking-title-y">Model Ranking</h3>
+                    <div id="ranking-list-y">
+                        <!-- Ranking list will be generated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script>
+    // Step 1: Define the complete data from the start, now including LiveBench
+    const modelData = [
+        { Model: "DeepSeek V3.2 Thinking", Total: 1045, Tonic: 397, Mode: 115, Chords: 254, "Pedal analysis": 108, Cadence: 123, Theory: 44, "Intelligence Index": 57, "AIME": 88, "IFBench": 54, "LiveBench Global": 71.64, "LiveBench Reasoning": 88.72, "LiveBench Coding": 70.06, "LiveBench Agentic Coding": 26.67, "LiveBench Mathematics": 89.14, "LiveBench Data Analysis": 72.78, "LiveBench Language": 71.12, "LiveBench Instruction Following": 83.00 },
+        { Model: "Qwen3 Max", Total: 995, Tonic: 393, Mode: 94, Chords: 226, "Pedal analysis": 116, Cadence: 123, Theory: 43, "Intelligence Index": 55, "AIME": 81, "IFBench": 44, "LiveBench Global": 69.86, "LiveBench Reasoning": 89.00, "LiveBench Coding": 71.78, "LiveBench Agentic Coding": 31.67, "LiveBench Mathematics": 83.17, "LiveBench Data Analysis": 65.37, "LiveBench Language": 71.45, "LiveBench Instruction Following": 76.55 },
+        { Model: "Gemini 2.5 Flash Thinking", Total: 1003, Tonic: 411, Mode: 109, Chords: 222, "Pedal analysis": 99, Cadence: 119, Theory: 43, "Intelligence Index": 54, "AIME": 78, "IFBench": 52, "LiveBench Global": 68.20, "LiveBench Reasoning": 82.53, "LiveBench Coding": 67.50, "LiveBench Agentic Coding": 20.00, "LiveBench Mathematics": 88.86, "LiveBench Data Analysis": 72.71, "LiveBench Language": 63.51, "LiveBench Instruction Following": 82.29 },
+        { Model: "GPT 5 High", Total: 1000, Tonic: 382, Mode: 115, Chords: 233, "Pedal analysis": 118, Cadence: 107, Theory: 41, "Intelligence Index": 68, "AIME": 94, "IFBench": 73, "LiveBench Global": 79.33, "LiveBench Reasoning": 98.17, "LiveBench Coding": 77.10, "LiveBench Agentic Coding": 46.67, "LiveBench Mathematics": 92.77, "LiveBench Data Analysis": 71.63, "LiveBench Language": 80.83, "LiveBench Instruction Following": 88.11 },
+        { Model: "GPT 5 Low", Total: 978, Tonic: 379, Mode: 116, Chords: 218, "Pedal analysis": 115, Cadence: 109, Theory: 41, "Intelligence Index": 62, "AIME": 83, "IFBench": 67, "LiveBench Global": 74.65, "LiveBench Reasoning": 90.47, "LiveBench Coding": 74.28, "LiveBench Agentic Coding": 35.00, "LiveBench Mathematics": 85.33, "LiveBench Data Analysis": 69.72, "LiveBench Language": 78.73, "LiveBench Instruction Following": 88.99 },
+        { Model: "GPT 5 Medium", Total: 962, Tonic: 377, Mode: 112, Chords: 215, "Pedal analysis": 112, Cadence: 118, Theory: 42, "Intelligence Index": 66, "AIME": 92, "IFBench": 71, "LiveBench Global": 78.85, "LiveBench Reasoning": 96.58, "LiveBench Coding": 75.05, "LiveBench Agentic Coding": 50.00, "LiveBench Mathematics": 89.95, "LiveBench Data Analysis": 72.38, "LiveBench Language": 78.99, "LiveBench Instruction Following": 88.99 },
+        { Model: "GLM 4.6 Thinking", Total: 908, Tonic: 402, Mode: 71, Chords: 166, "Pedal analysis": 118, Cadence: 126, Theory: 30, "Intelligence Index": 45, "AIME": 44, "IFBench": 37, "LiveBench Global": 71.22, "LiveBench Reasoning": 92.22, "LiveBench Coding": 71.02, "LiveBench Agentic Coding": 35.00, "LiveBench Mathematics": 90.10, "LiveBench Data Analysis": 71.74, "LiveBench Language": 56.82, "LiveBench Instruction Following": 81.65 },
+        { Model: "Qwen3 23B5 2507 Thinking", Total: 923, Tonic: 353, Mode: 99, Chords: 210, "Pedal analysis": 105, Cadence: 120, Theory: 36, "Intelligence Index": 57, "AIME": 91, "IFBench": 51, "LiveBench Global": 69.11, "LiveBench Reasoning": 91.56, "LiveBench Coding": 68.97, "LiveBench Agentic Coding": 6.67, "LiveBench Mathematics": 81.14, "LiveBench Data Analysis": 74.65, "LiveBench Language": 70.86, "LiveBench Instruction Following": 89.96 },
+        { Model: "GPT 5 Chat", Total: 852, Tonic: 369, Mode: 69, Chords: 171, "Pedal analysis": 100, Cadence: 107, Theory: 40, "Intelligence Index": 42, "AIME": 48, "IFBench": 45, "LiveBench Global": 61.04, "LiveBench Reasoning": 63.14, "LiveBench Coding": 78.57, "LiveBench Agentic Coding": 11.67, "LiveBench Mathematics": 73.46, "LiveBench Data Analysis": 64.48, "LiveBench Language": 62.96, "LiveBench Instruction Following": 73.00 },
+        { Model: "DeepSeek V3.2", Total: 871, Tonic: 373, Mode: 70, Chords: 184, "Pedal analysis": 106, Cadence: 103, Theory: 35, "Intelligence Index": 46, "AIME": 58, "IFBench": 43, "LiveBench Global": 66.64, "LiveBench Reasoning": 66.58, "LiveBench Coding": 73.19, "LiveBench Agentic Coding": 35.00, "LiveBench Mathematics": 80.79, "LiveBench Data Analysis": 65.09, "LiveBench Language": 62.71, "LiveBench Instruction Following": 83.15 },
+        { Model: "Grok 4 Fast Thinking", Total: 805, Tonic: 346, Mode: 67, Chords: 158, "Pedal analysis": 111, Cadence: 94, Theory: 29, "Intelligence Index": 60, "AIME": 90, "IFBench": 51, "LiveBench Global": 68.09, "LiveBench Reasoning": 95.44, "LiveBench Coding": 66.41, "LiveBench Agentic Coding": 18.33, "LiveBench Mathematics": 86.91, "LiveBench Data Analysis": 66.55, "LiveBench Language": 74.00, "LiveBench Instruction Following": 68.97 },
+        { Model: "Gemini 2.5 Pro", Total: 838, Tonic: 362, Mode: 54, Chords: 181, "Pedal analysis": 104, Cadence: 100, Theory: 39, "Intelligence Index": 60, "AIME": 88, "IFBench": 49, "LiveBench Global": 71.92, "LiveBench Reasoning": 94.28, "LiveBench Coding": 75.69, "LiveBench Agentic Coding": 25.00, "LiveBench Mathematics": 84.19, "LiveBench Data Analysis": 71.50, "LiveBench Language": 75.44, "LiveBench Instruction Following": 77.35 },
+        { Model: "Kimi K2", Total: 775, Tonic: 371, Mode: 53, Chords: 143, "Pedal analysis": 79, Cadence: 97, Theory: 31, "Intelligence Index": 50, "AIME": 57, "IFBench": 42, "LiveBench Global": 63.77, "LiveBench Reasoning": 62.97, "LiveBench Coding": 74.28, "LiveBench Agentic Coding": 25.00, "LiveBench Mathematics": 74.41, "LiveBench Data Analysis": 63.41, "LiveBench Language": 63.85, "LiveBench Instruction Following": 82.47 },
+        { Model: "Gemini 2.5 Flash", Total: 761, Tonic: 332, Mode: 67, Chords: 153, "Pedal analysis": 76, Cadence: 96, Theory: 27, "Intelligence Index": 47, "AIME": 57, "IFBench": 44 },
+        { Model: "Qwen3 23B5 2507", Total: 779, Tonic: 320, Mode: 64, Chords: 177, "Pedal analysis": 100, Cadence: 93, Theory: 28, "Intelligence Index": 45, "AIME": 72, "IFBench": 46, "LiveBench Global": 65.18, "LiveBench Reasoning": 86.89, "LiveBench Coding": 69.61, "LiveBench Agentic Coding": 13.33, "LiveBench Mathematics": 79.18, "LiveBench Data Analysis": 65.24, "LiveBench Language": 66.29, "LiveBench Instruction Following": 75.70 },
+        { Model: "Qwen3 Next 80B Thinking", Total: 765, Tonic: 261, Mode: 69, Chords: 196, "Pedal analysis": 106, Cadence: 91, Theory: 40, "Intelligence Index": 54, "AIME": 84, "IFBench": 61, "LiveBench Global": 64.57, "LiveBench Reasoning": 91.25, "LiveBench Coding": 60.66, "LiveBench Agentic Coding": 5.00, "LiveBench Mathematics": 82.37, "LiveBench Data Analysis": 73.16, "LiveBench Language": 54.48, "LiveBench Instruction Following": 85.08 },
+        { Model: "Qwen3 Next 80B", Total: 739, Tonic: 315, Mode: 38, Chords: 166, "Pedal analysis": 93, Cadence: 99, Theory: 28, "Intelligence Index": 45, "AIME": 66, "IFBench": 40, "LiveBench Global": 66.30, "LiveBench Reasoning": 88.22, "LiveBench Coding": 68.20, "LiveBench Agentic Coding": 10.00, "LiveBench Mathematics": 80.67, "LiveBench Data Analysis": 68.63, "LiveBench Language": 68.17, "LiveBench Instruction Following": 80.20 }
+    ];
+
+    // Step 1.5: Filter out "Gemini 2.5 Flash" as requested
+    const dataForAnalysis = modelData.filter(model => model.Model !== "Gemini 2.5 Flash");
+
+    // Step 1.6: Programmatically add all combined categories to the filtered data
+    const baseCategories = ["Mode", "Chords", "Pedal analysis", "Cadence", "Theory"];
+    for (let i = 0; i < baseCategories.length; i++) {
+        for (let j = i + 1; j < baseCategories.length; j++) {
+            const cat1 = baseCategories[i]; const cat2 = baseCategories[j];
+            const newCategoryName = `${cat1} + ${cat2}`;
+            dataForAnalysis.forEach(row => { row[newCategoryName] = row[cat1] + row[cat2]; });
+        }
+    }
+
+    // Step 2: Implement the Pearson Correlation calculation function
+    function pearsonCorrelation(x, y) {
+        const n = x.length; if (n === 0 || n !== y.length) return 0;
+        const sumX = x.reduce((a, b) => a + b, 0); const sumY = y.reduce((a, b) => a + b, 0);
+        const sumXY = x.reduce((total, xi, i) => total + xi * y[i], 0);
+        const sumX2 = x.reduce((total, xi) => total + xi * xi, 0); const sumY2 = y.reduce((total, yi) => total + yi * yi, 0);
+        const numerator = n * sumXY - sumX * sumY;
+        const denominator = Math.sqrt((n * sumX2 - sumX * sumX) * (n * sumY2 - sumY * sumY));
+        return denominator === 0 ? 0 : numerator / denominator;
+    }
+
+    // Step 3: Generate the correlation matrix with a custom key order
+    function generateCorrelationMatrix(data) {
+        const allKeys = Object.keys(data[0]).filter(key => key !== 'Model');
+        // REMOVED "Tonic" and "Cadence" from musicTheoryKeys
+        const musicTheoryKeys = ["Total", "Mode", "Chords", "Pedal analysis", "Theory"];
+        const otherBenchmarksKeys = ["Intelligence Index", "AIME", "IFBench", "LiveBench Global", "LiveBench Reasoning", "LiveBench Coding", "LiveBench Agentic Coding", "LiveBench Mathematics", "LiveBench Data Analysis", "LiveBench Language", "LiveBench Instruction Following"];
+        const combinedKeys = allKeys.filter(key => key.includes(' + '));
+        const orderedKeys = [...musicTheoryKeys, ...combinedKeys, ...otherBenchmarksKeys];
+        const matrix = []; for (let i = 0; i < orderedKeys.length; i++) {
+            matrix[i] = []; for (let j = 0; j < orderedKeys.length; j++) {
+                const col1Data = data.map(row => row[orderedKeys[i]]); const col2Data = data.map(row => row[orderedKeys[j]]);
+                matrix[i][j] = pearsonCorrelation(col1Data, col2Data);
+            }
+        } return { keys: orderedKeys, matrix };
+    }
+
+    // Step 4: Create a function to get color based on correlation value
+    function getColorForCorrelation(value) {
+        const clampedValue = Math.max(-1, Math.min(1, value));
+        let red, green;
+        if (clampedValue < 0) { red = 255; green = Math.floor(255 * (clampedValue + 1)); }
+        else { red = Math.floor(255 * (1 - clampedValue)); green = 255; }
+        return `rgb(${red}, ${green}, 0)`;
+    }
+
+    // Step 5: Render the table to the DOM
+    function renderTable(correlationData) {
+        const table = document.getElementById('correlation-table'); table.innerHTML = '';
+        const headerRow = document.createElement('tr'); headerRow.innerHTML = '<th></th>';
+        correlationData.keys.forEach(key => { const th = document.createElement('th'); th.textContent = key; headerRow.appendChild(th); });
+        table.appendChild(headerRow);
+        correlationData.matrix.forEach((row, i) => {
+            const tr = document.createElement('tr'); const rowHeader = document.createElement('td');
+            rowHeader.textContent = correlationData.keys[i]; tr.appendChild(rowHeader);
+            row.forEach((value, j) => {
+                const td = document.createElement('td'); td.textContent = value.toFixed(3);
+                td.style.backgroundColor = getColorForCorrelation(value); td.style.color = 'black';
+                tr.appendChild(td);
+            }); table.appendChild(tr);
+        });
+    }
+
+    // CORRECTED FUNCTION: Print correlations in order from highest to lowest
+    function printCorrelationsInOrder(correlationData) {
+        // Extract all correlations with their metric pairs
+        const correlations = [];
+        
+        for (let i = 0; i < correlationData.keys.length; i++) {
+            for (let j = i + 1; j < correlationData.keys.length; j++) {
+                const metric1 = correlationData.keys[i];
+                const metric2 = correlationData.keys[j];
+                const value = correlationData.matrix[i][j];
+                
+                correlations.push({
+                    metric1: metric1,
+                    metric2: metric2,
+                    value: value,
+                    row: i,
+                    col: j
+                });
+            }
+        }
+        
+        // CORRECTED: Sort correlations from highest to lowest by actual value (not absolute value)
+        correlations.sort((a, b) => b.value - a.value);
+        
+        // Display the correlations
+        const correlationsList = document.getElementById('correlations-list');
+        correlationsList.innerHTML = '';
+        
+        correlations.forEach((corr, index) => {
+            const corrItem = document.createElement('div');
+            corrItem.className = 'correlation-item';
+            
+            // Color code based on correlation strength
+            const color = getColorForCorrelation(corr.value);
+            corrItem.style.backgroundColor = color;
+            
+            // Add click event to highlight in table
+            corrItem.style.cursor = 'pointer';
+            corrItem.addEventListener('click', () => {
+                // Remove previous highlights
+                document.querySelectorAll('#correlation-table td').forEach(td => {
+                    td.style.border = '';
+                    td.style.fontWeight = '';
+                });
+                
+                // Highlight the selected correlation in the table
+                const table = document.getElementById('correlation-table');
+                const rows = table.getElementsByTagName('tr');
+                
+                // Highlight cell at (corr.row+1, corr.col+1) and (corr.col+1, corr.row+1)
+                const cell1 = rows[corr.row + 1].getElementsByTagName('td')[corr.col + 1];
+                const cell2 = rows[corr.col + 1].getElementsByTagName('td')[corr.row + 1];
+                
+                cell1.style.border = '3px solid #2c3e50';
+                cell1.style.fontWeight = 'bold';
+                cell2.style.border = '3px solid #2c3e50';
+                cell2.style.fontWeight = 'bold';
+                
+                // Scroll to the table
+                table.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            });
+            
+            corrItem.innerHTML = `
+                <span class="correlation-rank">#${index + 1}</span>
+                <span class="correlation-metrics">${corr.metric1} ↔ ${corr.metric2}</span>
+                <span class="correlation-value">${corr.value.toFixed(3)}</span>
+            `;
+            
+            correlationsList.appendChild(corrItem);
+        });
+    }
+
+    // NEW FUNCTION: Calculate correlation statistics by category
+    function calculateCorrelationStats(correlationData) {
+        // Define the categories
+        // REMOVED "Tonic" and "Cadence" from musicTheoryKeys
+        const musicTheoryKeys = ["Total", "Mode", "Chords", "Pedal analysis", "Theory"];
+        const liveBenchKeys = ["LiveBench Global", "LiveBench Reasoning", "LiveBench Coding", "LiveBench Agentic Coding", 
+                              "LiveBench Mathematics", "LiveBench Data Analysis", "LiveBench Language", 
+                              "LiveBench Instruction Following"];
+        const combinedKeys = correlationData.keys.filter(key => key.includes(' + '));
+        
+        // All music-related keys (base + combined)
+        const allMusicKeys = [...musicTheoryKeys, ...combinedKeys];
+        
+        // Get indices for each category
+        const musicIndices = allMusicKeys.map(key => correlationData.keys.indexOf(key));
+        const liveBenchIndices = liveBenchKeys.map(key => correlationData.keys.indexOf(key));
+        
+        // Extract correlations within music benchmarks
+        const musicCorrelations = [];
+        for (let i = 0; i < musicIndices.length; i++) {
+            for (let j = i + 1; j < musicIndices.length; j++) {
+                const row = musicIndices[i];
+                const col = musicIndices[j];
+                musicCorrelations.push(correlationData.matrix[row][col]);
+            }
+        }
+        
+        // Extract correlations within LiveBench benchmarks
+        const liveBenchCorrelations = [];
+        for (let i = 0; i < liveBenchIndices.length; i++) {
+            for (let j = i + 1; j < liveBenchIndices.length; j++) {
+                const row = liveBenchIndices[i];
+                const col = liveBenchIndices[j];
+                liveBenchCorrelations.push(correlationData.matrix[row][col]);
+            }
+        }
+        
+        // Extract correlations between music benchmarks and LiveBench benchmarks
+        const crossCorrelations = [];
+        for (let i = 0; i < musicIndices.length; i++) {
+            for (let j = 0; j < liveBenchIndices.length; j++) {
+                const row = musicIndices[i];
+                const col = liveBenchIndices[j];
+                crossCorrelations.push(correlationData.matrix[row][col]);
+            }
+        }
+        
+        // Calculate average and standard deviation
+        function calculateStats(values) {
+            const n = values.length;
+            if (n === 0) return { avg: 0, std: 0 };
+            
+            const sum = values.reduce((a, b) => a + b, 0);
+            const avg = sum / n;
+            
+            const squaredDiffs = values.map(value => Math.pow(value - avg, 2));
+            const avgSquaredDiff = squaredDiffs.reduce((a, b) => a + b, 0) / n;
+            const std = Math.sqrt(avgSquaredDiff);
+            
+            return { avg, std };
+        }
+        
+        return {
+            music: calculateStats(musicCorrelations),
+            liveBench: calculateStats(liveBenchCorrelations),
+            cross: calculateStats(crossCorrelations)
+        };
+    }
+
+    // NEW FUNCTION: Display correlation statistics
+    function displayCorrelationStats(stats) {
+        const statsGrid = document.getElementById('stats-grid');
+        statsGrid.innerHTML = '';
+        
+        // Create stats cards
+        const categories = [
+            { 
+                name: 'Within Music Benchmarks', 
+                stats: stats.music,
+                description: 'Correlations between music theory metrics and their combinations'
+            },
+            { 
+                name: 'Within LiveBench', 
+                stats: stats.liveBench,
+                description: 'Correlations between different LiveBench metrics'
+            },
+            { 
+                name: 'Music vs LiveBench', 
+                stats: stats.cross,
+                description: 'Correlations between music benchmarks and LiveBench metrics'
+            }
+        ];
+        
+        categories.forEach(category => {
+            const card = document.createElement('div');
+            card.className = 'stats-card';
+            
+            const cardTitle = document.createElement('h3');
+            cardTitle.textContent = category.name;
+            cardTitle.style.marginTop = '0';
+            cardTitle.style.color = '#2c3e50';
+            card.appendChild(cardTitle);
+            
+            const cardDesc = document.createElement('p');
+            cardDesc.textContent = category.description;
+            cardDesc.style.fontSize = '0.9em';
+            cardDesc.style.color = '#555';
+            cardDesc.style.marginBottom = '15px';
+            card.appendChild(cardDesc);
+            
+            const avgStat = document.createElement('div');
+            avgStat.style.display = 'flex';
+            avgStat.style.justifyContent = 'space-between';
+            avgStat.style.marginBottom = '10px';
+            
+            const avgLabel = document.createElement('span');
+            avgLabel.textContent = 'Average Correlation:';
+            avgLabel.style.fontWeight = 'bold';
+            avgStat.appendChild(avgLabel);
+            
+            const avgValue = document.createElement('span');
+            avgValue.textContent = category.stats.avg.toFixed(3);
+            avgValue.style.fontFamily = '"Courier New", Courier, monospace';
+            avgValue.style.fontWeight = 'bold';
+            avgValue.style.color = getColorForCorrelation(category.stats.avg);
+            avgStat.appendChild(avgValue);
+            
+            card.appendChild(avgStat);
+            
+            const stdStat = document.createElement('div');
+            stdStat.style.display = 'flex';
+            stdStat.style.justifyContent = 'space-between';
+            
+            const stdLabel = document.createElement('span');
+            stdLabel.textContent = 'Standard Deviation:';
+            stdLabel.style.fontWeight = 'bold';
+            stdStat.appendChild(stdLabel);
+            
+            const stdValue = document.createElement('span');
+            stdValue.textContent = category.stats.std.toFixed(3);
+            stdValue.style.fontFamily = '"Courier New", Courier, monospace';
+            stdValue.style.fontWeight = 'bold';
+            stdStat.appendChild(stdValue);
+            
+            card.appendChild(stdStat);
+            
+            statsGrid.appendChild(card);
+        });
+    }
+
+    // Step 6: Create the Interactive Scatterplot Switcher and Dual Rankings
+    function initializeScatterplotSwitcher(keys, data) {
+        const xSelect = document.getElementById('x-axis-select');
+        const ySelect = document.getElementById('y-axis-select');
+        const ctx = document.getElementById('scatterplot-canvas').getContext('2d');
+        
+        const rankingTitleX = document.getElementById('ranking-title-x');
+        const rankingListX = document.getElementById('ranking-list-x');
+        const rankingTitleY = document.getElementById('ranking-title-y');
+        const rankingListY = document.getElementById('ranking-list-y');
+
+        // Populate dropdowns
+        keys.forEach(key => {
+            xSelect.add(new Option(key, key));
+            ySelect.add(new Option(key, key));
+        });
+
+        // Set default values
+        xSelect.value = 'Total';
+        ySelect.value = 'LiveBench Global';
+
+        let myChart;
+
+        // Helper function to get color based on rank
+        function getRankColor(rank, total) {
+            const ratio = (rank - 1) / (total - 1);
+            const red = Math.floor(255 * ratio);
+            const green = Math.floor(255 * (1 - ratio));
+            return `rgb(${red}, ${green}, 0)`;
+        }
+
+        function updateChart(xKey, yKey, rankMap) {
+            const scatterData = data.map(d => ({
+                x: d[xKey], 
+                y: d[yKey], 
+                model: d.Model,
+                backgroundColor: getRankColor(rankMap[d.Model], data.length)
+            }));
+
+            if (myChart) {
+                myChart.data.datasets[0].data = scatterData;
+                myChart.options.scales.x.title.text = xKey;
+                myChart.options.scales.y.title.text = yKey;
+                myChart.update();
+            } else {
+                myChart = new Chart(ctx, {
+                    type: 'scatter', 
+                    data: { 
+                        datasets: [{ 
+                            label: 'Models', 
+                            data: scatterData, 
+                            pointRadius: 6, 
+                            pointHoverRadius: 8 
+                        }] 
+                    },
+                    options: {
+                        responsive: true, maintainAspectRatio: false,
+                        scales: { x: { title: { display: true, text: xKey }, grid: { color: '#e0e0e0' } }, y: { title: { display: true, text: yKey }, grid: { color: '#e0e0e0' } } },
+                        plugins: { legend: { display: false }, tooltip: { callbacks: { label: (ctx) => `${ctx.raw.model}: (${ctx.parsed.x}, ${ctx.parsed.y.toFixed(2)})` } } }
+                    }
+                });
+            }
+        }
+
+        function updateRanking(listElement, titleElement, key, rankMap) {
+            const sortedData = [...data].sort((a, b) => b[key] - a[key]);
+            titleElement.textContent = `Model Ranking by ${key}`;
+            let html = '';
+            sortedData.forEach((model, index) => {
+                const score = model[key];
+                const formattedScore = (typeof score === 'number' && !Number.isInteger(score)) ? score.toFixed(2) : score;
+                const rank = index + 1;
+                const color = getRankColor(rankMap[model.Model], data.length);
+                // Apply color to the background of the entire row
+                html += `<div class="ranking-item" style="background-color: ${color};"><span class="ranking-rank">#${rank}</span><span class="ranking-model-name">${model.Model}</span><span class="ranking-score">${formattedScore}</span></div>`;
+            });
+            listElement.innerHTML = html;
+        }
+
+        function refreshAll() {
+            const xKey = xSelect.value;
+            const yKey = ySelect.value;
+
+            // 1. Create the rank map based on the X-axis key
+            const sortedDataForRank = [...data].sort((a, b) => b[xKey] - a[xKey]);
+            const rankMap = {};
+            sortedDataForRank.forEach((model, index) => {
+                rankMap[model.Model] = index + 1;
+            });
+
+            // 2. Update chart and rankings with the new rank map
+            updateChart(xKey, yKey, rankMap);
+            updateRanking(rankingListX, rankingTitleX, xKey, rankMap);
+            updateRanking(rankingListY, rankingTitleY, yKey, rankMap);
+        }
+
+        // Add event listeners
+        xSelect.addEventListener('change', refreshAll);
+        ySelect.addEventListener('change', refreshAll);
+
+        // Initial render
+        refreshAll();
+    }
+
+    // Main execution
+    window.onload = () => {
+        const correlationData = generateCorrelationMatrix(dataForAnalysis);
+        renderTable(correlationData);
+        
+        // Display correlations in order (now correctly sorted)
+        printCorrelationsInOrder(correlationData);
+        
+        // Calculate and display correlation statistics
+        const correlationStats = calculateCorrelationStats(correlationData);
+        displayCorrelationStats(correlationStats);
+        
+        initializeScatterplotSwitcher(correlationData.keys, dataForAnalysis);
+    };
+</script>
+
+</body>
+</html>
