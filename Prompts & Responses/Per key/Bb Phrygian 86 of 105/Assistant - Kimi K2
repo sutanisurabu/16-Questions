@@ -1,0 +1,54 @@
+**Assistant - Kimi K2**
+
+Let's analyze the chord progression:
+
+**Bbm – Bbm – Gb/Bb – Gb/Bb – Bbm – Bbm – Db/Ab – B/Bb – Bbm – Bbm – Gb/Bb – Gb/Bb – Bbm – Bbm – Abm6 – Bbm**
+
+---
+
+### Step 1: Identify the roots and their relationships
+All chords are rooted in flats (Bb, Gb, Db, Ab), so we’re likely in a **flat key**.
+
+Let’s list the root notes in order:
+
+- Bb  
+- Gb  
+- Db  
+- B (natural!)  
+- Ab  
+
+This is unusual because **B natural** appears in a progression otherwise full of flats.
+
+---
+
+### Step 2: Look at the tonic
+The chord **Bbm** appears **6 times**, more than any other. It begins and ends the progression. This strongly suggests **Bb minor** is the **tonic**.
+
+---
+
+### Step 3: Check the mode
+Since the tonic is **Bbm**, and the progression centers around **Bb**, we are in **Bb minor**.
+
+But we must check for **modal inflections**.
+
+---
+
+### Step 4: Analyze the chords in Bb minor
+
+| Chord     | Function in Bb minor |
+|-----------|----------------------|
+| Bbm       | i (tonic)            |
+| Gb/Bb     | ♭VI in 1st inversion |
+| Db/Ab     | ♭III in 1st inversion |
+| B/Bb      | **V/V** (secondary dominant of V) |
+| Abm6      | ♭II with added 6th   |
+
+---
+
+### Final Answer:
+
+**Key: Bb minor**  
+**Mode: Natural minor (Aeolian)** with **secondary dominant** (B/Bb = V/V) and **chromatic voice-leading** (Abm6 is a passing color).
+
+No modal interchange or major tonic is implied — it's **straight Bb minor**, with some **chromatic spice**.
+
