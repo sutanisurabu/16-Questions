@@ -1,0 +1,645 @@
+**Assistant - Qwen3 Next 80B**
+
+Let’s analyze the chord progression you’ve provided:
+
+**Chord progression:**
+> G# G# Fm/G# Fm/G# Cdim/F# A#m/G# G# G# Fm/G# Fm/G# G# G# F#6 G#
+
+---
+
+### Step 1: List the chords clearly
+
+We’ll write them in root position or highlight the bass note:
+
+1. **G#** — likely G# major (G#-B#-D#)  
+2. **G#**  
+3. **Fm/G#** — F minor with G# in the bass → So bass is G#, chord is F minor → inversion of Fm: G#-A-C  
+4. **Fm/G#**  
+5. **Cdim/F#** — C diminished with F# in the bass → bass is F#, chord is Cdim: F#-A-C (which is F# half-diminished, or F#m7♭5)  
+6. **A#m/G#** — A# minor with G# in the bass → G#-A#-E# (since A#minor = A#-C#-E#) → so it’s G# as bass, A# minor triad above → **G#-A#-C#-E#**? Wait — actually, **A#m/G#** means the chord is A# minor with G# in the bass → notes: G# - A# - C# - E#? But A#m triad is A#-C#-E#, so with G# bass → G#-A#-C#-E# — that’s **G# minor 7th**? Let’s hold that thought.
+
+7. **G#**  
+8. **G#**  
+9. **Fm/G#**  
+10. **Fm/G#**  
+11. **G#**  
+12. **G#**  
+13. **F#6** — F# major with a 6th → F#-A#-C#-D#  
+14. **G#**
+
+---
+
+### Step 2: Simplify and look for tonal center
+
+We see **G#** repeated very frequently — it’s the most common chord/bass note. Let’s assume **G#** is the tonal center.
+
+So potential key: **G# major** or **G# minor**
+
+But let’s look at the other chords:
+
+- **Fm/G#** → This is **F minor triad** over G# bass: G# - A - C  
+  - This is a **minor 6th chord**? Not quite. The notes G#-A-C form a **G# diminished triad**? Let’s see:
+    - G# to A: minor 2nd
+    - A to C: minor 3rd
+    - G# to C: diminished 5th (G#–C is 6 half-steps: G#–A–A#–B–C → G# to C is 6 semitones → tritone → diminished 5th)
+    - So **G#-A-C = G# dim triad** → So this is **G#dim** chord.
+
+Wait — hold on! That’s critical.
+
+**Fm/G# = F minor on G# bass**
+
+F minor triad: F–A–C  
+Put G# in the bass: **G#–F–A–C** — rearranged: **G#–A–C–F**
+
+But that’s a **4-note chord**: G#, A, C, F — this is NOT a standard triad. Chord symbols like X/Y mean the chord X with bass Y — so the *chord quality* is F minor, but the *bass note* is G#.
+
+So the full chord is: **F minor triad (F–A–C)** with **G#** as the lowest note → notes: **G#, F, A, C**
+
+Now let’s arrange them in order:
+
+**G# - A - C - F**
+
+Intervals from G#:
+- G# to A: m2
+- G# to C: d5 (6 semitones)
+- G# to F: m6 (8 semitones) — G#–A–A#–B–C–C#–D–D#–E–F → 8 semitones? Let’s count:
+
+**G# → A (1), A# (2), B (3), C (4), C# (5), D (6), D# (7), E (8), F (9)** → **9 semitones** from G# to F — that’s a **major 6th?** Wait, G# to F is enharmonically **G# to F##**? No, F is natural.
+
+Wait — **G# to F** is **10 semitones**? Let me be precise:
+
+Half-steps from G#:
+- G# = 0
+- A = 1
+- A# = 2
+- B = 3
+- C = 4
+- C# = 5
+- D = 6
+- D# = 7
+- E = 8
+- F = 9
+
+So G# to F is **9 semitones** → A **minor 6th?** No — 9 semitones is a **major 6th**? Wait:
+
+- Major 6th from G# is E# (G# to E# = 9 semitones — yes, because E# = F natural)
+- But E# and F natural are enharmonic. So **G# to F natural** is a **minor 7th**? Wait, no.
+
+Wait — G# to F natural:
+
+- G# → A → A# → B → C → C# → D → D# → E → F → that's 9 steps → **minor 7th** would be G# to F# (8 semitones) → F natural is one step lower → **diminished 7th**? No.
+
+Let’s count semitones accurately:
+
+| Note | Semitone from G# |
+|------|------------------|
+| G#   | 0                |
+| A    | 1                |
+| A#   | 2                |
+| B    | 3                |
+| C    | 4                |
+| C#   | 5                |
+| D    | 6                |
+| D#   | 7                |
+| E    | 8                |
+| F    | **9**            |
+
+So **G# to F = 9 semitones** = a **minor 7th**? But minor 7th from G# is **F#**, which is 10 semitones? No, wait — mistake.
+
+Wait, standard: **Minor 7th interval** = 10 semitones
+
+- G# → A = 1
+- G# → B = 3
+- G# → C# = 5
+- G# → D# = 7
+- G# → E# = 9? No, E# is the major 6th
+
+Wait — G# to **F#** is 10 semitones → minor 7th  
+G# to **F** is 9 semitones → **Major 6th**! Because:
+
+- Major 6th = 9 semitones  
+- Minor 6th = 8 semitones → G# to E = 8 semitones
+
+So **G# to F natural = 9 semitones → major 6th**
+
+So F is the major 6th above G#
+
+So the chord **Fm over G# bass** = notes: G# (bass), F, A, C
+
+→ Belongs to the notes: **G#, A, C, F**
+
+In terms of intervals above G#:
+
+- 1: G#
+- 2: A (M2)
+- 4: C (P4)
+- 6: F (M6)
+
+So chord: **G# with added 2 and 4 and 6**? Unusual.
+
+Better to think: **F minor triad = F, A, C** — so stacked above G# bass, it's **G#–F–A–C**
+
+Which is the same as **A–C–F–G#**
+
+That’s an **A minor 7th flat 5 (Aø7)** chord? A–C–E♭–G → but we have A–C–F–G# — F is natural, G# is natural.
+
+A–C–F–G# → Could that be **G#7#5#9**? Too complicated.
+
+Wait — here's a better approach.
+
+---
+
+### Step 3: Consider key signature and scales
+
+Let’s suppose this is in the key of **G# minor**.
+
+G# minor scale: G# - A# - B - C# - D# - E - F# (natural minor)
+
+But we have chords with **F natural**, **C natural**, **A natural**, etc.
+
+Specifically, we see:
+
+- Fm → F is natural
+- Cdim → C natural
+- A#m → A#, C#, E#
+- F#6 → F#, A#, C#, D#
+
+So in the same progression, we see **C natural** (in Fm and Cdim) and **C#** (in A#m and F#6).  
+Also, **F natural** and **F#**.
+
+This suggests **chromaticism**, **modal interchange**, or even **modulation**.
+
+But look again — **Cdim/F#** — C diminished with F# bass.
+
+Cdim = C–E♭–G♭  
+F# bass → **F#–C–E♭–G♭**
+
+That’s **F# half-diminished** chord: F#–A–C–E → wait, no.
+
+Cdim triad: C–E♭–G♭  
+With F# bass → notes: F#, C, E♭, G♭
+
+That’s **F# minor 7♭5** chord: F#–A–C–E would be m7♭5 — but we have F#, C, E♭, G♭.
+
+Wait — F#, C, E♭, G♭ = F#–C–E♭–G♭ → that’s **C diminished 7th chord with F# bass** — which is enharmonic to:
+
+Cdim7 = C–E♭–G♭–B𝄫 → which is C–E♭–G♭–A (if B𝄫 = A)
+
+So **F#–C–E♭–A** — which is the same as **A–C–E♭–F#**
+
+That’s **A half-diminished seventh**: A–C–E♭–G — but we have A–C–E♭–F#, so **A–C–E♭–F#** = A half-diminished 7th? Let’s check:
+
+Normal A half-dim: A–C–E♭–G — **G natural**
+
+We have **F#** instead → which is a **major 6th** above A? Or a **minor 7th**? A to F# = 8 semitones → minor 6th
+
+Wait — 8 semitones = minor 6th.
+
+So **A–C–E♭–F#** = A minor triad with a flat 5 and a minor 6th? That’s **A7♭5♭6** — extremely rare.
+
+Alternatively: **Cdim7 chord with F# bass** → Cdim7 = C–E♭–G♭–B𝄫 (B𝄫 = A) → so C–E♭–G♭–A
+
+Then bass is F# → not one of those notes.
+
+So maybe it’s **Cdim7 with F# bass** → which implies **Cdim7 / F#** → but that’s not standard.
+
+Alternative idea: **Cdim/F# = F#m7b5**
+
+Because F#m7b5 = F#–A–C–E → but we have F#, C, and then E♭, G♭? No, we don’t have E.
+
+This is confusing.
+
+Let’s try a different strategy: **ignore bass notes** for a moment and just look at chord qualities.
+
+Chord qualities in the progression:
+
+- G# (major)
+- Fm (minor)
+- Cdim (diminished)
+- A#m (minor)
+- F#6 (major with 6th)
+
+F#6 = F#–A#–C#–D#
+
+That’s a **major 6th chord in F#**, which is the **major VI** chord in D# minor.
+
+Wait — let’s look at **F# major** and **G# minor**.
+
+### Try key of A major or F# major?
+
+F# major scale: F# G# A# B C# D# E#  
+So G# is #2, A# is #3
+
+We have chords: G# major, Fm, Cdim, A#m — does A# minor belong? A# minor is A#–C#–E# — that’s in F# major (vi chord: vi = D#m, not A#m).
+
+In G# minor key (natural):  
+Scale: G# A# B C# D# E F#  
+Chords:  
+i – G#m  
+ii° – A#dim  
+III – Bmaj  
+iv – C#m  
+v – D#m  
+VI – E  
+VII – F#  
+
+We don’t have any of these matching. We have **G# major** — out of place.  
+We have **Fm** — F natural, not in key.  
+We have **Cdim** — C natural.  
+We have **A#m** — A#-C#-E# — but in G# minor, that would be II, which is diminished, not minor.
+
+So perhaps **G# minor is not the key**.
+
+Try **D# major?**
+
+D# major: D# E# F# G# A# B# C##  
+Chord: G# = #5 — not likely.  
+F# = #7? Not good.
+
+Try **F# major**
+
+F# major: F# G# A# B C# D# E#  
+Chords:
+I: F#  
+II: G#m  
+III: A#m  
+IV: B  
+V: C#  
+VI: D#  
+VII: E#°
+
+We have:
+- G# — should be minor, but it’s major → so borrowed?
+- Fm? — F natural — NOT in F# major (F# has F#)
+- Cdim? C natural — F# major has C#
+- A#m — yes! that’s III chord
+- F#6 — yes, I chord with added 6
+
+So chords we see:
+- **G# major** → would normally be G#m in F# major → so **borrowed from parallel minor?** F# minor? But F# minor has G natural, not G#.
+
+F# minor scale: F# – G# – A – B – C# – D – E  
+Now F# minor includes:
+- G# (as 2nd degree) → so **G# major chord**? Yes! G#–B#–D#? But in F# minor, 3rd is A — so G#–B–D — G# minor.
+
+But you have **G# major** (G#–B#–D#) — B# — that’s not in F# minor — F# minor has B natural.
+
+So **G# major is borrowed from F# major**, but F# major has E# and C#, not C natural.
+
+Clash: Fm = F natural vs F# major has F# — conflict.
+
+So not a diatonic key.
+
+---
+
+### Let’s look for common tones or pivot
+
+The chord **F#6** is **F#–A#–C#–D#** — this is a very bright, major tonal center.
+
+Let’s assume we are in **F# major**.
+
+F# major scale: F# G# A# B C# D# E#
+
+Chords that fit:
+- F#6 = I6 → YES
+- A#m = III → YES
+- G# = ? Normally minor, but here it’s major → G# = II → in F# major, II is G#m, but we have G# major — so **major II chord**, which is **borrowed** (e.g., from F# Phrygian? Or parallel minor? No — F# minor has G#m)
+
+But in **F# harmonic minor?** That’s F#–G#–A–B–C#–D–E# — still has G# minor.
+
+So why G# major? It's unusual.
+
+Try **D# minor**
+
+D# minor scale (natural): D# E# F# G# A# B C#  
+Chords:
+i: D#m  
+ii°: E#°  
+III: F#  
+iv: G#m  
+v: A#m  
+VI: B  
+VII: C#
+
+Now we have:
+- G# → but it’s major — in D# minor, G# is iv → should be minor
+- Fm? F natural — not in key (has F#)
+- Cdim? C natural — has C#
+- A#m = v → YES
+- F#6 = III6 → FYI, F# major is III chord in D# minor — so F#6 is possible
+- G# major — again, should be G#m
+
+So again, G# major is inconsistent.
+
+### Critical observation:
+
+We keep seeing **Fm/G#**
+
+That is: F minor with G# bass → notes: G#, F, A, C
+
+Now, **F–A–C** is F minor triad, add G# bass.
+
+But **G#, A, C** → spelled: G#–A–C = **G# diminished triad**
+
+So **Fm/G#** is **functionally a G#dim chord**
+
+Why? Because the **notes G#, A, C** form a diminished triad.
+
+Similarly, **Cdim/F#** = C diminished with F# bass → C–E♭–G♭ with F# bass = F#–C–E♭–G♭ → that’s **F# half-diminished 7**? F#–A–C–E would be the standard — but we have E♭ and G♭ — not in key.
+
+Wait — wait a minute: **Cdim/F#**
+
+Cdim = C–E♭–G♭  
+F# = F#
+
+So: F#–C–E♭–G♭
+
+Let’s write as: **F#–G♭–B𝄫–D𝄫**? No — that’s voodoo.
+
+Wait — C–E♭–G♭ = Cdim
+
+Now, F#–C–E♭–G♭ — what is this? Let's spell all as flats or sharps.
+
+E♭ = D#  
+G♭ = F#  
+C = C
+
+So: F#–C–D#–F#
+
+We have: F# (bass), C, D#, F# — so **C–D#–F#** = **C major triad?** C–E–G — no, C–D#–F# = C to D# = M2, C to F# = P5? C–F# = 6 semitones — tritone.
+
+C to D# = 3 semitones → minor 3rd? No, C to D# = C–C#–D–D# → 3 semitones = minor 3rd
+
+C to F# = C–C#–D–D#–E–F–F# = 6 semitones = diminished 5th
+
+So **C–D#–F# = C diminished triad** — so we’re back to **Cdim with bass C**, but we have bass **F#**
+
+So chord = **F#–C–D#–F#** → which is **Cdim with F# in bass** = **Cdim/F#**
+
+But Cdim = C–E♭–G♭ = C–D#–F# — yes! So **Cdim = C–D#–F#**
+
+Therefore, **Cdim/F# = F# (bass) + C–D#–F#** → so it’s a **C diminished triad with F# in bass** — but the bass note F# is already in the chord!
+
+So it’s just **C diminished with F# as root?** No — the chord is **Cdim**, bass is F# — so root is C, bass is F#.
+
+But the triad is **C–D#–F#** — so the notes are **C, D#, F#** — which is a **C diminished triad**
+
+So **Cdim/F#** is **Cdim (C–D#–F#) with F# in bass** → that’s **F#–C–D#**
+
+Now arrange: **F#–C–D#** → that’s F# to C = 8 semitones (m6), F# to D# = 3 semitones (m3)
+
+So F#–D#–C — which is **D#–F#–C** = D# diminished triad? D#–F#–A → but we have C, not A.
+
+Wait — F#–C–D# is **C–D#–F#** rearranged
+
+Which is **C diminished** — no way around it.
+
+But F#–C–D# = **F# minor 7th flat 5?** F#–A–C–E is m7♭5, but here we have F#–C–D# = F#–D#–C — that’s **C minor 6?** No.
+
+Actually — F#–C–D# is a **C diminished triad with F# in bass** — means the root is C, and bass is F# → it's an **inversion**
+
+Specifically, Cdim triad = C–E♭–G♭ = C–D#–F#
+
+Its first inversion = E♭–G♭–C = D#–F#–C  
+Second inversion = G♭–C–E♭ = F#–C–D#
+
+So **Cdim/F#** = **second inversion of C diminished triad**
+
+So **the actual chord is C diminished**
+
+Similarly, **Fm/G#** = F minor with G# bass = notes: G#, F, A, C — which is **G#–A–C–F**
+
+G#–A–C: G# to A = m2, A to C = m3, G# to C = d5 — so **G#dim**
+
+F is an added note? Or maybe we missed something.
+
+Wait — **Fm triad = F–A–C**, bass G# — total notes: G#, F, A, C
+
+Group as **F–A–C** (Fm) + G# bass
+
+But these 4 notes: **F, G#, A, C**
+
+That’s **F–A–C–G#**
+
+Which is a **G# minor 7th?** G#–B#–D#–F# — no, we have F natural.
+
+G#–A–C–F: intervals from G#:
+- G#–A: m2
+- G#–C: d5
+- G#–F: M6
+
+So it's **G# with added 2, 4, and 6** — A, C, F
+
+A = M2, C = d5, F = M6 — these are very dissonant.
+
+This sounds like a **G# half-diminished 7th with no 3rd**? Or **F#m7 b5 without thirds**?
+
+Wait — G# half-dim 7th = G#–B–D#–F#
+
+We have G#–A–C–F — no B, no D#, no F#
+
+So other possibility: **this is a "C minor 6th" chord with G# bass?**
+
+Cm6 = C–E♭–G–A — we have C–F–A–G# — F and G# instead of E♭ and A
+
+Not matching.
+
+---
+
+### Final breakthrough: Think of G# as the root, and find scale.
+
+Chord symbols:
+
+- G# — assume major
+- Fm/G# — implies G#dim or G#m6? But let's just take the bass as reference.
+
+Assume the key is **G# minor**, and the **Fm/G#** is a **borrowed chord from G# melodic minor or harmonic minor**.
+
+G# harmonic minor = G#–A#–B–C#–D#–E–F# — still no F natural.
+
+G# melodic minor ascending: G#–A#–B–C#–D#–E#–F# — still F#.
+
+**F natural** only appears in **G# Dorian?** — G# Dorian = G#–A#–B–C#–D#–E#–F# — same.
+
+I'm thinking we’re dealing with **tonal ambiguity** or **modal interchange from D# Lydian or something**.
+
+Another possibility: **This progression is in the key of B major?**
+
+B major: B C# D# E F# G# A#
+
+Check G# — #4  
+Fm — F natural — not in key
+
+No.
+
+### Insight: The chord F#6 and G# major
+
+F#6 = F# A# C# D#  
+G# major = G# B# D#
+
+In the key of C# major? C# major: C# D# E# F# G# A# B#
+
+Now we have:
+
+- G# major = V
+- F#6 = IV6 — in C# major, IV is F# major — yes!
+- A#m = vi — in C# major: vi = A#m — yes!
+- Cdim = ? C# major has C# — not C
+
+Cdim = C–E♭–G♭ — C natural — not in C# major
+
+Fm = F natural — also not in C# major (has F#)
+
+So again: **C natural** and **F natural** are out of key.
+
+C# major’s note C# is sharp — C natural is chromatic.
+
+So we have **C natural** and **F natural** — that’s a clue.
+
+C natural and F natural: F and C form **tritone** — classic diminished chord enharmonic.
+
+But here’s the key insight:
+
+### Let’s reinterpret the entire sequence as a descending bass line:
+
+Bass notes:
+
+1. **G#**
+2. **G#**
+3. **G#**
+4. **G#**
+5. **F#**
+6. **G#**
+7. **G#**
+8. **G#**
+9. **G#**
+10. **G#**
+11. **G#**
+12. **G#**
+13. **F#**
+14. **G#**
+
+So the bass moves:  
+G# (x4) → **F#** → G# (x5) → F# → G#
+
+So we have a **G# – F# – G#** bass motion — very common in pop/rock.
+
+That’s exactly the pattern of **I – bVI – I** in some modal settings.
+
+Like: G# – F# – G#
+
+**F#** would be the bVI chord if key is G# major.
+
+G# major scale: G# A# B# C# D# E# F## (F## = G natural)
+
+F# is not in G# major — it’s the **lowered 6th** → so **F# = bVI**
+
+So if we assume **G# major** as tonic:
+
+- G# = I
+- F#6 = bVI6
+
+That’s a **very common borrowed chord progression**: **I – bVI – I**
+
+Like in pop: C – Ab – C
+
+Related to the “Andalusian cadence” or bluesy movement.
+
+Now what about the other chords:
+
+Fm/G# — What is this? If G# is tonic, and we have Fm triad over it — Fm = F–A–C — which is **bVII if we’re in G# major?**
+
+But G# major’s bVII would be F# — we have F natural — that’s **bVIIb**? No.
+
+Wait — F natural is **not in G# major** — it’s a **foreign tone**.
+
+But here’s the trick: **Fm/G#** could be interpreted as **G#7#11** or something — not standard.
+
+Another interpretation: **Fm/G# = G#m7♭5** if we consider it as **G#–B–D–F**
+
+But we have **G#–A–C–F** — A and C, not B and D.
+
+So it’s **G#–A–C–F**
+
+That’s **G#m7♭5** if C were E♭ and F were E — no.
+
+Perhaps this is a **Cmaj7b9** or something? Too complex.
+
+Let’s abandon trying to name the chord and look at **harmonic function**.
+
+The sequence:
+
+G# (tonic)  
+Fm/G# — bass D? No, G# for 4 bars — suggests **tonic pedal**
+
+Then Cdim/F# — F# bass, Cdim — which is bVI in G# major (F# = bVI)
+
+Then A#m/G# — G# bass, A#m chord → A#m = ii in G# minor, but we’re in G# major
+
+A#m is **iii** in F# major — again.
+
+Now, **F#6** is **bVI6** — and it resolves back to G# — very satisfying.
+
+So overall pattern:
+
+> G# — Fm/G# (tonic pedal) — **Cdim/F# (bVI)** — A#m/G# (iii?) — G# — **F#6 (bVI6)** — G#
+
+This is **essentially** a G# tonic with **bVI chord (F#)** used as a contrast, and **Fm/G#** and **A#m/G#** as colorful passing chords over the tonic bass.
+
+The only "weird" notes are **F, C, A natural** — which are not in G# major.
+
+But those notes — F, A, C — spell **F minor**.
+
+**F minor is the relative minor of A-flat major** — not helpful.
+
+But here's the idea: **The chord Fm = F–A–C** — this is the **bVII chord relative to A major?** No.
+
+In **A major**, bVII is G — not F.
+
+Another classic: in **minor keys**, bVII is I–bVII–I (e.g., in rock: G–F–G)
+
+But here the key is G# major, and **F#** is the bVI — and **F minor** is the same as **E# minor** — enharmonic to F minor, but F minor as a chord of G# major doesn’t fit.
+
+Wait — **F minor = E# minor** — and E# is the leading tone in F major — no.
+
+### Final Answer:
+
+Despite the presence of chromatic tones (F, C, A natural), the **tonic and anchoring chord is G#** used repeatedly, with **F#6** as a strong structural chord (bVI), forming a **I – bVI – I** progression in the key of **G# major**, but with **borrowed subdominant minor chords** (Fm) and diminished chords.
+
+The **mode is G# major**, but the use of Fm and Cdim suggests **modal mixture** (borrowing from G# minor or other modes).
+
+But **G# minor** doesn’t have F natural in its natural, harmonic, or melodic forms.
+
+Wait — G# Phrygian? G# A B C# D# E F# — still no F natural.
+
+**G# Mixolydian b2?** Not standard.
+
+Actually, the presence of **F natural** and **C natural** suggests the key center is **E major or C# major** — but then G# isn't tonic.
+
+I think the only logical conclusion is:
+
+---
+
+### ✅ **Key: G# major**  
+### ✅ **Mode: Major (Ionian)**  
+### **with modal mixture**: borrowing the **F minor chord** (bVII of G# minor? or from C# minor) and **C diminished** (viio of D#) as chromatic passing chords.
+
+But more precisely — the piece **centered on G#**, with a **strong cadential motion from F#6 to G#**, and Fm/G# acting as a **colored pedal tone over I** — the F and C naturals are **non-chord tones** or **borrowed from G# Dorian?** But G# Dorian is G# A# B C# D# E# F# — no naturals.
+
+So it's **G# major with chromaticism**, possibly suggesting **Blues or Rock style**.
+
+The presence of **F#6** and **I** suggests this is **G# major with lowered sixth chord**, common in many pop/rock songs (e.g., "Let It Be" has C – Ab – C).
+
+So even with all the chromaticism, the **tonal center is G#**.
+
+---
+
+## 🔚 Final Answer:
+
+> **Key: G# Major**  
+> **Mode: Ionian (Major)**  
+>  
+> *Note: The progression uses chromatic and borrowed chords (Fm, Cdim) for color and tension, but the tonal center remains G# with a strong cadence on F#6 → G#.*
+
+This progression is **not diatonic**, but it is **clearly centered on G# major**.
+
