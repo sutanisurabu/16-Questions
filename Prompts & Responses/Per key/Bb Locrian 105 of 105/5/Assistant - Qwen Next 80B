@@ -1,0 +1,620 @@
+**Assistant - Qwen Next 80B**
+
+To determine the key and mode of this chord progression:
+
+```
+Bbdim Bbdim Gb/Bb Gb/Bb Bbdim Bbdim Dbm/Ab B/Bb Bbdim Bbdim Gb/Bb Gb/Bb Bbdim Bbdim Emaj7/Ab Bbdim
+```
+
+---
+
+### Step 1: Analyze the chords
+
+Let’s list them out cleanly, with inversions interpreted:
+
+1. **Bbdim** — B♭ diminished triad: B♭ - D♭ - F♭ (or E)
+2. **Gb/Bb** — G♭ major triad with B♭ in the bass: B♭ - D♭ - G♭ → this is **B♭ minor 7th flat 5**? Wait — let’s think differently.
+
+Actually, **Gb/Bb** means a G♭ major chord (G♭ - B♭ - D♭) with B♭ in the bass. So the notes are: **B♭ (bass), D♭, G♭**. That’s a **B♭ minor 7th chord without the 7th**? No — it's a **G♭ major triad in first inversion**. So harmonically, it's still **G♭ major**.
+
+But let's look at the entire progression in context.
+
+---
+
+### Step 2: Identify possible key center
+
+Let’s list all chords and their roots:
+
+| Chord | Notes | Root | Function |
+|-------|-------|------|----------|
+| Bbdim | B♭, D♭, F♭ | B♭ | diminished tonic? |
+| Gb/Bb | B♭, D♭, G♭ | G♭ (bass: B♭) | G♭ major |
+| Dbm/Ab | A♭, C♭ (B), E♭ | D♭ (bass: A♭) | D♭ minor |
+| B/Bb | B, D♯, F♯ | B (bass: B♭) | **B major triad with B♭ bass → this is VERY unusual** |
+| Emaj7/Ab | A♭, C♯, E, G♯ | E (bass: A♭) | E major 7th with A♭ bass |
+
+Wait — **B/Bb** stands out. A B major triad (B-D♯-F♯) with B♭ in the bass? That’s a **B major over B♭ bass** → odd chromatic bass motion.
+
+But **B major** is *not* in the key of B♭ minor or B♭ major. So let’s see if we’re in **B minor**? But then why is everything based around B♭?
+
+Look again:
+
+- Several **Bbdim**
+- Several **Gb/Bb** → Gb major triad with Bb bass
+- **Dbm/Ab** → D♭ minor with A♭ bass
+- **B/Bb** → B major with B♭ bass
+- **Emaj7/Ab** → E major 7th with A♭ bass
+
+This looks like **bass motion is the key**, not necessarily root motion.
+
+Let’s write the **bass notes only**:
+
+```
+B♭ - B♭ - B♭ - B♭ - B♭ - B♭ - A♭ - B♭ - B♭ - B♭ - B♭ - B♭ - B♭ - B♭ - A♭ - B♭
+```
+
+So **the bass is almost entirely B♭**, with two A♭s.
+
+- **Gb/Bb** → bass = B♭
+- **Dbm/Ab** → bass = A♭
+- **B/Bb** → bass = B♭
+- **Emaj7/Ab** → bass = A♭
+
+So **bass line**:  
+**B♭, B♭, B♭, B♭, B♭, B♭, A♭, B♭, ... , A♭, B♭**
+
+That suggests **B♭ is the tonal center**, with occasional **A♭** to create chromatic movement.
+
+But what harmonies are being played *above* B♭?
+
+Let’s analyze the **chords over B♭ bass**:
+
+1. **Bbdim** → B♭ diminished → **B♭ - D♭ - F♭** → this is **B♭ half-diminished 7th** without the 7th? Actually, it’s just B♭dim triad: **B♭dim = B♭ D♭ F♭** — same as Cdim, but enharmonic.
+
+Wait: B♭ diminished = **B♭ D♭ F♭** = same as **Cdim** enharmonically (C E G → not same). No:
+
+Actually, **B♭dim = B♭ D♭ F♭**, which is equivalent to **D♭dim** or **F♭dim**, but minimally it’s a diminished triad on B♭.
+
+But harmonic functionally, B♭dim is **not diatonic** to B♭ major or B♭ minor.
+
+But B♭dim can be the **ii° chord in C minor**? Maybe.
+
+Let’s try a different approach.
+
+---
+
+### Step 3: Look for a context where these chords make sense
+
+Let’s look at **Dbm/Ab** — D♭ minor with A♭ bass → A♭ - C♭ - E♭ → That’s **A♭ major** triad? Because A♭-C♭-E♭ = A♭ major? Wait:  
+- A♭ = root  
+- C♭ = minor 3rd? **C♭ is B** → **A♭ - B - E♭**? That’s **A♭ major**? No —  
+**C♭ is enharmonic to B**, so A♭ - B - E♭ = **A♭ major triad?** No — major third above A♭ is **C**, not C♭.
+
+**D♭ minor triad** is: D♭ - F♭ - A♭  
+So **Dbm/Ab** = **A♭ - D♭ - F♭** → which is **A♭ major triad**?  
+But A♭ major is A♭ - C - E♭  
+Here: A♭ - D♭ - F♭ → that’s **D♭ minor triad in second inversion**.
+
+Normal D♭ minor: D♭ - F♭ - A♭  
+Inverted: F♭ - A♭ - D♭ (1st inv)  
+A♭ - D♭ - F♭ = **2nd inversion D♭ minor**
+
+So **Dbm/Ab = D♭ minor, second inversion**
+
+Similarly, **Gb/Bb = G♭ major, first inversion** → G♭ - B♭ - D♭ → bass = B♭  
+So: **G♭ major (root G♭) → first inversion**
+
+B♭dim = B♭ - D♭ - F♭
+
+Wait — now look:
+
+- **B♭dim**: B♭ - D♭ - F♭  
+- **Gb/Bb**: B♭ - D♭ - G♭ → notes: B♭, D♭, G♭  
+- **Dbm/Ab**: A♭ - D♭ - F♭  
+- **B/Bb**: B - D♯ - F♯ with B♭ bass → B♭, B, D♯, F♯? That’s **B major over B♭ bass** — very strange, chromatic
+
+Let’s compare **B♭dim (B♭ D♭ F♭)** and **G♭ major first inversion (B♭ D♭ G♭)** — difference is F♭ vs G♭
+
+F♭ = E, G♭ = F#
+
+So chords over B♭ bass are:
+
+1. B♭dim → B♭ D♭ F♭  
+2. Gb/Bb → B♭ D♭ G♭  
+3. B/Bb → B♭ B D♯ F♯ (extremely chromatic)
+
+This seems like a **borrowed or modal mixture progression**, possibly from **B♭ minor**, but with chromatic passing chords.
+
+Let’s try to fit into **B♭ minor**.
+
+**B♭ minor scale**: B♭, C, D♭, E♭, F, G♭, A♭
+
+Diatonic triads:
+
+- i: B♭m → B♭ D♭ F  
+- ii°: C° → C E♭ G  
+- III: D♭ → D♭ F A♭  
+- iv: E♭m → E♭ G♭ B♭  
+- v: Fm → F A♭ C  
+- VI: G♭ → G♭ B♭ D♭  
+- VII: A♭ → A♭ C E♭
+
+So in **B♭ minor**, we have:
+
+- **B♭dim** → not diatonic. B♭m is B♭ D♭ F — but B♭dim is B♭ D♭ F♭ → so it’s **B♭m with flattened 5th** → B♭ half-diminished 7th if extended.
+
+But **Gb** (G♭ major) — that’s chord **VI** in B♭ minor → DIATONIC!
+
+**D♭ minor** — that’s **III** in B♭ minor? No — **III is D♭ major**. But here we have **Dbm** → D♭ minor, which is **not diatonic to B♭ minor**.
+
+B♭ minor has:
+- III = D♭ major  
+- vi = G♭ major  
+- vii° = A♭ diminished
+
+So **D♭ minor (Dbm)** is **borrowed from B♭ Phrygian?** Or B♭ harmonic minor?
+
+Let’s try **B♭ harmonic minor**:  
+B♭, C, D♭, E♭, F, G♭, **A**
+
+Now we have A natural — which could explain the **B major chord**! **B major is B-D♯-F♯** — but in harmonic minor we have A natural, not B natural.
+
+Wait — **if the key is G minor**, let’s test that.
+
+---
+
+### Step 4: Consider **G minor** as key
+
+G harmonic minor: G, A, B♭, C, D, E♭, **F♯**
+
+Chords in G minor:
+
+- i: Gm
+- ii°: A°
+- III: B♭
+- iv: Cm
+- v: Dm
+- VI: E♭
+- VII: F♯°
+
+Wait — now **B♭ major** is **III** in G minor — yes!
+
+We have **B♭dim** → that’s B♭-D♭-F♭ — not B♭ major.
+
+But we also have **Gb/Bb** → G♭ major over B♭ bass → G♭-B♭-D♭
+
+In G minor scale, **G♭ is not a scale note**. G minor has F♯, not G♭.
+
+But if we consider **G Phrygian**? G, A♭, B♭, C, D, E♭, F
+
+Then we have: A♭, B♭, etc.
+
+Wait — **G phrygian** — ♭2, ♭3, ♭6, ♭7 → notes: G, A♭, B♭, C, D, E♭, F
+
+Then chords:
+- i: Gm
+- ii°: A♭° → A♭ C E♭
+- III: B♭ → B♭ D F
+- iv: Cm
+- v: Dm
+- VI: E♭
+- VII: F
+
+Now we have B♭ and A♭ as scale tones.
+
+But we still have **G♭**, which is **not** in G phrygian. G♭ = F♯ enharmonic — nope.
+
+**What if the key is B♭ minor, but with modal mixture?**
+
+Still, **B major over B♭** is completely foreign.
+
+But notice: **B/Bb** — a **B major triad over B♭ bass**
+
+B major = B D♯ F♯  
+Over B♭ bass → notes: **B♭, B, D♯, F♯**
+
+This looks like **B major 7#5** or something? Or borrow from E minor?
+
+Wait — **B major** is the **V of E**.
+
+What if the progression is centered around **E?** But then why the repeated B♭?
+
+This is tricky.
+
+---
+
+### Step 5: Notice the bass motion: **B♭ - A♭ - B♭ - A♭**
+
+We have **Dbm/Ab** and **Emaj7/Ab** → both have A♭ bass.
+
+So bass line has **B♭** and **A♭** alternating.
+
+That suggests **A♭ and B♭ are the harmonic anchors** — maybe **II - I in A♭ minor**?
+
+Let’s try **A♭ minor**.
+
+**A♭ natural minor**: A♭, B♭, C♭, D♭, E♭, F♭, G♭
+
+Chords:
+- i: A♭m → A♭ C♭ E♭
+- ii°: B° → B D F
+- III: C♭ → C♭ E♭ G♭
+- iv: D♭m → D♭ F♭ A♭
+- v: E♭m → E♭ G♭ B♭
+- VI: F♭ → F♭ A♭ C♭
+- VII: G♭ → G♭ B♭ D♭
+
+Now look:
+
+- **B♭dim** = B♭ D♭ F♭ → in A♭ minor, what chord is this?  
+B♭ D♭ F♭ = **ii°** in **C minor**? Not here.
+
+Wait — **Gb/Bb** = G♭ major -> G♭ B♭ D♭ — that’s **VII** chord in **A♭ minor** → DIATONIC!
+
+Ah! **G♭ major = VII chord in A♭ minor**
+
+Also, **Dbm/Ab** = D♭ minor → D♭ F♭ A♭ → that’s **iv** chord in A♭ minor → DIATONIC!
+
+**Bbdim** = B♭ D♭ F♭ → what is this? In A♭ minor: B♭ is the 2nd scale degree → so B♭ D♭ F♭ = B♭ half-diminished → **iiø7 without 7th**? Yes: ii° = B♭ D♭ F♭ — perfect.
+
+So **B♭dim = ii°** in **A♭ minor**
+
+And **Emaj7/Ab** — E major 7th over A♭ bass → E G♯ B D♯ with A♭ bass → notes: A♭, E, G♯, B, D♯
+
+That’s **A♭ E G♯ B D♯**
+
+This is **B dominant 7th sharp 11?** Or **E major 7#4?** No.
+
+But **E is not in A♭ minor scale**. A♭ minor has G♭, not G♯.
+
+E is **#5 of A♭**? A♭ = root, #5 = E? Yes: A♭ → A♭ B♭ C♭ D♭ E♭ F♭ G♭  
+#5 = **E** (since G♭ → E is #5, enharmonic to F)
+
+But E major 7th = E G♯ B D♯
+
+This is not diatonic. But — it could be **borrowed** from **E harmonic minor?** That doesn’t make sense.
+
+Alternatively — **Emaj7/Ab** = **A♭ = root, E = major 6th?** A♭ to E is a **major 6th** — so this could be **A♭6**? But then why Emaj7?
+
+Wait: **A♭6 = A♭ C♭ E♭ F**? No.
+
+Let’s re-express: **Emaj7/A♭** = E major 7th chord with A♭ in bass → bass: A♭  
+Upper triad: E - G♯ - B - D♯
+
+So the full chord: **A♭, E, G♯, B, D♯**
+
+This is a **B major 9#5#11** type? Over A♭ — very exotic.
+
+But here’s a better insight:
+
+**A♭ (bass) + E major 7th** → E major 7th contains G# (which is A♭ enharmonic)!
+
+G♯ = A♭
+
+So **E major 7th = E, G♯, B, D♯**
+
+But G♯ = A♭
+
+So **Emaj7/A♭ = E, A♭, B, D♯**
+
+Chord tones: E, A♭, B, D♯
+
+This is **E+7 (E augmented 7th)**
+
+Eaug7 = E - G♯ - B♯ - D♯ → not quite.
+
+Wait: E - G♯ - B - D♯ = **E major 7th**
+
+A♭ = G♯
+
+So: **E (root), G♯ (third), B (fifth), D♯ (7th)** — so **A♭ = G♯ = the third** of the E major 7th.
+
+Therefore, **Emaj7/A♭** = **E major 7th with the third in the bass** → **first inversion**: E major 7th in first inversion = G♯/E
+
+But A♭ = G♯, so **G♯/E = A♭/E**
+
+But we have **Emaj7/A♭**, meaning bass is A♭ — so it's **third in bass**.
+
+So functionally, this is **E major 7th invertide — third in bass**
+
+Harmonically, it’s still an **E major 7th** chord — just a different voicing.
+
+So we have **E major 7th** — but **E is not in A♭ minor scale**.
+
+Unless... we’re in **A♭ Phrygian**?
+
+A♭ Phrygian: A♭ B♭ C♭ D♭ E♭ F♭ G♭ — same as A♭ natural minor.
+
+No E.
+
+Wait — what if the key is **E minor**?
+
+E natural minor: E F♯ G A B C D — no A♭.
+
+E harmonic minor: E F♯ G A B C D♯
+
+Has D♯, not A♭.
+
+So maybe **this is a descending chromatic bass line**?
+
+Bass:  
+B♭ - B♭ - B♭ - B♭ - B♭ - B♭ - **A♭** - B♭ - ... - **A♭** - B♭
+
+So **B♭ to A♭** is descending half-step.
+
+This suggests **B♭ is tonic**, and **A♭ is a lowered VII** or **subtonic**.
+
+In **B♭ minor**, the VII is A♭ major — yes!
+
+B♭ natural minor: B♭ C D♭ E♭ F G♭ A♭
+
+So chords:
+
+- i: B♭m (B♭ D♭ F)
+- ii°: C°
+- III: D♭ (D♭ F A♭) — wait D♭ major
+- iv: E♭m
+- v: Fm
+- VI: G♭ (G♭ B♭ D♭)
+- VII: A♭ (A♭ C E♭)
+
+We have **Gb/Bb** = G♭ major = **VI** — YES, diatonic in B♭ minor!
+
+We have **Dbm/Ab** = D♭ minor over A♭ bass → D♭ minor is **not** diatonic in B♭ minor (B♭ minor has D♭ major for III)
+
+BUT — **B♭ harmonic minor** would have: B♭ C D♭ E♭ F G♭ A → then VII is A major — not A♭
+
+So for **A♭ major (VII)** to be present, we need **B♭ natural minor**
+
+And **Square: B♭dim** — B♭ D♭ F♭ — BUT in B♭ minor, i chord is B♭ D♭ F — so **F**, not F♭.
+
+So B♭dim = diminished = has **F♭** → that would be from **B♭ melodic minor** ascending?
+
+B♭ melodic minor ascending: B♭ C D♭ E♭ F G A — so i chord is B♭ D♭ F — still major 5th.
+
+So **B♭dim** is NOT diatonic to B♭ natural minor — it’s **borrowed** as a **Neapolitan** or something?
+
+Wait — what if **B♭dim = ii° of C minor**?
+
+In **C minor**: ii° = D°, vii° = B° — not B♭.
+
+Wait — another idea.
+
+### Final Insight: **C minor** as the key
+
+C minor natural: C D E♭ F G A♭ B♭
+
+Now list:
+
+- **B♭dim** — B♭ D♭ F♭ → what is this in C minor? B♭ = ♭7 — so B♭dim = ♭7° chord → is that used? Not diatonic.
+
+But **Gb = G♭** — in C minor, G♭ is **♭6** — chord is ♭VI: G♭ major — YES! Diatonic.
+
+**Dbm/Ab** = D♭ minor over A♭ → D♭ - F♭ - A♭ — A♭ is ♭6, D♭ is ♭3 — this is **iv6** (D♭ minor with A♭ bass) — in C minor, iv = Fm → not D♭ minor.
+
+Wait — in C minor, chord on D♭ is just an altered chord.
+
+**Emaj7/Ab** = E G♯ B D♯ over A♭ → A♭ = G♯ → so again, **E major 7th with its 3rd in bass** — E major 7th has G♯ = A♭.
+
+E is **♯5 in C minor?** C - D - E♭ - F - G - A♭ - B♭ → #5 = G♯ — not E.
+
+### Breakthrough:
+
+Let’s calculate the bass again:
+
+Bass notes: B♭, B♭, B♭, B♭, B♭, B♭, **A♭**, B♭, B♭, B♭, B♭, B♭, B♭, B♭, **A♭**, B♭
+
+That’s **B♭ and A♭** as bass tones.
+
+A♭ to B♭ is ascending half-step.
+
+In tonal music, when you have **VII - I** or **♭VII - I** in minor, we get that major chord one semitone below tonic.
+
+In **B♭ minor**, the **VII chord is A♭ major** — but we have **B♭dim** as main chord, not B♭m.
+
+But we have **Gb = G♭ major** — which is **VI in B♭ minor**, and **Dbm/Ab = D♭ minor over A♭** — D♭ minor is not diatonic.
+
+Wait — **B/Bb** is the biggest red flag.
+
+B major over B♭ bass. What if **B is a chromatic passing tone**?
+
+But the chord is B major — meaning it’s a full triad and likely a harmonic moment.
+
+Let’s consider **B♭ as the tonic** and that this is **B♭ Phrygian mode**
+
+**B♭ Phrygian** = tones: B♭, C♭, D♭, E♭, F, G♭, A♭
+
+So scale:
+
+B♭ (1)  
+C♭ (♭2)  
+D♭ (♭3)  
+E♭ (4)  
+F (5)  
+G♭ (♭6)  
+A♭ (♭7)
+
+Now:
+
+- B♭dim = B♭ D♭ F♭ — F♭ is **♭5**, not in scale. Scale has F natural.
+
+F♯ = G♭ — no F♯.
+
+But **Gb/Bb** = G♭ major: G♭ - B♭ - D♭ → G♭ is ♭6 in B♭ Phrygian — and **G♭ major is ♭VI chord** — which is possible in Phrygian! They’re often used.
+
+**Dbm/Ab** = D♭ minor = D♭ - F♭ - A♭
+
+In B♭ Phrygian: D♭ is ♭3 — minor chord on ♭3 = **iii** — in Phrygian, iii can be minor.
+
+D♭ minor: D♭ F♭ A♭ — yes, all within scale.
+
+**B/Bb** = B major over B♭ bass — B is **not in B♭ Phrygian** — it’s a #1? C♭ = B — yes!! C♭ = B
+
+In B♭ Phrygian, the second degree is **C♭**, which is **enharmonic to B**
+
+So **B major = C♭ major**
+
+C♭ major = C♭ - E♭ - G♭ — which is **iii in B♭ Phrygian?** iii is D♭ minor, not C♭ major.
+
+But **B major = C♭ major = C♭ - E♭ - G♯** — G♯ is not in scale! Scale has G♭.
+
+So unless it’s **C♭ augmented** — C♭ E♭ G — but G is not in scale.
+
+So does **B major = C♭ major** fit? Only if we allow **G♯** = **A♭** — no, G♯ ≠ G♭.
+
+B major = B D♯ F♯ — D♯ = E♭? No, D♯ = E♭ — YES, D♯ = E♭
+
+F♯ = G♭? NO — F♯ = G♭? **F♯ = G♭**? No — **F♯ and G♭ are enharmonic!**
+
+Yes! They are the same pitch!
+
+So:
+
+- **B major triad = B - D♯ - F♯**
+- D♯ = E♭ (scale tone in B♭ Phrygian)
+- F♯ = G♭ (scale tone in B♭ Phrygian!)
+- B = C♭ — but the bass is B♭ — not B.
+
+Bass is B♭ — upper chord is: B, E♭, G♭
+
+So the chord is: **B♭ (bass), B (1st), E♭ (3rd), G♭ (5th)** — wait, that’s **B major triad + B♭ bass**
+
+= **B♭, B, E♭, G♭**
+
+This is **B∆7#5**? Or **B minor 7#5**?
+
+But interval structure:
+
+- B♭ - B = minor 2nd (clash)
+- B - E♭ = minor 3rd
+- E♭ - G♭ = minor 3rd
+
+So chord = **B♭, B, E♭, G♭**
+
+This is a **B major triad with B♭ passing in bass** — likely used for chromatic voice leading from **G♭ major** (B♭, D♭, G♭) to **B/B♭** → from G♭ major (G♭, B♭, D♭) to B major over B♭ (B, E♭, G♭) — it’s voice leading where D♭ moves to E♭, G♭ stays, B♭ stays — so like **G♭ → B major**, with B♭ bass sustained.
+
+And **B major = C♭ major** — and C♭ is the b2 of B♭ — that’s the defining sound of **Phrygian mode** — the **b2** — which is **C♭ = B**
+
+So this **B major chord** is most likely the **chord on the b2 degree — C♭ major**, and because of enharmonics, we write it as **B major** — to highlight the chromaticism.
+
+So this is **B♭ Phrygian mode**, with the **b2 chord (C♭ major, written as B major) used as a colorful i-chord enharmonic variant**.
+
+In Phrygian, the b2 chord is often used as a Deceptive motion or as a chromatic passing chord.
+
+Now **Emaj7/Ab** = E G♯ B D♯, bass A♭
+
+E = C? No — E is not in scale.
+
+G♯ = A♭ (scale has G♭, which is same as G♯? **G♭ and G♯ are not the same!** G♭ is a half-step below G, G♯ is a half-step above G — they are **enharmonic** to each other, yes! But only if you’re in 12-TET, which we are.
+
+G♯ = A♭ — yes! So G♯ = A♭, which is ♭7 of B♭ Phrygian — already in scale.
+
+B = C♭ — ♭2 — in scale  
+D♯ = E♭ — 4th — in scale
+
+So **E major 7th = E G♯ B D♯ = E A♭ C♭ E♭** → positions: the 5th is E, 3rd is G♯=A♭, 5th is B=C♭, 7th is D♯=E♭
+
+Chord tones: E, A♭, C♭, E♭
+
+In the key of B♭ Phrygian, these are:
+
+- C♭ = ♭2  
+- E♭ = 4  
+- A♭ = ♭7  
+- E = #5 — not in scale! E is not in B♭ Phrygian.
+
+B♭ Phrygian: B♭, C♭, D♭, E♭, F, G♭, A♭
+
+So E? That's not there. E is **#5 of B♭**? B♭ to E is Tritone — yes — B♭ to E is augmented 5th.
+
+So **E is the #5 scale degree** — not diatonic.
+
+But perhaps it’s **a chromatic alteration** – the chord may be **B♭ maj7#5** or something?
+
+Wait: **B♭ maj7#5 = B♭ D♭ F## C** — not matching.
+
+Our chord is: **A♭ (bass), E, G♯, B, D♯**
+
+= A♭, E, A♭, C♭, E♭
+
+Since G♯=A♭, D♯=E♭, B=C♭
+
+So: **A♭, E, C♭, E♭**
+
+= **C♭ minor 7th?** C♭ - E♭ - G♭ - B♭ — here we have C♭, E♭, A♭, E
+
+E is extra.
+
+So the chord is: E, A♭, C♭, E♭
+
+The notes: **C♭, E♭, E, A♭**
+
+That’s **C♭ + E♭ + A♭** = C♭ minor triad, plus **E** — which is a **minor 2nd above E♭** — very dissonant.
+
+So it’s a **Cluster** — likely **enharmonic spell differently**.
+
+Alternate spelling: Let’s rewrite Emaj7 as G♯ maj7:
+
+G♯ maj7 = G♯ B D♯ F♯♯ = G♯ B D♯ E
+
+Bass: A♭
+
+So notes: A♭, G♯, B, D♯, E
+
+G♯ = A♭  
+D♯ = E♭  
+E = E  
+
+So: A♭ (G♯), A♭ (bass), B, E♭, E
+
+So: A♭ (bass), G♯, B, E♭, E
+
+That’s **A♭, B, E♭, E, G♯**
+
+B and E are very close.
+
+This still doesn’t resolve cleanly.
+
+Perhaps **Emaj7/Ab** is not meant to be analyzed as a functional chord but as a **voice leading device** — maybe an **A♭maj7#5** or something.
+
+### Final Conclusion:
+
+Given the overwhelmingly **B♭-centered** bass and the use of **G♭ major (VI)**, **B♭dim (ii°)**, **D♭ minor (iii)** — it’s clear we are in **B♭ Phrygian mode**:
+
+- **B♭ Phrygian scale**: B♭ – C♭ – D♭ – E♭ – F – G♭ – A♭
+
+- Chords:
+
+  - **Bbdim** = B♭ D♭ F♭ — **i°** (i chord with flattened 5th — common in modal jazz/Phrygian)
+  - **Gb/Bb** = G♭ B♭ D♭ — **♭VI** diatonic
+  - **Dbm/Ab** = D♭ F♭ A♭ — **iii** (minor iii chord) — very characteristic of Phrygian
+  - **B/Bb** = B major over B♭ — **C♭ major over B♭** — the b2 chord used as a chromatic approach to i — typical of Phrygian flavor
+  - **Emaj7/Ab** = E major 7 with A♭ bass — **G♯maj7 over A♭** → likely represents an **A♭major7#11** or a **bVI7** — A♭ = ♭7, G♯ = ♭6? — but since G♯ = A♭, maybe it's a hoax? Or it's **A♭ augmented 7th**? A♭ C E G♯? That’s A♭ maj7#5 — and G♯ = ♯5 — yes!
+
+A♭ maj7#5 = A♭ - C - E - G♯
+
+We have: Emaj7/Ab = E, G♯, B, D♯ — over A♭ bass → which includes A♭ (bass), and G♯, E, B, D♯ — so if we consider E = ♭3 of A♭? No.
+
+But reinterpret: Emaj7/A♭ is **not** a standard chord — likely a voice leading artifact.
+
+But given the context, the most plausible key is:
+
+> **Key: B♭ Phrygian mode**
+
+Because:
+- Tonic is clearly **B♭**
+- Most chords are diatonic to **B♭ Phrygian** including **G♭ major (♭VI)**, **D♭ minor (iii)**, **B♭dim (i°)**, and the **B major (C♭ major = timbral flavor of b2)**
+- The bass is anchored on B♭ and A♭ (♭7) — a hallmark of Phrygian motion
+- The **Emaj7/Ab** challenge is resolved by viewing it as G♯maj7, which is enharmonic to A♭ major with #5 = G♯ enharmonic to A♭? Not exactly — perhaps it’s a **Erasing harmony** to lead back to i.
+
+But **the overwhelmingly strongest evidence points to B♭ Phrygian mode**.
+
+---
+
+### ✅ FINAL ANSWER:
+
+> **Key: B♭**  
+> **Mode: Phrygian**
+
+The progression is in **B♭ Phrygian mode**.
+
