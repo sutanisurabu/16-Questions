@@ -1,0 +1,50 @@
+**Assistant - GPT 5 Chat**
+
+Let’s analyze the progression:
+
+**Chord sequence:**
+```
+F#dim | F#dim | D/F# | D/F# | F#dim | F#dim | Am/E | G/F# |
+F#dim | F#dim | D/F# | D/F# | F#dim | F#dim | Cmaj7/E | F#dim
+```
+
+---
+
+### Step 1. Identify chord components
+
+- **F#dim** = F# – A – C  
+- **D/F#** = F# – A – D  
+- **Am/E** = A – C – E  
+- **G/F#** = F# – G – B – D  
+- **Cmaj7/E** = E – G – B – C  
+
+You can see recurring tones: **F#, A, C, D, E, G, B.**
+
+---
+
+### Step 2. Note relationships
+
+- **F#dim** is the leading-tone diminished chord in **G major** (vii°) — strongly implying **G** as a tonal center.  
+- **D/F#** (the dominant in G) and **G/F#** (the tonic with dominant bass) also reinforce G-related harmony.  
+- **Am/E** (ii chord in G) and **Cmaj7/E** (IV with a major 7) fit naturally in **G major** as well.  
+
+---
+
+### Step 3. Determine key
+
+All chords fit inside **G major** (or its relative, **E minor**). Let’s check accidentals:
+
+- In G major: {G, A, B, C, D, E, F#} → all chord tones fit.  
+- No D# or C# appears to suggest modulation.
+
+The **F#dim** recurring so frequently might imply a minor setting (since it could act as ii° in E minor), but the harmonic motion toward **D** and **G** suggests **G major** more than **E minor**, because we lack a strong tonic **E**-based resolution.
+
+---
+
+### ✅ **Conclusion**
+
+- **Key:** G major  
+- **Mode:** Ionian (major)  
+
+Alternatively, you could interpret it as **E natural minor (Aeolian)** if you hear **F#dim** resolving inward to **E** — but the harmonic evidence more strongly supports **G major (Ionian)**.
+
