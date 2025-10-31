@@ -1,0 +1,64 @@
+**Assistant - Qwen3 Max**
+
+To determine the **key and mode** of the chord progression:
+
+**C C Am/C Am/C C C Em/B Dm/C C C Am/C Am/C C C G7/B C**
+
+---
+
+### Step 1: List the chords (ignoring bass notes for now)
+- C  
+- Am  
+- Em  
+- Dm  
+- G7  
+
+These are all **diatonic chords** in the key of **C major**:
+
+| Chord | Quality | Scale degree in C major |
+|-------|---------|--------------------------|
+| C     | I       | Tonic                    |
+| Dm    | ii      | Supertonic               |
+| Em    | iii     | Mediant                  |
+| Am    | vi      | Submediant               |
+| G7    | V7      | Dominant (with 7th)      |
+
+So far, **everything fits in C major**.
+
+---
+
+### Step 2: Consider the bass notes (slash chords)
+- Am/C = Am with C in the bass → C is the **root of the key**, gives a stable sound
+- Em/B = Em with B in the bass → B is the **leading tone** (7th scale degree), which strongly pulls to C
+- Dm/C = Dm with C in the bass → C in the bass under Dm creates a **Cadd9** or **C6/9** sound (still consonant in C major)
+- G7/B = G7 with B in the bass → B is the **3rd of G7**, and also the leading tone; smooth voice leading to C
+
+These slash chords are used primarily for **smooth bass motion** or **color**, not to imply a new key.
+
+---
+
+### Step 3: Look at harmonic function
+- The progression starts and ends on **C** (tonic)
+- It uses **Am** (vi) and **Em** (iii) as tonic substitutes or for color
+- **G7** (V7) appears near the end, creating a **dominant → tonic** resolution (G7 → C)
+- **Dm** (ii) appears briefly, often part of a ii–V–I or used for modal interchange—but here it's over C bass, softening its function
+
+This strongly supports **C major** as the tonal center.
+
+---
+
+### Step 4: Consider mode
+- All chords are **diatonic to C major** (no flats or sharps outside the key)
+- No use of characteristic modal chords (e.g., no B♭ for Mixolydian, no F# for Lydian, no E♭ for Dorian, etc.)
+- Final cadence is **G7 → C**, a classic **authentic cadence** in **Ionian (major) mode**
+
+Thus, the mode is **Ionian**, i.e., **major**.
+
+---
+
+### ✅ Conclusion:
+- **Key**: **C major**  
+- **Mode**: **Ionian (major)**
+
+The progression is firmly rooted in **C major**, using diatonic chords and standard functional harmony, with added color from slash chords for smooth voice leading.
+
