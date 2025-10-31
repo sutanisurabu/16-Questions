@@ -1,0 +1,434 @@
+**Assistant - Qwen 235B Thinking**
+
+### Reasoning
+
+Okay, the user has given me a chord progression: Bbdim Bbdim Gb/Bb Gb/Bb Bbdim Bbdim Dbm/Ab B/Bb Bbdim Bbdim Gb/Bb Gb/Bb Bbdim Bbdim Emaj7/Ab Bbdim. I need to figure out the key and mode. Let me start by understanding what each chord means.
+
+First, I should decode all these chord symbols. Some are written with slashes, like Gb/Bb, which means Gb major with Bb in the bass. But Bb is part of Gb major already (since Gb is Gb-Bb-Db), so Gb/Bb is just Gb major with Bb as the bass note—essentially a first inversion. Similarly, Dbm/Ab is Db minor with Ab in the bass, which is Dbm first inversion. B/Bb is interesting—it might be a typo? B natural over Bb bass? That would be a B major chord (B-D#-F#) over Bb, which is a bit messy. Emaj7/Ab is E major seventh with Ab in the bass—Ab is G#, which is the third of E major, so it's Emaj7 in first inversion.
+
+Now, listing them without considering inversions to see the root movement might help. So:
+- Bbdim (root Bb)
+- Gb/Bb → Gb major (root Gb)
+- Dbm/Ab → Db minor (root Db)
+- B/Bb → this is confusing. If it's B major over Bb bass, root is B (but B is enharmonic to Cb, which might relate to key signatures)
+- Emaj7/Ab → Emaj7 (root E)
+
+Wait, but note enharmonics. Gb is the same as F#, Db is C#, B is B (but in key contexts might be Cb), E is E. But in chord symbols, we usually use flats for consistency in keys like F# minor or something.
+
+Let me convert all chords to roots only, ignoring inversions for harmonic analysis:
+- Bbdim → Bb diminished (Bb-Db-Fb, which is Bb-Db-E)
+- Gb → Gb major (Gb-Bb-Db)
+- Dbm → Db minor (Db-Fb-Ab, i.e., Db-E-Ab enharmonically messy but standardly Db-Fb-Ab)
+- B/Bb → if it's B major over Bb, root B (B-D#-F#)
+- Emaj7 → E major seventh (E-G#-B-D#)
+
+But B natural and Gb (which is F#) are enharmonically close but not the same. Gb is F#, so Gb major is F# major. Similarly, Db is C#. So maybe we should respell everything in sharps for consistency? Let's try that.
+
+Respell:
+- Bb dim → A# dim? But Bb is standard. Maybe stay in flats since chords use flats mostly.
+- Gb → F# major
+- Dbm → C# minor
+- B → B major (but B is B, no enharmonic)
+- Emaj7 → E major seventh
+
+But E major seventh has G# which is same as Ab, but written as Ab in the slash chord. This is getting messy. The presence of both Gb (F#) and E suggests keys around E or F#, but Bb is also there.
+
+Another approach: find the key center. Diminished chords often function as passing chords or substitutes. Bbdim appears very frequently here—it's played 8 times out of 15 chords. That's unusual. Diminished chords are often used as leading tones to major or minor chords a half step above.
+
+For example, Bbdim (Bb-Db-E) has E, which is the leading tone to F. So Bbdim often leads to F major or F minor. But in this progression, Bbdim is mostly followed by Gb/Bb (which is Gb major, and Gb is same as F#). F# is a half step above E, and Bbdim has E as the top note (since Bb-Db-Fb, Fb is E), so yes: E → F# so Bbdim leads to F# (Gb) major. That makes sense.
+
+Similarly, Bbdim to Gb: E (in dim) → F# (Gb) is half step, so Bbdim acts as leading tone chord to Gb major. Standard function.
+
+Now, looking at the progression: it alternates Bbdim with Gb/Bb often, and also has Dbm/Ab and B/Bb and Emaj7/Ab.
+
+Let me write the root movement ignoring inversions:
+Chords: Bbdim, Bbdim, Gb, Gb, Bbdim, Bbdim, Dbm, B, Bbdim, Bbdim, Gb, Gb, Bbdim, Bbdim, Emaj7, Bbdim
+
+Roots: Bb, Bb, Gb, Gb, Bb, Bb, Db, B, Bb, Bb, Gb, Gb, Bb, Bb, E, Bb
+
+Now, the B chord here—B natural—is problematic because in most keys with flats, B natural would be unusual. But in the progression, it's "B/Bb", so maybe the chord is B major but with Bb in bass? That would create a dissonance: B (B-D#-F#) over Bb (A#). So the bass is Bb (A#) and chord is B (which is enharmonic to Cb, but written as B). This might be a typo. Perhaps it's meant to be Bb/Bdim or something? But the user wrote "B/Bb".
+
+Another possibility: in some notations, "B" could mean B diminished, but it's written as "B" not "Bdim". The user specified "B/Bb", so likely B major chord with Bb bass.
+
+But let's consider the root as B for now.
+
+So roots sequence: Bb, Gb, Db, B, E
+
+Now, mapping to circle of fifths or something. Bb to Gb: Gb is down a minor third from Bb? Bb to Db is up a minor third. Let's see intervals between the non-Bbdim chords.
+
+The progression has chord groups: [Bbdim x2] then Gb x2, then [Bbdim x2] then Dbm, then B, then [Bbdim x2] then Gb x2, then [Bbdim x2] then Emaj7, then Bbdim.
+
+The main chords besides Bbdim are Gb, Dbm, B, Emaj7.
+
+Gb major (F# major), Db minor (C# minor), B major, E major.
+
+Key of F# minor? Because F# minor has G# dim (which is enharmonic to Ab dim), but here we have Bb dim.
+
+Bb dim: Bb-Db-Fb. In terms of F# minor: F# minor scale is F# G# A B C# D E F#. Diminished chords diatonic to F# minor would be B dim (B D F), not Bb dim.
+
+Bb dim is not diatonic to F# minor. F# minor keys usually use sharp notation.
+
+Perhaps it's in Bb major? But Bb major has Bb, Cm, Dm, Eb, F, Gm, Adim. Adim is A-C-Eb, not Bb dim.
+
+Bb dim would be ii dim in A major, but A major is not suggested.
+
+Another idea: the frequent Bbdim suggests it's the leading tone to C major/minor. Bbdim (Bb-Db-E) leading to C (B->C half step). But in the progression, Bbdim is followed by Gb (F#), not C.
+
+Unless Gb is functioning as a substitute for something. Gb major is the bV of C minor? In C minor, the Neapolitan chord is Db major, but here it's Gb.
+
+Let's consider harmonic minor keys. For example, in C minor, the diatonic chords include Gb major as the Neapolitan? No, Neapolitan is usually Db major in C minor.
+
+C minor: Cm, Ddim, Eb, Fm, Gm, Ab, Bb dim. Bb dim is the vii dim in C minor! Yes!
+
+In C natural minor, the chords are:
+i Cm, ii Ddim, bIII Eb, iv Fm, v Gm, bVI Ab, bVII Bb
+
+But the vii is diminished in harmonic minor. Standard harmonic minor: C D Eb F G Ab B C, so vii dim is Bdim (B D F), not Bb dim.
+
+Bb dim would be Ab scale? No.
+
+Let's list Bb dim: Bb-Db-E (since Fb=E). So notes Bb, Db, E.
+
+E is the major third above C, so if this is a leading tone chord, it should lead to E half step. So it leads to E major or minor.
+
+Indeed, Bbdim → E is common because E is the root a half step above the top note of Bbdim (E).
+
+In the progression, the last non-Bbdim chord before the final Bbdim is Emaj7. So Bbdim leads to Emaj7? Yes: the E in Bbdim (the Fb) resolves up to E as the root of Emaj7. Perfect.
+
+So Bbdim is functioning as the leading tone chord to E major.
+
+Therefore, the key might be E major or E minor.
+
+Let's check if the other chords fit in E major.
+
+E major scale: E F# G# A B C# D# E
+
+Chords diatonic to E major:
+I E, ii F#m, iii G#m, IV A, V B, vi C#m, vii Dim D#dim
+
+Now, Gb major: Gb is F#, so F# major. In E major, ii is F# minor, not major. So Gb (F#) major is not diatonic; it would be a modal mixture or secondary chord.
+
+Similarly, Db minor: Db is enharmonic to C#, so C# minor. In E major, vi chord is C# minor, yes! C#m is vi.
+
+So Dbm = C# minor, which is diatonic to E major as vi.
+
+Then B major: B is the V chord in E major! Yes, V is B major.
+
+Emaj7 is I with added seventh.
+
+And Bbdim? In E major, what is Bbdim? Bb is not in the scale. Bb dim = A# dim? A# dim would be diatonic as vii dim in B major, but not E.
+
+In E harmonic minor, the scale is E F# G A B C D# E, so vii dim is D# dim (D#-F#-A), not Bb.
+
+Bbdim (Bb-Db-E) – let's see the notes. Bb is A#, Db is C, E is E. A#-C-E is actually A# dim, which is the same as Bb dim.
+
+In E major, the leading tone chord for the dominant? The dominant is B, so leading tone to B is A# dim (Bb dim), yes!
+
+A# dim (Bb dim) is the leading tone diminished seventh chord that resolves to B major, which is the V chord in E major.
+
+But in this progression, Bbdim is resolving to Gb (F#), not to B. F# is the ii chord in E major.
+
+A# dim (Bb dim) can also resolve to F#? Let's see: the notes A# (Bb), C (Db), E. The E can resolve up to F#, the C can resolve down to B (but B is in F#m), A# can resolve to A or B, but it's a bit messy.
+
+Standard resolution: leading tone dim7 to tonic. For example, in C, Bdim7 to C.
+
+But A# dim7 (Bb dim7) would typically go to B major (as V in E).
+
+In this progression, Bbdim goes to Gb, which is F# major. F# is the ii chord in E major.
+
+Perhaps it's a deceptive resolution or secondary dominant.
+
+Another possibility: Gb major (F#) could be V of Bm, but Bm is vi in D major, not clear.
+
+Back to the roots: the chords besides Bbdim are Gb (F#), Dbm (C#m), B, E.
+
+In E major, these are:
+F# = ii (but major instead of minor)
+C#m = vi (minor, matches)
+B = V (major, matches)
+E = I (maj7)
+
+So most fit except ii is major instead of minor. This suggests it might be in E major with a secondary dominant or modal mixture.
+
+Specifically, F# major instead of F# minor. F# major is the V of B minor. Since B is the V of E, F# major is V/V – the secondary dominant of the dominant.
+
+Yes! In E major, to get to V (B), you can use V/V which is F# major.
+
+So F# major (here written as Gb major) is V of B.
+
+Similarly, C# minor is vi diatonic.
+
+B is V.
+
+E is I.
+
+And Bbdim? Bbdim as we said is A# dim, which is the leading tone chord for B major. So A# dim (Bb dim) would typically lead to B major.
+
+But in the progression, it's leading to F# major (Gb), which is unusual. Let's see an example in the sequence:
+
+"Dbm/Ab B/Bb" – Dbm is C#m, B/Bb is B major with Bb bass? Or B chord root.
+
+The sequence is: ... Bbdim Bbdim Dbm/Ab B/Bb ...
+
+So Bbdim followed by Dbm? Dbm is C#m. Does Bbdim go to C#m? Notes: Bb-Db-E to C#-E-G#. E is common, Db to D# (but not), Bb to B.
+
+Not smooth. Alternatively, Dbm might be B/Bb meaning something else.
+
+Another idea: perhaps the B/Bb is a typo for Bdim or something. But user wrote "B/Bb".
+
+Let's look at the slash chords literally.
+
+Gb/Bb: Gb major over Bb bass. Notes: Bb in bass, Gb major triad (Gb-Bb-Db) so overall notes Bb, Gb, Bb, Db – so it's just Gb major with third in bass (first inversion), but Bb is the third of Gb major, yes.
+
+Similarly, Dbm/Ab: Db minor (Db-Fb-Ab) over Ab bass, so Ab in bass, notes Ab, Db, Fb, so it's Dbm first inversion.
+
+B/Bb: B major (B-D#-F#) over Bb bass. So bass is Bb (A#), and chord is B (enharmonic to Cb, but written as B). So notes: Bb, B, D#, F#. This is a cluster with Bb and B adjacent, very dissonant. Likely a typo.
+
+Perhaps it's Bb/B something? Or maybe "B" is meant to be "Bdim". In some fonts, dim might be cut off. But user wrote "B/Bb" specifically.
+
+Another possibility: in chord notation, "B" could mean A# (in flat keys), but B is standard.
+
+Let's consider E major as the key.
+
+Chords expected diatonic: E, F#m, G#m, A, B, C#m, D#dim.
+
+Now, the progression uses:
+- Gb major = F# major (instead of F#m) → so V/V, secondary dominant to B
+- Db minor = C# minor → vi, diatonic
+- B major → V, diatonic
+- Emaj7 → I, diatonic
+- Bbdim = A# dim → which is vii dim7 of B major, but in E major, it would be the secondary leading tone chord for V.
+
+In E major, the dominant is B major. The leading tone chord for B is A# dim7 (A#-C#-E-G#). But in the chord symbol, it's written as Bbdim, which is Bb-Db-Fb (Bb-Db-E), so it's Bb dim triad (not seventh), which contains A#-C#-E? A#-C#-E is A# dim triad, yes! Bb dim is enharmonic to A# dim triad.
+
+A# dim triad is A#-C#-E, while Bb dim is Bb-Db-Fb (which is A#-C#-E). Yes, exactly enharmonic.
+
+So Bbdim = A# dim, which is the leading tone diminished triad for B major. So in E major, A# dim → B is the standard resolution (vii dim to I in B major, but B major is V in E).
+
+Therefore, in the context of E major, Bbdim (A# dim) can be interpreted as a secondary leading tone chord for V (B major).
+
+But in the progression, it's not always going to B. For example, it often goes to Gb (F#), which is the V/V.
+
+So sequence: Bbdim → Gb (F#)
+
+F# major is V/V. What's the resolution of V/V? To V, which is B major.
+
+So in the progression, after F# major, do we get B major? Yes, later: ... Gb Gb Bbdim Bbdim Dbm B/Bb ... and B/Bb might be that B major chord.
+
+Specifically: positions 3-4: Gb/Bb Gb/Bb (chords 3 and 4)
+Then chords 7: Dbm/Ab
+Chord 8: B/Bb
+
+Between chord 4 and 7: chords 5-6 are Bbdim Bbdim, then chord 7 Dbm/Ab.
+
+Not immediately after Gb it goes to B.
+
+Sequence around there: ... Bbdim Bbdim Gb/Bb Gb/Bb Bbdim Bbdim Dbm/Ab B/Bb ...
+
+So after two Gb, there are two Bbdim, then Dbm, then B.
+
+So Gb → (Bbdim x2) → Dbm → B
+
+Not direct V/V to V. But the two Bbdim might be passing.
+
+Another part: later: Bbdim Bbdim Gb/Bb Gb/Bb ... same as beginning.
+
+And then at the end: Bbdim Bbdim Emaj7/Ab Bbdim
+
+Emaj7/Ab: Emaj7 with Ab bass. Ab is G#, which is the third of E major (E-G#-B), so Ab bass = G# bass, so it's Emaj7 in first inversion.
+
+So sequence: ... Bbdim Bbdim Emaj7 Bbdim
+
+Here, Bbdim (A# dim) leads to Emaj7 (I). But A# dim should lead to B, not directly to E. However, in some contexts, like a common tone diminished chord or deceptive resolution.
+
+But let's test if the key is E major.
+
+List all chords with enharmonic equivalents in E major context:
+
+- Bbdim = A# dim (leading tone chord for B major)
+- Gb/Bb = F# major first inversion (V/V of E major)
+- Dbm/Ab = C# minor first inversion (vi of E)
+- B/Bb = B major with Bb bass? Probably a typo; likely meant to be B major chord (V of E). The "/Bb" might be a mistake. Perhaps it's Bdim or something, but let's assume it's B major for now.
+- Emaj7/Ab = Emaj7 first inversion (I)
+
+So the progression essentially is: (A# dim x2) F# F# (A# dim x2) C#m B (A# dim x2) F# F# (A# dim x2) Emaj7 (A# dim)
+
+In E major:
+- F# major = V/V
+- C#m = vi
+- B = V
+- Emaj7 = I
+
+This makes sense as a progression in E major, using:
+- V/V (F#) to lead to V (B)
+- But sometimes V/V is preceded by its secondary leading tone chord (A# dim), which is common: e.g., vii dim7/V - V/V - V
+
+Here, A# dim (Bbdim) → F# = vii dim/V - V/V
+
+Then V/V should go to V (B), which it does later: after F# sections, we have B major (chord 8, B/Bb likely B major).
+
+Then after V (B), what? It goes to... let's see sequence: after B/Bb (chord 8), next is Bbdim Bbdim (chords 9-10), so V back to secondary leading tone? Or it might be a cycle.
+
+Also, there's Dbm (C#m) before B major: ... Bbdim Bbdim Dbm/Ab B/Bb ...
+
+So A# dim x2 → C#m → B
+
+What function is C#m? It's vi, which can go to V (B), yes. vi to V is a common progression (the "deceived" cadence but here it's going to V, not I).
+
+vi (C#m) to V (B) is standard.
+
+And before C#m, we have A# dim x2. How does A# dim relate to C#m? Not directly, but it could be a passing chord.
+
+Moreover, at the end: A# dim x2 → Emaj7 → A# dim
+
+So instead of going to B (V), it goes to I (E). This is a deceptive cadence: V to vi, but here secondary: V/V to I? No.
+
+V/V (F#) should go to V (B), but in the end, it might be going elsewhere. But the end is: after two Bbdim (A# dim), it goes to Emaj7.
+
+Perhaps the A# dim is being used as a common tone diminished chord related to I.
+
+For example, Emaj7 has G# (Ab), and A# dim has A# which is enharmonic to Bb, not close. But G# and A# are minor second apart.
+
+Alternatively, in E major, the chord after Bbdim could be seen as a I with added diminished chord for color.
+
+But overall, the harmonic skeleton suggests E major.
+
+Confirming the mode: since it ends on Emaj7 (with final chord Bbdim, but often pieces end on tonic), but the last full chord is Emaj7 before the final Bbdim, which is unusual. Typically, a progression would end on tonic, so Emaj7 might be the resolution.
+
+The progression has Emaj7 as the second last chord, then Bbdim, which might not be the ending if this is part of a loop. But for key determination, Emaj7 is likely the tonic.
+
+Are there accidentals that suggest a mode other than Ionian?
+
+In E major, we're using only diatonic chords except F# is major instead of minor. But since it's functioning as V/V, it's a secondary dominant, so still in major key.
+
+If it were Dorian or something, but no, the chords fit major.
+
+Another check: the B chord (B major) – in E major, V is major, yes.
+
+C# minor (vi) is diatonic.
+
+F# major as V/V.
+
+And Bbdim (A# dim) as secondary leading tone.
+
+Moreover, in the chord list, there's no G# minor or A major, which are diatonic, but their absence is ok.
+
+The frequent use of the secondary leading tone and dominant supports E major.
+
+Possible typo consideration: the "B/Bb" chord. If it's actually Bdim, that would be odd. Or perhaps it's "Bb" but written as "B/Bb" by mistake. But Bb major would be the bVII in E major, which isn't typical. More likely, it's B major chord, and "/Bb" is a typo or misnotation. In some contexts, slash might indicate inversion, but B major with B bass would be root position, so "/B" is redundant, but "/Bb" being different suggests Bb bass.
+
+However, B major over Bb bass is harmonically jarring, so I think it's safe to assume it's a mistake, and it's meant to be B major chord (V), possibly without slash or with correct inversion.
+
+Similarly, Emaj7/Ab – Ab is G#, so it's correct first inversion.
+
+So, key is E major.
+
+Mode: Ionian, since it's major key, no indication of other modes.
+
+To confirm, let's see if there's an alternative key.
+
+Suppose it's E minor. E natural minor: E F# G A B C D
+
+Chords: Em, F#dim, G, Am, Bm, C, D
+
+No Bb dim. E harmonic minor: E F# G A B C D#, so D# dim as vii, not Bb.
+
+Bb dim doesn't fit.
+
+C minor: Cm, Ddim, Eb, Fm, Gm, Ab, Bb dim.
+
+Bb dim is bVII in C minor, but leading to? In C minor, Bb dim should lead to Cm, but here it leads to Gb which is not diatonic.
+
+Gb is enharmonic to F#, which is not in C minor scale.
+
+Whereas in E major, all chords make sense as diatonic or standard secondary functions.
+
+Another check: the overall tonal center. The progression starts and ends with Bbdim, but the Emaj7 is the most restful chord. Since Bbdim is unstable, the resolution points to E.
+
+In jazz contexts, this might be E major with extensive secondary dominance.
+
+Therefore, key is E major, mode is Ionian (major scale).
+
+So the answer should be key of E major.
+
+### Analysis of the Chord Progression  
+**Given progression:**  
+`Bbdim Bbdim Gb/Bb Gb/Bb Bbdim Bbdim Dbm/Ab B/Bb Bbdim Bbdim Gb/Bb Gb/Bb Bbdim Bbdim Emaj7/Ab Bbdim`
+
+---
+
+### Step 1: Decoding the Chords (Enharmonic Spellings & Functions)
+- **Bbdim** (Bb°): Bb–Db–Fb (enharmonically **A#°**: A#–C#–E).  
+  - This is a **diminished triad acting as a secondary leading-tone chord** for **B major** (V in E major), as E (the top note) resolves up a half-step to **E root → B major**.
+- **Gb/Bb**: Gb major (Gb–Bb–Db) with **Bb in the bass** (first inversion).  
+  - Enharmonically **F# major** (F#–A#–C#), functioning as **V/V (secondary dominant)**, leading to **B major** (V in E).
+- **Dbm/Ab**: Db minor (Db–Fb–Ab) with **Ab in the bass** (first inversion).  
+  - Enharmonically **C# minor** (C#–E–G#), the **vi chord** in E major.
+- **B/Bb**: B major (B–D#–F#) with **Bb in the bass**.  
+  - **Problematic notation**: Bb bass (A#) clashes with B root (B natural), creating dissonance. This is **likely a typo** (intended as **B major chord**, V in E). Common errors in notation:  
+    - `B/Bb` may stem from mislabeling (e.g., meant `B` or `Bdim` but miswritten).  
+    - **In context, it functions as B major (V)**. The progression supports this (see Step 2).
+- **Emaj7/Ab**: E major 7th (E–G#–B–D#) with **Ab in bass** (Ab = G# enharmonically).  
+  - First inversion of **I (tonic chord)** in E major, confirming tonal center.
+
+> **Key Insight**:  
+> - **Bbdim (A#°)** consistently resolves to chords a half-step higher (e.g., Gb/F# or Emaj7), fulfilling a **leading-tone role**.  
+> - **Gb (F#)** is **V/V** (secondary dominant for V), **Dbm (C#m)** is **vi**, **B** is **V**, and **Emaj7** is **I**.  
+> - This progression is **diatonic to E major**, with secondary dominants and leading-tone chords.
+
+---
+
+### Step 2: Harmonic Analysis (in Context of E Major)
+E major scale: **E F# G# A B C# D#**  
+Diatonic chords:  
+- **I**: E major (tonic)  
+- **ii**: F# minor  
+- **V**: B major  
+- **vi**: C# minor  
+
+| Chord (as written) | Enharmonic Equivalent | Function in E Major | Role in Progression |
+|--------------------|------------------------|---------------------|---------------------|
+| Bbdim              | A#° (A#–C#–E)         | Secondary vii°/V    | Leads to B major (V) or F# major (V/V) |
+| Gb/Bb              | F# major (F#–A#–C#)   | **V/V**             | Tonicizes V (B major) |
+| Dbm/Ab             | C# minor (C#–E–G#)    | **vi**              | Pre-dominant; leads to V (B major) |
+| B/Bb (assumed)     | B major (B–D#–F#)     | **V**               | Dominant; cadential pull to I |
+| Emaj7/Ab           | Emaj7 (E–G#–B–D#)     | **I (tonic)**       | Tonal center; resolution point |
+
+**Progression Breakdown** (using E major functional notation):  
+`[vii°/V ×2] → V/V ×2 → [vii°/V ×2] → vi → V → [vii°/V ×2] → V/V ×2 → [vii°/V ×2] → I → vii°/V`  
+
+- **Why this fits E major**:  
+  - The **cycle** `vii°/V → V/V → V → vi → I` is a **standard dominant-driven progression** in major keys (e.g., common in jazz/pop).  
+  - **Bbdim (vii°/V)** reinforces **V (B major)**, while **Gb (V/V)** drives motion toward **V**.  
+  - **Emaj7** (I) is the only chord with **no tension** and **resolves the progression** (last stable chord before the final non-tonic Bbdim).  
+  - **No evidence of minor mode**:  
+    - E minor would require **G natural** (chords like C major or B♭), but progression uses **G#** (in Emaj7) and **B natural** (in V), confirming **major III** (G#).  
+    - E harmonic minor would need **D♯**, but progression uses **D# in Emaj7**, aligning with major (not harmonic minor’s diminished v).
+
+---
+
+### Step 3: Resolving Confusions
+- **B/Bb typo**:  
+  - Bass note Bb (A#) under B major chord creates a **major 7th clash** (A#–B). This is **non-functional in tonal harmony**.  
+  - **Resolution**: Likely meant `B` (B major root position) or `Bdim` (but chord symbol says "B"). Given the **vi → V motion** (Dbm → B), **B major (V) is the only logical fit**.  
+- **Why not another key?**  
+  - **C minor**: Bbdim is bVII, but Gb (F#) and B major are **foreign** (C minor has no F# or B natural).  
+  - **F# minor**: Gb = F# major (I), but Bbdim (Bb°) **doesn’t resolve** correctly (e.g., should lead to C, not Gb).  
+  - **E minor**: Lacks major V (B major) and uses G natural (not G#).  
+  - **Only E major** explains **all chords** as diatonic or standard secondary functions.
+
+---
+
+### Final Determination
+- **Key: E major**  
+- **Mode: Ionian** (the major scale itself, with no modal alterations).  
+
+**Why?**  
+- Tonal center is **E**, confirmed by:  
+  - **Emaj7** as the gravitational "home" chord.  
+  - **Dominant motion V→I** (B→Emaj7).  
+  - **Secondary dominants** (V/V, vii°/V) **pulling toward V→I**.  
+- **No modal mixture**: All non-diatonic elements (F# major instead of F# minor) function as **secondary dominants** (standard in major keys), not borrowed chords.  
+
+This is a **harmonically rich E major progression** with extended dominant-tonic relationships, common in jazz, R&B, or modern pop (e.g., similar to "Autumn Leaves" in E major). The frequent Bbdim creates tension that resolves to E, while the "B/Bb" typo is the only minor anomaly (resolved by context as V).
+
