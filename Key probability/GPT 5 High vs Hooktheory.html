@@ -1,0 +1,1023 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Correlation + Fancy Visuals</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-zoom@2.0.1/dist/chartjs-plugin-zoom.min.js"></script>
+  <style>
+    :root {
+      --bg: #0f1221;
+      --panel: #1a1f36;
+      --ink: #e6e8f2;
+      --muted: #9aa3b2;
+      --accent: #6ea8fe;
+      --grid: rgba(255,255,255,0.07);
+    }
+    html, body { margin: 0; padding: 0; background: var(--bg); color: var(--ink); font: 14px/1.5 Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
+    .wrap { max-width: 1200px; margin: 28px auto; padding: 0 16px; display: grid; gap: 20px; }
+    h1 { font-size: 22px; margin: 0; background: linear-gradient(135deg, #6ea8fe, #b98cff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .pan { background: var(--panel); border: 1px solid #2a3254; border-radius: 12px; padding: 14px; position: relative; overflow: hidden; }
+    .pan::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px; background: linear-gradient(90deg, #6ea8fe, #b98cff, #ff6f6f); opacity: 0.7; }
+    .row { display: grid; gap: 16px; grid-template-columns: 1.3fr 1fr; align-items: start; }
+    .controls { display: flex; flex-wrap: wrap; gap: 10px 16px; align-items: center; }
+    .controls label { display: inline-flex; align-items: center; gap: 6px; color: var(--muted); }
+    .pill { border: 1px solid #2a3254; background: #12162a; padding: 8px 10px; border-radius: 10px; display: inline-flex; gap: 4px 10px; flex-wrap: wrap; }
+    .modes { display: flex; flex-wrap: wrap; gap: 6px 10px; }
+    .mode-chip { display: inline-flex; align-items: center; gap: 8px; padding: 6px 10px; border-radius: 999px; background: #12162a; border: 1px solid #2a3254; cursor: pointer; transition: all 0.2s ease; }
+    .mode-chip:hover { transform: translateY(-2px); box-shadow: 0 4px 8px rgba(0,0,0,0.2); }
+    .mode-chip input { accent-color: currentColor; }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    .muted { color: var(--muted); }
+    .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    canvas { width: 100% !important; height: 420px !important; }
+    .foot { font-size: 12px; color: var(--muted); }
+    .legend { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 6px; }
+    .swatch { width: 12px; height: 12px; border-radius: 3px; display: inline-block; margin-right: 6px; }
+    .flex { display:flex; align-items:center; gap:10px; }
+    .range { display: inline-flex; align-items: center; gap: 8px; color: var(--muted); }
+    input[type="range"] { width: 160px; }
+    select, input[type="checkbox"] { cursor: pointer; }
+    select { background: #12162a; border: 1px solid #2a3254; color: var(--ink); padding: 6px 8px; border-radius: 8px; }
+    details summary { cursor: pointer; color: var(--muted); }
+    pre { white-space: pre-wrap; background: #11152a; border: 1px solid #2a3254; border-radius: 8px; padding: 10px; max-height: 220px; overflow: auto; }
+    .stat { color: #9fd6ff; }
+    .loading-overlay { position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(15, 18, 33, 0.8); display: flex; align-items: center; justify-content: center; z-index: 10; opacity: 0; pointer-events: none; transition: opacity 0.3s ease; }
+    .loading-overlay.active { opacity: 1; pointer-events: all; }
+    .spinner { width: 40px; height: 40px; border: 4px solid rgba(110, 168, 254, 0.2); border-top-color: #6ea8fe; border-radius: 50%; animation: spin 1s linear infinite; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .tab-container { display: flex; gap: 8px; margin-bottom: 12px; border-bottom: 1px solid #2a3254; }
+    .tab { padding: 8px 12px; cursor: pointer; color: var(--muted); border-bottom: 2px solid transparent; transition: all 0.2s ease; }
+    .tab:hover { color: var(--ink); }
+    .tab.active { color: var(--ink); border-bottom-color: var(--accent); }
+    .tab-content { display: none; }
+    .tab-content.active { display: block; }
+    .chart-container { position: relative; height: 420px; }
+    .chart-title { font-size: 16px; margin-bottom: 8px; color: var(--ink); }
+    .visualization-type { display: flex; gap: 8px; margin-bottom: 12px; }
+    .viz-btn { padding: 6px 10px; background: #12162a; border: 1px solid #2a3254; border-radius: 6px; color: var(--ink); cursor: pointer; transition: all 0.2s ease; }
+    .viz-btn:hover { background: #1a1f36; }
+    .viz-btn.active { background: var(--accent); color: var(--bg); }
+    .insights { background: #11152a; border-radius: 8px; padding: 12px; margin-top: 12px; }
+    .insight-item { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+    .insight-icon { width: 20px; height: 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; }
+    .insight-text { font-size: 13px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Correlation with Fancy Visuals ✨</h1>
+
+    <div class="pan">
+      <div class="controls">
+        <label><input id="intersectionOnly" type="checkbox" /> Intersection only</label>
+        <label><input id="normalizeB" type="checkbox" checked /> Normalize B to %</label>
+        <label><input id="logScale" type="checkbox" /> Log scale (B)</label>
+        <label class="flex">Sort Top‑N by
+          <select id="sortBy">
+            <option value="A">A %</option>
+            <option value="B">B %</option>
+            <option value="diff">|A% − B%|</option>
+          </select>
+        </label>
+        <label class="range">Top‑N <input id="topN" type="range" min="5" max="30" value="15" /><span id="topNVal">15</span></label>
+      </div>
+      <div class="pill">
+        <span class="muted">Filter modes:</span>
+        <div id="modeFilters" class="modes"></div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="pan">
+        <div class="loading-overlay" id="scatterLoading">
+          <div class="spinner"></div>
+        </div>
+        <div class="flex" style="justify-content:space-between">
+          <div>
+            <div class="muted">Scatter: A (%) vs B (<span id="bAxisUnit">%</span>)</div>
+            <div class="mono">r = <span id="rVal" class="stat">—</span> | slope = <span id="slopeVal" class="stat">—</span></div>
+          </div>
+        </div>
+        <div class="visualization-type">
+          <button class="viz-btn active" data-viz="scatter">Scatter</button>
+          <button class="viz-btn" data-viz="bubble">Bubble</button>
+          <button class="viz-btn" data-viz="density">Density</button>
+        </div>
+        <div class="chart-container">
+          <canvas id="scatter"></canvas>
+        </div>
+        <div class="insights">
+          <div class="insight-item">
+            <div class="insight-icon" style="background: #6ea8fe;">i</div>
+            <div class="insight-text" id="scatterInsight">Hover over data points to see details</div>
+          </div>
+        </div>
+      </div>
+      <div class="pan">
+        <div class="loading-overlay" id="modeLoading">
+          <div class="spinner"></div>
+        </div>
+        <div class="muted">Mode distribution (A% vs B%)</div>
+        <div class="tab-container">
+          <div class="tab active" data-tab="bars">Bar Chart</div>
+          <div class="tab" data-tab="radar">Radar Chart</div>
+          <div class="tab" data-tab="pie">Pie Chart</div>
+        </div>
+        <div class="tab-content active" id="bars-tab">
+          <div class="chart-container">
+            <canvas id="modeBars"></canvas>
+          </div>
+        </div>
+        <div class="tab-content" id="radar-tab">
+          <div class="chart-container">
+            <canvas id="modeRadar"></canvas>
+          </div>
+        </div>
+        <div class="tab-content" id="pie-tab">
+          <div class="chart-container">
+            <canvas id="modePie"></canvas>
+          </div>
+        </div>
+        <div class="legend" id="legend"></div>
+      </div>
+    </div>
+
+    <div class="pan">
+      <div class="loading-overlay" id="topLoading">
+        <div class="spinner"></div>
+      </div>
+      <div class="muted">Top‑N comparison (A% vs B%)</div>
+      <div class="visualization-type">
+        <button class="viz-btn active" data-topviz="bars">Bar</button>
+        <button class="viz-btn" data-topviz="lollipop">Lollipop</button>
+        <button class="viz-btn" data-topviz="difference">Difference</button>
+      </div>
+      <div class="chart-container">
+        <canvas id="topBars"></canvas>
+      </div>
+    </div>
+
+    <details class="pan">
+      <summary>Raw GPT 5 Data (percent)</summary>
+      <pre id="rawA" class="mono"></pre>
+    </details>
+    <details class="pan">
+      <summary>Raw Hooktheory data (counts)</summary>
+      <pre id="rawB" class="mono"></pre>
+    </details>
+
+    <div class="foot">
+      Notes:
+      • "Union" treats missing items in a dataset as zero. "Intersection" compares only keys present in both datasets.
+      • "Normalize B" converts counts to percentages so A and B are comparable on the same axis.
+      • Use mouse wheel to zoom in/out on scatter plot. Click and drag to pan.
+    </div>
+  </div>
+
+  <script>
+    // ==== Your datasets ====
+    const datasetA = `
+- C Ionian (0) — 7.700%
+- G Ionian (1♯) — 6.600%
+- F Ionian (1♭) — 5.500%
+- D Ionian (2♯) — 5.500%
+- A Aeolian (0) — 4.900%
+- B♭ Ionian (2♭) — 4.400%
+- A Ionian (3♯) — 4.400%
+- E Aeolian (1♯) — 4.200%
+- E♭ Ionian (3♭) — 3.850%
+- E Ionian (4♯) — 3.850%
+- D Aeolian (1♭) — 3.500%
+- B Aeolian (2♯) — 3.500%
+- A♭ Ionian (4♭) — 3.300%
+- G Aeolian (2♭) — 2.800%
+- F♯ Aeolian (3♯) — 2.800%
+- B Ionian (5♯) — 2.750%
+- C Aeolian (3♭) — 2.450%
+- C♯ Aeolian (4♯) — 2.450%
+- D♭ Ionian (5♭) — 2.200%
+- F Aeolian (4♭) — 2.100%
+- G♯ Aeolian (5♯) — 1.750%
+- F♯ Ionian (6♯) — 1.650%
+- G♭ Ionian (6♭) — 1.650%
+- B♭ Aeolian (5♭) — 1.400%
+- D♯ Aeolian (6♯) — 1.050%
+- E♭ Aeolian (6♭) — 1.050%
+- C♯ Ionian (7♯) — 0.825%
+- C♭ Ionian (7♭) — 0.825%
+- A♯ Aeolian (7♯) — 0.525%
+- A♭ Aeolian (7♭) — 0.525%
+- G Mixolydian (0) — 0.560%
+- D Dorian (0) — 0.560%
+- D Mixolydian (1♯) — 0.480%
+- A Dorian (1♯) — 0.480%
+- C Mixolydian (1♭) — 0.400%
+- G Dorian (1♭) — 0.400%
+- A Mixolydian (2♯) — 0.400%
+- E Dorian (2♯) — 0.400%
+- F Mixolydian (2♭) — 0.320%
+- C Dorian (2♭) — 0.320%
+- E Mixolydian (3♯) — 0.320%
+- B Dorian (3♯) — 0.320%
+- B♭ Mixolydian (3♭) — 0.280%
+- F Dorian (3♭) — 0.280%
+- B Mixolydian (4♯) — 0.280%
+- F♯ Dorian (4♯) — 0.280%
+- E♭ Mixolydian (4♭) — 0.240%
+- B♭ Dorian (4♭) — 0.240%
+- F♯ Mixolydian (5♯) — 0.200%
+- C♯ Dorian (5♯) — 0.200%
+- A♭ Mixolydian (5♭) — 0.160%
+- E♭ Dorian (5♭) — 0.160%
+- F Lydian (0) — 0.140%
+- E Phrygian (0) — 0.126%
+- C♯ Mixolydian (6♯) — 0.120%
+- G♯ Dorian (6♯) — 0.120%
+- D♭ Mixolydian (6♭) — 0.120%
+- A♭ Dorian (6♭) — 0.120%
+- C Lydian (1♯) — 0.120%
+- B Phrygian (1♯) — 0.108%
+- B♭ Lydian (1♭) — 0.100%
+- G Lydian (2♯) — 0.100%
+- A Phrygian (1♭) — 0.090%
+- F♯ Phrygian (2♯) — 0.090%
+- E♭ Lydian (2♭) — 0.080%
+- D Lydian (3♯) — 0.080%
+- D Phrygian (2♭) — 0.072%
+- C♯ Phrygian (3♯) — 0.072%
+- A♭ Lydian (3♭) — 0.070%
+- A Lydian (4♯) — 0.070%
+- G Phrygian (3♭) — 0.063%
+- G♯ Phrygian (4♯) — 0.063%
+- G♯ Mixolydian (7♯) — 0.060%
+- D♯ Dorian (7♯) — 0.060%
+- G♭ Mixolydian (7♭) — 0.060%
+- D♭ Dorian (7♭) — 0.060%
+- D♭ Lydian (4♭) — 0.060%
+- C Phrygian (4♭) — 0.054%
+- E Lydian (5♯) — 0.050%
+- D♯ Phrygian (5♯) — 0.045%
+- G♭ Lydian (5♭) — 0.040%
+- F Phrygian (5♭) — 0.036%
+- B Lydian (6♯) — 0.030%
+- C♭ Lydian (6♭) — 0.030%
+- A♯ Phrygian (6♯) — 0.027%
+- B♭ Phrygian (6♭) — 0.027%
+- F♯ Lydian (7♯) — 0.015%
+- F♭ Lydian (7♭) — 0.015%
+- E♯ Phrygian (7♯) — 0.014%
+- E♭ Phrygian (7♭) — 0.014%
+- B Locrian (0) — 0.014%
+- F♯ Locrian (1♯) — 0.012%
+- E Locrian (1♭) — 0.010%
+- C♯ Locrian (2♯) — 0.010%
+- A Locrian (2♭) — 0.008%
+- G♯ Locrian (3♯) — 0.008%
+- D Locrian (3♭) — 0.007%
+- D♯ Locrian (4♯) — 0.007%
+- G Locrian (4♭) — 0.006%
+- A♯ Locrian (5♯) — 0.005%
+- C Locrian (5♭) — 0.004%
+- E♯ Locrian (6♯) — 0.003%
+- F Locrian (6♭) — 0.003%
+- B♯ Locrian (7♯) — 0.002%
+- B♭ Locrian (7♭) — 0.002%
+`.trim();
+
+    const datasetB = `
+    C Major (5279)
+    D Major (4202)
+    G Major (3937)
+    A Major (3446)
+    E Major (3260)
+    F Major (2931)
+    A Minor (2926)
+    E Minor (2786)
+    C Minor (2664)
+    D Minor (2523)
+    E♭ Major (2305)
+    B♭ Major (2096)
+    B Minor (2050)
+    G Minor (1938)
+    D♭ Major (1733)
+    F♯ Major (1678)
+    B Major (1649)
+    F♯ Minor (1641)
+    A♭ Major (1579)
+    C♯ Minor (1537)
+    F Minor (1533)
+
+    D♯ Minor (1361)
+    B♭ Minor (1258)
+    G♯ Minor (1148)
+    A Mixolydian (467)
+    E Mixolydian (456)
+    G Mixolydian (445)
+    D Mixolydian (430)
+    C Mixolydian (403)
+    D Dorian (401)
+    A Dorian (351)
+    E Dorian (344)
+    C Dorian (297)
+    G Dorian (280)
+    B Mixolydian (232)
+    F Mixolydian (203)
+    B♭ Mixolydian (202)
+    B Dorian (199)
+    F Dorian (198)
+    A♭ Mixolydian (167)
+    E♭ Dorian (164)
+    C♯ Mixolydian (160)
+
+    E♭ Mixolydian (157)
+    F♯ Mixolydian (155)
+    F♯ Dorian (150)
+    E Phrygian (129)
+    C♯ Dorian (123)
+    G♯ Dorian (121)
+    B♭ Dorian (110)
+    C Phrygian (95)
+    D Phrygian (85)
+    F Phrygian (74)
+    G Phrygian (71)
+    C Lydian (71)
+    F Lydian (70)
+    A Phrygian (70)
+    D♯ Phrygian (67)
+    C♯ Phrygian (51)
+    B Phrygian (51)
+    F♯ Phrygian (47)
+    D Lydian (44)
+    A Lydian (44)
+    G Lydian (41)
+
+    A♯ Phrygian (38)
+    A♭ Lydian (37)
+    E Lydian (37)
+    D♭ Lydian (32)
+    E♭ Lydian (28)
+    B♭ Lydian (27)
+    G♯ Phrygian (26)
+    B Lydian (24)
+    D Locrian (19)
+    B Locrian (17)
+    G♭ Lydian (16)
+    C Locrian (14)
+    D♯ Locrian (14)
+    E Locrian (13)
+    F♯ Locrian (13)
+    A Locrian (10)
+    C♯ Locrian (8)
+    A♯ Locrian (6)
+    G Locrian (6)
+    E♯ Locrian (4)
+    G♯ Locrian (1)
+`.trim();
+
+    // Attach raw text for reference
+    document.getElementById('rawA').textContent = datasetA;
+    document.getElementById('rawB').textContent = datasetB;
+
+    // ==== Parsing and helpers ====
+    const modeSynonyms = new Map([
+      ['Major', 'Ionian'],
+      ['Minor', 'Aeolian'],
+      ['Ionian', 'Ionian'],
+      ['Aeolian', 'Aeolian'],
+      ['Mixolydian', 'Mixolydian'],
+      ['Dorian', 'Dorian'],
+      ['Lydian', 'Lydian'],
+      ['Phrygian', 'Phrygian'],
+      ['Locrian', 'Locrian'],
+    ]);
+    const MODES = ['Ionian', 'Aeolian', 'Mixolydian', 'Dorian', 'Lydian', 'Phrygian', 'Locrian'];
+    const MODE_COLORS = {
+      Ionian:   '#5bb8ff',
+      Aeolian:  '#ff9b57',
+      Mixolydian:'#71d26a',
+      Dorian:   '#b98cff',
+      Lydian:   '#ff6f6f',
+      Phrygian: '#c49a6c',
+      Locrian:  '#f58ad6',
+    };
+
+    function parsePercentDataset(text) {
+      const map = new Map();
+      const lines = text.split(/\r?\n/);
+      const re = /^\s*[-–•]?\s*([A-G][♯♭]?)\s+(Ionian|Aeolian|Mixolydian|Dorian|Lydian|Phrygian|Locrian)\s*\([^)]*\)\s*[—-]\s*([\d.]+)\s*%/u;
+      let parsed = 0;
+      for (const line of lines) {
+        const m = line.match(re);
+        if (!m) continue;
+        const tonic = m[1];
+        const mode = m[2];
+        const pct = parseFloat(m[3]);
+        const key = `${tonic} ${mode}`;
+        map.set(key, pct);
+        parsed++;
+      }
+      return { map, parsed };
+    }
+
+    function parseCountDataset(text) {
+      const map = new Map();
+      const lines = text.split(/\r?\n/);
+      const re = /^\s*([A-G][♯♭]?)\s+(Major|Minor|Mixolydian|Dorian|Phrygian|Lydian|Locrian)\s*\((\d+)\)\s*$/u;
+      let total = 0, parsed = 0;
+      for (const line of lines) {
+        const m = line.match(re);
+        if (!m) continue;
+        const tonic = m[1];
+        const rawMode = m[2];
+        const mode = modeSynonyms.get(rawMode) || rawMode;
+        const count = parseInt(m[3], 10);
+        const key = `${tonic} ${mode}`;
+        map.set(key, count);
+        total += count;
+        parsed++;
+      }
+      return { map, total, parsed };
+    }
+
+    // Stats
+    function pearson(x, y) {
+      const n = x.length;
+      if (!n || n !== y.length) return { r: NaN, n: 0 };
+      let sumX=0,sumY=0,sumXX=0,sumYY=0,sumXY=0;
+      for (let i=0;i<n;i++){ const xi=x[i], yi=y[i]; sumX+=xi; sumY+=yi; sumXX+=xi*xi; sumYY+=yi*yi; sumXY+=xi*yi; }
+      const meanX = sumX/n, meanY = sumY/n;
+      const cov = sumXY/n - meanX*meanY;
+      const varX = sumXX/n - meanX*meanX;
+      const varY = sumYY/n - meanY*meanY;
+      const denom = Math.sqrt(varX*varY);
+      return {
+        r: denom ? cov/denom : NaN, n,
+        meanX, meanY, varX, varY, cov,
+        sdX: Math.sqrt(Math.max(varX,0)), sdY: Math.sqrt(Math.max(varY,0))
+      };
+    }
+    function regression(x, y) {
+      const s = pearson(x, y);
+      if (!Number.isFinite(s.varX) || s.varX === 0) return { slope: NaN, intercept: NaN };
+      const slope = s.cov / s.varX;
+      const intercept = s.meanY - slope * s.meanX;
+      return { slope, intercept, ...s };
+    }
+    const fmt = (n, d=3) => Number.isFinite(n) ? (Math.round(n*10**d)/10**d).toFixed(d) : '—';
+
+    // Parse once
+    const A = parsePercentDataset(datasetA);
+    const B = parseCountDataset(datasetB);
+
+    // Build mode filter UI
+    const modeFiltersEl = document.getElementById('modeFilters');
+    const modeActive = new Set(MODES); // default all on
+    MODES.forEach(mode => {
+      const lab = document.createElement('label');
+      lab.className = 'mode-chip';
+      lab.style.color = MODE_COLORS[mode];
+      lab.innerHTML = `<span class="swatch" style="background:${MODE_COLORS[mode]}"></span>${mode} <input type="checkbox" checked data-mode="${mode}" />`;
+      modeFiltersEl.appendChild(lab);
+    });
+
+    // Legend
+    const legendEl = document.getElementById('legend');
+    legendEl.innerHTML = MODES.map(m => `<span><span class="swatch" style="background:${MODE_COLORS[m]}"></span>${m}</span>`).join(' ');
+
+    // Controls
+    const elIntersection = document.getElementById('intersectionOnly');
+    const elNormalizeB = document.getElementById('normalizeB');
+    const elLogScale = document.getElementById('logScale');
+    const elTopN = document.getElementById('topN');
+    const elTopNVal = document.getElementById('topNVal');
+    const elSortBy = document.getElementById('sortBy');
+    const bAxisUnitEl = document.getElementById('bAxisUnit');
+
+    elTopN.addEventListener('input', () => { elTopNVal.textContent = elTopN.value; updateAll(); });
+
+    modeFiltersEl.addEventListener('change', e => {
+      if (e.target && e.target.matches('input[type=checkbox][data-mode]')) {
+        const mode = e.target.getAttribute('data-mode');
+        if (e.target.checked) modeActive.add(mode); else modeActive.delete(mode);
+        updateAll();
+      }
+    });
+
+    [elIntersection, elNormalizeB, elLogScale, elSortBy].forEach(el => el.addEventListener('change', updateAll));
+
+    // Tab switching
+    document.querySelectorAll('.tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+        document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+        
+        tab.classList.add('active');
+        document.getElementById(`${tab.dataset.tab}-tab`).classList.add('active');
+        
+        if (tab.dataset.tab === 'radar') {
+          updateModeRadar();
+        } else if (tab.dataset.tab === 'pie') {
+          updateModePie();
+        }
+      });
+    });
+
+    // Visualization type buttons
+    document.querySelectorAll('.viz-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const vizType = btn.dataset.viz;
+        const topVizType = btn.dataset.topviz;
+        
+        if (vizType) {
+          document.querySelectorAll('[data-viz]').forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          currentScatterViz = vizType;
+          updateScatter(currentItems, elNormalizeB.checked, elLogScale.checked);
+        }
+        
+        if (topVizType) {
+          document.querySelectorAll('[data-topviz]').forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          currentTopViz = topVizType;
+          updateTopN(currentItems, parseInt(elTopN.value, 10), elSortBy.value);
+        }
+      });
+    });
+
+    function splitLabel(label) {
+      const i = label.lastIndexOf(' ');
+      return { tonic: label.slice(0, i), mode: label.slice(i+1) };
+    }
+
+    function buildItems({intersection, normalizeB, modeSet}) {
+      const labelsA = [...A.map.keys()];
+      const labelsB = [...B.map.keys()];
+      const union = new Set([...labelsA, ...labelsB]);
+      const inter = new Set(labelsA.filter(k => B.map.has(k)));
+
+      const chosen = intersection ? inter : union;
+      const items = [];
+      for (const key of chosen) {
+        const { tonic, mode } = splitLabel(key);
+        if (!modeSet.has(mode)) continue;
+        const aPct = A.map.get(key) || 0;
+        const bCount = B.map.get(key) || 0;
+        const bPct = B.total ? (bCount / B.total) * 100 : 0;
+        const point = {
+          key, tonic, mode,
+          aPct,
+          bVal: normalizeB ? bPct : bCount,
+          bPct, bCount
+        };
+        items.push(point);
+      }
+      return items;
+    }
+
+    // Global variables for current visualization state
+    let currentItems = [];
+    let currentScatterViz = 'scatter';
+    let currentTopViz = 'bars';
+
+    // Charts
+    const scatterCtx = document.getElementById('scatter').getContext('2d');
+    const modeBarsCtx = document.getElementById('modeBars').getContext('2d');
+    const modeRadarCtx = document.getElementById('modeRadar').getContext('2d');
+    const modePieCtx = document.getElementById('modePie').getContext('2d');
+    const topBarsCtx = document.getElementById('topBars').getContext('2d');
+    const rEl = document.getElementById('rVal');
+    const slopeEl = document.getElementById('slopeVal');
+    const scatterInsightEl = document.getElementById('scatterInsight');
+
+    const scatterChart = new Chart(scatterCtx, {
+      type: 'scatter',
+      data: { datasets: [] },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        animation: {
+          duration: 1000,
+          easing: 'easeOutQuart'
+        },
+        scales: {
+          x: {
+            title: { display: true, text: 'GPT 5 Data (%)', color: '#cbd5e1' },
+            grid: { color: 'rgba(255,255,255,0.07)' },
+            ticks: { color: '#cbd5e1' }
+          },
+          y: {
+            title: { display: true, text: 'Hooktheory data', color: '#cbd5e1' },
+            grid: { color: 'rgba(255,255,255,0.07)' },
+            ticks: { color: '#cbd5e1' }
+          }
+        },
+        plugins: {
+          legend: { labels: { color: '#cbd5e1' } },
+          tooltip: {
+            callbacks: {
+              title: (items) => items[0].raw.label,
+              label: (ctx) => {
+                const p = ctx.raw;
+                const a = `A: ${p.aPct.toFixed(3)}%`;
+                const b = p.bIsPct ? `B: ${p.bVal.toFixed(3)}% (${p.bCount})` : `B: ${p.bVal.toLocaleString()} (${p.bPct.toFixed(3)}%)`;
+                return [a, b];
+              }
+            }
+          },
+          zoom: {
+            zoom: {
+              wheel: { enabled: true },
+              pinch: { enabled: true },
+              mode: 'xy',
+            },
+            pan: {
+              enabled: true,
+              mode: 'xy',
+            }
+          }
+        }
+      }
+    });
+
+    const modeBars = new Chart(modeBarsCtx, {
+      type: 'bar',
+      data: { labels: MODES, datasets: [
+        { label: 'A %', data: [], backgroundColor: 'rgba(110,168,254,0.5)', borderColor: '#6ea8fe', borderWidth: 1.2 },
+        { label: 'B %', data: [], backgroundColor: 'rgba(113,210,106,0.5)', borderColor: '#71d26a', borderWidth: 1.2 }
+      ]},
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        animation: {
+          duration: 1000,
+          easing: 'easeOutQuart'
+        },
+        scales: {
+          x: { grid: { color: 'rgba(255,255,255,0.07)' }, ticks: { color: '#cbd5e1' } },
+          y: { grid: { color: 'rgba(255,255,255,0.07)' }, ticks: { color: '#cbd5e1' }, title: { display: true, text: 'Percent of total within chart scope', color: '#cbd5e1' } }
+        },
+        plugins: { 
+          legend: { labels: { color: '#cbd5e1' } },
+          tooltip: {
+            callbacks: {
+              label: (ctx) => `${ctx.dataset.label}: ${ctx.raw.toFixed(2)}%`
+            }
+          }
+        }
+      }
+    });
+
+    const modeRadar = new Chart(modeRadarCtx, {
+      type: 'radar',
+      data: { labels: MODES, datasets: [
+        { label: 'A %', data: [], backgroundColor: 'rgba(110,168,254,0.2)', borderColor: '#6ea8fe', borderWidth: 2, pointBackgroundColor: '#6ea8fe' },
+        { label: 'B %', data: [], backgroundColor: 'rgba(113,210,106,0.2)', borderColor: '#71d26a', borderWidth: 2, pointBackgroundColor: '#71d26a' }
+      ]},
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        animation: {
+          duration: 1000,
+          easing: 'easeOutQuart'
+        },
+        scales: {
+          r: {
+            grid: { color: 'rgba(255,255,255,0.07)' },
+            ticks: { color: '#cbd5e1', backdropColor: 'transparent' },
+            pointLabels: { color: '#cbd5e1' }
+          }
+        },
+        plugins: { 
+          legend: { labels: { color: '#cbd5e1' } },
+          tooltip: {
+            callbacks: {
+              label: (ctx) => `${ctx.dataset.label}: ${ctx.raw.toFixed(2)}%`
+            }
+          }
+        }
+      }
+    });
+
+    const modePie = new Chart(modePieCtx, {
+      type: 'doughnut',
+      data: { labels: MODES, datasets: [
+        { label: 'A %', data: [], backgroundColor: MODES.map(m => MODE_COLORS[m]), borderWidth: 0 }
+      ]},
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        animation: {
+          animateRotate: true,
+          animateScale: true,
+          duration: 1000,
+          easing: 'easeOutQuart'
+        },
+        plugins: { 
+          legend: { labels: { color: '#cbd5e1' } },
+          tooltip: {
+            callbacks: {
+              label: (ctx) => `${ctx.label}: ${ctx.raw.toFixed(2)}%`
+            }
+          }
+        }
+      }
+    });
+
+    const topBars = new Chart(topBarsCtx, {
+      type: 'bar',
+      data: { labels: [], datasets: [
+        { label: 'A %', data: [], backgroundColor: 'rgba(110,168,254,0.5)', borderColor: '#6ea8fe', borderWidth: 1.2 },
+        { label: 'B %', data: [], backgroundColor: 'rgba(255,155,87,0.5)', borderColor: '#ff9b57', borderWidth: 1.2 }
+      ] },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        animation: {
+          duration: 1000,
+          easing: 'easeOutQuart'
+        },
+        scales: {
+          x: { grid: { color: 'rgba(255,255,255,0.07)' }, ticks: { color: '#cbd5e1' } },
+          y: { grid: { color: 'rgba(255,255,255,0.07)' }, ticks: { color: '#cbd5e1' }, title: { display: true, text: 'Percent', color: '#cbd5e1' } }
+        },
+        plugins: { 
+          legend: { labels: { color: '#cbd5e1' } }, 
+          tooltip: { 
+            mode: 'index', 
+            intersect: false,
+            callbacks: {
+              label: (ctx) => `${ctx.dataset.label}: ${ctx.raw.toFixed(3)}%`
+            }
+          } 
+        }
+      }
+    });
+
+    function showLoading(elementId) {
+      document.getElementById(elementId).classList.add('active');
+    }
+
+    function hideLoading(elementId) {
+      document.getElementById(elementId).classList.remove('active');
+    }
+
+    function updateScatter(items, normalizeB, logScale) {
+      showLoading('scatterLoading');
+      
+      // Group by mode for colored clusters
+      const byMode = new Map(MODES.map(m => [m, []]));
+      let x = [], y = [];
+      let minX = Infinity, maxX = -Infinity;
+
+      for (const it of items) {
+        const dot = {
+          x: it.aPct,
+          y: it.bVal,
+          label: it.key,
+          aPct: it.aPct,
+          bVal: it.bVal,
+          bCount: it.bCount,
+          bPct: it.bPct,
+          bIsPct: normalizeB
+        };
+        byMode.get(it.mode).push(dot);
+        x.push(it.aPct);
+        y.push(it.bVal);
+        if (it.aPct < minX) minX = it.aPct;
+        if (it.aPct > maxX) maxX = it.aPct;
+      }
+
+      // Regression across all points
+      const reg = x.length ? regression(x, y) : { slope: NaN, intercept: NaN, r: NaN };
+      rEl.textContent = fmt(reg.r);
+      slopeEl.textContent = fmt(reg.slope);
+      bAxisUnitEl.textContent = normalizeB ? '%' : 'count';
+
+      // Update insight text
+      if (Number.isFinite(reg.r)) {
+        if (Math.abs(reg.r) > 0.7) {
+          scatterInsightEl.textContent = `Strong ${reg.r > 0 ? 'positive' : 'negative'} correlation detected (r=${fmt(reg.r)})`;
+        } else if (Math.abs(reg.r) > 0.3) {
+          scatterInsightEl.textContent = `Moderate ${reg.r > 0 ? 'positive' : 'negative'} correlation detected (r=${fmt(reg.r)})`;
+        } else {
+          scatterInsightEl.textContent = `Weak correlation detected (r=${fmt(reg.r)})`;
+        }
+      } else {
+        scatterInsightEl.textContent = 'Insufficient data for correlation analysis';
+      }
+
+      const regLine = [];
+      if (Number.isFinite(reg.slope) && Number.isFinite(reg.intercept) && Number.isFinite(minX) && Number.isFinite(maxX)) {
+        const x1 = Math.max(0, Math.min(minX, maxX));
+        const x2 = Math.max(minX, maxX);
+        regLine.push({ x: x1, y: reg.slope * x1 + reg.intercept });
+        regLine.push({ x: x2, y: reg.slope * x2 + reg.intercept });
+      }
+
+      // Assemble datasets based on visualization type
+      let datasets = [];
+      
+      if (currentScatterViz === 'scatter') {
+        datasets = MODES.map(mode => ({
+          label: mode,
+          data: byMode.get(mode),
+          showLine: false,
+          pointRadius: 4,
+          pointHoverRadius: 6,
+          backgroundColor: MODE_COLORS[mode],
+          borderColor: MODE_COLORS[mode]
+        }));
+      } else if (currentScatterViz === 'bubble') {
+        datasets = MODES.map(mode => ({
+          label: mode,
+          data: byMode.get(mode).map(point => ({
+            ...point,
+            r: Math.max(5, Math.sqrt(point.bCount) * 0.5) // Size based on count
+          })),
+          showLine: false,
+          pointRadius: 4,
+          pointHoverRadius: 6,
+          backgroundColor: MODE_COLORS[mode] + '80', // Add transparency
+          borderColor: MODE_COLORS[mode]
+        }));
+      } else if (currentScatterViz === 'density') {
+        // Create a density heatmap
+        const gridSize = 20;
+        const densityMap = new Map();
+        
+        // Calculate density grid
+        for (const point of items) {
+          const xGrid = Math.floor(point.aPct / gridSize);
+          const yGrid = Math.floor(point.bVal / gridSize);
+          const key = `${xGrid},${yGrid}`;
+          densityMap.set(key, (densityMap.get(key) || 0) + 1);
+        }
+        
+        // Convert to dataset
+        const maxDensity = Math.max(...densityMap.values());
+        const densityData = Array.from(densityMap.entries()).map(([key, density]) => {
+          const [xGrid, yGrid] = key.split(',').map(Number);
+          return {
+            x: xGrid * gridSize + gridSize/2,
+            y: yGrid * gridSize + gridSize/2,
+            r: (density / maxDensity) * 30 + 5,
+            density
+          };
+        });
+        
+        datasets = [{
+          label: 'Density',
+          data: densityData,
+          showLine: false,
+          pointRadius: 0,
+          pointHoverRadius: 0,
+          backgroundColor: (ctx) => {
+            const value = ctx.raw.density / maxDensity;
+            const alpha = value * 0.7;
+            return `rgba(110, 168, 254, ${alpha})`;
+          }
+        }];
+      }
+
+      // Add regression line as final dataset
+      datasets.push({
+        label: 'Regression',
+        data: regLine,
+        showLine: true,
+        pointRadius: 0,
+        borderWidth: 2,
+        borderDash: [6, 6],
+        borderColor: '#9fd6ff',
+        backgroundColor: 'transparent'
+      });
+
+      scatterChart.options.scales.y.type = (!normalizeB && logScale) ? 'logarithmic' : 'linear';
+      scatterChart.options.scales.y.title.text = `Hooktheory Data (${normalizeB ? '%' : 'count'})`;
+      scatterChart.data.datasets = datasets;
+      
+      setTimeout(() => {
+        scatterChart.update('none');
+        hideLoading('scatterLoading');
+      }, 300);
+    }
+
+    function updateModeBars(items) {
+      showLoading('modeLoading');
+      
+      // Percent-of-total per mode within the current item set
+      const sums = {};
+      for (const m of MODES) sums[m] = { A: 0, B: 0 };
+      let totalA = 0, totalB = 0;
+      for (const it of items) {
+        sums[it.mode].A += it.aPct;
+        sums[it.mode].B += it.bPct; // always use % for B in this comparison
+        totalA += it.aPct;
+        totalB += it.bPct;
+      }
+      const labels = MODES;
+      const aVals = labels.map(m => totalA ? (sums[m].A / totalA) * 100 : 0);
+      const bVals = labels.map(m => totalB ? (sums[m].B / totalB) * 100 : 0);
+
+      modeBars.data.labels = labels;
+      modeBars.data.datasets[0].data = aVals;
+      modeBars.data.datasets[1].data = bVals;
+      
+      // Update radar and pie charts with same data
+      modeRadar.data.datasets[0].data = aVals;
+      modeRadar.data.datasets[1].data = bVals;
+      modePie.data.datasets[0].data = aVals;
+      
+      setTimeout(() => {
+        modeBars.update('none');
+        hideLoading('modeLoading');
+      }, 300);
+    }
+
+    function updateModeRadar() {
+      // This is called when the radar tab is activated
+      modeRadar.update('none');
+    }
+
+    function updateModePie() {
+      // This is called when the pie tab is activated
+      modePie.update('none');
+    }
+
+    function updateTopN(items, n, sortBy) {
+      showLoading('topLoading');
+      
+      // Compare by percent for both A and B for readability
+      const rows = items.map(it => ({
+        label: it.key,
+        aPct: it.aPct,
+        bPct: it.bPct,
+        diff: Math.abs(it.aPct - it.bPct)
+      }));
+      const key = sortBy === 'A' ? 'aPct' : sortBy === 'B' ? 'bPct' : 'diff';
+      rows.sort((u,v) => v[key] - u[key]);
+      const top = rows.slice(0, n);
+
+      if (currentTopViz === 'bars') {
+        topBars.config.type = 'bar';
+        topBars.data.labels = top.map(r => r.label);
+        topBars.data.datasets[0].data = top.map(r => r.aPct);
+        topBars.data.datasets[1].data = top.map(r => r.bPct);
+      } else if (currentTopViz === 'lollipop') {
+        topBars.config.type = 'line';
+        topBars.data.labels = top.map(r => r.label);
+        topBars.data.datasets[0].data = top.map(r => r.aPct);
+        topBars.data.datasets[0].backgroundColor = '#6ea8fe';
+        topBars.data.datasets[0].borderColor = '#6ea8fe';
+        topBars.data.datasets[0].pointRadius = 6;
+        topBars.data.datasets[0].pointHoverRadius = 8;
+        topBars.data.datasets[0].showLine = false;
+        
+        topBars.data.datasets[1].data = top.map(r => r.bPct);
+        topBars.data.datasets[1].backgroundColor = '#ff9b57';
+        topBars.data.datasets[1].borderColor = '#ff9b57';
+        topBars.data.datasets[1].pointRadius = 6;
+        topBars.data.datasets[1].pointHoverRadius = 8;
+        topBars.data.datasets[1].showLine = false;
+      } else if (currentTopViz === 'difference') {
+        topBars.config.type = 'bar';
+        topBars.data.labels = top.map(r => r.label);
+        topBars.data.datasets = [{
+          label: 'Difference (A% - B%)',
+          data: top.map(r => r.aPct - r.bPct),
+          backgroundColor: top.map(r => (r.aPct - r.bPct) > 0 ? 'rgba(110,168,254,0.5)' : 'rgba(255,155,87,0.5)'),
+          borderColor: top.map(r => (r.aPct - r.bPct) > 0 ? '#6ea8fe' : '#ff9b57'),
+          borderWidth: 1.2
+        }];
+      }
+      
+      setTimeout(() => {
+        topBars.update('none');
+        hideLoading('topLoading');
+      }, 300);
+    }
+
+    function updateAll() {
+      const intersection = elIntersection.checked;
+      const normalizeB = elNormalizeB.checked;
+      const logScale = elLogScale.checked;
+      const n = parseInt(elTopN.value, 10);
+      const sortBy = elSortBy.value;
+
+      currentItems = buildItems({
+        intersection,
+        normalizeB,
+        modeSet: modeActive
+      });
+
+      updateScatter(currentItems, normalizeB, logScale);
+      updateModeBars(currentItems);
+      updateTopN(currentItems, n, sortBy);
+    }
+
+    // Initial render
+    updateAll();
+  </script>
+</body>
+</html>
