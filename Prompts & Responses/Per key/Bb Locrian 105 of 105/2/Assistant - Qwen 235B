@@ -1,0 +1,657 @@
+**Assistant - Qwen 235B**
+
+Let's analyze the chord progression you've provided:
+
+**Chords:**
+- Bbdim  
+- Bbdim  
+- Gb/Bb  
+- Gb/Bb  
+- Bbdim  
+- Bbdim  
+- Dbm/Ab  
+- B/Bb  
+- Bbdim  
+- Bbdim  
+- Gb/Bb  
+- Gb/Bb  
+- Bbdim  
+- Bbdim  
+- Emaj7/Ab  
+- Bbdim
+
+---
+
+### Step 1: Understanding the Chords
+
+Let’s clarify each chord and its function:
+
+1. **Bbdim (Bb°)** = Bb - Db - Fb (Bb diminished triad)
+   - Common as vii° in Cb major or C minor, or as a passing chord.
+
+2. **Gb/Bb** = Gb major triad with Bb in the bass (1st inversion)
+   - Gb major = Gb - Bb - Db
+   - So Gb/Bb is Bb - Db - Gb → which is essentially Bb minor 6 (Bbm6)
+   - Because Bb - Db - F - Gb = Bbm6. This chord is **functionally Bbm6**.
+
+3. **Dbm/Ab** = Db minor with Ab in the bass → Ab - Db - Fb (Ab - Db - E)
+   - This is **Ab7 (Ab dominant 7th)**: Ab-C-E-Gb?
+     Wait — Dbm = Db - E - Ab → that’s **Db - Fb - Ab** (Fb is E enharmonically)
+     So: Db - Fb - Ab = Db diminished? Wait — **Db minor is Db - Ebb - Ab**, i.e., Db - Fb - Ab
+     So chord: **Ab (bass), Db, Fb, Ab** → notes: Ab, Db, Fb
+     This is **Ab - Db - Fb** → that's **Ab dim (Ab°)** → Ab - Cb - Ebb
+     Wait: Fb is Ebb? Not quite — Fb = E double flat (Ebb), but we rarely use that.
+     Actually: Dbm is **Db, Ebb, Ab**, so pitches: **Db, Fb, Ab**
+     So Dbm/Ab = Ab (bass), Db, Fb, Ab → notes: **Ab, Db, Fb**
+
+     Now: Ab - Db = P4, Db - Fb = m3 → this is an augmented triad? No.
+     Ab - Db = P4 (or augmented 4th if considered differently).
+
+     Actually: Ab to Db is a **P4**, Db to Fb is a **m3**, so Ab - Db - Fb is **Abm6**? No — Abm6 would be Ab - Cb - Eb - F.
+     This looks more like a **diminished chord**.
+
+     Let's spell:
+     - Ab - Cb - Ebb = Ab° = Ab - Cb - Ebb (Cb = B, Ebb = D)
+     But our notes are: Ab, Db, Fb
+     - Ab to Db = **augmented 4th**
+     - Db to Fb = **minor 3rd**
+     - Ab to Fb = **diminished 7th**
+
+     That's **Ab°7** without the Cb? Wait — no, missing the third.
+     Ab, Db, Fb → Ab - Db = tritone, Db - Fb = m3, Ab - Fb = dim7 (9 semitones).
+
+     Actually: **Ab - Cb - Ebb - Gbb** = Ab°7
+     But here we have Ab, Db (Cb?), Fb (Ebb?) — Db is enharmonic to C#, but not Cb.
+
+     **Db = C#**, so not Cb. Cb = B.
+
+     So Ab, Db, Fb → **Ab, C#, E**
+
+     Wait — enharmonically:
+     - Ab = G#
+     - Db = C#
+     - Fb = E
+
+     So: **G#, C#, E** → that’s **G# dim (G# - B - D#)**? No: G#, C#, E → G# - C# is P4, C# - E is m3.
+
+     Wait: G# - C# = augmented 4th (tritone), C# - E = m3 → so: **G#dim7?**
+     G#dim7 = G# - B - D - F
+     But we have G# - C# - E → C# = enharmonic to Dbb? Not helpful.
+
+     Alternatively, **Ab, C#, E** → that’s **Ab - C# - E** = **Ab augmented (Ab+)**
+
+     But Dbm is Db - Fb - Ab → Fb = E, so **Db - E - Ab**
+
+     Db - E = **augmented 2nd**, E - Ab = **diminished 4th** — not a standard triad.
+
+     But let's keep it in key terms — **Dbm/Ab** means Db minor chord over Ab bass → **Ab - Db - Fb**
+
+     So pitches: **Ab, Db, Fb**
+
+     Now Fb = E, but in proper spelling: Ab, Db, Fb → this is **Ab - Db - Fb**
+
+     Interval from Ab to Fb is a **diminished 7th** (Ab to F is M6, Fb is a half step down → dim7)
+
+     So Ab - Db - Fb → this is **Ab°7 without the third (Cb)** — **incomplete dim7**
+
+     But if we assume it implies a full chord, it might be **Ab°7**, which is enharmonic to:
+     - Ab°7 = Ab - Cb - Ebb - Gbb → enharmonic to G#°7 = G# - B - D - F
+
+     But we have **Ab, Db, Fb** → that’s **Ab - C# - E** enharmonically → which is **Ab augmented**, not diminished.
+
+     There's a contradiction.
+
+     Wait — **Db minor = Db - Ebb - Ab** → Ebb = D (natural)? No: Ebb = D (double flat) = C.
+
+     Let's use enharmonic equivalents to simplify:
+
+     - Db = C#
+     - Ebb = D
+     - Ab = G#
+     So Db minor = C# - D - G#
+
+     C# - D = minor 2nd, D - G# = augmented 4th — that’s not a minor triad.
+
+     This shows the risk of enharmonic confusion.
+
+     Let's re-express everything in **Bb root terms**, since many chords have Bb in bass.
+
+---
+
+Let’s analyze the **bass line**:
+
+Bass progression:
+- Bb (Bbdim)
+- Bb (Bbdim)
+- Bb (Gb/Bb → Gb over Bb)
+- Bb (Gb/Bb)
+- Bb
+- Bb
+- Ab (Dbm/Ab)
+- Bb (B/Bb → B natural over Bb)
+- Bb
+- Bb
+- Bb
+- Bb
+- Bb
+- Bb
+- Ab (Emaj7/Ab → E major 7th over Ab bass)
+- Bb (Bbdim)
+
+So bass line: mostly **Bb**, with two **Ab** bass notes before returning to Bb.
+
+**Dominant bass note: Bb**
+
+---
+
+Now chord qualities:
+
+- **Bbdim**: Bb - Db - Fb (Fb = E)
+  - Notes: Bb, Db, E → wait: Fb is E natural?
+  - But in equal temperament: Fb = E → so **Bb - Db - E** → that’s **Bb - Dbb - E**
+  - Interval: Bb - E = augmented 4th → so it's not a proper diminished triad unless Fb is used.
+
+  Actually, a dim triad is root - m3 - dim5:
+  - Bb - Db (m3), Db - Fb (dim5), Bb - Fb = diminished 5th? Bb - Fb → Bb to Fb is **diminished 5th** (normal 5th is F, Fb is a half step down).
+
+  So notes:
+  - Bb
+  - Db
+  - Fb (enharmonic to E)
+
+  So **Bbdim = Bb - Db - E (enharmonically)**
+
+  This is **Bb°**, a fully diminished triad? No — triad only has three notes. To be fully diminished 7th, it would need a 7th: A (G#).
+
+  So **Bbdim** = **Bb°** = Bb - Db - Fb (E) — correct.
+
+- **Gb/Bb**: Gb major chord (Gb-Bb-Db) over Bb bass → so **Bb - Db - Gb**
+  - Bb - Db = m3
+  - Db - Gb = P4
+  - Bb - Gb = P5? No: Bb to Gb is minor 6th
+  - So the chord is **Bb - Db - Gb** → **Bbm6**
+
+  So **Gb/Bb = Bbm6**
+
+- **Dbm/Ab** = Db minor (Db - Fb - Ab) with Ab in bass → Ab - Db - Fb
+  - Ab - Db = aug4 (tritone)
+  - Db - Fb = m3
+  - Ab - Fb = dim7
+
+  This is **Ab°7 without the Cb** — almost a diminished 7th chord.
+
+  But Ab°7 = Ab - Cb - Ebb - Gbb → Ab - Cb - D - Fb? Gbb = Fb.
+
+  So Ab - Cb - Ebb - Gbb = Ab - Cb - D - Fb
+
+  Our chord has Ab, Db, Fb → lacks Cb, has Db instead.
+
+  But **Db = C#**, not Cb.
+
+  So **Ab - Db - Fb = Ab - C# - E** (enharmonic) → that’s **Ab augmented**!
+
+  That can’t be right because the chord is labeled **Dbm**, so it should be based on Db minor.
+
+  Unless it’s a typo?
+
+  Alternatively, maybe **Dbm/Ab** is meant to be **Ab7**, because:
+  - Dbm = Db - Ebb - Ab = Db - Cb - Ab? No: Ebb = Dbb = C
+
+  Let’s spell properly in fixed pitch:
+
+  Use enharmonic equivalents for clarity:
+
+  Assume **C = C**, and convert:
+
+  - Db = C#
+  - Ebb = D (natural)
+  - Fb = E
+  - Ab = G#
+
+  So **Dbm** = C# - D - G#
+
+  That’s not a standard chord.
+
+  Better to keep in flats.
+
+  **Db minor**: Db (D flat), Eb flat (D), Ab
+  So **Db - Ebb - Ab** → **Db - D - Ab** → that’s a **diminished 2nd** interval — very awkward.
+
+  In practice, this chord **Dbm/Ab** spelled as **Ab (bass), Db, Fb** = **Ab - Db - Fb**
+
+  Notes: Ab, Db, Fb
+
+  Let’s assign pitches in C:
+  - Ab = 8 (in MIDI or semitones: A = 9, Ab = 8)
+  - Db = 3? or Db = C# = 1
+  Wait: standard pitches:
+  - Bb = 10
+  - Db = 1
+  - Fb = 4 (since E = 4, Fb = E = 4)
+  - Ab = 8
+
+  So **Ab (8), Db (1), Fb (4)** → that’s **Ab (8), C# (1), E (4)**
+
+  So pitches: **C#, E, Ab** → wait, sorted: C# (1), E (4), Ab (8)
+
+  That’s C# - E - Ab = **C# diminished triad**
+
+  But bass is Ab.
+
+  So **Ab/C#**? But it's written as **Dbm/Ab** — confusion.
+
+  Alternatively, **Ab - C# - E** → that’s **Ab augmented triad**
+
+  Yes! Ab - C# - E = Ab augmented (Ab+)
+
+  But labeled as **Dbm/Ab**? That doesn't make sense.
+
+  Could it be a typo? Maybe it’s **Dm/Ab** or **Ab7**?
+
+  Alternatively, perhaps it's **Fm/Ab** or something else.
+
+  Wait — **Dbm** over **Ab** — maybe it's **first inversion Ab7**?
+
+  Ab7 = Ab - C - Eb - Gb
+
+  But Dbm is Db - Fb - Ab → Fb = E, so E is not in Ab7.
+
+  Ab7 has C (major 3rd), not Cb.
+
+  **But here’s an idea**: maybe the chord is intended to be **Ab7**, and it's written as **Dbm/Ab** due to enharmonic or voice-leading reasons? Unlikely.
+
+  Let's look at the last chord: **Emaj7/Ab**
+
+  **Emaj7** = E - G# - B - D#
+  Over **Ab** bass → so bass is Ab
+
+  Notes: Ab, E, G#, B, D#
+
+  That’s a very dissonant cluster.
+
+  Enharmonic:
+  - Ab = G#
+  So G# as both bass and chord tone? Then it’s **G#maj7** with G# in bass.
+
+  But spelled as **E** over **Ab**?
+
+  E and Ab are a tritone apart.
+
+  Emaj7/Ab → Ab bass, E - G# - B - D#
+
+  So full chord: **Ab, E, G#, B, D#**
+
+  That’s essentially an **Ab7#5#9** or something?
+
+  Let’s build from Ab:
+
+  - Ab (root)
+  - E = **augmented 5th**
+  - G# = G# = A double-flat = enharmonic to G#, which is **major 7th** above Ab? Ab to G# is octave minus half-step → major 7th
+  - B = B → Ab to B is **augmented 9th** (same as #9)
+  - D# = Fbb? Ab to D# is augmented 11th?
+
+  So the chord is: **Ab7 with #5 (E), #9 (B), maj7 (G#)**
+
+  That’s an **Ab7#5#9**, which is a common altered dominant chord.
+
+  Notably, **Ab7#5#9** resolves to **Db minor** or **D major**?
+
+  But in jazz, Ab7#9 is often a **V7 of D**, meaning it’s the dominant of D.
+
+  Ab is tritone of D → yes! Ab7 is **V7 of D**, because:
+  - D’s dominant is **A7**, but **Ab7** is the tritone substitution of A7.
+
+  So **Ab7#9 = tritone sub of A7**, resolves to **D minor or D major**
+
+  And here, **Emaj7/Ab** — with Emaj7 in upper structure — might be a way of voicing **Ab7#9 add #11 or something**.
+
+  Emaj7 = E-G#-B-D#
+  Ab7 = Ab-C-Eb-Gb
+
+  Shared note: none directly — but G# = Ab, so that’s the root.
+
+  E = #5 of Ab7
+  G# = maj7 of Ab
+  B = enharmonic D##, which is like a #9 (B = #9 of Ab)
+  D# = #13?
+
+  So yes: **Emaj7 over Ab = upper structure of Ab7#5#9#13**
+
+  So **Emaj7/Ab ≈ Ab7alt**, a dominant chord.
+
+  Given that it resolves to **Bbdim**, which we’ll see.
+
+  But Bbdim doesn’t sound like D major.
+
+---
+
+Now let’s reconsider the entire progression with **bass motion**:
+
+- Long stretches of **Bbdim** and **Bbm6 (Gb/Bb)**
+- Then **Dbm/Ab** — which seems like **Ab diminished or Ab7** (but analysis was messy)
+- Then **B/Bb** — that’s **B natural over Bb bass**
+  - B/Bb = B - Bb → major chord with major 7th interval in slash? Chord: B major (B-D#-F#) over Bb bass
+  - So notes: Bb - B - D# - F#
+  - Bb to B = major 7th
+  - This is a **BbM7#11?** or simply a **B major chord over Bb** → very dissonant
+  - Enharmonically, **B = Cb**, so **Cb over Bb** = minor 2nd cluster
+
+  This is extremely dissonant — often used as a **passing chord** or **chromatic approach**
+
+  But more likely, **B/Bb** is intended as a **dominant function chord** approaching Cb or C?
+
+  B over Bb — could be **preparation for C**, as B is leading tone to C.
+
+  But chord is B major, not Bdim.
+
+  Alternatively, **B/Bb** could be a misnotation for **Bdim/Bb**, which would make more sense harmonically.
+
+  Or **Bº7/Bb**?
+
+  But it's written as **B/Bb**, so we take it as is.
+
+  Notes: **Bb, B, D#, F#**
+
+  That’s very clashing.
+
+  Alternatively, perhaps it’s meant to be **A/Bb**, or **Bb7**, but not.
+
+---
+
+Now, let’s look for a **tonic**.
+
+Most of the progression dwells on chords with **Bb in the bass**, especially **Bbdim** and **Bbm6 (Gb/Bb)**.
+
+Bbdim appears at the beginning, middle, and end — suggesting it might be a **tonic** or **pedal point**.
+
+But **diminished chords are unstable** — they don’t function as tonics unless in a modal or modern context.
+
+However, if we consider the **chord Gb/Bb = Bbm6**, and it alternates with Bbdim, that could suggest a **Bb minor** tonality with chromatic voice leading.
+
+Voice leading between Bbdim and Bbm6:
+
+- Bbdim: Bb - Db - Fb (E)
+- Bbm6: Bb - Db - Gb
+
+Common tones: Bb, Db
+- Fb (E) moves to Gb → up by **m3**? Not smooth.
+
+Wait: Fb (E) to Gb is augmented unison? Enharmonically E to Gb = E to F# = minor 3rd down.
+
+Not strong voice leading.
+
+Alternatively, consider that **Bbdim** functions as **vii° of Cb**, leading to **Cb major**.
+
+But no Cb appears.
+
+Then we have **Dbm/Ab** — possibly a **iiø7** or **ii7** in Cb? In Cb major, ii chord is **Dbm7**.
+
+Cb major: Cb - Db - Eb - Fb - Gb - Ab - Bb
+
+So:
+- **Dbm7 = ii7**
+- Over **Ab bass** → second inversion? Dbm7/Ab = Ab - Db - Fb - Ab → but we only have three notes probably.
+
+Then **B/Bb** — B natural over Bb — very chromatic.
+
+Then Bbdim again.
+
+Last unusual chord: **Emaj7/Ab** — as analyzed, sounds like **Ab7#9**, a dominant chord.
+
+**Ab7#9** is the **tritone substitution** of **D7**, which is the **dominant of G**, or **dominant of Db**, or **dominant of Gb**?
+
+Ab7 resolves to **D** or **Db**?
+
+But Ab7 is tritone substitute of D7, so resolves to **G** or **G minor**.
+
+But our final chord is **Bbdim** — not G.
+
+Alternatively, **Ab7 → Bb dim** doesn't resolve properly.
+
+But wait — **Ab7 to Bb dim**: Ab to Bb = M2, but no bass motion indicated — bass goes from Ab to Bb.
+
+So bass: Ab → Bb = major 2nd up.
+
+Chordally: Ab7 has C (3rd), Eb (5th), Gb (7th), E (3rd of Emaj7) — but in Emaj7/Ab, the 3rd is E, which is **#5 of Ab**.
+
+So **Ab7#5**
+
+Ab7#5 can resolve to **Bbm** or **Bb**?
+
+In jazz, **Ab7#5** can act as a **V of Bm** or **B**?
+
+But we go to **Bbdim**.
+
+Bbdim contains Bb-Db-Fb → Fb = E, which is the **#9 of Ab7**, so maybe **voice leading**:
+
+- Ab7 with #5 and #9 → resolves up by semitone to Bb
+
+So Ab → Bb (bass)
+- Gb (7th of Ab7) → F (not present)
+- Fb/E (from earlier) → E might want to resolve to D or F, but we go to Bbdim which has Fb again.
+
+Not convincing.
+
+---
+
+Re-express the entire progression enharmonically to see if it's simpler.
+
+Let’s try **enharmonic spelling in C#?** Maybe.
+
+Alternatively, suspect: the chords are mostly in **Bb something**, with chromatic alterations.
+
+Another idea: **Bbdim** might be acting as a **common tone diminished chord** over a static Bb bass.
+
+So the harmony is **Bb with changing upper voices**.
+
+- Bb dim: Bb - Db - E (Fb)
+- Gb/Bb: Bb - Db - Gb
+So only the top note changes: E to Gb
+
+Gb is a half step above F, so not direct.
+
+E to Gb is minor 3rd.
+
+But if Fb is respelled as E, and Gb as (Gb), then E to Gb is m3.
+
+Alternatively, if the upper note goes: E - F - Gb, but not present.
+
+Still, the two notes E and Gb flanking F (Fb) suggest chromaticism around **F** and **Gb**.
+
+Then we have Dbm/Ab — Ab bass, chord Ab-Db-Fb
+
+Then B/Bb — Bb bass, B-D#-F# chord
+
+- D# = Eb, F# = Gb
+
+So notes: Bb, B, D# (Eb), F# (Gb)
+
+So upper structure: B - Eb - Gb → B - Eb = dim5, Eb - Gb = m3 → **B dim triad**!
+
+**Bº = B - D - F**
+But we have B - D# (Eb) - F# (Gb) → B - Eb - Gb
+
+B to Eb = dim5, Eb to Gb = m3, B to Gb = diminished 7th? B to Gb = diminished 6th
+
+Actually, B - Eb - Gb = **B half-diminished 7th without 7th?** No.
+
+Bdim = B - D - F
+But Eb = D#, not D.
+
+B - D# - F# = B major
+
+B - D# - F# = B - D# = M3, D# - F# = m3 → **B major triad**
+
+Yes! **B/Bb** is a **B major triad over Bb bass**
+
+So it's a **major triad a semitone above the bass**
+
+This is a classic **chromatic upper structure** or **Neapolitan approach**, but here it's not the bII.
+
+It's **I+ chord over bI bass** in C? Confusing.
+
+But B is **major and a major 7th** above Bb.
+
+It's very dissonant.
+
+This chord (B/Bb) is likely a **passing chord** to resolve to C or Cb.
+
+But instead, we go to Bbdim.
+
+Bbdim has Bb, Db, Fb
+B has B, D#, F#
+
+No common tones.
+
+Voice leading:
+- B (from B/Bb) → Bb? Down minor 2nd
+- D# → Db? Down minor 2nd
+- F# → Fb? Down minor 2nd
+
+Yes! **All upper voices resolve down by minor second**
+
+So B → Bb
+D# → Db
+F# → Fb
+
+So **B/Bb (B major over Bb) resolves to Bbdim by chromatic resolution down a half step for each voice**
+
+That’s strong voice leading.
+
+Similarly, earlier chord: Emaj7/Ab
+
+Emaj7 = E - G# - B - D#
+Bass: Ab
+
+Now resolve to Bbdim: Bb bass, Bb - Db - Fb
+
+Ab → Bb up by m2
+E → Fb? E to Fb is down half step? Fb = E, so same note?
+E to Fb = same pitch
+G# = Ab → Ab to Bb = up m2
+B → Bb = down half step
+D# = Eb → Eb to Db = down half step
+
+So:
+- Ab (bass) → Bb (up m2)
+- E → Fb = enharmonic same
+- G# = Ab → Ab to Bb = up m2
+- B → Bb = down m2
+- D# = Eb → Eb to Db = down m2
+
+But in resulting Bbdim, we only need Bb, Db, Fb
+
+So the upper structure: E, G#, B, D# → resolves to Fb (E), ? , Db
+
+So E → Fb (E)
+G# → perhaps Gb or F, but not specified
+B → Bb
+D# → Db
+
+So likely the upper voices: E stays, B->Bb, D#->Db, G#->Gb (not in chord)
+
+But Fb = E, so E is common.
+
+So good resolution.
+
+This suggests that **Bbdim is functioning as a tonal center**, with chromatic passing chords from below and above.
+
+Also, the long persistence of Bb in the bass, and return to Bbdim at the end, suggests **Bb is the tonic**.
+
+Moreover, the chord **Bbm6 (Gb/Bb)** is a **minor tonic with added 6th**, which is common in jazz and modal music.
+
+So the progression might be in **Bb minor**, but spelled with many alterations.
+
+But Bb diminished is not the tonic in minor; the tonic is Bbm.
+
+However, in some styles (jazz, modern classical), the diminished chord can be used as an embellishment for the tonic.
+
+Alternatively, could it be in **G minor** or **Db major**?
+
+Let’s try to find a key.
+
+Consider the chords:
+
+- Bbdim: common in Cb major, C minor, or as passing
+- Gb major: iv in Db major, bIII in Ab major, etc.
+- Gb/Bb = Bbm6: suggests Bb minor tonality
+- Dbm/Ab: perhaps ii in Cb major or C minor
+- B/Bb: chromatic
+- Emaj7/Ab: Ab7alt, which is V of D, or tritone sub
+- back to Bbdim
+
+One possibility: the key is **Bb minor**.
+
+In Bb minor:
+- i = Bbm
+- Bbm6 is a common variant
+- Bbdim could be a substitute for Bbm, or a common-tone dim chord
+
+The other chords are chromatic passing chords.
+
+Alternatively, the mode might be **Phrygian** or **Locrian**, but Bbdim as a final chord suggests maybe **Bb Locrian**, where the tonic is diminished.
+
+**Locrian mode** has a diminished tonic triad.
+
+Bb Locrian: would be the 7th mode of Cb major.
+
+Cb major: Cb Db Eb Fb Gb Ab Bb
+
+So Bb Locrian: Bb - Cb - Db - Eb - Fb - Gb - Ab
+
+Notes of Bbdim: Bb - Db - Fb → fits Bb Locrian
+
+Bbm6 = Bb - Db - Gb → Gb is in the mode
+
+Dbm/Ab = Ab - Db - Fb → Ab, Db, Fb are in the mode
+
+B/Bb = B major over Bb — B natural is **not in Cb major** — it's a chromatic alteration
+
+Emaj7/Ab = E, G#, B, D# — E, G#, B, D# are **not** in Cb major
+
+So lot of chromaticism.
+
+But the base could be **Bb Locrian (Cb major)**, with heavy chromatic alterations, especially the Ab7alt (Emaj7/Ab) which leads back to Bbdim.
+
+In jazz, it's common to have modal interchange and tritone subs.
+
+### Conclusion:
+
+- **Key: Bb**
+- **Most likely mode: Bb Locrian** (from Cb major), given the diminished tonic and presence of Gb, Ab, Db, Fb
+- Or, it's **chromatically altered Bb minor**, with Bbdim used in place of Bbm
+- The repeated use of Bbdim at the end, over static Bb bass, suggests it's functioning as a **tonic**, which points to **Locrian mode**
+
+However, Locrian is rare as a final mode in practice.
+
+More likely, it's **Bb minor** with a **diminished chord used for color**, not true Locrian.
+
+But given that the final chord is Bbdim and it's framed as the central harmony, **Bb Locrian** is the best fit tonal-wise.
+
+Additionally, **Emaj7/Ab = Ab7#9**, the tritone substitute for D7, could be a dominant of G, but it resolves to Bb, so not directly.
+
+Perhaps the entire thing is **centered on Bb with modal mixture and chromaticism**.
+
+### Final Answer:
+
+**Key: Bb**  
+**Mode: Bb Locrian** (theoretical), or more accurately, a **chromatic Bb minor with diminished tonic substitution**
+
+But given the chords, Bbdim as tonic, and pitches involved, **Bb Locrian** is the best theoretical fit.
+
+Alternatively, if we respell everything in Cb major:
+
+- Bbdim = vii°
+- Gb = IV
+- Gb/Bb = ii6 in Cb? Cb - Eb - Gb, not.
+
+No, Gb/Bb has Bb bass.
+
+So simpler to say:
+
+👉 **Tonal center: Bb**  
+👉 **Mode: Bb Locrian (from Cb major)**
+
+**Answer: Key = Bb, Mode = Locrian**
+
