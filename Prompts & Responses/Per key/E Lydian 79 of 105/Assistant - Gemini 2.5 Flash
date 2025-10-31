@@ -1,0 +1,50 @@
+**Assistant - Gemini 2.5 Flash**
+
+The provided chord progression is:
+
+**E E C#m/E C#m/E E E G#m/D# F#7/E E E C#m/E C#m/E E E Bmaj7/D# E**
+
+Let's analyze the chords:
+
+1. **Root Chord:** The progression starts and ends on **E**. The vast majority of the chords are centered around E (indicated by the "/E" bass in many cases, although the progression analysis typically uses the chord root name).
+2. **Diatonic Chords in E Major:**
+ Routine chords:
+    * E Major (**I**)
+    * F# minor (**ii**)
+    * G# minor (**iii**)
+    * A Major (**IV**)
+    * B Major (**V**)
+    * C# minor (**vi**)
+    * D# diminished (**vii°**)
+
+3. **Chords in the Progression:**
+    * **E:** I (E Major) - Fits perfectly.
+    * **C#m/E (or just C#m for analysis):** vi (C# minor) - Fits perfectly.
+    * **G#m/D# (or just G#m):** iii (G# minor) - Fits perfectly.
+    * **F#7/E (or just F#7):** This is the most crucial chord for mode determination.
+        * The diatonic chord is **F#m** (ii).
+        * **F#7** is a secondary dominant or a non-diatonic V/V chord. In this context, it functions as a dominant chord leading to B (or Bm, though B major is diatonic).
+        * However, music often uses F# Major (the chord within F#7) in E Major as a temporary secondary dominant (V/V). It contains the note **A#**.
+    * **Bmaj7/D# (or just Bmaj7):** V (B Major) - Fits perfectly, adding the major 7th (A#) which is already present in E Major.
+
+4. **Analysis of Accidentals (from F#7):**
+    * E Major scale: E, F#, G#, A, B, C#, D#
+    * F#7 chord notes: F#, A#, C#, E
+    * The note **A#** is present in the F#7 chord.
+    * E Major diatonic contains **A natural**.
+    * The presence of **A#** *chromatically* (in the F#7 chord) is standard practice in E Major harmony (V/V).
+
+5. **Modal Conclusion:**
+    * All core structural chords (I, vi, iii, V) are diatonic to the **E Major** scale.
+    * The progression strongly centers on **E**.
+    * The use of F#7 is a common chromatic alteration (secondary dominant) that doesn't push the tonality out of E Major, especially since it doesn't resolve directly to B (though it sets up a tonic feel).
+
+6. **Alternative (Minor) possibility:**
+    * Could it be C# Minor (the relative minor)? The tonic (E) is I. No.
+
+**Conclusion:**
+
+The key is clearly **E**. The mode is **Major** (Ionian).
+
+**Key and Mode:** **E Major** (E Ionian)
+

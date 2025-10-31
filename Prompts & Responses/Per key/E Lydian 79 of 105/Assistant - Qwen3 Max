@@ -1,0 +1,76 @@
+**Assistant - Qwen3 Max**
+
+To determine the key and mode of the chord progression:
+
+**Chord progression:**  
+E – E – C#m/E – C#m/E – E – E – G#m/D# – F#7/E – E – E – C#m/E – C#m/E – E – E – Bmaj7/D# – E
+
+---
+
+### Step 1: Identify the tonic (home chord)
+The progression starts and ends on **E major**, and **E** appears very frequently—this strongly suggests **E** is the tonic.
+
+---
+
+### Step 2: Analyze the chords in relation to E major
+
+**Key of E major has the following diatonic chords:**
+- E (I)
+- F#m (ii)
+- G#m (iii)
+- A (IV)
+- B (V)
+- C#m (vi)
+- D#dim (vii°)
+
+Now compare the chords used:
+- **E** = I → ✅ diatonic  
+- **C#m/E** = vi (with E in the bass) → ✅ diatonic  
+- **G#m/D#** = iii chord (G#m) with D# in the bass → D# is the 5th of G#m, so it’s a standard inversion; G#m is diatonic → ✅  
+- **F#7/E** = F#7 (ii7) with E in the bass → F#7 is **not** diatonic to E major. In E major, the ii chord is **F#m**, not F#7. F#7 implies a **dominant 7th**, which includes **A#** (the major 3rd) and **E** (the minor 7th). So F#7 = F#–A#–C#–E. The **A#** is **not** in E major (E major has A natural).  
+- **Bmaj7/D#** = Bmaj7 (Vmaj7) with D# in the bass → Bmaj7 = B–D#–F#–A#. Again, **A#** appears here. In E major, the V chord is **B major** (B–D#–F#), and Bmaj7 would include **A#**, which is **not** in the E major scale (E major has A natural). So Bmaj7 is **not diatonic** to E major.
+
+So we have **two chords containing A#**:  
+- F#7 (contains A#)  
+- Bmaj7 (contains A#)
+
+The presence of **A#** suggests the use of **E major’s dominant key (B major)** or possible modal/tonal mixture.
+
+---
+
+### Step 3: Consider E Lydian?
+
+E Lydian mode = E–F#–G#–A#–B–C#–D#
+
+This scale includes **A#**, which matches the A# found in F#7 and Bmaj7.
+
+Let’s check if all chords fit **E Lydian**:
+
+- E = I → ✅ (E major)
+- C#m = vi → C#–E–G# → all in E Lydian → ✅
+- G#m = iii → G#–B–D# → ✅ (all in E Lydian)
+- F#7 = II7 → F#–A#–C#–E → all notes in E Lydian → ✅
+- Bmaj7 = Vmaj7 → B–D#–F#–A# → all in E Lydian → ✅
+
+So **all chords are diatonic to E Lydian**!
+
+In E major (Ionian), the IV chord is A major. But in this progression, there's **no A major or A natural at all**—instead, we see **A#** consistently, which is the **#4** of E, the hallmark of **Lydian mode**.
+
+Also, the repeated use of **F#7** (II7) and **Bmaj7** (Vmaj7) supports Lydian, where the II chord is major or dominant (because of the #4), and the V chord can be maj7 due to the raised 4th.
+
+---
+
+### Step 4: Confirm mode
+
+- Tonic: E  
+- Scale degrees used: E, F#, G#, A#, B, C#, D#  
+- This is **E Lydian** (1 2 3 #4 5 6 7)
+
+No chords contradict this, and the characteristic #4 (A#) appears in two important chords.
+
+---
+
+### ✅ Final Answer:
+**Key: E  
+Mode: Lydian**
+

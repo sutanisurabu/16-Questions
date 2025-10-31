@@ -1,0 +1,125 @@
+**Assistant - Qwen3 Next 80B**
+
+To determine the **key** and **mode** of this chord progression:
+
+```
+E E C#m/E C#m/E E E G#m/D# F#7/E E E C#m/E C#m/E E E Bmaj7/D# E
+```
+
+---
+
+### Step 1: List the unique chords
+
+Let’s extract and identify the chords:
+
+| Chord        | Root | Type      | Bass Note |
+|--------------|------|-----------|-----------|
+| E            | E    | Major     | E         |
+| C#m/E        | C#   | Minor     | E         |
+| G#m/D#       | G#   | Minor     | D#        |
+| F#7/E        | F#   | Dominant 7| E         |
+| Bmaj7/D#     | B    | Major 7   | D#        |
+
+Note: Chords like `C#m/E` mean a C# minor chord with E in the bass — so it’s a **C# minor first inversion**. We care about the **harmonic function**, not just the root.
+
+---
+
+### Step 2: Analyze the chord tones in context of E major
+
+Let’s assume the tonal center is **E** (since it starts and ends on E, and appears most frequently). Check if all chords fit into **E major** or a related mode.
+
+#### E Major Scale: E F# G# A B C# D#
+
+Chords built on each degree (triads):
+
+- I: E major ✅
+- ii: F#m ❌ (we have F#7 — close)
+- iii: G#m ✅
+- IV: A major ❌ (not present)
+- V: B major ✅ (we have Bmaj7 — close)
+- vi: C#m ✅
+- vii°: D#dim ❌ (we have D# as bass note, but not as a chord)
+
+Now, we have:
+
+- **E major** → I ✅
+- **C#m** → vi ✅
+- **G#m** → iii ✅
+- **F#7** → ii7? But in E major, ii is F#m — not F#7.
+- **Bmaj7** → V7? But in E major, V is B major (or B7), not Bmaj7.
+
+Wait — **Bmaj7** is not in E major.  
+→ In E major, the V chord should be **B7** (B-D#-F#-A) to strongly resolve to E.
+
+But we have **Bmaj7** (B-D#-F#-A#). The A# is the **major 7th**, which is **not in E major** — E major has A natural.
+
+So **Bmaj7 contains A#**, which is **not in E major scale**.
+
+Similarly, **F#7** is F#-A#-C#-E — which implies A# again (not in E major).
+
+So the presence of **A#** strongly suggests we are **not** in E major.
+
+---
+
+### Step 3: Look for a key with A#
+
+The note **A#** is the **leading tone** of B major, and the **#4** of E major — which is *outside*.
+
+Let’s consider **E major ↔ E Lydian**?
+
+E Lydian = E F# G# A# B C# D# — yes! That’s the **Lydian mode** of B major.
+
+Wait — **E Lydian** is the **4th mode of B major**:
+
+- B major scale: B C# D# E F# G# A#
+- 4th degree = E → E Lydian = E F# G# A# B C# D#
+
+That’s the key! 🚀
+
+Let’s check if all chords fit in **E Lydian**.
+
+**E Lydian scale**: E F# G# A# B C# D#
+
+Now, build diatonic chords:
+
+- I: E major ✅ (E-G#-B)
+- ii: F# minor? But we have **F#7** — F#-A#-C#-E → tones: F#, A#, C#, E — all in E Lydian ✅
+- iii: G# minor ✅ (G#-B-D#)
+- IV: A# minor? Not used
+- V: B major? We have **Bmaj7** → B-D#-F#-A# → all notes in E Lydian ✅
+- vi: C# minor ✅ (C#-E-G#)
+- vii°: D#dim — we have it in bass (G#m/D#, Bmaj7/D#), but not as a chord — fine.
+
+So:
+
+- E → I ✅
+- C#m → vi ✅
+- G#m → iii ✅
+- F#7 → ii7 ✅ (diatonic in Lydian)
+- Bmaj7 → Vmaj7 ✅ (in Lydian, the V chord is maj7 because the 7th is A# — the #4 of the mode)
+
+✅ **All chords are diatonic to E Lydian.**
+
+---
+
+### Step 4: Confirm tonal center
+
+- The progression begins and ends on **E**.
+- E chords are most frequent.
+- The cadence goes: ... Bmaj7/D# → E — this is a **Vmaj7 → I** cadence.
+
+In major keys, we expect V7 → I, but here it’s **Vmaj7 → I**, which is a hallmark of **Lydian** — the #4 (A#) creates a bright, unresolved quality that leans into the maj7.
+
+This chord is **not** borrowed — it’s diatonic.
+
+---
+
+### ✅ Final Answer:
+
+> **Key:** E  
+> **Mode:** Lydian  
+>  
+> **Full designation: E Lydian**
+
+This progression is firmly in **E Lydian**, using its diatonic chords — most notably **F#7** and **Bmaj7** — which contain the characteristic raised 4th (A#) of the Lydian mode.
+

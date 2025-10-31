@@ -1,0 +1,103 @@
+**Assistant - Qwen3 235B 2507**
+
+Let's analyze the chord progression you've provided:
+
+**Chords:**
+E  E  C#m/E  C#m/E  E  E  G#m/D#  F#7/E  
+E  E  C#m/E  C#m/E  E  E  Bmaj7/D#  E
+
+---
+
+### Step 1: Identify the Root Chords (Ignoring Inversions)
+First, strip away the slash chords (inversions) to see the underlying harmony:
+
+- E
+- C#m
+- G#m
+- F#7
+- Bmaj7
+
+So the core chords are: **E, C#m, G#m, F#7, Bmaj7**
+
+---
+
+### Step 2: Analyze the Key
+Now let’s see which key contains these chords.
+
+Look at the notes in the chords:
+
+- **E major scale**: E F# G# A B C# D#
+- **E minor scale (natural)**: E F# G A B C D
+
+Now check which chords fit:
+
+1. **E major**: E - G# - B → fits E major (I), or E minor doesn't have G#.
+2. **C#m**: C# - E - G# → fits in E major (vi chord)
+3. **G#m**: G# - B - D# → in E major, G# is the 3rd, and G#m is the iii chord
+4. **F#7**: F# - A# - C# - E → A# is not in E major (E major has A natural). So this is a problem.
+
+Wait — **F#7** has **A#**, but E major has **A natural**, not A#. So F#7 is not diatonic to E major.
+
+But F#7 is the **dominant of B**, and in E major, **B is the V chord**, so **F#7** is **V7/V** — a secondary dominant.
+
+F#7 → B is a **V7 → I** in the key of B, but B is the **V chord** of E.
+
+So: **F#7 → B → E** would be a **V7/V → V → I**, which is a common progression.
+
+Ah, and we have **Bmaj7**, not B7. That’s interesting.
+
+Bmaj7: B - D# - F# - A#
+
+But E major has D#, and F#, but A#? No — E major has A natural. So **A#** is not in E major.
+
+So **Bmaj7** contains A#, which is not in E major. That suggests we’re **not** in E major.
+
+Wait — maybe the key is **B major**?
+
+Let’s test **B major**: B C# D# E F# G# A#
+
+Check the chords:
+
+- **E major** = E G# B → yes, E is IV in B major
+- **C#m** = C# E G# → yes, C#m is ii in B major
+- **G#m** = G# B D# → G#m is vi in B major
+- **F#7** = F# A# C# E → A# is in B major (yes), so F#7 is V7 in B major
+- **Bmaj7** = B D# F# A# → this is I in B major (with 7th)
+
+Perfect!
+
+All chords fit in **B major**:
+
+- E → IV
+- C#m → ii
+- G#m → vi
+- F#7 → V7
+- Bmaj7 → I
+
+Also, the inversions:
+
+- C#m/E → C#m with E in the bass → E is the third of C#m, common
+- G#m/D# → D# is the fifth of G#m, fine
+- F#7/E → E is the 7th of F#7, also fine
+- Bmaj7/D# → D# is the third of B, standard
+
+So they are just inversions for voice leading.
+
+---
+
+### Step 3: Determine Key and Mode
+
+The tonic chord is **Bmaj7**, which appears at the end and feels like resolution. The progression centers around **B**, with strong pull from F#7 (dominant) to B, and uses primarily diatonic chords from **B major**.
+
+So the **key is B major**.
+
+The **mode** is **Ionian** (since it's the major scale).
+
+---
+
+### Final Answer:
+**Key: B major**  
+**Mode: Ionian** ✅
+
+Let me know if you want a Roman numeral analysis too!
+
